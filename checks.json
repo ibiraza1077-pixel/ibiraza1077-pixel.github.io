@@ -1,9 +1,9 @@
 {
- "run": "2026-09-29T11:40",
+ "run": "2026-09-29T12:04",
  "counts": {
-  "ok": 31,
+  "ok": 33,
   "changed": 0,
-  "unreachable": 13,
+  "unreachable": 11,
   "manual": 1
  },
  "results": [
@@ -113,8 +113,7 @@
    "ageDays": 0
   },
   {
-   "result": "unreachable",
-   "error": "HTTP 403 at https://www.london.ac.uk/about/services/senate-house-library/opening-hours",
+   "result": "ok",
    "id": "study-senate",
    "title": "Senate House Library, open till 11pm",
    "url": "https://www.london.ac.uk/about/services/senate-house-library/opening-hours",
@@ -205,8 +204,7 @@
    "ageDays": 0
   },
   {
-   "result": "unreachable",
-   "error": "HTTP 403 at https://www.ucl.ac.uk/work-at-ucl/temporary-work",
+   "result": "ok",
    "id": "job-unitemps",
    "title": "On-campus temp jobs at UCL",
    "url": "https://www.ucl.ac.uk/work-at-ucl/temporary-work",
