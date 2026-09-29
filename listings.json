@@ -601,12 +601,13 @@
    "status": "verified",
    "verify": [
     {
+     "url": "https://senatehouselibrary.libcal.com/hours",
      "find": [
-      "Monday - Friday 09:00 - 23:00",
-      "Saturday 09:45 - 21:00"
+      "Senate House Library 9am - 11pm 9am - 11pm 9am - 11pm 9am - 11pm 9am - 11pm 9:45am - 9pm 9:45am - 9pm"
      ]
     }
-   ]
+   ],
+   "autoChecked": true
   },
   {
    "id": "study-wellcome",
@@ -1072,11 +1073,14 @@
    "status": "verified",
    "verify": [
     {
+     "url": "https://www.unitemps.com/branches/ucl/",
      "find": [
-      "Unitemps is UCL's internal recruitment agency"
+      "Unitemps UCL",
+      "job opportunities on campus for students"
      ]
     }
-   ]
+   ],
+   "autoChecked": true
   },
   {
    "id": "job-jobshop",
