@@ -538,11 +538,48 @@
     "quiet",
     "wifi"
    ],
-   "desc": "LSE's main library, in the Lionel Robbins Building. Check today's hours on LSE Library's page before a late visit.",
+   "desc": "LSE's main library, in the Lionel Robbins Building. Open to cardholders 8am to midnight, 7 days a week; staff help 9am–5pm, Monday to Friday.",
    "url": "https://www.lse.ac.uk/library/about/opening-hours",
    "source": "LSE Library",
    "checked": "2026-09-29",
-   "status": "verified"
+   "status": "verified",
+   "weekHours": [
+    [
+     8,
+     24
+    ],
+    [
+     8,
+     24
+    ],
+    [
+     8,
+     24
+    ],
+    [
+     8,
+     24
+    ],
+    [
+     8,
+     24
+    ],
+    [
+     8,
+     24
+    ],
+    [
+     8,
+     24
+    ]
+   ],
+   "verify": [
+    {
+     "find": [
+      "8am to 12 midnight 7 days a week"
+     ]
+    }
+   ]
   },
   {
    "id": "study-senate",
