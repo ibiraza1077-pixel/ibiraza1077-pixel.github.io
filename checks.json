@@ -1,9 +1,9 @@
 {
- "run": "2026-09-29T11:35",
+ "run": "2026-09-29T11:40",
  "counts": {
-  "ok": 29,
+  "ok": 31,
   "changed": 0,
-  "unreachable": 15,
+  "unreachable": 13,
   "manual": 1
  },
  "results": [
@@ -50,16 +50,14 @@
    "ageDays": 0
   },
   {
-   "result": "unreachable",
-   "error": "HTTP 403 at https://www.kclsu.org/news/article/6015/Cheap-Eats-Near-Strand-Campus/",
+   "result": "ok",
    "id": "food-vault",
    "title": "Main and two sides for under £7",
    "url": "https://www.kclsu.org/news/article/6015/Cheap-Eats-Near-Strand-Campus/",
    "ageDays": 0
   },
   {
-   "result": "unreachable",
-   "error": "HTTP 403 at https://www.kclsu.org/news/article/6015/Cheap-Eats-Near-Strand-Campus/",
+   "result": "ok",
    "id": "food-shack",
    "title": "Cheapest grab-and-go spot at Strand",
    "url": "https://www.kclsu.org/news/article/6015/Cheap-Eats-Near-Strand-Campus/",

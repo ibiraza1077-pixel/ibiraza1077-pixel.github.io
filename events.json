@@ -1,5 +1,5 @@
 {
- "generated": "2026-09-29T11:28",
+ "generated": "2026-09-29T11:39",
  "windowDays": 35,
  "sources": [
   {
@@ -7,8 +7,8 @@
    "name": "Students' Union UCL",
    "url": "https://studentsunionucl.org/whats-on",
    "ok": true,
-   "count": 634,
-   "fetched": "2026-09-29T11:28"
+   "count": 635,
+   "fetched": "2026-09-29T11:39"
   },
   {
    "key": "lse-su",
@@ -16,7 +16,7 @@
    "url": "https://www.lsesu.com/events/whats-on/",
    "ok": true,
    "count": 5,
-   "fetched": "2026-09-29T11:28"
+   "fetched": "2026-09-29T11:39"
   },
   {
    "key": "kcl",
@@ -24,7 +24,7 @@
    "url": "https://www.kcl.ac.uk/events/events-calendar",
    "ok": true,
    "count": 74,
-   "fetched": "2026-09-29T11:28"
+   "fetched": "2026-09-29T11:39"
   },
   {
    "key": "lse-public",
@@ -32,34 +32,10 @@
    "url": "https://www.lse.ac.uk/events",
    "ok": true,
    "count": 12,
-   "fetched": "2026-09-29T11:28"
+   "fetched": "2026-09-29T11:39"
   }
  ],
  "events": [
-  {
-   "id": "lse-public-the-womens-library-at-100-celebrating-a-century-of-collectio",
-   "cat": "events",
-   "title": "The Women’s Library at 100: celebrating a century of collections",
-   "org": "LSE public events",
-   "area": "LSE Library Gallery",
-   "ll": [
-    51.5144,
-    -0.1165
-   ],
-   "start": "2026-03-02T09:00",
-   "end": "2026-09-30T19:00",
-   "tags": [
-    "culture",
-    "research"
-   ],
-   "desc": "LSE public event, open to everyone. LSE Library Gallery.",
-   "url": "https://www.lse.ac.uk/library/whats-on/events/the-womens-library-at-100-celebrating-a-century-of-collections",
-   "source": "LSE public events",
-   "sourceKey": "lse-public",
-   "checked": "2026-09-29",
-   "status": "verified",
-   "auto": true
-  },
   {
    "id": "ucl-su-202390",
    "cat": "events",
@@ -360,34 +336,6 @@
    ],
    "desc": "Run by Comedy Club. Venue: North Cloisters, Main Building, Gower Street. Beginner Friendly · Alcohol Free.",
    "url": "https://studentsunionucl.org/whats-on/events-activities/comedy-club-at-arts-fair-yoooooooooooooooooooooooooooooooo",
-   "source": "Students' Union UCL",
-   "sourceKey": "ucl-su",
-   "checked": "2026-09-29",
-   "status": "verified",
-   "auto": true
-  },
-  {
-   "id": "ucl-su-203154",
-   "cat": "sport",
-   "title": "TeamUCL Gym East Tour",
-   "org": "Students' Union UCL",
-   "area": "UCL East",
-   "ll": [
-    51.5378,
-    -0.0107
-   ],
-   "price": 0,
-   "start": "2026-09-29T10:30",
-   "end": "2026-09-29T11:30",
-   "unis": [
-    "ucl"
-   ],
-   "tags": [
-    "community",
-    "fitness"
-   ],
-   "desc": "Run by Students' Union UCL. Venue: TeamUCL Gym East. Also on 1 more date in the next few weeks.",
-   "url": "https://studentsunionucl.org/whats-on/events-activities/teamucl-gym-east-tour-0",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
    "checked": "2026-09-29",
@@ -1118,31 +1066,6 @@
    "auto": true
   },
   {
-   "id": "kcl-managing-your-career-shaping-your-career-journey",
-   "cat": "careers",
-   "title": "Managing your career: shaping your career journey",
-   "org": "King's College London",
-   "area": "Online",
-   "ll": [
-    51.5115,
-    -0.116
-   ],
-   "online": true,
-   "start": "2026-09-29T14:00",
-   "end": "2026-09-29T15:30",
-   "unis": [
-    "kcl"
-   ],
-   "tags": [],
-   "desc": "Take ownership of your development with this workshop designed to help you reflect on your career and achieve goals.",
-   "url": "https://www.kcl.ac.uk/events/managing-your-career-shaping-your-career-journey",
-   "source": "King's College London events",
-   "sourceKey": "kcl",
-   "checked": "2026-09-29",
-   "status": "verified",
-   "auto": true
-  },
-  {
    "id": "kcl-learning-from-local-child-safeguarding-practice-reviews-lcsp",
    "cat": "careers",
    "title": "Exploring Professional Identity Among Experienced and Early-Career Social Workers in England",
@@ -1165,6 +1088,31 @@
    ],
    "desc": "Mary Baginsky (King's College London)",
    "url": "https://www.kcl.ac.uk/events/learning-from-local-child-safeguarding-practice-reviews-lcsprs-in-england-copy-1",
+   "source": "King's College London events",
+   "sourceKey": "kcl",
+   "checked": "2026-09-29",
+   "status": "verified",
+   "auto": true
+  },
+  {
+   "id": "kcl-managing-your-career-shaping-your-career-journey",
+   "cat": "careers",
+   "title": "Managing your career: shaping your career journey",
+   "org": "King's College London",
+   "area": "Online",
+   "ll": [
+    51.5115,
+    -0.116
+   ],
+   "online": true,
+   "start": "2026-09-29T14:00",
+   "end": "2026-09-29T15:30",
+   "unis": [
+    "kcl"
+   ],
+   "tags": [],
+   "desc": "Take ownership of your development with this workshop designed to help you reflect on your career and achieve goals.",
+   "url": "https://www.kcl.ac.uk/events/managing-your-career-shaping-your-career-journey",
    "source": "King's College London events",
    "sourceKey": "kcl",
    "checked": "2026-09-29",
@@ -5855,31 +5803,6 @@
    "auto": true
   },
   {
-   "id": "lse-public-martino-tirimo-piano",
-   "cat": "events",
-   "title": "Martino Tirimo (piano)",
-   "org": "LSE public events",
-   "area": "Shaw Library, 6th floor, Old Building",
-   "ll": [
-    51.5144,
-    -0.1165
-   ],
-   "start": "2026-10-01T13:05",
-   "end": "2026-10-01T14:00",
-   "tags": [
-    "culture",
-    "music",
-    "research"
-   ],
-   "desc": "LSE public event, open to everyone. In-person public event (Shaw Library, 6th floor, Old Building).",
-   "url": "https://www.lse.ac.uk/events/arts-and-music/martino-tirimo-piano",
-   "source": "LSE public events",
-   "sourceKey": "lse-public",
-   "checked": "2026-09-29",
-   "status": "verified",
-   "auto": true
-  },
-  {
    "id": "ucl-su-203677",
    "cat": "events",
    "title": "Life Science Society: Board Games & Drinks",
@@ -8273,6 +8196,34 @@
    ],
    "desc": "Run by MODO Fashion Society. Venue: UCL Main Quad - Portico Steps. Under 18 Friendly.",
    "url": "https://studentsunionucl.org/whats-on/events-activities/vintage-shop-crawl-modo-x-womens-wrongs",
+   "source": "Students' Union UCL",
+   "sourceKey": "ucl-su",
+   "checked": "2026-09-29",
+   "status": "verified",
+   "auto": true
+  },
+  {
+   "id": "ucl-su-203155",
+   "cat": "sport",
+   "title": "TeamUCL Gym East Tour",
+   "org": "Students' Union UCL",
+   "area": "UCL East",
+   "ll": [
+    51.5378,
+    -0.0107
+   ],
+   "price": 0,
+   "start": "2026-10-02T15:00",
+   "end": "2026-10-02T16:00",
+   "unis": [
+    "ucl"
+   ],
+   "tags": [
+    "community",
+    "fitness"
+   ],
+   "desc": "Run by Students' Union UCL. Venue: TeamUCL Gym East.",
+   "url": "https://studentsunionucl.org/whats-on/events-activities/teamucl-gym-east-tour-1",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
    "checked": "2026-09-29",
@@ -12511,30 +12462,6 @@
    "auto": true
   },
   {
-   "id": "lse-public-educate-indias-forgotten-daughters",
-   "cat": "events",
-   "title": "Every last girl: a journey to educate India’s forgotten daughters",
-   "org": "LSE public events",
-   "area": "Sheikh Zayed Theatre, Cheng Kin Ku Building",
-   "ll": [
-    51.5144,
-    -0.1165
-   ],
-   "start": "2026-10-06T18:30",
-   "end": "2026-10-06T20:00",
-   "tags": [
-    "culture",
-    "research"
-   ],
-   "desc": "LSE public event, open to everyone. In-person and online public event (Sheikh Zayed Theatre, Cheng Kin Ku Building).",
-   "url": "https://www.lse.ac.uk/events/educate-indias-forgotten-daughters",
-   "source": "LSE public events",
-   "sourceKey": "lse-public",
-   "checked": "2026-09-29",
-   "status": "verified",
-   "auto": true
-  },
-  {
    "id": "ucl-su-203319",
    "cat": "events",
    "title": "Freshers Jazz Jammin'",
@@ -13510,30 +13437,6 @@
    "auto": true
   },
   {
-   "id": "lse-public-sixty-six-years-on-how-can-nigeria-escape-the-fragility-trap",
-   "cat": "events",
-   "title": "Sixty-six years on - how can Nigeria escape the fragility trap and unlock its potential?",
-   "org": "LSE public events",
-   "area": "LSE campus, Room MAR 2.08, Marshall Building",
-   "ll": [
-    51.5144,
-    -0.1165
-   ],
-   "start": "2026-10-07T17:30",
-   "end": "2026-10-07T18:45",
-   "tags": [
-    "culture",
-    "research"
-   ],
-   "desc": "LSE public event, open to everyone. In-person public event (LSE campus, Room MAR 2.08, Marshall Building).",
-   "url": "https://www.lse.ac.uk/international-relations/events/2026/sixty-six-years-on-how-can-nigeria-escape-the-fragility-trap-and-unlock-its-potential",
-   "source": "LSE public events",
-   "sourceKey": "lse-public",
-   "checked": "2026-09-29",
-   "status": "verified",
-   "auto": true
-  },
-  {
    "id": "ucl-su-203881",
    "cat": "events",
    "title": "Chibi drawing workshop",
@@ -14062,31 +13965,6 @@
    ],
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-09-29",
-   "status": "verified",
-   "auto": true
-  },
-  {
-   "id": "lse-public-petar-pejcic-cello-and-nour-ayadi-piano",
-   "cat": "events",
-   "title": "Petar Pejčić (cello) and Nour Ayadi (piano)",
-   "org": "LSE public events",
-   "area": "Shaw Library, 6th floor, Old Building",
-   "ll": [
-    51.5144,
-    -0.1165
-   ],
-   "start": "2026-10-08T13:05",
-   "end": "2026-10-08T14:00",
-   "tags": [
-    "culture",
-    "music",
-    "research"
-   ],
-   "desc": "LSE public event, open to everyone. In-person public event (Shaw Library, 6th floor, Old Building).",
-   "url": "https://www.lse.ac.uk/events/arts-and-music/petar-pejcic-cello-and-nour-ayadi-piano",
-   "source": "LSE public events",
-   "sourceKey": "lse-public",
    "checked": "2026-09-29",
    "status": "verified",
    "auto": true
@@ -14668,23 +14546,23 @@
    "auto": true
   },
   {
-   "id": "lse-public-black-history-month",
+   "id": "lse-public-no-future-for-transatlantic-relations-reflections-in-advance",
    "cat": "events",
-   "title": "In conversation with Reni Eddo-Lodge",
+   "title": "'No future' for transatlantic relations? Reflections in advance of the US mid-term elections",
    "org": "LSE public events",
-   "area": "LSE campus, venue tbc to ticketholders",
+   "area": "Alumni Theatre, CKK",
    "ll": [
     51.5144,
     -0.1165
    ],
    "start": "2026-10-08T18:30",
-   "end": "2026-10-08T19:30",
+   "end": "2026-10-08T20:00",
    "tags": [
     "culture",
     "research"
    ],
-   "desc": "LSE public event, open to everyone. In-person and online public event (LSE campus, venue tbc to ticketholders).",
-   "url": "https://www.lse.ac.uk/events/black-history-month",
+   "desc": "LSE public event, open to everyone. In-person and online public event (Alumni Theatre, CKK).",
+   "url": "https://www.lse.ac.uk/european-institute/events/2026-27/no-future-for-transatlantic-relations-reflections-in-advance-of-the-us-mid-term-elections",
    "source": "LSE public events",
    "sourceKey": "lse-public",
    "checked": "2026-09-29",
@@ -16651,6 +16529,31 @@
    "auto": true
   },
   {
+   "id": "lse-public-political-economy-1",
+   "cat": "events",
+   "title": "Shaping the future: Europe’s quest for technological leadership",
+   "org": "LSE public events",
+   "area": "LSE campus, venue tbc to ticketholders",
+   "ll": [
+    51.5144,
+    -0.1165
+   ],
+   "start": "2026-10-13T17:15",
+   "end": "2026-10-13T18:30",
+   "tags": [
+    "culture",
+    "research",
+    "tech"
+   ],
+   "desc": "LSE public event, open to everyone. In-person public event (LSE campus, venue tbc to ticketholders).",
+   "url": "https://www.lse.ac.uk/events/political-economy-1",
+   "source": "LSE public events",
+   "sourceKey": "lse-public",
+   "checked": "2026-09-29",
+   "status": "verified",
+   "auto": true
+  },
+  {
    "id": "ucl-su-203237",
    "cat": "events",
    "title": "artsUnlocked Drawing (UCL East)",
@@ -16845,6 +16748,32 @@
    "url": "https://studentsunionucl.org/whats-on/clubs-societies/basc-x-natsci-boat-party",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
+   "checked": "2026-09-29",
+   "status": "verified",
+   "auto": true
+  },
+  {
+   "id": "lse-public-homelessness-and-evidence",
+   "cat": "events",
+   "title": "Solving homelessness through partnership: philanthropy, finance, and social entrepreneurship",
+   "org": "LSE public events",
+   "area": "In-person public event (Wolfson Theatre, Chen",
+   "ll": [
+    51.5144,
+    -0.1165
+   ],
+   "start": "2026-10-13T18:30",
+   "end": "2026-10-13T20:00",
+   "tags": [
+    "community",
+    "culture",
+    "finance",
+    "research"
+   ],
+   "desc": "LSE public event, open to everyone. In-person public event (Wolfson Theatre, Cheng Kin Ku Building, LSE.",
+   "url": "https://www.lse.ac.uk/marshall-institute/events/homelessness-and-evidence",
+   "source": "LSE public events",
+   "sourceKey": "lse-public",
    "checked": "2026-09-29",
    "status": "verified",
    "auto": true
@@ -17875,6 +17804,30 @@
    "auto": true
   },
   {
+   "id": "lse-public-designing-for-wellbeing-a-new-way-to-conceptualise-the-wellb",
+   "cat": "events",
+   "title": "Designing for wellbeing: a new way to conceptualise the wellbeing of caregivers",
+   "org": "LSE public events",
+   "area": "MAR.2.04, Marshall Building",
+   "ll": [
+    51.5144,
+    -0.1165
+   ],
+   "start": "2026-10-15T18:00",
+   "end": "2026-10-15T20:00",
+   "tags": [
+    "culture",
+    "research"
+   ],
+   "desc": "LSE public event, open to everyone. In-person and online public event (MAR.2.04, Marshall Building).",
+   "url": "https://www.lse.ac.uk/cities/designing-for-wellbeing-a-new-way-to-conceptualise-the-wellbeing-of-caregivers",
+   "source": "LSE public events",
+   "sourceKey": "lse-public",
+   "checked": "2026-09-29",
+   "status": "verified",
+   "auto": true
+  },
+  {
    "id": "ucl-su-203284",
    "cat": "events",
    "title": "Local Lineup Sessions",
@@ -18514,6 +18467,30 @@
    "auto": true
   },
   {
+   "id": "lse-public-rethinking-the-public-sphere",
+   "cat": "events",
+   "title": "Rethinking the public sphere: space and society in an age of crisis",
+   "org": "LSE public events",
+   "area": "LSE campus, venue tbc to ticketholders",
+   "ll": [
+    51.5144,
+    -0.1165
+   ],
+   "start": "2026-10-19T18:30",
+   "end": "2026-10-19T20:00",
+   "tags": [
+    "culture",
+    "research"
+   ],
+   "desc": "LSE public event, open to everyone. In-person public event (LSE campus, venue tbc to ticketholders).",
+   "url": "https://www.lse.ac.uk/geography-and-environment/events/2026/rethinking-the-public-sphere",
+   "source": "LSE public events",
+   "sourceKey": "lse-public",
+   "checked": "2026-09-29",
+   "status": "verified",
+   "auto": true
+  },
+  {
    "id": "ucl-su-203128",
    "cat": "events",
    "title": "Jazz @ Institute Bar",
@@ -18645,6 +18622,30 @@
    "url": "https://www.kcl.ac.uk/events/unveiling-byzantium-an-evening-remembering-prof-dame-averil-cameron-1940-2026",
    "source": "King's College London events",
    "sourceKey": "kcl",
+   "checked": "2026-09-29",
+   "status": "verified",
+   "auto": true
+  },
+  {
+   "id": "lse-public-russian-active-measures-under-putin-how-should-europe-respon",
+   "cat": "events",
+   "title": "Russian active measures under Putin: how should Europe respond?",
+   "org": "LSE public events",
+   "area": "LSE campus, venue tbc to ticketholders",
+   "ll": [
+    51.5144,
+    -0.1165
+   ],
+   "start": "2026-10-20T18:30",
+   "end": "2026-10-20T20:00",
+   "tags": [
+    "culture",
+    "research"
+   ],
+   "desc": "LSE public event, open to everyone. In-person and online public event (LSE campus, venue tbc to ticketholders).",
+   "url": "https://www.lse.ac.uk/school-of-public-policy/events/2026-27/russian-active-measures-under-putin-how-should-europe-respond",
+   "source": "LSE public events",
+   "sourceKey": "lse-public",
    "checked": "2026-09-29",
    "status": "verified",
    "auto": true
@@ -20188,6 +20189,37 @@
    "url": "https://www.kcl.ac.uk/events/global-placements-employer-speed-meet-autumn-2026",
    "source": "King's College London events",
    "sourceKey": "kcl",
+   "checked": "2026-09-29",
+   "status": "verified",
+   "auto": true
+  },
+  {
+   "id": "ucl-su-203938",
+   "cat": "events",
+   "title": "PGT Active bystander Workshop: In Person",
+   "org": "Students' Union UCL",
+   "area": "UCL Bloomsbury",
+   "ll": [
+    51.5246,
+    -0.134
+   ],
+   "price": 0,
+   "start": "2026-11-03T11:30",
+   "end": "2026-11-03T13:00",
+   "unis": [
+    "ucl"
+   ],
+   "tags": [
+    "community",
+    "culture"
+   ],
+   "desc": "Run by Students' Union UCL. Venue: John Adams Hall G25, 15-23 Endsleigh Street, London, WC1H 0DP. Beginner Friendly · Alcohol Free · Postgrads only.",
+   "url": "https://studentsunionucl.org/whats-on/events-activities/pgt-active-bystander-workshop-in-person",
+   "yrs": [
+    4
+   ],
+   "source": "Students' Union UCL",
+   "sourceKey": "ucl-su",
    "checked": "2026-09-29",
    "status": "verified",
    "auto": true
