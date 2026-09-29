@@ -1,5 +1,5 @@
 {
- "generated": "2026-09-29T11:17",
+ "generated": "2026-09-29T11:28",
  "windowDays": 35,
  "sources": [
   {
@@ -8,7 +8,7 @@
    "url": "https://studentsunionucl.org/whats-on",
    "ok": true,
    "count": 634,
-   "fetched": "2026-09-29T11:17"
+   "fetched": "2026-09-29T11:28"
   },
   {
    "key": "lse-su",
@@ -16,15 +16,15 @@
    "url": "https://www.lsesu.com/events/whats-on/",
    "ok": true,
    "count": 5,
-   "fetched": "2026-09-29T11:17"
+   "fetched": "2026-09-29T11:28"
   },
   {
    "key": "kcl",
    "name": "King's College London events",
    "url": "https://www.kcl.ac.uk/events/events-calendar",
    "ok": true,
-   "count": 71,
-   "fetched": "2026-09-29T11:17"
+   "count": 74,
+   "fetched": "2026-09-29T11:28"
   },
   {
    "key": "lse-public",
@@ -32,7 +32,7 @@
    "url": "https://www.lse.ac.uk/events",
    "ok": true,
    "count": 12,
-   "fetched": "2026-09-29T11:17"
+   "fetched": "2026-09-29T11:28"
   }
  ],
  "events": [
@@ -2678,7 +2678,7 @@
    "tags": [
     "community"
    ],
-   "desc": "A session to explore mindfulness and how to be mindful. Also on 5 more dates in the next few weeks.",
+   "desc": "A session to explore mindfulness and how to be mindful. Also on 3 more dates in the next few weeks.",
    "url": "https://www.kcl.ac.uk/events/mindfulness-with-jenny-online-16",
    "source": "King's College London events",
    "sourceKey": "kcl",
@@ -3438,6 +3438,34 @@
    ],
    "desc": "Run by Mixed Martial Arts Club. Venue: Portico. Under 18 Friendly.",
    "url": "https://studentsunionucl.org/whats-on/events-activities/mma-club-mini-fair-performance",
+   "source": "Students' Union UCL",
+   "sourceKey": "ucl-su",
+   "checked": "2026-09-29",
+   "status": "verified",
+   "auto": true
+  },
+  {
+   "id": "ucl-su-204153",
+   "cat": "sport",
+   "title": "Ice hockey taster 1!",
+   "org": "Ice Hockey Club",
+   "area": "Streatham Ice and Leisure",
+   "ll": [
+    51.5246,
+    -0.134
+   ],
+   "price": 0,
+   "start": "2026-09-30T13:45",
+   "end": "2026-09-30T15:45",
+   "unis": [
+    "ucl"
+   ],
+   "tags": [
+    "community",
+    "fitness"
+   ],
+   "desc": "Run by Ice Hockey Club. Venue: Streatham Ice and Leisure. Beginner Friendly · Alcohol Free.",
+   "url": "https://studentsunionucl.org/whats-on/sport/ice-hockey-taster-1-0",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
    "checked": "2026-09-29",
@@ -4633,7 +4661,7 @@
    "tags": [
     "community"
    ],
-   "desc": "A group for Catholic students of the healthcare professions and biosciences. Also on 5 more dates in the next few weeks.",
+   "desc": "A group for Catholic students of the healthcare professions and biosciences. Also on 4 more dates in the next few weeks.",
    "url": "https://www.kcl.ac.uk/events/christus-medicus-group-at-guys-1",
    "source": "King's College London events",
    "sourceKey": "kcl",
@@ -5152,7 +5180,7 @@
    "tags": [
     "community"
    ],
-   "desc": "A short Morning Prayer service at Guy's every Thursday during term time. Also on 5 more dates in the next few weeks.",
+   "desc": "A short Morning Prayer service at Guy's every Thursday during term time. Also on 4 more dates in the next few weeks.",
    "url": "https://www.kcl.ac.uk/events/morning-prayer-at-guys-5",
    "source": "King's College London events",
    "sourceKey": "kcl",
@@ -11424,34 +11452,6 @@
    ],
    "desc": "Run by Introverts Society. Venue: IOE Room 675. Beginner Friendly · Alcohol Free · Under 18 Friendly.",
    "url": "https://studentsunionucl.org/whats-on/clubs-societies/introverts-scavenger-hunt-0",
-   "source": "Students' Union UCL",
-   "sourceKey": "ucl-su",
-   "checked": "2026-09-29",
-   "status": "verified",
-   "auto": true
-  },
-  {
-   "id": "ucl-su-204129",
-   "cat": "events",
-   "title": "Pub Social",
-   "org": "Jewish Society",
-   "area": "UCL Bloomsbury",
-   "ll": [
-    51.5246,
-    -0.134
-   ],
-   "price": 0,
-   "start": "2026-10-05T18:30",
-   "end": "2026-10-05T21:00",
-   "unis": [
-    "ucl"
-   ],
-   "tags": [
-    "community",
-    "culture"
-   ],
-   "desc": "Run by Jewish Society.",
-   "url": "https://studentsunionucl.org/whats-on/clubs-societies/pub-social-7",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
    "checked": "2026-09-29",
@@ -17959,6 +17959,30 @@
    "auto": true
   },
   {
+   "id": "kcl-qs-discover-connect-masters-in-milan",
+   "cat": "careers",
+   "title": "QS Discover & Connect Master's in Milan",
+   "org": "King’s Business School",
+   "area": "Strand campus",
+   "ll": [
+    51.5115,
+    -0.116
+   ],
+   "start": "2026-10-16T14:00",
+   "end": "2026-10-16T19:30",
+   "unis": [
+    "kcl"
+   ],
+   "tags": [],
+   "desc": "Ask King's Business School team about life on campus, employment opportunities, funding options and how our programmes will suit your career goals.",
+   "url": "https://www.kcl.ac.uk/events/qs-discover-connect-masters-in-milan",
+   "source": "King's College London events",
+   "sourceKey": "kcl",
+   "checked": "2026-09-29",
+   "status": "verified",
+   "auto": true
+  },
+  {
    "id": "kcl-undergraduate-info-session-accommodation-16-october-2026",
    "cat": "events",
    "title": "Undergraduate accommodation at King's",
@@ -17977,30 +18001,6 @@
    "tags": [],
    "desc": "Discover more about the accommodation options available at King's.",
    "url": "https://www.kcl.ac.uk/events/undergraduate-info-session-accommodation-16-october-2026",
-   "source": "King's College London events",
-   "sourceKey": "kcl",
-   "checked": "2026-09-29",
-   "status": "verified",
-   "auto": true
-  },
-  {
-   "id": "kcl-qs-discover-connect-masters-in-milan",
-   "cat": "careers",
-   "title": "QS Discover & Connect Master's in Milan",
-   "org": "King’s Business School",
-   "area": "Strand campus",
-   "ll": [
-    51.5115,
-    -0.116
-   ],
-   "start": "2026-10-16T14:00",
-   "end": "2026-10-16T19:30",
-   "unis": [
-    "kcl"
-   ],
-   "tags": [],
-   "desc": "Ask King's Business School team about life on campus, employment opportunities, funding options and how our programmes will suit your career goals.",
-   "url": "https://www.kcl.ac.uk/events/qs-discover-connect-masters-in-milan",
    "source": "King's College London events",
    "sourceKey": "kcl",
    "checked": "2026-09-29",
@@ -18457,6 +18457,34 @@
    "auto": true
   },
   {
+   "id": "kcl-the-waging-of-war",
+   "cat": "events",
+   "title": "The Waging of War",
+   "org": "Faculty of Social Science & Public Policy",
+   "area": "Strand campus",
+   "ll": [
+    51.5115,
+    -0.116
+   ],
+   "start": "2026-10-19T12:30",
+   "end": "2026-10-19T14:00",
+   "unis": [
+    "kcl"
+   ],
+   "tags": [
+    "community",
+    "law",
+    "research"
+   ],
+   "desc": "This talk will emphasise the dynamic and evolving nature of the interactions of belligerents, offering new insights into how the organisation of warring parties influences the conduct of war, and conversely, how the fighting impacts the organisational structure of the…",
+   "url": "https://www.kcl.ac.uk/events/the-waging-of-war",
+   "source": "King's College London events",
+   "sourceKey": "kcl",
+   "checked": "2026-09-29",
+   "status": "verified",
+   "auto": true
+  },
+  {
    "id": "ucl-su-203486",
    "cat": "sport",
    "title": "Emergency First Aid Training",
@@ -18784,6 +18812,31 @@
    "url": "https://studentsunionucl.org/whats-on/clubs-societies/life-sciences-internship-panel",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
+   "checked": "2026-09-29",
+   "status": "verified",
+   "auto": true
+  },
+  {
+   "id": "kcl-undergraduate-info-session-personal-statement-21-october-202",
+   "cat": "events",
+   "title": "Writing your undergraduate personal statement",
+   "org": "King's College London",
+   "area": "Online",
+   "ll": [
+    51.5115,
+    -0.116
+   ],
+   "online": true,
+   "start": "2026-10-21T18:00",
+   "end": "2026-10-21T19:00",
+   "unis": [
+    "kcl"
+   ],
+   "tags": [],
+   "desc": "Discover more about writing a successful undergraduate personal statement at King's.",
+   "url": "https://www.kcl.ac.uk/events/undergraduate-info-session-personal-statement-21-october-2026",
+   "source": "King's College London events",
+   "sourceKey": "kcl",
    "checked": "2026-09-29",
    "status": "verified",
    "auto": true
@@ -19855,6 +19908,32 @@
    "url": "https://studentsunionucl.org/whats-on/clubs-societies/halloween-boat-party-2026",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
+   "checked": "2026-09-29",
+   "status": "verified",
+   "auto": true
+  },
+  {
+   "id": "kcl-john-hegley-and-friends-keats-the-cat-and-the-kennel",
+   "cat": "events",
+   "title": "Keats at the Kirk at King’s: John Hegley and Friends",
+   "org": "Dean's Office",
+   "area": "Guy's campus",
+   "ll": [
+    51.5033,
+    -0.0869
+   ],
+   "start": "2026-10-29T18:30",
+   "end": "2026-10-29T20:00",
+   "unis": [
+    "kcl"
+   ],
+   "tags": [
+    "community"
+   ],
+   "desc": "Unwind in the Guy's Chapel and enjoy a restorative performance.",
+   "url": "https://www.kcl.ac.uk/events/john-hegley-and-friends-keats-the-cat-and-the-kennel",
+   "source": "King's College London events",
+   "sourceKey": "kcl",
    "checked": "2026-09-29",
    "status": "verified",
    "auto": true
