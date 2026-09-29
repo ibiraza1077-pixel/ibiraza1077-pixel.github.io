@@ -1,5 +1,5 @@
 {
- "generated": "2026-09-29T12:03",
+ "generated": "2026-09-29T14:48",
  "windowDays": 35,
  "sources": [
   {
@@ -7,8 +7,8 @@
    "name": "Students' Union UCL",
    "url": "https://studentsunionucl.org/whats-on",
    "ok": true,
-   "count": 635,
-   "fetched": "2026-09-29T12:03"
+   "count": 634,
+   "fetched": "2026-09-29T14:48"
   },
   {
    "key": "lse-su",
@@ -16,15 +16,15 @@
    "url": "https://www.lsesu.com/events/whats-on/",
    "ok": true,
    "count": 5,
-   "fetched": "2026-09-29T12:03"
+   "fetched": "2026-09-29T14:48"
   },
   {
    "key": "kcl",
    "name": "King's College London events",
    "url": "https://www.kcl.ac.uk/events/events-calendar",
    "ok": true,
-   "count": 74,
-   "fetched": "2026-09-29T12:03"
+   "count": 73,
+   "fetched": "2026-09-29T14:48"
   },
   {
    "key": "lse-public",
@@ -32,10 +32,34 @@
    "url": "https://www.lse.ac.uk/events",
    "ok": true,
    "count": 12,
-   "fetched": "2026-09-29T12:03"
+   "fetched": "2026-09-29T14:48"
   }
  ],
  "events": [
+  {
+   "id": "lse-public-the-womens-library-at-100-celebrating-a-century-of-collectio",
+   "cat": "events",
+   "title": "The Women’s Library at 100: celebrating a century of collections",
+   "org": "LSE public events",
+   "area": "LSE Library Gallery",
+   "ll": [
+    51.5144,
+    -0.1165
+   ],
+   "start": "2026-03-02T09:00",
+   "end": "2026-09-30T19:00",
+   "tags": [
+    "culture",
+    "research"
+   ],
+   "desc": "LSE public event, open to everyone. LSE Library Gallery.",
+   "url": "https://www.lse.ac.uk/library/whats-on/events/the-womens-library-at-100-celebrating-a-century-of-collections",
+   "source": "LSE public events",
+   "sourceKey": "lse-public",
+   "checked": "2026-09-29",
+   "status": "verified",
+   "auto": true
+  },
   {
    "id": "ucl-su-202390",
    "cat": "events",
@@ -115,63 +139,6 @@
    ],
    "desc": "Run by European and International Social and Political Studies Society. Venue: EISPS Common Room, 33-35 Torrington Place. Alcohol Free.",
    "url": "https://studentsunionucl.org/whats-on/clubs-societies/pastry-morning-with-rendezvous",
-   "source": "Students' Union UCL",
-   "sourceKey": "ucl-su",
-   "checked": "2026-09-29",
-   "status": "verified",
-   "auto": true
-  },
-  {
-   "id": "ucl-su-203936",
-   "cat": "events",
-   "title": "ArtsUCL Fair - Piano Society",
-   "org": "Piano Society",
-   "area": "UCL Bloomsbury",
-   "ll": [
-    51.5246,
-    -0.134
-   ],
-   "price": 0,
-   "start": "2026-09-29T09:00",
-   "end": "2026-09-29T16:00",
-   "unis": [
-    "ucl"
-   ],
-   "tags": [
-    "community",
-    "culture",
-    "music"
-   ],
-   "desc": "Run by Piano Society. Venue: North Cloisters, Main Building, Gower Street. Beginner Friendly.",
-   "url": "https://studentsunionucl.org/whats-on/events-activities/artsucl-fair-piano-society",
-   "source": "Students' Union UCL",
-   "sourceKey": "ucl-su",
-   "checked": "2026-09-29",
-   "status": "verified",
-   "auto": true
-  },
-  {
-   "id": "ucl-su-202817",
-   "cat": "events",
-   "title": "artsUCL Fair",
-   "org": "Students' Union UCL",
-   "area": "UCL Bloomsbury",
-   "ll": [
-    51.5246,
-    -0.134
-   ],
-   "price": 0,
-   "start": "2026-09-29T10:00",
-   "end": "2026-09-29T15:00",
-   "unis": [
-    "ucl"
-   ],
-   "tags": [
-    "community",
-    "culture"
-   ],
-   "desc": "Run by Students' Union UCL. Venue: North Cloisters, Main Building, Gower Street. Beginner Friendly · Alcohol Free · Under 18 Friendly.",
-   "url": "https://studentsunionucl.org/whats-on/events-activities/artsucl-fair-2",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
    "checked": "2026-09-29",
@@ -315,253 +282,6 @@
    "auto": true
   },
   {
-   "id": "ucl-su-203033",
-   "cat": "events",
-   "title": "Explore London’s Social Enterprise Scene: Welcome Week Walking Tour",
-   "org": "Students' Union UCL",
-   "area": "31-34 Gordon Square - Archaeology 612",
-   "ll": [
-    51.5246,
-    -0.134
-   ],
-   "price": 5.0,
-   "start": "2026-09-29T11:00",
-   "end": "2026-09-29T13:30",
-   "unis": [
-    "ucl"
-   ],
-   "tags": [
-    "community",
-    "culture"
-   ],
-   "desc": "Run by Students' Union UCL. Venue: 31-34 Gordon Square - Archaeology 612. Beginner Friendly · Alcohol Free · Under 18 Friendly.",
-   "url": "https://studentsunionucl.org/whats-on/give-it-go/explore-londons-social-enterprise-scene-welcome-week-walking-tour",
-   "source": "Students' Union UCL",
-   "sourceKey": "ucl-su",
-   "checked": "2026-09-29",
-   "status": "verified",
-   "auto": true
-  },
-  {
-   "id": "kcl-part-time-work-fair-2026",
-   "cat": "careers",
-   "title": "Part-Time Work Fair 2026",
-   "org": "Employer Engagement",
-   "area": "Strand campus",
-   "ll": [
-    51.5115,
-    -0.116
-   ],
-   "start": "2026-09-29T11:30",
-   "end": "2026-09-29T15:30",
-   "unis": [
-    "kcl"
-   ],
-   "tags": [
-    "community"
-   ],
-   "desc": "Our Part-time Work Fair provides you with an opportunity to meet and recruit our students, offering them the invaluable opportunity to gain experience.",
-   "url": "https://www.kcl.ac.uk/events/part-time-work-fair-2026",
-   "source": "King's College London events",
-   "sourceKey": "kcl",
-   "checked": "2026-09-29",
-   "status": "verified",
-   "auto": true
-  },
-  {
-   "id": "ucl-su-203468",
-   "cat": "events",
-   "title": "Friendship Bracelet Making Session 🧵✨",
-   "org": "Students' Union UCL",
-   "area": "Phineas Bar",
-   "ll": [
-    51.5246,
-    -0.134
-   ],
-   "price": 0,
-   "start": "2026-09-29T12:00",
-   "end": "2026-09-29T14:00",
-   "unis": [
-    "ucl"
-   ],
-   "tags": [
-    "community"
-   ],
-   "desc": "Run by Students' Union UCL. Venue: Phineas Bar. Beginner Friendly · Alcohol Free. Also on 1 more date in the next few weeks.",
-   "url": "https://studentsunionucl.org/whats-on/events-activities/friendship-bracelet-making-session",
-   "source": "Students' Union UCL",
-   "sourceKey": "ucl-su",
-   "checked": "2026-09-29",
-   "status": "verified",
-   "auto": true
-  },
-  {
-   "id": "ucl-su-203750",
-   "cat": "sport",
-   "title": "Pole Fitness Taster Session",
-   "org": "Pole Fitness Club",
-   "area": "Dance Studio, Lewis' Building",
-   "ll": [
-    51.5246,
-    -0.134
-   ],
-   "price": 0,
-   "start": "2026-09-29T12:00",
-   "end": "2026-09-29T13:00",
-   "unis": [
-    "ucl"
-   ],
-   "tags": [
-    "community",
-    "fitness"
-   ],
-   "desc": "Run by Pole Fitness Club. Venue: Dance Studio, Lewis' Building. Beginner Friendly. Also on 3 more dates in the next few weeks.",
-   "url": "https://studentsunionucl.org/whats-on/clubs-societies/pole-fitness-taster-session-22",
-   "source": "Students' Union UCL",
-   "sourceKey": "ucl-su",
-   "checked": "2026-09-29",
-   "status": "verified",
-   "auto": true
-  },
-  {
-   "id": "kcl-international-lunch-at-waterloo",
-   "cat": "events",
-   "title": "International Lunch at Waterloo",
-   "org": "Dean's Office",
-   "area": "Waterloo campus",
-   "ll": [
-    51.5053,
-    -0.1134
-   ],
-   "start": "2026-09-29T12:00",
-   "end": "2026-09-29T13:30",
-   "unis": [
-    "kcl"
-   ],
-   "tags": [
-    "community",
-    "food"
-   ],
-   "desc": "Meet other members of the King's community and enjoy a (free!) lunch. Also on 5 more dates in the next few weeks.",
-   "url": "https://www.kcl.ac.uk/events/international-lunch-at-waterloo",
-   "source": "King's College London events",
-   "sourceKey": "kcl",
-   "checked": "2026-09-29",
-   "status": "verified",
-   "auto": true
-  },
-  {
-   "id": "ucl-su-203903",
-   "cat": "events",
-   "title": "Analogue x Zoosoc Zine Making Taster",
-   "org": "Analogue Magazine",
-   "area": "Wilkins Building, Rajani Room",
-   "ll": [
-    51.5246,
-    -0.134
-   ],
-   "price": 0,
-   "start": "2026-09-29T12:30",
-   "end": "2026-09-29T14:30",
-   "unis": [
-    "ucl"
-   ],
-   "tags": [
-    "community"
-   ],
-   "desc": "Run by Analogue Magazine. Venue: Wilkins Building, Rajani Room. Beginner Friendly · Under 18 Friendly.",
-   "url": "https://studentsunionucl.org/whats-on/clubs-societies/analogue-x-zoosoc-zine-making-taster",
-   "source": "Students' Union UCL",
-   "sourceKey": "ucl-su",
-   "checked": "2026-09-29",
-   "status": "verified",
-   "auto": true
-  },
-  {
-   "id": "ucl-su-203946",
-   "cat": "events",
-   "title": "Analogue x Zoosoc Zine Making Taster",
-   "org": "Zoology Society",
-   "area": "B03, Gordon Square 36-38",
-   "ll": [
-    51.5246,
-    -0.134
-   ],
-   "price": 0,
-   "start": "2026-09-29T12:30",
-   "end": "2026-09-29T14:30",
-   "unis": [
-    "ucl"
-   ],
-   "tags": [
-    "community"
-   ],
-   "desc": "Run by Zoology Society. Venue: B03, Gordon Square 36-38.",
-   "url": "https://studentsunionucl.org/whats-on/clubs-societies/analogue-x-zoosoc-zine-making-taster-0",
-   "source": "Students' Union UCL",
-   "sourceKey": "ucl-su",
-   "checked": "2026-09-29",
-   "status": "verified",
-   "auto": true
-  },
-  {
-   "id": "ucl-su-203774",
-   "cat": "sport",
-   "title": "7-a-side taster session",
-   "org": "Football Red Star",
-   "area": "Coram’s Fields",
-   "ll": [
-    51.5246,
-    -0.134
-   ],
-   "price": 0,
-   "start": "2026-09-29T12:55",
-   "end": "2026-09-29T14:00",
-   "unis": [
-    "ucl"
-   ],
-   "tags": [
-    "community",
-    "fitness"
-   ],
-   "desc": "Run by Football Red Star. Venue: Coram’s Fields. Beginner Friendly · Under 18 Friendly. Also on 1 more date in the next few weeks.",
-   "url": "https://studentsunionucl.org/whats-on/sport/7-side-taster-session-0",
-   "source": "Students' Union UCL",
-   "sourceKey": "ucl-su",
-   "checked": "2026-09-29",
-   "status": "verified",
-   "auto": true
-  },
-  {
-   "id": "ucl-su-203042",
-   "cat": "sport",
-   "title": "TeamUCL Gym Tour",
-   "org": "Students' Union UCL",
-   "area": "UCL Bloomsbury",
-   "ll": [
-    51.5246,
-    -0.134
-   ],
-   "price": 0,
-   "start": "2026-09-29T13:00",
-   "end": "2026-09-29T13:30",
-   "unis": [
-    "ucl"
-   ],
-   "tags": [
-    "community",
-    "culture",
-    "fitness"
-   ],
-   "desc": "Run by Students' Union UCL. Venue: TeamUCL Gym, Level 3, Bloomsbury Theatre Building. Also on 4 more dates in the next few weeks.",
-   "url": "https://studentsunionucl.org/whats-on/events-activities/teamucl-gym-tour-3",
-   "source": "Students' Union UCL",
-   "sourceKey": "ucl-su",
-   "checked": "2026-09-29",
-   "status": "verified",
-   "auto": true
-  },
-  {
    "id": "ucl-su-203458",
    "cat": "events",
    "title": "Meet The Committee Picnic 🧺🌳🍓",
@@ -590,62 +310,6 @@
    "auto": true
   },
   {
-   "id": "ucl-su-203593",
-   "cat": "sport",
-   "title": "Project Active Barre",
-   "org": "Students' Union UCL",
-   "area": "UCL Bloomsbury",
-   "ll": [
-    51.5246,
-    -0.134
-   ],
-   "price": 0,
-   "start": "2026-09-29T13:00",
-   "end": "2026-09-29T14:00",
-   "unis": [
-    "ucl"
-   ],
-   "tags": [
-    "community",
-    "culture",
-    "fitness"
-   ],
-   "desc": "Run by Students' Union UCL. Venue: Rehearsal Room (1st Floor, Bloomsbury Theatre Building). Beginner Friendly. Also on 4 more dates in the next few weeks.",
-   "url": "https://studentsunionucl.org/whats-on/sport/project-active-barre-185",
-   "source": "Students' Union UCL",
-   "sourceKey": "ucl-su",
-   "checked": "2026-09-29",
-   "status": "verified",
-   "auto": true
-  },
-  {
-   "id": "ucl-su-203628",
-   "cat": "events",
-   "title": "Commuter Students' Meet and Greet",
-   "org": "Commuters' Network",
-   "area": "Huntley's",
-   "ll": [
-    51.5246,
-    -0.134
-   ],
-   "price": 0,
-   "start": "2026-09-29T13:00",
-   "end": "2026-09-29T14:00",
-   "unis": [
-    "ucl"
-   ],
-   "tags": [
-    "community"
-   ],
-   "desc": "Run by Commuters' Network. Venue: Huntley's. Beginner Friendly · Alcohol Free · Commuters.",
-   "url": "https://studentsunionucl.org/whats-on/events-activities/commuter-students-meet-and-greet",
-   "source": "Students' Union UCL",
-   "sourceKey": "ucl-su",
-   "checked": "2026-09-29",
-   "status": "verified",
-   "auto": true
-  },
-  {
    "id": "ucl-su-203648",
    "cat": "sport",
    "title": "Men's Football Club Trial 1",
@@ -667,89 +331,6 @@
    ],
    "desc": "Run by Football Club (Men's). Venue: Mabley Green. Under 18 Friendly.",
    "url": "https://studentsunionucl.org/whats-on/clubs-societies/mens-football-club-trial-1",
-   "source": "Students' Union UCL",
-   "sourceKey": "ucl-su",
-   "checked": "2026-09-29",
-   "status": "verified",
-   "auto": true
-  },
-  {
-   "id": "ucl-su-203858",
-   "cat": "events",
-   "title": "MPBE Society Committee Meet & Greet",
-   "org": "Medical Physics and Biomedical Engineering Society",
-   "area": "Mullys Basement Bar",
-   "ll": [
-    51.5246,
-    -0.134
-   ],
-   "price": 0,
-   "start": "2026-09-29T13:00",
-   "end": "2026-09-29T14:00",
-   "unis": [
-    "ucl"
-   ],
-   "tags": [
-    "community",
-    "tech"
-   ],
-   "desc": "Run by Medical Physics and Biomedical Engineering Society. Venue: Mullys Basement Bar. Under 18 Friendly.",
-   "url": "https://studentsunionucl.org/whats-on/clubs-societies/mpbe-society-committee-meet-greet",
-   "source": "Students' Union UCL",
-   "sourceKey": "ucl-su",
-   "checked": "2026-09-29",
-   "status": "verified",
-   "auto": true
-  },
-  {
-   "id": "kcl-deans-office-book-club-at-waterloo-6",
-   "cat": "events",
-   "title": "Dean's Office Book Club at Waterloo",
-   "org": "Dean's Office",
-   "area": "Waterloo campus",
-   "ll": [
-    51.5053,
-    -0.1134
-   ],
-   "start": "2026-09-29T13:00",
-   "end": "2026-09-29T14:00",
-   "unis": [
-    "kcl"
-   ],
-   "tags": [
-    "community",
-    "culture"
-   ],
-   "desc": "Read & discuss 'The Left Hand of Darkness' by Ursula K. Le Guin. Also on 4 more dates in the next few weeks.",
-   "url": "https://www.kcl.ac.uk/events/deans-office-book-club-at-waterloo-6",
-   "source": "King's College London events",
-   "sourceKey": "kcl",
-   "checked": "2026-09-29",
-   "status": "verified",
-   "auto": true
-  },
-  {
-   "id": "ucl-su-203958",
-   "cat": "events",
-   "title": "Anime Band Welcome Performance",
-   "org": "Anime Society",
-   "area": "UCL Main Quad - Portico Landing",
-   "ll": [
-    51.5246,
-    -0.134
-   ],
-   "price": 0,
-   "start": "2026-09-29T13:30",
-   "end": "2026-09-29T14:00",
-   "unis": [
-    "ucl"
-   ],
-   "tags": [
-    "community",
-    "culture"
-   ],
-   "desc": "Run by Anime Society. Venue: UCL Main Quad - Portico Landing.",
-   "url": "https://studentsunionucl.org/whats-on/clubs-societies/anime-band-welcome-performance",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
    "checked": "2026-09-29",
@@ -815,7 +396,7 @@
   {
    "id": "ucl-su-203019",
    "cat": "events",
-   "title": "Welcome to UCL East",
+   "title": "Welcome to the UCL East Campus",
    "org": "Students' Union UCL",
    "area": "UCL East",
    "ll": [
@@ -834,35 +415,7 @@
     "research"
    ],
    "desc": "Run by Students' Union UCL. Venue: Marshgate Lecture Theatre 530. Under 18 Friendly.",
-   "url": "https://studentsunionucl.org/whats-on/events-activities/welcome-to-ucl-east",
-   "source": "Students' Union UCL",
-   "sourceKey": "ucl-su",
-   "checked": "2026-09-29",
-   "status": "verified",
-   "auto": true
-  },
-  {
-   "id": "ucl-su-203183",
-   "cat": "events",
-   "title": "LGBTQ+ Walking Tour: Soho",
-   "org": "LGBTQ+ Network",
-   "area": "Meet outside Waterstones Gower Street",
-   "ll": [
-    51.5246,
-    -0.134
-   ],
-   "price": 0,
-   "start": "2026-09-29T14:00",
-   "end": "2026-09-29T15:30",
-   "unis": [
-    "ucl"
-   ],
-   "tags": [
-    "community",
-    "culture"
-   ],
-   "desc": "Run by LGBTQ+ Network. Venue: Meet outside Waterstones Gower Street.",
-   "url": "https://studentsunionucl.org/whats-on/events-activities/lgbtq-walking-tour-soho",
+   "url": "https://studentsunionucl.org/whats-on/events-activities/welcome-to-ucl-east-campus",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
    "checked": "2026-09-29",
@@ -983,6 +536,31 @@
    "auto": true
   },
   {
+   "id": "kcl-managing-your-career-shaping-your-career-journey",
+   "cat": "careers",
+   "title": "Managing your career: shaping your career journey",
+   "org": "King's College London",
+   "area": "Online",
+   "ll": [
+    51.5115,
+    -0.116
+   ],
+   "online": true,
+   "start": "2026-09-29T14:00",
+   "end": "2026-09-29T15:30",
+   "unis": [
+    "kcl"
+   ],
+   "tags": [],
+   "desc": "Take ownership of your development with this workshop designed to help you reflect on your career and achieve goals.",
+   "url": "https://www.kcl.ac.uk/events/managing-your-career-shaping-your-career-journey",
+   "source": "King's College London events",
+   "sourceKey": "kcl",
+   "checked": "2026-09-29",
+   "status": "verified",
+   "auto": true
+  },
+  {
    "id": "kcl-learning-from-local-child-safeguarding-practice-reviews-lcsp",
    "cat": "careers",
    "title": "Exploring Professional Identity Among Experienced and Early-Career Social Workers in England",
@@ -1005,31 +583,6 @@
    ],
    "desc": "Mary Baginsky (King's College London)",
    "url": "https://www.kcl.ac.uk/events/learning-from-local-child-safeguarding-practice-reviews-lcsprs-in-england-copy-1",
-   "source": "King's College London events",
-   "sourceKey": "kcl",
-   "checked": "2026-09-29",
-   "status": "verified",
-   "auto": true
-  },
-  {
-   "id": "kcl-managing-your-career-shaping-your-career-journey",
-   "cat": "careers",
-   "title": "Managing your career: shaping your career journey",
-   "org": "King's College London",
-   "area": "Online",
-   "ll": [
-    51.5115,
-    -0.116
-   ],
-   "online": true,
-   "start": "2026-09-29T14:00",
-   "end": "2026-09-29T15:30",
-   "unis": [
-    "kcl"
-   ],
-   "tags": [],
-   "desc": "Take ownership of your development with this workshop designed to help you reflect on your career and achieve goals.",
-   "url": "https://www.kcl.ac.uk/events/managing-your-career-shaping-your-career-journey",
    "source": "King's College London events",
    "sourceKey": "kcl",
    "checked": "2026-09-29",
@@ -1112,6 +665,35 @@
    ],
    "desc": "Run by Division of Medicine Society. Venue: Mully's.",
    "url": "https://studentsunionucl.org/whats-on/clubs-societies/division-of-medicine-society-meet-greet-speedfriending-mullys",
+   "source": "Students' Union UCL",
+   "sourceKey": "ucl-su",
+   "checked": "2026-09-29",
+   "status": "verified",
+   "auto": true
+  },
+  {
+   "id": "ucl-su-203043",
+   "cat": "sport",
+   "title": "TeamUCL Gym Tour",
+   "org": "Students' Union UCL",
+   "area": "UCL Bloomsbury",
+   "ll": [
+    51.5246,
+    -0.134
+   ],
+   "price": 0,
+   "start": "2026-09-29T15:15",
+   "end": "2026-09-29T15:45",
+   "unis": [
+    "ucl"
+   ],
+   "tags": [
+    "community",
+    "culture",
+    "fitness"
+   ],
+   "desc": "Run by Students' Union UCL. Venue: TeamUCL Gym, Level 3, Bloomsbury Theatre Building. Also on 3 more dates in the next few weeks.",
+   "url": "https://studentsunionucl.org/whats-on/events-activities/teamucl-gym-tour-4",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
    "checked": "2026-09-29",
@@ -1282,6 +864,35 @@
    ],
    "desc": "Run by Pharmacology Society. Venue: Room G13 Torrington Place.",
    "url": "https://studentsunionucl.org/whats-on/events-activities/freshers-meet-greet",
+   "source": "Students' Union UCL",
+   "sourceKey": "ucl-su",
+   "checked": "2026-09-29",
+   "status": "verified",
+   "auto": true
+  },
+  {
+   "id": "ucl-su-203841",
+   "cat": "events",
+   "title": "🎶 A Guide to Auditions & Interviews at UCL - from the Committee and Core Prod at Musical Theatre 📝",
+   "org": "Musical Theatre Society",
+   "area": "UCL Bloomsbury",
+   "ll": [
+    51.5246,
+    -0.134
+   ],
+   "price": 0,
+   "start": "2026-09-29T16:00",
+   "end": "2026-09-29T17:30",
+   "unis": [
+    "ucl"
+   ],
+   "tags": [
+    "community",
+    "culture",
+    "music"
+   ],
+   "desc": "Run by Musical Theatre Society. Beginner Friendly · Under 18 Friendly.",
+   "url": "https://studentsunionucl.org/whats-on/clubs-societies/guide-to-auditions-interviews-at-ucl-from-committee-and-core-prod-at",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
    "checked": "2026-09-29",
@@ -1460,9 +1071,9 @@
   {
    "id": "ucl-su-203968",
    "cat": "events",
-   "title": "Games and Pizza Night with Physics Society",
+   "title": "Games Night with Physics Society",
    "org": "Physics Society",
-   "area": "UCL Bloomsbury",
+   "area": "IOE - Bedford Way (20) - C3.09",
    "ll": [
     51.5246,
     -0.134
@@ -1474,11 +1085,10 @@
     "ucl"
    ],
    "tags": [
-    "community",
-    "food"
+    "community"
    ],
-   "desc": "Run by Physics Society. Beginner Friendly · Alcohol Free.",
-   "url": "https://studentsunionucl.org/whats-on/clubs-societies/games-and-pizza-night-with-physics-society",
+   "desc": "Run by Physics Society. Venue: IOE - Bedford Way (20) - C3.09. Beginner Friendly · Alcohol Free.",
+   "url": "https://studentsunionucl.org/whats-on/clubs-societies/games-night-with-physics-society",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
    "checked": "2026-09-29",
@@ -1732,6 +1342,33 @@
    ],
    "desc": "Run by Jazz Society. Venue: 2nd Floor Conference Room, Bloomsbury Building. Beginner Friendly · Under 18 Friendly.",
    "url": "https://studentsunionucl.org/whats-on/clubs-societies/jazz-choir-taster-session",
+   "source": "Students' Union UCL",
+   "sourceKey": "ucl-su",
+   "checked": "2026-09-29",
+   "status": "verified",
+   "auto": true
+  },
+  {
+   "id": "ucl-su-203338",
+   "cat": "events",
+   "title": "Discover London - Quiz Night!",
+   "org": "Students' Union UCL",
+   "area": "UCL Bloomsbury",
+   "ll": [
+    51.5246,
+    -0.134
+   ],
+   "price": 0,
+   "start": "2026-09-29T18:30",
+   "end": "2026-09-29T20:30",
+   "unis": [
+    "ucl"
+   ],
+   "tags": [
+    "community"
+   ],
+   "desc": "Run by Students' Union UCL. Venue: Blue Room, Main Quad, Gower St, London WC1E 6AE.",
+   "url": "https://studentsunionucl.org/whats-on/events-activities/discover-london-quiz-night",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
    "checked": "2026-09-29",
@@ -2326,34 +1963,6 @@
    ],
    "desc": "Run by Hockey Club (RUMS Women's). Venue: Southgate Hockey Centre, Snakes Lane, EN4 0PS. Beginner Friendly. Also on 1 more date in the next few weeks.",
    "url": "https://studentsunionucl.org/whats-on/sport/rums-womens-hockey-taster-social",
-   "source": "Students' Union UCL",
-   "sourceKey": "ucl-su",
-   "checked": "2026-09-29",
-   "status": "verified",
-   "auto": true
-  },
-  {
-   "id": "ucl-su-202906",
-   "cat": "sport",
-   "title": "Pilates Taster Session",
-   "org": "Students' Union UCL",
-   "area": "TeamUCL Gym Mandela Studio",
-   "ll": [
-    51.5246,
-    -0.134
-   ],
-   "price": 0,
-   "start": "2026-09-30T08:30",
-   "end": "2026-09-30T09:25",
-   "unis": [
-    "ucl"
-   ],
-   "tags": [
-    "community",
-    "fitness"
-   ],
-   "desc": "Run by Students' Union UCL. Venue: TeamUCL Gym Mandela Studio. Also on 1 more date in the next few weeks.",
-   "url": "https://studentsunionucl.org/whats-on/events-activities/pilates-taster-session",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
    "checked": "2026-09-29",
@@ -3003,6 +2612,34 @@
    "auto": true
   },
   {
+   "id": "ucl-su-203817",
+   "cat": "sport",
+   "title": "7-a-side taster session",
+   "org": "Football Red Star",
+   "area": "Coram’s Fields",
+   "ll": [
+    51.5246,
+    -0.134
+   ],
+   "price": 0,
+   "start": "2026-09-30T12:55",
+   "end": "2026-09-30T14:00",
+   "unis": [
+    "ucl"
+   ],
+   "tags": [
+    "community",
+    "fitness"
+   ],
+   "desc": "Run by Football Red Star. Venue: Coram’s Fields. Beginner Friendly · Under 18 Friendly.",
+   "url": "https://studentsunionucl.org/whats-on/sport/7-side-taster-session-1",
+   "source": "Students' Union UCL",
+   "sourceKey": "ucl-su",
+   "checked": "2026-09-29",
+   "status": "verified",
+   "auto": true
+  },
+  {
    "id": "ucl-su-202830",
    "cat": "events",
    "title": "Commuters Speedfriending",
@@ -3642,6 +3279,33 @@
    "auto": true
   },
   {
+   "id": "ucl-su-204162",
+   "cat": "events",
+   "title": "Mathematics Society Meet and Greet",
+   "org": "Mathematics Society",
+   "area": "The Huntley",
+   "ll": [
+    51.5246,
+    -0.134
+   ],
+   "price": 0,
+   "start": "2026-09-30T14:00",
+   "end": "2026-09-30T15:00",
+   "unis": [
+    "ucl"
+   ],
+   "tags": [
+    "community"
+   ],
+   "desc": "Run by Mathematics Society. Venue: The Huntley. Beginner Friendly · Alcohol Free.",
+   "url": "https://studentsunionucl.org/whats-on/clubs-societies/mathematics-society-meet-and-greet",
+   "source": "Students' Union UCL",
+   "sourceKey": "ucl-su",
+   "checked": "2026-09-29",
+   "status": "verified",
+   "auto": true
+  },
+  {
    "id": "ucl-su-203745",
    "cat": "sport",
    "title": "UCL200 Active K-pop Dance",
@@ -3889,33 +3553,6 @@
    ],
    "desc": "Run by Street Aid Society.",
    "url": "https://studentsunionucl.org/whats-on/give-it-go/help-us-stock-up-our-outreach-supplies-grocery-run-with-street-aid-society",
-   "source": "Students' Union UCL",
-   "sourceKey": "ucl-su",
-   "checked": "2026-09-29",
-   "status": "verified",
-   "auto": true
-  },
-  {
-   "id": "ucl-su-202819",
-   "cat": "events",
-   "title": "Niche & Common Interest Societies Fair",
-   "org": "Students' Union UCL",
-   "area": "South Cloisters, Wilkins Building",
-   "ll": [
-    51.5246,
-    -0.134
-   ],
-   "price": 0,
-   "start": "2026-09-30T16:00",
-   "end": "2026-09-30T19:00",
-   "unis": [
-    "ucl"
-   ],
-   "tags": [
-    "community"
-   ],
-   "desc": "Run by Students' Union UCL. Venue: South Cloisters, Wilkins Building. Beginner Friendly · Alcohol Free · Under 18 Friendly.",
-   "url": "https://studentsunionucl.org/whats-on/events-activities/niche-common-interest-societies-fair-0",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
    "checked": "2026-09-29",
@@ -4302,7 +3939,7 @@
     "community",
     "fitness"
    ],
-   "desc": "Run by Students' Union UCL. Venue: Blue Room, Main Quad, Gower St, London WC1E 6AE. Beginner Friendly. Also on 1 more date in the next few weeks.",
+   "desc": "Run by Students' Union UCL. Venue: Blue Room, Main Quad, Gower St, London WC1E 6AE. Beginner Friendly.",
    "url": "https://studentsunionucl.org/whats-on/sport/ucl200-active-yoga",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
@@ -4622,6 +4259,34 @@
    "auto": true
   },
   {
+   "id": "ucl-su-202913",
+   "cat": "sport",
+   "title": "Pilates Taster Session",
+   "org": "Students' Union UCL",
+   "area": "UCL East",
+   "ll": [
+    51.5378,
+    -0.0107
+   ],
+   "price": 0,
+   "start": "2026-09-30T18:30",
+   "end": "2026-09-30T19:30",
+   "unis": [
+    "ucl"
+   ],
+   "tags": [
+    "community",
+    "fitness"
+   ],
+   "desc": "Run by Students' Union UCL. Venue: TeamUCL Gym East.",
+   "url": "https://studentsunionucl.org/whats-on/events-activities/pilates-taster-session-0",
+   "source": "Students' Union UCL",
+   "sourceKey": "ucl-su",
+   "checked": "2026-09-29",
+   "status": "verified",
+   "auto": true
+  },
+  {
    "id": "ucl-su-203065",
    "cat": "events",
    "title": "Canary Wharf Welcome Social",
@@ -4696,6 +4361,35 @@
    "url": "https://www.lse.ac.uk/events/social-media-happy",
    "source": "LSE public events",
    "sourceKey": "lse-public",
+   "checked": "2026-09-29",
+   "status": "verified",
+   "auto": true
+  },
+  {
+   "id": "ucl-su-202949",
+   "cat": "events",
+   "title": "Sports Night @ Phineas",
+   "org": "Students' Union UCL",
+   "area": "Phineas Bar",
+   "ll": [
+    51.5246,
+    -0.134
+   ],
+   "price": 0,
+   "start": "2026-09-30T19:00",
+   "end": "2026-10-01T00:30",
+   "unis": [
+    "ucl"
+   ],
+   "tags": [
+    "community",
+    "music",
+    "nightlife"
+   ],
+   "desc": "Run by Students' Union UCL. Venue: Phineas Bar. Also on 4 more dates in the next few weeks.",
+   "url": "https://studentsunionucl.org/whats-on/bars/sports-night-phineas-34",
+   "source": "Students' Union UCL",
+   "sourceKey": "ucl-su",
    "checked": "2026-09-29",
    "status": "verified",
    "auto": true
@@ -5033,6 +4727,34 @@
    "auto": true
   },
   {
+   "id": "ucl-su-203796",
+   "cat": "sport",
+   "title": "UCLWFC - Taster Session",
+   "org": "Football Club (Women's)",
+   "area": "Douglas Eyre Sports Centre",
+   "ll": [
+    51.5246,
+    -0.134
+   ],
+   "price": 0,
+   "start": "2026-10-01T10:00",
+   "end": "2026-10-01T13:00",
+   "unis": [
+    "ucl"
+   ],
+   "tags": [
+    "community",
+    "fitness"
+   ],
+   "desc": "Run by Football Club (Women's). Venue: Douglas Eyre Sports Centre. Beginner Friendly · Under 18 Friendly.",
+   "url": "https://studentsunionucl.org/whats-on/clubs-societies/uclwfc-taster-session-1",
+   "source": "Students' Union UCL",
+   "sourceKey": "ucl-su",
+   "checked": "2026-09-29",
+   "status": "verified",
+   "auto": true
+  },
+  {
    "id": "kcl-six-steps-to-build-your-career-map",
    "cat": "careers",
    "title": "Six Steps to Build Your Career Map",
@@ -5075,7 +4797,7 @@
    "tags": [
     "community"
    ],
-   "desc": "A short Morning Prayer service at Guy's every Thursday during term time. Also on 5 more dates in the next few weeks.",
+   "desc": "A short Morning Prayer service at Guy's every Thursday during term time. Also on 3 more dates in the next few weeks.",
    "url": "https://www.kcl.ac.uk/events/morning-prayer-at-guys-5",
    "source": "King's College London events",
    "sourceKey": "kcl",
@@ -5750,6 +5472,31 @@
    "auto": true
   },
   {
+   "id": "lse-public-martino-tirimo-piano",
+   "cat": "events",
+   "title": "Martino Tirimo (piano)",
+   "org": "LSE public events",
+   "area": "Shaw Library, 6th floor, Old Building",
+   "ll": [
+    51.5144,
+    -0.1165
+   ],
+   "start": "2026-10-01T13:05",
+   "end": "2026-10-01T14:00",
+   "tags": [
+    "culture",
+    "music",
+    "research"
+   ],
+   "desc": "LSE public event, open to everyone. In-person public event (Shaw Library, 6th floor, Old Building).",
+   "url": "https://www.lse.ac.uk/events/arts-and-music/martino-tirimo-piano",
+   "source": "LSE public events",
+   "sourceKey": "lse-public",
+   "checked": "2026-09-29",
+   "status": "verified",
+   "auto": true
+  },
+  {
    "id": "ucl-su-203677",
    "cat": "events",
    "title": "Life Science Society: Board Games & Drinks",
@@ -6018,6 +5765,33 @@
    ],
    "desc": "Run by Introverts Society. Venue: Room 433, 14-16 Taviton Street. Beginner Friendly · Alcohol Free · Under 18 Friendly.",
    "url": "https://studentsunionucl.org/whats-on/clubs-societies/introverts-meccha-chameleon",
+   "source": "Students' Union UCL",
+   "sourceKey": "ucl-su",
+   "checked": "2026-09-29",
+   "status": "verified",
+   "auto": true
+  },
+  {
+   "id": "ucl-su-203469",
+   "cat": "events",
+   "title": "Friendship Bracelet Making Session 🧵✨",
+   "org": "Students' Union UCL",
+   "area": "Phineas Bar",
+   "ll": [
+    51.5246,
+    -0.134
+   ],
+   "price": 0,
+   "start": "2026-10-01T16:00",
+   "end": "2026-10-01T18:00",
+   "unis": [
+    "ucl"
+   ],
+   "tags": [
+    "community"
+   ],
+   "desc": "Run by Students' Union UCL. Venue: Phineas Bar. Beginner Friendly · Alcohol Free.",
+   "url": "https://studentsunionucl.org/whats-on/events-activities/friendship-bracelet-making-session-0",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
    "checked": "2026-09-29",
@@ -7722,7 +7496,7 @@
     "community",
     "fitness"
    ],
-   "desc": "Run by Students' Union UCL. Venue: Room 301, One Pool Street. Beginner Friendly.",
+   "desc": "Run by Students' Union UCL. Venue: Room 301, One Pool Street. Beginner Friendly. Also on 2 more dates in the next few weeks.",
    "url": "https://studentsunionucl.org/whats-on/sport/project-active-mat-pilates-ucl-east-0",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
@@ -7752,6 +7526,34 @@
    ],
    "desc": "Run by Students' Union UCL. Venue: Main Quad, South Mini Stage. Beginner Friendly.",
    "url": "https://studentsunionucl.org/whats-on/sport/project-active-pop-up-pickleball",
+   "source": "Students' Union UCL",
+   "sourceKey": "ucl-su",
+   "checked": "2026-09-29",
+   "status": "verified",
+   "auto": true
+  },
+  {
+   "id": "ucl-su-203754",
+   "cat": "sport",
+   "title": "Pole Fitness Taster Session",
+   "org": "Pole Fitness Club",
+   "area": "Dance Studio, Lewis' Building",
+   "ll": [
+    51.5246,
+    -0.134
+   ],
+   "price": 0,
+   "start": "2026-10-02T13:00",
+   "end": "2026-10-02T14:00",
+   "unis": [
+    "ucl"
+   ],
+   "tags": [
+    "community",
+    "fitness"
+   ],
+   "desc": "Run by Pole Fitness Club. Venue: Dance Studio, Lewis' Building. Beginner Friendly. Also on 1 more date in the next few weeks.",
+   "url": "https://studentsunionucl.org/whats-on/clubs-societies/pole-fitness-taster-session-25",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
    "checked": "2026-09-29",
@@ -8263,7 +8065,7 @@
   {
    "id": "ucl-su-203821",
    "cat": "events",
-   "title": "Maths Art Event!- Aperiodic Hat-Tile Murals",
+   "title": "Maths Art Event!- Aperiodic Hat-Tile Murals (Slot A)",
    "org": "Mathematics Society",
    "area": "IOE - Bedford Way (20) - Room 731",
    "ll": [
@@ -8281,7 +8083,7 @@
     "culture"
    ],
    "desc": "Run by Mathematics Society. Venue: IOE - Bedford Way (20) - Room 731. Alcohol Free · Under 18 Friendly.",
-   "url": "https://studentsunionucl.org/whats-on/events-activities/maths-art-event-aperiodic-hat-tile-murals",
+   "url": "https://studentsunionucl.org/whats-on/events-activities/maths-art-event-aperiodic-hat-tile-murals-slot",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
    "checked": "2026-09-29",
@@ -8421,6 +8223,34 @@
    "url": "https://www.lsesu.com/events/19961/552473/",
    "source": "LSE Students' Union",
    "sourceKey": "lse-su",
+   "checked": "2026-09-29",
+   "status": "verified",
+   "auto": true
+  },
+  {
+   "id": "ucl-su-204163",
+   "cat": "events",
+   "title": "Maths Art Event!- Aperiodic Hat-Tile Murals (Slot B)",
+   "org": "Mathematics Society",
+   "area": "IOE - Bedford Way (20) - Room 731",
+   "ll": [
+    51.5246,
+    -0.134
+   ],
+   "price": 0,
+   "start": "2026-10-02T16:30",
+   "end": "2026-10-02T18:00",
+   "unis": [
+    "ucl"
+   ],
+   "tags": [
+    "community",
+    "culture"
+   ],
+   "desc": "Run by Mathematics Society. Venue: IOE - Bedford Way (20) - Room 731. Beginner Friendly · Alcohol Free · Under 18 Friendly.",
+   "url": "https://studentsunionucl.org/whats-on/events-activities/maths-art-event-aperiodic-hat-tile-murals-slot-b",
+   "source": "Students' Union UCL",
+   "sourceKey": "ucl-su",
    "checked": "2026-09-29",
    "status": "verified",
    "auto": true
@@ -9682,6 +9512,33 @@
    "auto": true
   },
   {
+   "id": "ucl-su-203507",
+   "cat": "sport",
+   "title": "UCL Women's Football Club Trials",
+   "org": "Football Club (Women's)",
+   "area": "Market Road Football Pitches",
+   "ll": [
+    51.5246,
+    -0.134
+   ],
+   "price": 0,
+   "start": "2026-10-03T16:00",
+   "end": "2026-10-03T18:00",
+   "unis": [
+    "ucl"
+   ],
+   "tags": [
+    "fitness"
+   ],
+   "desc": "Run by Football Club (Women's). Venue: Market Road Football Pitches.",
+   "url": "https://studentsunionucl.org/whats-on/sport/ucl-womens-football-club-trials",
+   "source": "Students' Union UCL",
+   "sourceKey": "ucl-su",
+   "checked": "2026-09-29",
+   "status": "verified",
+   "auto": true
+  },
+  {
    "id": "ucl-su-203264",
    "cat": "events",
    "title": "LGBTQ+ Pub Trip",
@@ -10682,6 +10539,35 @@
    "auto": true
   },
   {
+   "id": "ucl-su-204164",
+   "cat": "sport",
+   "title": "Project Active Women Only Tai Chi",
+   "org": "Students' Union UCL",
+   "area": "UCL Bloomsbury",
+   "ll": [
+    51.5246,
+    -0.134
+   ],
+   "price": 3.5,
+   "start": "2026-10-05T13:00",
+   "end": "2026-10-05T14:00",
+   "unis": [
+    "ucl"
+   ],
+   "tags": [
+    "community",
+    "culture",
+    "fitness"
+   ],
+   "desc": "Run by Students' Union UCL. Venue: Conference Room, Level 2, Bloomsbury Theatre Building. Beginner Friendly. Also on 2 more dates in the next few weeks.",
+   "url": "https://studentsunionucl.org/whats-on/sport/project-active-women-only-tai-chi",
+   "source": "Students' Union UCL",
+   "sourceKey": "ucl-su",
+   "checked": "2026-09-29",
+   "status": "verified",
+   "auto": true
+  },
+  {
    "id": "ucl-su-202911",
    "cat": "events",
    "title": "artsUnlocked Drawing (Taster)",
@@ -11667,6 +11553,36 @@
    "auto": true
   },
   {
+   "id": "ucl-su-204161",
+   "cat": "events",
+   "title": "BAKE SHARE and Great British Bake Off Watch Party night!",
+   "org": "Baking Society",
+   "area": "Gustave Tuck Lecture Theatre",
+   "ll": [
+    51.5246,
+    -0.134
+   ],
+   "price": 0,
+   "start": "2026-10-06T00:00",
+   "end": "2026-10-06T23:59",
+   "unis": [
+    "ucl"
+   ],
+   "tags": [
+    "community",
+    "culture",
+    "music",
+    "research"
+   ],
+   "desc": "Run by Baking Society. Venue: Gustave Tuck Lecture Theatre. Beginner Friendly · Alcohol Free · Under 18 Friendly · Commuters.",
+   "url": "https://studentsunionucl.org/whats-on/clubs-societies/bake-share-and-great-british-bake-off-watch-party-night",
+   "source": "Students' Union UCL",
+   "sourceKey": "ucl-su",
+   "checked": "2026-09-29",
+   "status": "verified",
+   "auto": true
+  },
+  {
    "id": "kcl-morning-prayer-at-waterloo-copy",
    "cat": "events",
    "title": "Morning Prayer at Waterloo",
@@ -11822,8 +11738,35 @@
     "community",
     "food"
    ],
-   "desc": "Meet with other staff & students & enjoy a (free!) vegetarian light lunch in the Denmark Hill Chaplaincy. Also on 1 more date in the next few weeks.",
+   "desc": "Meet with other staff & students & enjoy a (free!) vegetarian light lunch in the Denmark Hill Chaplaincy. Also on 2 more dates in the next few weeks.",
    "url": "https://www.kcl.ac.uk/events/lunch-at-denmark-hill-1",
+   "source": "King's College London events",
+   "sourceKey": "kcl",
+   "checked": "2026-09-29",
+   "status": "verified",
+   "auto": true
+  },
+  {
+   "id": "kcl-international-lunch-at-waterloo-7",
+   "cat": "events",
+   "title": "International Lunch at Waterloo",
+   "org": "Dean's Office",
+   "area": "Waterloo campus",
+   "ll": [
+    51.5053,
+    -0.1134
+   ],
+   "start": "2026-10-06T12:00",
+   "end": "2026-10-06T13:30",
+   "unis": [
+    "kcl"
+   ],
+   "tags": [
+    "community",
+    "food"
+   ],
+   "desc": "Meet other members of the King's community and enjoy a (free!) lunch. Also on 3 more dates in the next few weeks.",
+   "url": "https://www.kcl.ac.uk/events/international-lunch-at-waterloo-7",
    "source": "King's College London events",
    "sourceKey": "kcl",
    "checked": "2026-09-29",
@@ -11854,6 +11797,33 @@
    "url": "https://studentsunionucl.org/whats-on/events-activities/hair-braiding-workshop-black-history-month",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
+   "checked": "2026-09-29",
+   "status": "verified",
+   "auto": true
+  },
+  {
+   "id": "kcl-deans-office-book-club-at-waterloo-7",
+   "cat": "events",
+   "title": "Dean's Office Book Club at Waterloo",
+   "org": "Dean's Office",
+   "area": "Waterloo campus",
+   "ll": [
+    51.5053,
+    -0.1134
+   ],
+   "start": "2026-10-06T13:00",
+   "end": "2026-10-06T14:00",
+   "unis": [
+    "kcl"
+   ],
+   "tags": [
+    "community",
+    "culture"
+   ],
+   "desc": "Read & discuss 'The Left Hand of Darkness' by Ursula K. Le Guin. Also on 3 more dates in the next few weeks.",
+   "url": "https://www.kcl.ac.uk/events/deans-office-book-club-at-waterloo-7",
+   "source": "King's College London events",
+   "sourceKey": "kcl",
    "checked": "2026-09-29",
    "status": "verified",
    "auto": true
@@ -12432,6 +12402,30 @@
    "url": "https://www.kcl.ac.uk/events/banking-financial-services-networking-night-2026",
    "source": "King's College London events",
    "sourceKey": "kcl",
+   "checked": "2026-09-29",
+   "status": "verified",
+   "auto": true
+  },
+  {
+   "id": "lse-public-educate-indias-forgotten-daughters",
+   "cat": "events",
+   "title": "Every last girl: a journey to educate India’s forgotten daughters",
+   "org": "LSE public events",
+   "area": "Sheikh Zayed Theatre, Cheng Kin Ku Building",
+   "ll": [
+    51.5144,
+    -0.1165
+   ],
+   "start": "2026-10-06T18:30",
+   "end": "2026-10-06T20:00",
+   "tags": [
+    "culture",
+    "research"
+   ],
+   "desc": "LSE public event, open to everyone. In-person and online public event (Sheikh Zayed Theatre, Cheng Kin Ku Building).",
+   "url": "https://www.lse.ac.uk/events/educate-indias-forgotten-daughters",
+   "source": "LSE public events",
+   "sourceKey": "lse-public",
    "checked": "2026-09-29",
    "status": "verified",
    "auto": true
@@ -13186,6 +13180,34 @@
    "auto": true
   },
   {
+   "id": "ucl-su-204168",
+   "cat": "sport",
+   "title": "UCL Calisthenics Taster Session",
+   "org": "Calisthenics Club",
+   "area": "UCL Bloomsbury",
+   "ll": [
+    51.5246,
+    -0.134
+   ],
+   "price": 0,
+   "start": "2026-10-07T15:00",
+   "end": "2026-10-07T17:00",
+   "unis": [
+    "ucl"
+   ],
+   "tags": [
+    "community",
+    "fitness"
+   ],
+   "desc": "Run by Calisthenics Club. Venue: Crossfit Farringdon, 9 Cowcross Street, London EC1M 6DR. Beginner Friendly · Alcohol Free.",
+   "url": "https://studentsunionucl.org/whats-on/events-activities/ucl-calisthenics-taster-session",
+   "source": "Students' Union UCL",
+   "sourceKey": "ucl-su",
+   "checked": "2026-09-29",
+   "status": "verified",
+   "auto": true
+  },
+  {
    "id": "ucl-su-203981",
    "cat": "events",
    "title": "COMPOST ZINE meeting",
@@ -13412,6 +13434,30 @@
    "auto": true
   },
   {
+   "id": "lse-public-sixty-six-years-on-how-can-nigeria-escape-the-fragility-trap",
+   "cat": "events",
+   "title": "Sixty-six years on - how can Nigeria escape the fragility trap and unlock its potential?",
+   "org": "LSE public events",
+   "area": "LSE campus, Room MAR 2.08, Marshall Building",
+   "ll": [
+    51.5144,
+    -0.1165
+   ],
+   "start": "2026-10-07T17:30",
+   "end": "2026-10-07T18:45",
+   "tags": [
+    "culture",
+    "research"
+   ],
+   "desc": "LSE public event, open to everyone. In-person public event (LSE campus, Room MAR 2.08, Marshall Building).",
+   "url": "https://www.lse.ac.uk/international-relations/events/2026/sixty-six-years-on-how-can-nigeria-escape-the-fragility-trap-and-unlock-its-potential",
+   "source": "LSE public events",
+   "sourceKey": "lse-public",
+   "checked": "2026-09-29",
+   "status": "verified",
+   "auto": true
+  },
+  {
    "id": "ucl-su-203881",
    "cat": "events",
    "title": "Chibi drawing workshop",
@@ -13542,35 +13588,6 @@
    "url": "https://www.lse.ac.uk/events/talk-to-the-animals",
    "source": "LSE public events",
    "sourceKey": "lse-public",
-   "checked": "2026-09-29",
-   "status": "verified",
-   "auto": true
-  },
-  {
-   "id": "ucl-su-203079",
-   "cat": "events",
-   "title": "Sports Night @ Phineas",
-   "org": "Students' Union UCL",
-   "area": "Phineas Bar",
-   "ll": [
-    51.5246,
-    -0.134
-   ],
-   "price": 0,
-   "start": "2026-10-07T19:00",
-   "end": "2026-10-08T00:30",
-   "unis": [
-    "ucl"
-   ],
-   "tags": [
-    "community",
-    "music",
-    "nightlife"
-   ],
-   "desc": "Run by Students' Union UCL. Venue: Phineas Bar. Also on 3 more dates in the next few weeks.",
-   "url": "https://studentsunionucl.org/whats-on/bars/sports-night-phineas-35",
-   "source": "Students' Union UCL",
-   "sourceKey": "ucl-su",
    "checked": "2026-09-29",
    "status": "verified",
    "auto": true
@@ -13940,6 +13957,31 @@
    ],
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
+   "checked": "2026-09-29",
+   "status": "verified",
+   "auto": true
+  },
+  {
+   "id": "lse-public-petar-pejcic-cello-and-nour-ayadi-piano",
+   "cat": "events",
+   "title": "Petar Pejčić (cello) and Nour Ayadi (piano)",
+   "org": "LSE public events",
+   "area": "Shaw Library, 6th floor, Old Building",
+   "ll": [
+    51.5144,
+    -0.1165
+   ],
+   "start": "2026-10-08T13:05",
+   "end": "2026-10-08T14:00",
+   "tags": [
+    "culture",
+    "music",
+    "research"
+   ],
+   "desc": "LSE public event, open to everyone. In-person public event (Shaw Library, 6th floor, Old Building).",
+   "url": "https://www.lse.ac.uk/events/arts-and-music/petar-pejcic-cello-and-nour-ayadi-piano",
+   "source": "LSE public events",
+   "sourceKey": "lse-public",
    "checked": "2026-09-29",
    "status": "verified",
    "auto": true
@@ -16465,8 +16507,37 @@
     "culture",
     "fitness"
    ],
-   "desc": "Run by Students' Union UCL. Venue: Rehearsal Room, Level 1, Bloomsbury Theatre Building. Beginner Friendly. Also on 1 more date in the next few weeks.",
+   "desc": "Run by Students' Union UCL. Venue: Rehearsal Room, Level 1, Bloomsbury Theatre Building. Beginner Friendly. Also on 2 more dates in the next few weeks.",
    "url": "https://studentsunionucl.org/whats-on/sport/project-active-breathe-balance",
+   "source": "Students' Union UCL",
+   "sourceKey": "ucl-su",
+   "checked": "2026-09-29",
+   "status": "verified",
+   "auto": true
+  },
+  {
+   "id": "ucl-su-203376",
+   "cat": "sport",
+   "title": "Project Active Barre",
+   "org": "Students' Union UCL",
+   "area": "UCL Bloomsbury",
+   "ll": [
+    51.5246,
+    -0.134
+   ],
+   "price": 3.5,
+   "start": "2026-10-13T13:00",
+   "end": "2026-10-13T14:00",
+   "unis": [
+    "ucl"
+   ],
+   "tags": [
+    "community",
+    "culture",
+    "fitness"
+   ],
+   "desc": "Run by Students' Union UCL. Venue: Rehearsal Room, Level 1, Bloomsbury Theatre Building. Beginner Friendly. Also on 4 more dates in the next few weeks.",
+   "url": "https://studentsunionucl.org/whats-on/sport/project-active-barre-176",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
    "checked": "2026-09-29",
@@ -16524,31 +16595,6 @@
    "url": "https://studentsunionucl.org/whats-on/clubs-societies/panda-quiz-social",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-09-29",
-   "status": "verified",
-   "auto": true
-  },
-  {
-   "id": "lse-public-political-economy-1",
-   "cat": "events",
-   "title": "Shaping the future: Europe’s quest for technological leadership",
-   "org": "LSE public events",
-   "area": "LSE campus, venue tbc to ticketholders",
-   "ll": [
-    51.5144,
-    -0.1165
-   ],
-   "start": "2026-10-13T17:15",
-   "end": "2026-10-13T18:30",
-   "tags": [
-    "culture",
-    "research",
-    "tech"
-   ],
-   "desc": "LSE public event, open to everyone. In-person public event (LSE campus, venue tbc to ticketholders).",
-   "url": "https://www.lse.ac.uk/events/political-economy-1",
-   "source": "LSE public events",
-   "sourceKey": "lse-public",
    "checked": "2026-09-29",
    "status": "verified",
    "auto": true
@@ -16748,32 +16794,6 @@
    "url": "https://studentsunionucl.org/whats-on/clubs-societies/basc-x-natsci-boat-party",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-09-29",
-   "status": "verified",
-   "auto": true
-  },
-  {
-   "id": "lse-public-homelessness-and-evidence",
-   "cat": "events",
-   "title": "Solving homelessness through partnership: philanthropy, finance, and social entrepreneurship",
-   "org": "LSE public events",
-   "area": "In-person public event (Wolfson Theatre, Chen",
-   "ll": [
-    51.5144,
-    -0.1165
-   ],
-   "start": "2026-10-13T18:30",
-   "end": "2026-10-13T20:00",
-   "tags": [
-    "community",
-    "culture",
-    "finance",
-    "research"
-   ],
-   "desc": "LSE public event, open to everyone. In-person public event (Wolfson Theatre, Cheng Kin Ku Building, LSE.",
-   "url": "https://www.lse.ac.uk/marshall-institute/events/homelessness-and-evidence",
-   "source": "LSE public events",
-   "sourceKey": "lse-public",
    "checked": "2026-09-29",
    "status": "verified",
    "auto": true
@@ -17221,6 +17241,32 @@
    "auto": true
   },
   {
+   "id": "kcl-kclea-alumni-and-student-speed-networking",
+   "cat": "careers",
+   "title": "KCLEA Alumni and Student Speed Networking",
+   "org": "King’s alumni",
+   "area": "Strand campus",
+   "ll": [
+    51.5115,
+    -0.116
+   ],
+   "start": "2026-10-14T18:00",
+   "end": "2026-10-14T21:00",
+   "unis": [
+    "kcl"
+   ],
+   "tags": [
+    "tech"
+   ],
+   "desc": "Join the KCL Engineers' Association for an evening of speed networking with KCL Engineering and Womxn in STEM Societies.",
+   "url": "https://www.kcl.ac.uk/events/kclea-alumni-and-student-speed-networking",
+   "source": "King's College London events",
+   "sourceKey": "kcl",
+   "checked": "2026-09-29",
+   "status": "verified",
+   "auto": true
+  },
+  {
    "id": "kcl-open-pitch-night-2026",
    "cat": "events",
    "title": "Open Pitch Night 2026",
@@ -17242,32 +17288,6 @@
    ],
    "desc": "Do you have a problem you’re passionate about solving? Pitch for a chance to win £200 towards the next step for your idea!",
    "url": "https://www.kcl.ac.uk/events/open-pitch-night-2026",
-   "source": "King's College London events",
-   "sourceKey": "kcl",
-   "checked": "2026-09-29",
-   "status": "verified",
-   "auto": true
-  },
-  {
-   "id": "kcl-kclea-alumni-and-student-speed-networking",
-   "cat": "careers",
-   "title": "KCLEA Alumni and Student Speed Networking",
-   "org": "King’s alumni",
-   "area": "Strand campus",
-   "ll": [
-    51.5115,
-    -0.116
-   ],
-   "start": "2026-10-14T18:00",
-   "end": "2026-10-14T21:00",
-   "unis": [
-    "kcl"
-   ],
-   "tags": [
-    "tech"
-   ],
-   "desc": "Join the KCL Engineers' Association for an evening of speed networking with KCL Engineering and Womxn in STEM Societies.",
-   "url": "https://www.kcl.ac.uk/events/kclea-alumni-and-student-speed-networking",
    "source": "King's College London events",
    "sourceKey": "kcl",
    "checked": "2026-09-29",
@@ -17804,30 +17824,6 @@
    "auto": true
   },
   {
-   "id": "lse-public-designing-for-wellbeing-a-new-way-to-conceptualise-the-wellb",
-   "cat": "events",
-   "title": "Designing for wellbeing: a new way to conceptualise the wellbeing of caregivers",
-   "org": "LSE public events",
-   "area": "MAR.2.04, Marshall Building",
-   "ll": [
-    51.5144,
-    -0.1165
-   ],
-   "start": "2026-10-15T18:00",
-   "end": "2026-10-15T20:00",
-   "tags": [
-    "culture",
-    "research"
-   ],
-   "desc": "LSE public event, open to everyone. In-person and online public event (MAR.2.04, Marshall Building).",
-   "url": "https://www.lse.ac.uk/cities/designing-for-wellbeing-a-new-way-to-conceptualise-the-wellbeing-of-caregivers",
-   "source": "LSE public events",
-   "sourceKey": "lse-public",
-   "checked": "2026-09-29",
-   "status": "verified",
-   "auto": true
-  },
-  {
    "id": "ucl-su-203284",
    "cat": "events",
    "title": "Local Lineup Sessions",
@@ -17912,6 +17908,30 @@
    "auto": true
   },
   {
+   "id": "kcl-qs-discover-connect-masters-in-milan",
+   "cat": "careers",
+   "title": "QS Discover & Connect Master's in Milan",
+   "org": "King’s Business School",
+   "area": "Strand campus",
+   "ll": [
+    51.5115,
+    -0.116
+   ],
+   "start": "2026-10-16T14:00",
+   "end": "2026-10-16T19:30",
+   "unis": [
+    "kcl"
+   ],
+   "tags": [],
+   "desc": "Ask King's Business School team about life on campus, employment opportunities, funding options and how our programmes will suit your career goals.",
+   "url": "https://www.kcl.ac.uk/events/qs-discover-connect-masters-in-milan",
+   "source": "King's College London events",
+   "sourceKey": "kcl",
+   "checked": "2026-09-29",
+   "status": "verified",
+   "auto": true
+  },
+  {
    "id": "kcl-undergraduate-info-session-accommodation-16-october-2026",
    "cat": "events",
    "title": "Undergraduate accommodation at King's",
@@ -17930,30 +17950,6 @@
    "tags": [],
    "desc": "Discover more about the accommodation options available at King's.",
    "url": "https://www.kcl.ac.uk/events/undergraduate-info-session-accommodation-16-october-2026",
-   "source": "King's College London events",
-   "sourceKey": "kcl",
-   "checked": "2026-09-29",
-   "status": "verified",
-   "auto": true
-  },
-  {
-   "id": "kcl-qs-discover-connect-masters-in-milan",
-   "cat": "careers",
-   "title": "QS Discover & Connect Master's in Milan",
-   "org": "King’s Business School",
-   "area": "Strand campus",
-   "ll": [
-    51.5115,
-    -0.116
-   ],
-   "start": "2026-10-16T14:00",
-   "end": "2026-10-16T19:30",
-   "unis": [
-    "kcl"
-   ],
-   "tags": [],
-   "desc": "Ask King's Business School team about life on campus, employment opportunities, funding options and how our programmes will suit your career goals.",
-   "url": "https://www.kcl.ac.uk/events/qs-discover-connect-masters-in-milan",
    "source": "King's College London events",
    "sourceKey": "kcl",
    "checked": "2026-09-29",
@@ -18316,7 +18312,7 @@
     "community",
     "fitness"
    ],
-   "desc": "Run by Students' Union UCL. Venue: Bobby Moore Academy.",
+   "desc": "Run by Students' Union UCL. Venue: Bobby Moore Academy. Also on 6 more dates in the next few weeks.",
    "url": "https://studentsunionucl.org/whats-on/sport/social-badminton-mini-tournament",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
@@ -18467,30 +18463,6 @@
    "auto": true
   },
   {
-   "id": "lse-public-rethinking-the-public-sphere",
-   "cat": "events",
-   "title": "Rethinking the public sphere: space and society in an age of crisis",
-   "org": "LSE public events",
-   "area": "LSE campus, venue tbc to ticketholders",
-   "ll": [
-    51.5144,
-    -0.1165
-   ],
-   "start": "2026-10-19T18:30",
-   "end": "2026-10-19T20:00",
-   "tags": [
-    "culture",
-    "research"
-   ],
-   "desc": "LSE public event, open to everyone. In-person public event (LSE campus, venue tbc to ticketholders).",
-   "url": "https://www.lse.ac.uk/geography-and-environment/events/2026/rethinking-the-public-sphere",
-   "source": "LSE public events",
-   "sourceKey": "lse-public",
-   "checked": "2026-09-29",
-   "status": "verified",
-   "auto": true
-  },
-  {
    "id": "ucl-su-203128",
    "cat": "events",
    "title": "Jazz @ Institute Bar",
@@ -18622,30 +18594,6 @@
    "url": "https://www.kcl.ac.uk/events/unveiling-byzantium-an-evening-remembering-prof-dame-averil-cameron-1940-2026",
    "source": "King's College London events",
    "sourceKey": "kcl",
-   "checked": "2026-09-29",
-   "status": "verified",
-   "auto": true
-  },
-  {
-   "id": "lse-public-russian-active-measures-under-putin-how-should-europe-respon",
-   "cat": "events",
-   "title": "Russian active measures under Putin: how should Europe respond?",
-   "org": "LSE public events",
-   "area": "LSE campus, venue tbc to ticketholders",
-   "ll": [
-    51.5144,
-    -0.1165
-   ],
-   "start": "2026-10-20T18:30",
-   "end": "2026-10-20T20:00",
-   "tags": [
-    "culture",
-    "research"
-   ],
-   "desc": "LSE public event, open to everyone. In-person and online public event (LSE campus, venue tbc to ticketholders).",
-   "url": "https://www.lse.ac.uk/school-of-public-policy/events/2026-27/russian-active-measures-under-putin-how-should-europe-respond",
-   "source": "LSE public events",
-   "sourceKey": "lse-public",
    "checked": "2026-09-29",
    "status": "verified",
    "auto": true
@@ -19328,36 +19276,6 @@
    ],
    "desc": "Run by Students' Union UCL.",
    "url": "https://studentsunionucl.org/whats-on/events-activities/celya-ab-comedywe-must-stop-meeting-like-this",
-   "source": "Students' Union UCL",
-   "sourceKey": "ucl-su",
-   "checked": "2026-09-29",
-   "status": "verified",
-   "auto": true
-  },
-  {
-   "id": "ucl-su-202895",
-   "cat": "events",
-   "title": "Research Consultancy Training Taster",
-   "org": "Students' Union UCL",
-   "area": "UCL Bloomsbury",
-   "ll": [
-    51.5246,
-    -0.134
-   ],
-   "price": 0,
-   "start": "2026-10-26T10:00",
-   "end": "2026-10-26T16:00",
-   "unis": [
-    "ucl"
-   ],
-   "tags": [
-    "community",
-    "finance",
-    "research",
-    "volunteer"
-   ],
-   "desc": "Run by Students' Union UCL. Venue: UCL Base KX, 103c Camley Street, N1C 4PF. Beginner Friendly · Alcohol Free · Under 18 Friendly.",
-   "url": "https://studentsunionucl.org/whats-on/jobs-skills/research-consultancy-training-taster-0",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
    "checked": "2026-09-29",
@@ -20215,6 +20133,37 @@
    ],
    "desc": "Run by Students' Union UCL. Venue: John Adams Hall G25, 15-23 Endsleigh Street, London, WC1H 0DP. Beginner Friendly · Alcohol Free · Postgrads only.",
    "url": "https://studentsunionucl.org/whats-on/events-activities/pgt-active-bystander-workshop-in-person",
+   "yrs": [
+    4
+   ],
+   "source": "Students' Union UCL",
+   "sourceKey": "ucl-su",
+   "checked": "2026-09-29",
+   "status": "verified",
+   "auto": true
+  },
+  {
+   "id": "ucl-su-203939",
+   "cat": "events",
+   "title": "PGR Active Bystander Workshop: In Person",
+   "org": "Students' Union UCL",
+   "area": "UCL Bloomsbury",
+   "ll": [
+    51.5246,
+    -0.134
+   ],
+   "price": 0,
+   "start": "2026-11-03T13:00",
+   "end": "2026-11-03T14:30",
+   "unis": [
+    "ucl"
+   ],
+   "tags": [
+    "community",
+    "culture"
+   ],
+   "desc": "Run by Students' Union UCL. Venue: John Adams Hall G25, 15-23 Endsleigh Street, London, WC1H 0DP. Beginner Friendly · Alcohol Free · Postgrads only.",
+   "url": "https://studentsunionucl.org/whats-on/events-activities/pgr-active-bystander-workshop-in-person",
    "yrs": [
     4
    ],

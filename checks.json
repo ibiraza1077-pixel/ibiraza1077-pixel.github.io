@@ -1,10 +1,10 @@
 {
- "run": "2026-09-29T12:04",
+ "run": "2026-09-29T14:49",
  "counts": {
-  "ok": 33,
+  "ok": 34,
   "changed": 0,
   "unreachable": 11,
-  "manual": 1
+  "manual": 0
  },
  "results": [
   {
@@ -106,7 +106,7 @@
    "ageDays": 0
   },
   {
-   "result": "manual",
+   "result": "ok",
    "id": "study-lselib",
    "title": "LSE Library",
    "url": "https://www.lse.ac.uk/library/about/opening-hours",
