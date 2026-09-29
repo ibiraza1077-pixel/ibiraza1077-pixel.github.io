@@ -5,10 +5,10 @@ window.UNILONDON_CONFIG = {
   goatcounter: "",
 
   // Link to a Google Form (or similar) for written feedback. Leave empty to hide the button.
-  feedbackUrl: "",
+  feedbackUrl: "https://docs.google.com/forms/d/e/1FAIpQLScoGzelzzayWbcG5909Ckx1lGUAz_91fIbH6cerdBnaB_Z0_A/viewform",
 
   // Link to a form where societies, cafés and students can suggest a listing. Leave empty to hide it.
-  submitUrl: "",
+  submitUrl: "https://docs.google.com/forms/d/e/1FAIpQLSctjTka50P_n1r2jZWYJ8e4jdwkYlZBMFnqIFX7u9EeXeIBYw/viewform",
 
   // Your GitHub repository (owner/name). Used by the admin page's Sync now and Publish buttons.
   repo: "ibiraza1077-pixel/ibiraza1077-pixel.github.io",
