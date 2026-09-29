@@ -108,7 +108,7 @@ const S = {
   survey: store.get("survey", null),
   installDismissed: store.get("installDismissed", false),
   view: "today",
-  explore: {q:"", cat:"all", sort:"foryou", openNow:false, free:false},
+  explore: {q:"", cat:"all", sort:"foryou", openNow:false, free:false, limit:40},
   map: {cat:"all", vb:null, active:null},
   chat: [],
   updated: "",
@@ -185,30 +185,58 @@ function whenLabel(it){
     if(s <= NOW) return `On now · until ${dateShort(e)}`;
     return `${dateShort(s)} – ${dateShort(e)}`;
   }
-  if(s <= NOW && e && e >= NOW) return `On now · until ${timeOf(e)}`;
-  const dd = dayDiff(s), t = timeOf(s);
+  const allDay = s.getHours()===0 && s.getMinutes()===0 && e && e.getHours()===23 && e.getMinutes()===59;
+  if(s <= NOW && e && e >= NOW) return allDay ? "Today · all day" : `On now · until ${timeOf(e)}`;
+  const dd = dayDiff(s), t = allDay ? "· all day" : timeOf(s);
   if(dd===0) return (s.getHours()>=17 ? "Tonight " : "Today ") + t;
   if(dd===1) return "Tomorrow " + t;
   if(dd<7) return DAYS[s.getDay()] + " " + t;
   return `${dateShort(s)}, ${t}`;
 }
 const nowHour = () => NOW.getHours() + NOW.getMinutes()/60;
-function openState(it){
+const hasHours = it => !!(it.hours || it.weekHours);
+function hoursOn(it, dow){
+  if(it.weekHours) return it.weekHours[dow] || null;
   if(!it.hours) return null;
-  const [o,c] = it.hours, h = nowHour(), dow = NOW.getDay();
-  if(it.days && !it.days.includes(dow)){
-    const next = [1,2,3,4,5,6,7].map(n=>(dow+n)%7).find(d=>it.days.includes(d));
-    const weekdays = it.days.length===5 && [1,2,3,4,5].every(d=>it.days.includes(d));
-    return {open:false, label: weekdays ? `Weekdays · opens ${DAYS[next]}` : it.days.length>1 ? `Next on ${DAYS[next]}` : `Only on ${FULLDAYS[next]}s`};
+  return !it.days || it.days.includes(dow) ? it.hours : null;
+}
+function openState(it){
+  if(!hasHours(it)) return null;
+  const h = nowHour(), dow = NOW.getDay();
+  const prev = hoursOn(it, (dow+6)%7);
+  if(prev && prev[1] > 24 && h < prev[1]-24) return {open:true, label:`Open · closes ${hhmm(prev[1]-24)}`};
+  const t = hoursOn(it, dow);
+  const nextOpen = () => { for(let n=1;n<=7;n++){ const d=(dow+n)%7, x=hoursOn(it,d); if(x) return {d, x, n}; } return null; };
+  if(!t){
+    const nx = nextOpen(); if(!nx) return {open:false, label:"Closed"};
+    if(it.days && !it.weekHours){
+      const weekdays = it.days.length===5 && [1,2,3,4,5].every(d=>it.days.includes(d));
+      return {open:false, label: weekdays ? `Weekdays · opens ${DAYS[nx.d]}` : it.days.length>1 ? `Next on ${DAYS[nx.d]}` : `Only on ${FULLDAYS[nx.d]}s`};
+    }
+    return {open:false, label:`Closed today · opens ${nx.n===1?"tomorrow":DAYS[nx.d]} ${hhmm(nx.x[0])}`};
   }
-  if(o===0 && c===24) return {open:true, label:"Open 24 hours"};
-  if(h>=o && h<c) return {open:true, label:`Open · closes ${hhmm(c)}`};
-  return {open:false, label: h<o ? `Opens ${hhmm(o)}` : `Closed · opens ${hhmm(o)}`};
+  const [o,c] = t;
+  if(o===0 && c>=24) return {open:true, label:"Open 24 hours"};
+  if(h>=o && h<c) return {open:true, label:`Open · closes ${hhmm(c%24)}`};
+  if(h<o) return {open:false, label:`Opens ${hhmm(o)}`};
+  const nx = nextOpen();
+  return {open:false, label: nx ? `Closed · opens ${nx.n===1?"tomorrow":DAYS[nx.d]} ${hhmm(nx.x[0])}` : "Closed"};
+}
+function hoursSummary(it){
+  const fmt = x => x[0]===0 && x[1]>=24 ? "24 hours" : `${hhmm(x[0])}–${hhmm(x[1]%24)}`;
+  if(it.weekHours){
+    const order = [1,2,3,4,5,6,0], groups = [];
+    for(const d of order){ const x = it.weekHours[d], key = x ? fmt(x) : "Closed"; const g = groups[groups.length-1]; if(g && g.key===key) g.days.push(d); else groups.push({key, days:[d]}); }
+    return groups.map(g=>`${DAYS[g.days[0]]}${g.days.length>1?"–"+DAYS[g.days[g.days.length-1]]:""} ${g.key}`).join(" · ");
+  }
+  const days = !it.days ? "Daily" : it.days.length===5 && [1,2,3,4,5].every(d=>it.days.includes(d)) ? "Mon–Fri" : it.days.map(d=>DAYS[d]).join(", ");
+  return `${days} ${fmt(it.hours)}`;
 }
 const daysLeft = it => Math.max(0, dayDiff(it.deadline));
 
 /* ================= listings ================= */
 let ITEMS = [], BY_ID = {};
+const STALE_DAYS = 60; // hand-checked listings older than this are flagged and ranked lower
 function hydrate(raw){
   const parseLocal = s => { if(!s) return null; const [d,t="23:59"] = s.split("T"); const [Y,M,D] = d.split("-").map(Number); const [h,m] = t.split(":").map(Number); return new Date(Y, M-1, D, h, m); };
   const out = [];
@@ -220,6 +248,7 @@ function hydrate(raw){
     it.deadline = r.deadline ? parseLocal(r.deadline.includes("T") ? r.deadline : r.deadline+"T23:59") : null;
     if(it.end && it.end < NOW) continue;            // finished events drop off automatically
     if(it.deadline && it.deadline < NOW) continue;  // closed deadlines too
+    if(!it.auto && it.checked) it.stale = (NOW - parseLocal(it.checked)) / 864e5 > STALE_DAYS;
     out.push(it);
   }
   ITEMS = out; BY_ID = Object.fromEntries(out.map(i=>[i.id,i]));
@@ -238,8 +267,8 @@ function ctx(){
 }
 function priceText(it){
   if(it.priceText) return it.priceText;
-  if(it.cat==="work") return it.pay ? `£${it.pay.toFixed(2).replace(/\.00$/,"")}/h+` : "";
-  if(it.cat==="funding") return it.pay ? `Up to £${it.pay.toLocaleString("en-GB")}` : "Free to apply";
+  if(it.cat==="work") return it.pay ? `£${it.pay.toFixed(2).replace(/\.00$/,"")}/h` : "";
+  if(it.cat==="funding") return it.pay ? `Up to £${it.pay.toLocaleString("en-GB")}` : "";
   if(it.price==null) return "";
   if(it.price===0) return "Free";
   return "£" + (Number.isInteger(it.price) ? it.price : it.price.toFixed(2));
@@ -247,6 +276,8 @@ function priceText(it){
 function timingText(it){
   if(it.start) return whenLabel(it);
   if(it.deadline){ const d = daysLeft(it); return d===0 ? "Closes tonight" : `${d} day${d===1?"":"s"} left`; }
+  if(it.opensOn){ const d = new Date(it.opensOn+"T00:00"); return d > NOW ? `Opens ${d.getDate()} ${MONTHS[d.getMonth()]}` : "Open now"; }
+  if(it.closedNote) return it.closedNote;
   if(it.rolling) return "Rolling applications";
   const os = openState(it); if(os) return os.label;
   return "";
@@ -271,7 +302,10 @@ function score(it, C){
   if(it.start){ const hrs = (it.start-NOW)/36e5; if(it.start<=NOW) { s+=1.4; why.push("Happening now"); } else if(hrs < 36){ s+=1.6; why.push(hrs<10 ? "Happening today" : "Coming up tomorrow"); } else if(hrs<24*8) s+=.8; else s-=.4; }
   if(it.rolling && ["careers","funding"].includes(it.cat)) s+=.3;
   const os = openState(it); if(os && os.open) s+=.7;
-  if(it.days && !it.days.includes(NOW.getDay())) s -= 3;
+  if(hasHours(it) && !hoursOn(it, NOW.getDay()) && !(os && os.open)) s -= 3;
+  if(it.closedNote) s -= 2;
+  if(it.opensOn && new Date(it.opensOn+"T00:00") > NOW){ const dd = dayDiff(new Date(it.opensOn+"T00:00")); s += dd<=7 ? .8 : -.5; if(dd<=7) why.push("Opens this week"); }
+  if(it.stale) s -= 1.5;
   if(it.cat==="food" && it.price!=null){ if(it.price<=C.p.meal){ s+=.8; if(it.price<=4) why.push(it.price===0 ? "Free" : `Under £${C.p.meal}`);} else s-=1.2; }
   if(it.cat==="housing" && it.price){ if(it.price<=C.p.rent){ s+=1.2; why.push(`Within your £${C.p.rent}/mo budget`);} else s-=1.5; }
   s *= (S.catBias[it.cat] ?? 1);
@@ -289,6 +323,9 @@ function badges(it){
   const b = [], C = ctx();
   if(it.deadline){ const d=daysLeft(it); b.push(`<span class="badge ${d<=5?"hot":""}">${d===0?"Closes tonight":`${d} day${d===1?"":"s"} left`}</span>`); }
   if(it.rolling) b.push(`<span class="badge">Rolling</span>`);
+  if(it.opensOn){ const d = new Date(it.opensOn+"T00:00"); if(d > NOW) b.push(`<span class="badge warn">Opens ${d.getDate()} ${MONTHS[d.getMonth()]}</span>`); }
+  if(it.closedNote) b.push(`<span class="badge warn">${esc(it.closedNote)}</span>`);
+  if(it.stale) b.push(`<span class="badge warn">Not re-checked recently</span>`);
   if(it.start){ const soon = it.start<=NOW || (it.start-NOW)/36e5<10; b.push(`<span class="badge ${soon?"acc":""}">${esc(whenLabel(it))}</span>`); }
   const os = openState(it); if(os) b.push(`<span class="badge ${os.open?"good":""}">${esc(os.label)}</span>`);
   const pt = priceText(it); if(pt) b.push(`<span class="badge ${pt==="Free"?"good":""}">${esc(pt)}</span>`);
@@ -337,19 +374,26 @@ function topbar(){
 }
 function footer(){
   return `<footer class="footer">
-    <div>Listings last checked ${esc(fmtUpdated())}. Always confirm on the official page before you go.</div>
+    <div>${S.events ? `Events synced ${esc(fmtSynced())} from ${S.events.sources.filter(x=>x.ok).map(x=>esc(x.name)).join(", ")}. ` : ""}Other listings hand-checked ${esc(fmtUpdated())}. Always confirm on the official page before you go.</div>
+    ${eventsStale() ? `<div style="color:var(--warn)">Event listings haven't refreshed for a few days, so some may have changed.</div>` : ""}
     <div>${CFG.submitUrl ? `<a href="${esc(CFG.submitUrl)}" target="_blank" rel="noopener" data-track="submit/footer">Suggest a listing</a> · ` : ""}${CFG.feedbackUrl ? `<a href="${esc(CFG.feedbackUrl)}" target="_blank" rel="noopener" data-track="feedback/footer">Report a problem</a> · ` : ""}<button data-privacy>Privacy</button> · <button data-reset>Reset my data</button></div>
   </footer>`;
 }
+function fmtSynced(){
+  if(!S.events?.generated) return "recently";
+  const d = new Date(S.events.generated), dd = dayDiff(d);
+  return (dd===0 ? "today" : dd===-1 ? "yesterday" : `${d.getDate()} ${MONTHS[d.getMonth()]}`) + " at " + timeOf(d);
+}
+const eventsStale = () => !!S.events?.generated && (NOW - new Date(S.events.generated)) / 864e5 > 3;
 const fmtUpdated = () => { if(!S.updated) return "recently"; const [y,m,d]=S.updated.split("-").map(Number); return `${d} ${MONTHS[m-1]} ${y}`; };
 
 /* ================= views ================= */
 function viewToday(){
   const C = ctx();
   const all = ranked(ITEMS, C);
-  const top = diverse(all.filter(r=>r.s>1 && !uniMismatch(r.it,C)), 6, 1);
+  const top = diverse(all.filter(r=>r.s>1 && !uniMismatch(r.it,C) && r.it.cat!=="housing"), 6, 1);
   const topIds = new Set(top.map(r=>r.it.id));
-  const upcoming = all.filter(r=>r.it.start && !topIds.has(r.it.id) && !uniMismatch(r.it,C) && (r.it.start-NOW)/864e5 < 21).sort((a,b)=>a.it.start-b.it.start).slice(0,5);
+  const upcoming = all.filter(r=>r.it.start && !topIds.has(r.it.id) && !uniMismatch(r.it,C) && (r.it.start-NOW)/864e5 < 14).slice(0,6).sort((a,b)=>a.it.start-b.it.start);
   const deadlines = all.filter(r=>r.it.deadline && !S.applied.has(r.it.id) && !uniMismatch(r.it,C)).sort((a,b)=>a.it.deadline-b.it.deadline).slice(0,6);
   const openFood = all.filter(r=>r.it.cat==="food" && !uniMismatch(r.it,C) && openState(r.it)?.open && !topIds.has(r.it.id)).slice(0,3);
   const date = `${DAYS[NOW.getDay()]} ${NOW.getDate()} ${MONTHS[NOW.getMonth()]}`;
@@ -361,6 +405,7 @@ function viewToday(){
       <span class="ctx">${ic("cap")}${esc(C.uni.name)} · ${esc(C.p.course)} · Year ${C.p.year}</span>
       <span class="ctx">${ic("pin")}${esc(C.p.area)}</span>
     </div>
+    ${S.events ? `<button class="live" data-nav="explore" data-cat="events"><i></i>${ITEMS.filter(i=>i.auto).length} live events from official uni &amp; union calendars · synced ${esc(fmtSynced())}</button>` : ""}
   </section>
   ${installCard()}
   <section class="section">
@@ -460,7 +505,7 @@ function viewExplore(){
     </div>
   </section>
   <section class="section" style="margin-top:14px">
-    ${rows.length ? `<div class="list" id="results">${rows.map(r=>card(r)).join("")}</div>` : `<div class="empty">No matches. Try fewer words or turn off a filter.${CFG.submitUrl?` Know somewhere good? <a href="${esc(CFG.submitUrl)}" target="_blank" rel="noopener">Suggest it</a>.`:""}</div>`}
+    ${rows.length ? `<div class="list" id="results">${rows.slice(0,E.limit).map(r=>card(r)).join("")}</div>${rows.length>E.limit ? `<button class="btn" id="more" style="margin-top:10px;width:100%">Show more (${rows.length-E.limit} left)</button>` : ""}` : `<div class="empty">No matches. Try fewer words or turn off a filter.${CFG.submitUrl?` Know somewhere good? <a href="${esc(CFG.submitUrl)}" target="_blank" rel="noopener">Suggest it</a>.`:""}</div>`}
     ${S.hidden.size ? `<p class="fineprint">${S.hidden.size} hidden listing${S.hidden.size===1?"":"s"}. <button class="link" id="unhide">Show them again</button></p>`:""}
   </section>
   ${footer()}`;
@@ -504,7 +549,7 @@ function mapSVG(rows, vb, idAttr=true, pxW){
     <g><circle cx="${hx}" cy="${hy}" r="${10*k}" fill="var(--accent)" stroke="var(--surface)" stroke-width="${3*k}"/><circle cx="${hx}" cy="${hy}" r="${3.5*k}" fill="var(--accent-ink)"/><text x="${hx}" y="${hy+24*k}" text-anchor="middle" font-size="${fs*1.05}" class="maplabel" style="fill:var(--accent);stroke-width:${3.5*k}">Home</text></g>
   </svg>`;
 }
-function mapRows(){ const C=ctx(); let rows = ranked(ITEMS.filter(i=>!i.online),C); if(S.map.cat!=="all") rows = rows.filter(r=>r.it.cat===S.map.cat); return rows; }
+function mapRows(){ const C=ctx(); let rows = ranked(ITEMS.filter(i=>!i.online && (!i.start || (i.start-NOW)/864e5 < 7)),C); if(S.map.cat!=="all") rows = rows.filter(r=>r.it.cat===S.map.cat); return rows; }
 function viewMap(){
   const rows = mapRows();
   if(!S.map.vb) S.map.vb = defaultVB();
@@ -752,8 +797,8 @@ function openDetail(id){
   const pt = priceText(it); if(pt) facts.push([it.cat==="work"?"Pay":it.cat==="funding"?"Amount":it.cat==="housing"?"Cost":"Price", pt]);
   if(it.start) facts.push(["When", it.end && dayDiff(it.end)!==dayDiff(it.start) ? `${dateShort(it.start)} – ${dateShort(it.end)}` : `${dateShort(it.start)}, ${timeOf(it.start)}${it.end?"–"+timeOf(it.end):""}`]);
   if(it.deadline) facts.push(["Deadline", `${dateShort(it.deadline)} · ${daysLeft(it)}d left`]);
-  if(it.hours) facts.push(["Hours", it.hours[0]===0&&it.hours[1]===24 ? "24 hours" : `${hhmm(it.hours[0])}–${hhmm(it.hours[1])}`]);
-  if(it.days) facts.push(["Days", it.days.length===5 && !it.days.includes(0) && !it.days.includes(6) ? "Mon–Fri" : it.days.map(d=>DAYS[d]).join(", ")]);
+  if(hasHours(it)) facts.push(["Hours", hoursSummary(it)]);
+  if(it.opensOn || it.closedNote) facts.push(["Status", timingText(it)]);
   if(it.online) facts.push(["Where", it.cat==="funding" ? "Apply online" : "Online"]);
   else { facts.push(["From home", `${fmtDist(r.dh)} · ${travelLabel(r.dh)}`]); if(C.uni.id!=="other") facts.push([`From ${C.uni.name}`, `${fmtDist(r.du)} · ${travelLabel(r.du)}`]); }
   if(it.unis?.length) facts.push(["Who", it.unis.map(u=>UNIS.find(x=>x.id===u)?.name||u).join(", ") + " students"]);
@@ -779,8 +824,9 @@ function openDetail(id){
       <button class="btn ghost" data-hide="${esc(id)}">${ic("hide")} Not for me</button>
     </div>
     <div class="srcline">
-      <span class="status ${it.status==="verified"?"verified":"check"}">${it.status==="verified"?ic("check","icon")+" Checked":"Details may change"}</span>
-      <span>Source: ${esc(it.source||"—")}${checked?` · checked ${checked}`:""}</span>
+      ${it.auto
+        ? `<span class="status verified">${ic("check","icon")} Live</span><span>From ${esc(it.source)}'s official calendar · synced ${esc(fmtSynced())}</span>`
+        : `<span class="status ${it.stale?"check":"verified"}">${it.stale?"Needs re-checking":ic("check","icon")+" Checked"}</span><span>Source: ${esc(it.source||"—")}${checked?` · checked ${checked}`:""}</span>`}
       ${CFG.feedbackUrl ? `<a href="${esc(CFG.feedbackUrl)}" target="_blank" rel="noopener" data-track="report/${esc(it.id)}">Report a problem</a>` : ""}
     </div>`);
   $("#sheetroot .srcline .icon")?.setAttribute("style","width:12px;height:12px");
@@ -887,11 +933,12 @@ function go(v, opts={}){
 }
 function bindExplore(){
   const q = $("#q");
-  let t; q.addEventListener("input", () => { clearTimeout(t); t = setTimeout(()=>{ S.explore.q = q.value; const pos=q.selectionStart; render(); const nq=$("#q"); nq.focus(); nq.setSelectionRange(pos,pos); }, 180); });
+  let t; q.addEventListener("input", () => { clearTimeout(t); t = setTimeout(()=>{ S.explore.q = q.value; S.explore.limit = 40; const pos=q.selectionStart; render(); const nq=$("#q"); nq.focus(); nq.setSelectionRange(pos,pos); }, 180); });
   q.addEventListener("change", () => { if(q.value.trim()) track("search", {once:true}); });
-  $("#sort").addEventListener("change", e => { S.explore.sort = e.target.value; render(); });
-  $("#t-open").addEventListener("click", () => { S.explore.openNow = !S.explore.openNow; render(); });
-  $("#t-free").addEventListener("click", () => { S.explore.free = !S.explore.free; render(); });
+  $("#sort").addEventListener("change", e => { S.explore.sort = e.target.value; S.explore.limit = 40; render(); });
+  $("#t-open").addEventListener("click", () => { S.explore.openNow = !S.explore.openNow; S.explore.limit = 40; render(); });
+  $("#t-free").addEventListener("click", () => { S.explore.free = !S.explore.free; S.explore.limit = 40; render(); });
+  $("#more")?.addEventListener("click", () => { const y = window.scrollY; S.explore.limit += 40; render(); window.scrollTo({top:y}); });
   $("#unhide")?.addEventListener("click", () => { S.hidden.clear(); persist(); render(); });
 }
 function bindAsk(){
@@ -909,7 +956,7 @@ document.addEventListener("click", e => {
   if(d.open){ openDetail(d.open); return; }
   if(d.nav){ closeSheet(); go(d.nav, {cat:d.cat}); return; }
   if("profile" in d){ openProfile(false); return; }
-  if(d.ecat){ S.explore.cat = d.ecat; render(); return; }
+  if(d.ecat){ S.explore.cat = d.ecat; S.explore.limit = 40; render(); return; }
   if(d.mcat){ S.map.cat = d.mcat; S.map.active = null; render(); return; }
   if(d.suggest){ $("#msgs").innerHTML=""; ask(d.suggest); return; }
   if(d.dsave){ toggleSave(d.dsave); openDetail(d.dsave); render(); return; }
@@ -939,11 +986,16 @@ document.addEventListener("visibilitychange", () => { if(document.visibilityStat
 /* ================= boot ================= */
 async function boot(){
   try{
-    const res = await fetch("listings.json", {cache:"no-cache"});
-    if(!res.ok) throw new Error(res.status);
-    const data = await res.json();
+    const [lres, eres] = await Promise.all([
+      fetch("listings.json", {cache:"no-cache"}),
+      fetch("events.json", {cache:"no-cache"}).catch(()=>null),
+    ]);
+    if(!lres.ok) throw new Error(lres.status);
+    const data = await lres.json();
     S.updated = data.updated || "";
-    hydrate(data.listings || []);
+    let events = [];
+    if(eres && eres.ok){ try{ const ev = await eres.json(); S.events = {generated: ev.generated, sources: ev.sources || []}; events = ev.events || []; }catch(e){} }
+    hydrate([...(data.listings || []), ...events]);
   }catch(err){
     $("#main").innerHTML = `<div class="loading">Couldn't load listings. Check your connection and refresh.</div>`;
     return;

@@ -24,6 +24,23 @@ Live at **https://ibiraza1077-pixel.github.io/** (the repository `ibiraza1077-pi
 
 To edit a file on GitHub: open it → pencil icon → change → *Commit changes*. The live site updates in a minute or two.
 
+## How listings stay current
+
+**Events update themselves.** Twice a day (06:15 and 16:15 London time), a GitHub Action runs `scripts/update_events.py`. It pulls upcoming events from:
+
+| Source | What it adds |
+|---|---|
+| Students' Union UCL "What's on" | Society, sport, social and welcome events |
+| LSE Students' Union calendar | Society events, careers talks |
+| King's College London events calendar | Student and careers events (fairs, workshops, networking nights) |
+| LSE public events | Free public lectures and concerts |
+
+It writes them to `events.json` and commits. The site republishes automatically. Past events disappear on their own. If a source is down, the last good events from it are kept. You can run it any time from the **Actions** tab → *Update events* → *Run workflow*.
+
+Not covered automatically (their sites block automated access): KCLSU events and UCL Careers fairs. UCL Careers fairs are hand-entered in `listings.json` from the official page.
+
+**Everything else is hand-checked.** Food, study spaces, deals, funding, jobs, sport and housing live in `listings.json`. Each has a source link and a `checked` date. Anything not re-checked for 60 days is flagged in the app and ranked lower, so aim to re-check each listing at least every two months in `admin.html`.
+
 ## Keeping listings accurate
 
 - Open `https://ibiraza1077-pixel.github.io/admin.html`.
