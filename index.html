@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>UniLondon</title>
+<meta name="description" content="Cheap food, study spaces, jobs, careers fairs, funding and student deals around UCL, King's and LSE, picked for you.">
+<meta name="theme-color" content="#3B2FE0">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="UniLondon">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta property="og:title" content="UniLondon">
+<meta property="og:description" content="Everything a London student needs today: cheap eats, study spaces, jobs, careers fairs, funding and deals.">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="icons/icon-192.png" type="image/png">
+<link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Instrument+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="app" id="app">
+  <nav class="rail" aria-label="Main">
+    <div class="brand"><span class="brand-mark">U</span><span>UniLondon<small>Student OS for London</small></span></div>
+    <div id="railnav"></div>
+    <div class="rail-foot" id="railfoot"></div>
+  </nav>
+  <main class="main" id="main"><div class="loading">Loading UniLondon…</div></main>
+  <aside class="aside" id="aside" aria-label="At a glance"></aside>
+</div>
+<nav class="bottomnav" id="bottomnav" aria-label="Main"></nav>
+<div id="sheetroot"></div>
+<div id="toastroot" aria-live="polite"></div>
+<script src="config.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex">
+<title>UniLondon Listings Editor</title>
+<link rel="icon" href="icons/icon-192.png">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap">
+<style>
+:root{--bg:#F2F4F8;--surface:#fff;--surface-2:#E9ECF3;--ink:#10131C;--ink-2:#4A5163;--ink-3:#737B8F;--line:#DADFEA;--accent:#3B2FE0;--accent-soft:#E7E5FF;--good:#0F7F57;--good-soft:#DDF3EA;--warn:#9A6A08;--warn-soft:#FBF1D9;--hot:#D92D20}
+@media (prefers-color-scheme:dark){:root{color-scheme:dark;--bg:#0B0D13;--surface:#141822;--surface-2:#1C2130;--ink:#EEF0F6;--ink-2:#B4BACB;--ink-3:#848B9E;--line:#272D3D;--accent:#8C84FF;--accent-soft:#25214F;--good:#3DD39A;--good-soft:#12301F;--warn:#E8B34A;--warn-soft:#33280F;--hot:#FF6B5E}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:14px/1.45 "Instrument Sans",system-ui,sans-serif}
+button,input,select,textarea{font:inherit;color:inherit}
+.wrap{max-width:1180px;margin:0 auto;padding:20px 16px 60px}
+h1{font-size:24px;margin:0}
+.sub{color:var(--ink-3);margin:4px 0 16px}
+.bar{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin-bottom:14px}
+.btn{border:1px solid var(--line);background:var(--surface);border-radius:10px;padding:8px 13px;font-weight:600;cursor:pointer}
+.btn.primary{background:var(--accent);border-color:var(--accent);color:#fff}
+.btn.danger{color:var(--hot)}
+input[type=search],input[type=text],input[type=url],input[type=number],input[type=date],input[type=datetime-local],select,textarea{border:1px solid var(--line);background:var(--surface);border-radius:9px;padding:8px 10px;width:100%}
+.grid{display:grid;grid-template-columns:minmax(0,1fr);gap:16px}
+@media (min-width:980px){.grid{grid-template-columns:minmax(0,1.1fr) minmax(0,1fr)}}
+.panel{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:14px}
+.list{display:flex;flex-direction:column;gap:6px;max-height:75vh;overflow:auto}
+.row{display:grid;grid-template-columns:auto minmax(0,1fr) auto;gap:10px;align-items:center;text-align:left;border:1px solid var(--line);background:var(--surface);border-radius:10px;padding:8px 10px;cursor:pointer}
+.row[aria-current="true"]{border-color:var(--accent);box-shadow:inset 0 0 0 1px var(--accent)}
+.row small{display:block;color:var(--ink-3)}
+.pill{font-size:11.5px;font-weight:700;border-radius:6px;padding:2px 7px;white-space:nowrap}
+.pill.verified{background:var(--good-soft);color:var(--good)}
+.pill.check{background:var(--warn-soft);color:var(--warn)}
+.cat{font-family:"JetBrains Mono",monospace;font-size:11px;color:var(--ink-3);width:62px}
+form{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+form .full{grid-column:1/-1}
+label{display:flex;flex-direction:column;gap:4px;font-size:12.5px;font-weight:700;color:var(--ink-2)}
+label small{font-weight:400;color:var(--ink-3)}
+.checks{display:flex;flex-wrap:wrap;gap:8px 14px;font-weight:500}
+.checks label{flex-direction:row;align-items:center;gap:6px;font-weight:500}
+.help{background:var(--accent-soft);border-radius:12px;padding:12px 14px;margin-bottom:14px}
+.help ol{margin:6px 0 0;padding-left:20px}
+.stat{font-family:"JetBrains Mono",monospace;font-size:12.5px;color:var(--ink-2)}
+.toast{position:fixed;bottom:20px;left:50%;transform:translateX(-50%);background:var(--ink);color:var(--bg);padding:10px 16px;border-radius:10px;font-weight:600}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>UniLondon listings editor</h1>
+  <p class="sub">Only you need this page. Students never see it.</p>
+  <div class="help">
+    <b>How to update the live app</b>
+    <ol>
+      <li>Open a listing on the left, check it against its official page, fix anything, then press <b>Mark checked</b>.</li>
+      <li>Add new ones with <b>New listing</b>. Your edits are kept in this browser until you download.</li>
+      <li>Press <b>Download listings.json</b>, then upload that file to your GitHub repository, replacing the old one. The app updates within a minute or two.</li>
+    </ol>
+  </div>
+  <div class="bar">
+    <button class="btn primary" id="new">New listing</button>
+    <button class="btn" id="download">Download listings.json</button>
+    <button class="btn" id="copy">Copy JSON</button>
+    <label class="btn" style="flex-direction:row;cursor:pointer">Import file<input type="file" id="import" accept=".json,application/json" hidden></label>
+    <button class="btn" id="reload">Discard my edits</button>
+    <span class="stat" id="stats"></span>
+  </div>
+  <div class="grid">
+    <div class="panel">
+      <div class="bar"><input type="search" id="q" placeholder="Search listings" aria-label="Search listings"><select id="fstatus" aria-label="Filter by status" style="width:auto"><option value="">All</option><option value="check">Needs checking</option><option value="verified">Checked</option></select></div>
+      <div class="list" id="list"></div>
+    </div>
+    <div class="panel" id="editor"><p class="sub">Pick a listing to edit it.</p></div>
+  </div>
+</div>
+<script>
+(() => {
+const CATS = ["food","study","events","careers","work","funding","deals","sport","housing"];
+const UNIS = [["ucl","UCL"],["kcl","King's"],["lse","LSE"]];
+const CG = [["tech","Tech/Maths/Eng"],["finance","Econ/Business"],["law","Law/Politics"],["health","Health/Life sci"],["creative","Arts/Humanities"]];
+const DAYS = ["Sun","Mon","Tue","Wed","Thu","Fri","Sat"];
+const KEY = "unilondon-admin:draft";
+let data = null, sel = null;
+const $ = s => document.querySelector(s);
+const esc = s => String(s ?? "").replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const today = () => new Date().toISOString().slice(0,10);
+function toast(m){ const t=document.createElement("div"); t.className="toast"; t.textContent=m; document.body.appendChild(t); setTimeout(()=>t.remove(),2500); }
+function save(){ try{ localStorage.setItem(KEY, JSON.stringify(data)); }catch(e){} stats(); }
+async function load(fresh){
+  if(!fresh){ try{ const d = JSON.parse(localStorage.getItem(KEY)); if(d?.listings){ data = d; render(); return; } }catch(e){} }
+  const res = await fetch("listings.json", {cache:"no-cache"}); data = await res.json(); render();
+}
+function stats(){ const n=data.listings.length, c=data.listings.filter(l=>l.status!=="verified").length; $("#stats").textContent = `${n} listings · ${c} need checking`; }
+function render(){
+  stats();
+  const q = $("#q").value.toLowerCase(), f = $("#fstatus").value;
+  const rows = data.listings.filter(l => (!f || (f==="verified") === (l.status==="verified")) && (!q || JSON.stringify(l).toLowerCase().includes(q)));
+  $("#list").innerHTML = rows.map(l => `<button class="row" data-id="${esc(l.id)}" aria-current="${l.id===sel}"><span class="cat">${esc(l.cat)}</span><span><b>${esc(l.title)}</b><small>${esc(l.org)} · ${esc(l.area)}${l.start?" · "+esc(l.start.replace("T"," ")):""}${l.deadline?" · closes "+esc(l.deadline):""}</small></span><span class="pill ${l.status==="verified"?"verified":"check"}">${l.status==="verified"?"Checked":"Check"}</span></button>`).join("") || `<p class="sub">No listings match.</p>`;
+}
+function field(label, name, val, type="text", hint="", full=false){
+  return `<label class="${full?"full":""}">${label}${hint?` <small>${hint}</small>`:""}<input type="${type}" name="${name}" value="${esc(val ?? "")}" ${type==="number"?'step="any"':""}></label>`;
+}
+function edit(id){
+  sel = id; render();
+  const l = data.listings.find(x=>x.id===id); if(!l) return;
+  const checks = (name, opts, vals) => `<div class="checks">${opts.map(([v,t])=>`<label><input type="checkbox" name="${name}" value="${v}" ${(vals||[]).map(String).includes(String(v))?"checked":""}>${t}</label>`).join("")}</div>`;
+  $("#editor").innerHTML = `
+    <div class="bar" style="justify-content:space-between"><b>${esc(l.title)}</b><span class="pill ${l.status==="verified"?"verified":"check"}">${l.status==="verified"?"Checked "+esc(l.checked||""):"Needs checking"}</span></div>
+    <div class="bar">${l.url?`<a class="btn" href="${esc(l.url)}" target="_blank" rel="noopener">Open official page ↗</a>`:""}<button class="btn primary" id="verify">Mark checked today</button><button class="btn" id="dup">Duplicate</button><button class="btn danger" id="del">Delete</button></div>
+    <form id="f">
+      <label>Category<select name="cat">${CATS.map(c=>`<option ${c===l.cat?"selected":""}>${c}</option>`).join("")}</select></label>
+      <label>Status<select name="status"><option value="check" ${l.status!=="verified"?"selected":""}>Needs checking</option><option value="verified" ${l.status==="verified"?"selected":""}>Checked</option></select></label>
+      ${field("Title","title",l.title,"text","",true)}
+      ${field("Organiser / venue","org",l.org)}
+      ${field("Area","area",l.area,"text","e.g. Bloomsbury")}
+      ${field("Latitude","lat",l.ll?.[0],"number","right-click in Google Maps")}
+      ${field("Longitude","lng",l.ll?.[1],"number")}
+      <label class="full"><span>Online only</span><div class="checks"><label><input type="checkbox" name="online" ${l.online?"checked":""}> No physical location</label><label><input type="checkbox" name="rolling" ${l.rolling?"checked":""}> Always open / rolling</label></div></label>
+      ${field("Price (£)","price",l.price,"number","0 = free")}
+      ${field("Price text","priceText",l.priceText,"text","overrides price, e.g. £5–£8")}
+      ${field("Hourly pay (£)","pay",l.pay,"number","jobs/funding")}
+      ${field("Opens (hour)","open",l.hours?.[0],"number","e.g. 8.5 = 08:30")}
+      ${field("Closes (hour)","close",l.hours?.[1],"number","24 = midnight")}
+      <label class="full">Days open <small>none ticked = every day</small>${checks("days", DAYS.map((d,i)=>[i,d]), l.days)}</label>
+      ${field("Starts","start",l.start,"datetime-local","events only")}
+      ${field("Ends","end",l.end,"datetime-local")}
+      ${field("Deadline","deadline",l.deadline,"date")}
+      ${field("Last checked","checked",l.checked,"date")}
+      <label class="full">Only for students at <small>none ticked = everyone</small>${checks("unis", UNIS, l.unis)}</label>
+      <label class="full">Best for courses <small>none = all</small>${checks("cg", CG, l.cg)}</label>
+      <label class="full">Best for years <small>none = all</small>${checks("yrs", [[1,"Year 1"],[2,"Year 2"],[3,"Year 3"],[4,"4+/PG"]], l.yrs)}</label>
+      ${field("Tags","tags",(l.tags||[]).join(", "),"text","comma separated: food, money, tech, finance, law, culture, music, fitness, community, veg, quiet, wifi",true)}
+      <label class="full">Description<textarea name="desc" rows="4">${esc(l.desc)}</textarea></label>
+      ${field("Official link","url",l.url,"url","",true)}
+      ${field("Source name","source",l.source,"text","",true)}
+      <div class="full bar"><button class="btn primary" type="submit">Save changes</button><span class="sub" style="margin:0">ID: <code>${esc(l.id)}</code></span></div>
+    </form>`;
+  $("#f").addEventListener("submit", e => { e.preventDefault(); apply(l, new FormData(e.target)); save(); render(); edit(l.id); toast("Saved in this browser"); });
+  $("#verify").onclick = () => { const fd = new FormData($("#f")); apply(l, fd); l.status="verified"; l.checked=today(); save(); render(); edit(l.id); toast("Marked checked"); };
+  $("#dup").onclick = () => { const c = JSON.parse(JSON.stringify(l)); c.id = l.id+"-copy-"+Math.random().toString(36).slice(2,5); c.title += " (copy)"; c.status="check"; data.listings.unshift(c); save(); edit(c.id); };
+  $("#del").onclick = e => { if(!e.target.dataset.armed){ e.target.dataset.armed="1"; e.target.textContent="Tap again to delete"; return; } data.listings = data.listings.filter(x=>x.id!==l.id); sel=null; save(); render(); $("#editor").innerHTML='<p class="sub">Deleted.</p>'; };
+}
+function apply(l, fd){
+  const num = k => { const v = fd.get(k); return v===""||v==null ? null : Number(v); };
+  const str = k => (fd.get(k)||"").trim();
+  const all = k => fd.getAll(k);
+  l.cat = str("cat"); l.status = str("status"); l.title = str("title"); l.org = str("org"); l.area = str("area");
+  const lat = num("lat"), lng = num("lng"); if(lat!=null && lng!=null) l.ll = [lat,lng]; else delete l.ll;
+  l.online = fd.get("online")==="on" || undefined; l.rolling = fd.get("rolling")==="on" || undefined;
+  const set = (k,v) => { if(v===null || v==="" || v===undefined || (Array.isArray(v) && !v.length)) delete l[k]; else l[k]=v; };
+  set("price", num("price")); set("priceText", str("priceText")); set("pay", num("pay"));
+  const o=num("open"), c=num("close"); set("hours", o!=null && c!=null ? [o,c] : null);
+  set("days", all("days").map(Number)); set("start", str("start")); set("end", str("end")); set("deadline", str("deadline"));
+  set("checked", str("checked")); set("unis", all("unis")); set("cg", all("cg")); set("yrs", all("yrs").map(Number));
+  l.tags = str("tags").split(",").map(s=>s.trim()).filter(Boolean);
+  l.desc = str("desc"); set("url", str("url")); set("source", str("source"));
+  if(!l.online) delete l.online; if(!l.rolling) delete l.rolling;
+}
+function exportJSON(){ data.updated = today(); return JSON.stringify(data, null, 1); }
+$("#list").addEventListener("click", e => { const b = e.target.closest("[data-id]"); if(b) edit(b.dataset.id); });
+$("#q").addEventListener("input", render); $("#fstatus").addEventListener("change", render);
+$("#new").onclick = () => { const id = "new-"+Date.now().toString(36); data.listings.unshift({id, cat:"food", title:"New listing", org:"", area:"Bloomsbury", tags:[], desc:"", status:"check", checked:today()}); save(); edit(id); };
+$("#download").onclick = () => { const blob = new Blob([exportJSON()], {type:"application/json"}); const a = document.createElement("a"); a.href = URL.createObjectURL(blob); a.download = "listings.json"; a.click(); setTimeout(()=>URL.revokeObjectURL(a.href), 1000); save(); };
+$("#copy").onclick = async () => { try{ await navigator.clipboard.writeText(exportJSON()); toast("Copied"); }catch(e){ toast("Couldn't copy, use Download instead"); } };
+$("#import").onchange = async e => { const f = e.target.files[0]; if(!f) return; try{ const d = JSON.parse(await f.text()); if(!d.listings) throw 0; data = d; save(); render(); toast("Imported"); }catch(err){ toast("That file isn't a UniLondon listings file"); } };
+$("#reload").onclick = e => { if(!e.target.dataset.armed){ e.target.dataset.armed="1"; e.target.textContent="Tap again to discard"; return; } try{ localStorage.removeItem(KEY); }catch(err){} location.reload(); };
+load();
+})();
+</script>
+</body>
+</html>
