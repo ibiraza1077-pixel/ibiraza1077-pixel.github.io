@@ -2,7 +2,7 @@
 window.UNILONDON_CONFIG = {
   // Your GoatCounter site code, e.g. "unilondon" if your dashboard is unilondon.goatcounter.com.
   // Leave empty to turn anonymous usage counting off.
-  goatcounter: "",
+  goatcounter: "unilondon",
 
   // Link to a Google Form (or similar) for written feedback. Leave empty to hide the button.
   feedbackUrl: "https://docs.google.com/forms/d/e/1FAIpQLScoGzelzzayWbcG5909Ckx1lGUAz_91fIbH6cerdBnaB_Z0_A/viewform",
