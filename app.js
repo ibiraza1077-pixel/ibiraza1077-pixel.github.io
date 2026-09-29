@@ -33,6 +33,7 @@ const ICONS = {
   check:'<path d="M5 12.5l4.5 4.5L19 7"/>',
   chat:'<path d="M4 5h16v11H9l-5 4z"/>',
   share:'<path d="M12 3v12M7 8l5-5 5 5M5 13v7h14v-7"/>',
+  refresh:'<path d="M20 11a8 8 0 0 0-14.9-3.9L4 9M4 4v5h5M4 13a8 8 0 0 0 14.9 3.9L20 15M20 20v-5h-5"/>',
 };
 const ic = (n, cls="icon") => `<svg class="${cls}" viewBox="0 0 24 24" aria-hidden="true">${ICONS[n]||""}</svg>`;
 
@@ -306,6 +307,7 @@ function score(it, C){
   if(it.closedNote) s -= 2;
   if(it.opensOn && new Date(it.opensOn+"T00:00") > NOW){ const dd = dayDiff(new Date(it.opensOn+"T00:00")); s += dd<=7 ? .8 : -.5; if(dd<=7) why.push("Opens this week"); }
   if(it.stale) s -= 1.5;
+  if(it.flag) s -= 2.5;
   if(it.cat==="food" && it.price!=null){ if(it.price<=C.p.meal){ s+=.8; if(it.price<=4) why.push(it.price===0 ? "Free" : `Under £${C.p.meal}`);} else s-=1.2; }
   if(it.cat==="housing" && it.price){ if(it.price<=C.p.rent){ s+=1.2; why.push(`Within your £${C.p.rent}/mo budget`);} else s-=1.5; }
   s *= (S.catBias[it.cat] ?? 1);
@@ -325,7 +327,8 @@ function badges(it){
   if(it.rolling) b.push(`<span class="badge">Rolling</span>`);
   if(it.opensOn){ const d = new Date(it.opensOn+"T00:00"); if(d > NOW) b.push(`<span class="badge warn">Opens ${d.getDate()} ${MONTHS[d.getMonth()]}</span>`); }
   if(it.closedNote) b.push(`<span class="badge warn">${esc(it.closedNote)}</span>`);
-  if(it.stale) b.push(`<span class="badge warn">Not re-checked recently</span>`);
+  if(it.flag) b.push(`<span class="badge warn">May have changed</span>`);
+  else if(it.stale) b.push(`<span class="badge warn">Not re-checked recently</span>`);
   if(it.start){ const soon = it.start<=NOW || (it.start-NOW)/36e5<10; b.push(`<span class="badge ${soon?"acc":""}">${esc(whenLabel(it))}</span>`); }
   const os = openState(it); if(os) b.push(`<span class="badge ${os.open?"good":""}">${esc(os.label)}</span>`);
   const pt = priceText(it); if(pt) b.push(`<span class="badge ${pt==="Free"?"good":""}">${esc(pt)}</span>`);
@@ -376,7 +379,7 @@ function footer(){
   return `<footer class="footer">
     <div>${S.events ? `Events synced ${esc(fmtSynced())} from ${S.events.sources.filter(x=>x.ok).map(x=>esc(x.name)).join(", ")}. ` : ""}Other listings hand-checked ${esc(fmtUpdated())}. Always confirm on the official page before you go.</div>
     ${eventsStale() ? `<div style="color:var(--warn)">Event listings haven't refreshed for a few days, so some may have changed.</div>` : ""}
-    <div>${CFG.submitUrl ? `<a href="${esc(CFG.submitUrl)}" target="_blank" rel="noopener" data-track="submit/footer">Suggest a listing</a> · ` : ""}${CFG.feedbackUrl ? `<a href="${esc(CFG.feedbackUrl)}" target="_blank" rel="noopener" data-track="feedback/footer">Report a problem</a> · ` : ""}<button data-privacy>Privacy</button> · <button data-reset>Reset my data</button></div>
+    <div>${CFG.submitUrl ? `<a href="${esc(CFG.submitUrl)}" target="_blank" rel="noopener" data-track="submit/footer">Suggest a listing</a> · ` : ""}${CFG.feedbackUrl ? `<a href="${esc(CFG.feedbackUrl)}" target="_blank" rel="noopener" data-track="feedback/footer">Report a problem</a> · ` : ""}<button data-refresh>Refresh now</button> · <button data-privacy>Privacy</button> · <button data-reset>Reset my data</button></div>
   </footer>`;
 }
 function fmtSynced(){
@@ -405,7 +408,7 @@ function viewToday(){
       <span class="ctx">${ic("cap")}${esc(C.uni.name)} · ${esc(C.p.course)} · Year ${C.p.year}</span>
       <span class="ctx">${ic("pin")}${esc(C.p.area)}</span>
     </div>
-    ${S.events ? `<button class="live" data-nav="explore" data-cat="events"><i></i>${ITEMS.filter(i=>i.auto).length} live events from official uni &amp; union calendars · synced ${esc(fmtSynced())}</button>` : ""}
+    ${S.events ? `<div class="liverow"><button class="live" data-nav="explore" data-cat="events"><i></i>${ITEMS.filter(i=>i.auto).length} live events from official uni &amp; union calendars · synced ${esc(fmtSynced())}</button><button class="refresh" data-refresh aria-label="Refresh listings">${ic("refresh")} Refresh</button></div>` : ""}
   </section>
   ${installCard()}
   <section class="section">
@@ -812,6 +815,7 @@ function openDetail(id){
       <button class="x" data-close aria-label="Close">${ic("x")}</button>
     </div>
     <div class="facts">${facts.map(([k,v])=>`<div class="fact"><span>${esc(k)}</span><b>${esc(v)}</b></div>`).join("")}</div>
+    ${it.flag ? `<div class="flagbox">${ic("clock","icon")}<span>${esc(it.flag)}</span></div>` : ""}
     <p class="desc">${esc(it.desc)}</p>
     ${r.why.length ? `<div class="why"><div class="eyebrow" style="color:var(--accent)">Why you're seeing this</div><ul>${r.why.map(w=>`<li>${esc(w)}</li>`).join("")}</ul></div>` : ""}
     <div class="actions">
@@ -826,7 +830,7 @@ function openDetail(id){
     <div class="srcline">
       ${it.auto
         ? `<span class="status verified">${ic("check","icon")} Live</span><span>From ${esc(it.source)}'s official calendar · synced ${esc(fmtSynced())}</span>`
-        : `<span class="status ${it.stale?"check":"verified"}">${it.stale?"Needs re-checking":ic("check","icon")+" Checked"}</span><span>Source: ${esc(it.source||"—")}${checked?` · checked ${checked}`:""}</span>`}
+        : `<span class="status ${it.stale||it.flag?"check":"verified"}">${it.flag?"May have changed":it.stale?"Needs re-checking":ic("check","icon")+(it.autoChecked?" Auto-checked":" Checked")}</span><span>Source: ${esc(it.source||"—")}${checked?` · ${it.flag||it.stale?"last confirmed":it.autoChecked?"confirmed on the official page":"checked"} ${checked}`:""}</span>`}
       ${CFG.feedbackUrl ? `<a href="${esc(CFG.feedbackUrl)}" target="_blank" rel="noopener" data-track="report/${esc(it.id)}">Report a problem</a>` : ""}
     </div>`);
   $("#sheetroot .srcline .icon")?.setAttribute("style","width:12px;height:12px");
@@ -970,6 +974,7 @@ document.addEventListener("click", e => {
   if("install" in d && deferredInstall){ track("install/prompt"); deferredInstall.prompt(); deferredInstall.userChoice.finally(()=>{ deferredInstall=null; render(); }); return; }
   if("installNo" in d){ S.installDismissed = true; persist(); render(); return; }
   if("privacy" in d){ openPrivacy(); return; }
+  if("refresh" in d){ refreshData(t); return; }
   if("reset" in d){
     if(t.dataset.armed){ store.clear(); location.reload(); return; }
     t.dataset.armed = "1"; t.textContent = "Tap again to erase everything"; setTimeout(()=>{ if(t.isConnected){ delete t.dataset.armed; t.textContent="Reset my data"; } }, 4000); return;
@@ -981,21 +986,43 @@ document.addEventListener("change", e => {
   if(e.target.checked){ track(`done/${BY_ID[id]?.cat}`); toast("Nice. Marked as done."); }
 });
 window.addEventListener("hashchange", () => { const h = location.hash.slice(1); if(h!==S.view && NAV.some(([v])=>v===h)){ closeSheet(); S.view = h; render(); window.scrollTo({top:0}); } });
-document.addEventListener("visibilitychange", () => { if(document.visibilityState==="visible" && ITEMS.length){ const d = new Date(); if(d.getDate()!==NOW.getDate() || d-NOW > 15*60e3) { render(); } } });
+document.addEventListener("visibilitychange", async () => {
+  if(document.visibilityState!=="visible" || !ITEMS.length) return;
+  if(Date.now() - lastLoad > 30*60e3){ try{ await loadData(true); }catch(e){} render(); }
+  else if(new Date().getDate()!==NOW.getDate()) render();
+});
 
 /* ================= boot ================= */
+let lastLoad = 0;
+async function loadData(fresh){
+  const q = fresh ? `?t=${Date.now()}` : "";
+  const [lres, eres] = await Promise.all([
+    fetch("listings.json"+q, {cache:"no-cache"}),
+    fetch("events.json"+q, {cache:"no-cache"}).catch(()=>null),
+  ]);
+  if(!lres.ok) throw new Error(lres.status);
+  const data = await lres.json();
+  S.updated = data.updated || "";
+  let events = [];
+  if(eres && eres.ok){ try{ const ev = await eres.json(); S.events = {generated: ev.generated, sources: ev.sources || []}; events = ev.events || []; }catch(e){} }
+  NOW = new Date();
+  hydrate([...(data.listings || []), ...events]);
+  lastLoad = Date.now();
+}
+async function refreshData(btn){
+  if(btn){ btn.disabled = true; btn.dataset.label = btn.textContent; btn.textContent = "Refreshing…"; }
+  const before = S.events?.generated;
+  try{
+    await loadData(true);
+    render();
+    track("refresh", {once:true});
+    toast(S.events?.generated && S.events.generated !== before ? `Updated · events synced ${fmtSynced()}` : `Up to date · events synced ${fmtSynced()}`);
+  }catch(e){ toast("Couldn't refresh. Check your connection."); }
+  finally{ const b = btn?.isConnected ? btn : null; if(b){ b.disabled = false; b.textContent = b.dataset.label; } }
+}
 async function boot(){
   try{
-    const [lres, eres] = await Promise.all([
-      fetch("listings.json", {cache:"no-cache"}),
-      fetch("events.json", {cache:"no-cache"}).catch(()=>null),
-    ]);
-    if(!lres.ok) throw new Error(lres.status);
-    const data = await lres.json();
-    S.updated = data.updated || "";
-    let events = [];
-    if(eres && eres.ok){ try{ const ev = await eres.json(); S.events = {generated: ev.generated, sources: ev.sources || []}; events = ev.events || []; }catch(e){} }
-    hydrate([...(data.listings || []), ...events]);
+    await loadData(false);
   }catch(err){
     $("#main").innerHTML = `<div class="loading">Couldn't load listings. Check your connection and refresh.</div>`;
     return;

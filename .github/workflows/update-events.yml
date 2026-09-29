@@ -1,41 +1,67 @@
-name: Update events
+name: Sync
 
-# Pulls upcoming events from official university and students' union calendars
-# into events.json, twice a day. GitHub Pages republishes the site automatically.
+# Keeps UniLondon current:
+#   1. pulls upcoming events from official university and union calendars (events.json)
+#   2. re-checks every hand-entered listing against its official page (listings.json, checks.json)
+#   3. opens/updates a GitHub issue when something needs a human, and closes it when all is well
+# Runs twice a day, and on demand from the admin page's "Sync now" button or the Actions tab.
 on:
   schedule:
     - cron: "15 5 * * *"   # 05:15 UTC (06:15 London in summer)
     - cron: "15 15 * * *"  # 15:15 UTC, afternoon refresh
-  workflow_dispatch: {}    # "Run workflow" button in the Actions tab
+  workflow_dispatch: {}
 
 permissions:
   contents: write
+  issues: write
 
 concurrency:
-  group: update-events
+  group: sync
   cancel-in-progress: false
 
 jobs:
-  update:
+  sync:
     runs-on: ubuntu-latest
-    timeout-minutes: 15
+    timeout-minutes: 20
+    env:
+      TZ: Europe/London
+      GH_TOKEN: ${{ github.token }}
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-      - name: Fetch events from official sources
-        env:
-          TZ: Europe/London
+
+      - name: Update events from official calendars
         run: python scripts/update_events.py
-      - name: Commit if anything changed
+
+      - name: Re-check listings against official pages
+        id: check
+        run: python scripts/check_listings.py
+
+      - name: Save changes
         run: |
           git config user.name "unilondon-bot"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add events.json
+          git add events.json listings.json checks.json
           if git diff --cached --quiet; then
-            echo "No changes to events."
+            echo "Nothing changed."
           else
-            git commit -m "Update events from official calendars ($(date -u +%Y-%m-%dT%H:%MZ))"
+            git commit -m "Sync: events and listing checks ($(date -u +%Y-%m-%dT%H:%MZ))"
             git push
+          fi
+
+      - name: Tell the owner if anything needs attention
+        run: |
+          gh label create "listings-check" --color D93F0B --description "Automatic listing checks" 2>/dev/null || true
+          existing=$(gh issue list --label listings-check --state open --json number --jq '.[0].number')
+          if [ "${{ steps.check.outputs.needs_attention }}" = "true" ]; then
+            if [ -n "$existing" ]; then
+              gh issue edit "$existing" --body-file check-summary.md
+              gh issue comment "$existing" --body "Updated by the sync on $(date +'%d %b %Y at %H:%M')."
+            else
+              gh issue create --title "Listings need attention" --label listings-check --body-file check-summary.md
+            fi
+          elif [ -n "$existing" ]; then
+            gh issue close "$existing" --comment "All listings confirmed by the sync on $(date +'%d %b %Y at %H:%M'). Closing."
           fi

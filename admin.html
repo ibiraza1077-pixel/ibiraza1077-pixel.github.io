@@ -41,6 +41,15 @@ label small{font-weight:400;color:var(--ink-3)}
 .help{background:var(--accent-soft);border-radius:12px;padding:12px 14px;margin-bottom:14px}
 .help ol{margin:6px 0 0;padding-left:20px}
 .stat{font-family:"JetBrains Mono",monospace;font-size:12.5px;color:var(--ink-2)}
+.sync{margin-bottom:14px}
+.syncgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:8px}
+.syncgrid .cell{background:var(--surface-2);border-radius:10px;padding:10px 12px;font-size:13px}
+.syncgrid .cell b{display:block;font-size:13px}
+.syncgrid .cell .n{font-family:"JetBrains Mono",monospace;font-size:20px;font-weight:600}
+.dot{display:inline-block;width:8px;height:8px;border-radius:50%;margin-right:6px;background:var(--good)}
+.dot.bad{background:var(--hot)}
+.pill.changed{background:#FDE8E6;color:var(--hot)}
+.pill.blocked{background:var(--surface-2);color:var(--ink-3)}
 .toast{position:fixed;bottom:20px;left:50%;transform:translateX(-50%);background:var(--ink);color:var(--bg);padding:10px 16px;border-radius:10px;font-weight:600}
 </style>
 </head>
@@ -48,16 +57,39 @@ label small{font-weight:400;color:var(--ink-3)}
 <div class="wrap">
   <h1>UniLondon listings editor</h1>
   <p class="sub">Only you need this page. Students never see it. <b>Events aren't edited here:</b> they update automatically twice a day from the official UCL union, LSE union, King's and LSE calendars (see <code>events.json</code>). Use this page for everything else: food, study spaces, deals, funding, jobs, sport and housing, plus any event you want to add by hand.</p>
+  <section class="panel sync" id="sync">
+    <div class="bar" style="justify-content:space-between;margin:0">
+      <h2 style="margin:0;font-size:18px">Sync</h2>
+      <div class="bar" style="margin:0">
+        <button class="btn primary" id="syncnow">Sync now</button>
+        <a class="btn" id="actionslink" target="_blank" rel="noopener">Open on GitHub</a>
+      </div>
+    </div>
+    <p class="sub" style="margin:6px 0 10px">Runs automatically at about 06:15 and 16:15 every day. <b>Sync now</b> runs it immediately: it pulls new events from the official calendars and re-checks every listing against its official page. It takes about 2 minutes, and the live app updates a minute after that.</p>
+    <div id="syncstatus" class="syncgrid"></div>
+    <div id="runstatus" class="sub" style="margin:8px 0 0"></div>
+    <details id="tokenbox" style="margin-top:10px">
+      <summary><b>Connect this page to GitHub</b> (one-time, needed for Sync now and Publish)</summary>
+      <ol class="sub" style="margin:8px 0">
+        <li>Open <a href="https://github.com/settings/personal-access-tokens/new" target="_blank" rel="noopener">GitHub → New fine-grained token</a>.</li>
+        <li>Name it "UniLondon admin", set an expiry, and under <b>Repository access</b> choose <b>Only select repositories</b> → <code id="reponame"></code>.</li>
+        <li>Under <b>Repository permissions</b> set <b>Actions: Read and write</b> and <b>Contents: Read and write</b>. Nothing else.</li>
+        <li>Generate it, copy it, and paste it below. It's saved only in this browser on this device, and it can only touch this one repository.</li>
+      </ol>
+      <div class="bar"><input type="password" id="token" placeholder="github_pat_…" autocomplete="off" style="max-width:360px"><button class="btn" id="savetoken">Save</button><button class="btn" id="forgettoken">Forget</button><span class="stat" id="tokenstate"></span></div>
+    </details>
+  </section>
   <div class="help">
-    <b>How to update the live app</b>
+    <b>Editing listings</b>
     <ol>
-      <li>Open a listing on the left, check it against its official page, fix anything, then press <b>Mark checked</b>.</li>
-      <li>Add new ones with <b>New listing</b>. Your edits are kept in this browser until you download.</li>
-      <li>Press <b>Download listings.json</b>, then upload that file to your GitHub repository, replacing the old one. The app updates within a minute or two.</li>
+      <li>Open a listing on the left, check it against its official page, fix anything, then press <b>Mark checked today</b>.</li>
+      <li>Add new ones with <b>New listing</b>. Your edits are kept in this browser until you publish.</li>
+      <li>Press <b>Publish to site</b>. With the page connected to GitHub, your edits go live within a minute or two. (Not connected? Use <b>Download listings.json</b> and upload it to GitHub instead.)</li>
     </ol>
   </div>
   <div class="bar">
-    <button class="btn primary" id="new">New listing</button>
+    <button class="btn primary" id="publish">Publish to site</button>
+    <button class="btn" id="new">New listing</button>
     <button class="btn" id="download">Download listings.json</button>
     <button class="btn" id="copy">Copy JSON</button>
     <label class="btn" style="flex-direction:row;cursor:pointer">Import file<input type="file" id="import" accept=".json,application/json" hidden></label>
@@ -66,12 +98,13 @@ label small{font-weight:400;color:var(--ink-3)}
   </div>
   <div class="grid">
     <div class="panel">
-      <div class="bar"><input type="search" id="q" placeholder="Search listings" aria-label="Search listings"><select id="fstatus" aria-label="Filter by status" style="width:auto"><option value="">All</option><option value="check">Needs checking</option><option value="verified">Checked</option></select></div>
+      <div class="bar"><input type="search" id="q" placeholder="Search listings" aria-label="Search listings"><select id="fstatus" aria-label="Filter by status" style="width:auto"><option value="">All</option><option value="check">Needs checking</option><option value="verified">Checked</option><option value="changed">Changed on official page</option><option value="unreachable">Can't auto-check</option></select></div>
       <div class="list" id="list"></div>
     </div>
     <div class="panel" id="editor"><p class="sub">Pick a listing to edit it.</p></div>
   </div>
 </div>
+<script src="config.js"></script>
 <script>
 (() => {
 const CATS = ["food","study","events","careers","work","funding","deals","sport","housing"];
@@ -79,7 +112,11 @@ const UNIS = [["ucl","UCL"],["kcl","King's"],["lse","LSE"]];
 const CG = [["tech","Tech/Maths/Eng"],["finance","Econ/Business"],["law","Law/Politics"],["health","Health/Life sci"],["creative","Arts/Humanities"]];
 const DAYS = ["Sun","Mon","Tue","Wed","Thu","Fri","Sat"];
 const KEY = "unilondon-admin:draft";
-let data = null, sel = null;
+let data = null, sel = null, checks = {}, checksRun = null;
+const CFG = window.UNILONDON_CONFIG || {};
+const REPO = CFG.repo || (location.hostname.endsWith("github.io") ? (() => { const owner = location.hostname.split(".")[0]; const seg = location.pathname.split("/")[1]; return seg && !seg.endsWith(".html") ? `${owner}/${seg}` : `${owner}/${location.hostname}`; })() : "");
+const TOKEN_KEY = "unilondon-admin:token";
+const WORKFLOW = "update-events.yml";
 const $ = s => document.querySelector(s);
 const esc = s => String(s ?? "").replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
 const today = () => new Date().toISOString().slice(0,10);
@@ -93,8 +130,17 @@ function stats(){ const n=data.listings.length, c=data.listings.filter(l=>l.stat
 function render(){
   stats();
   const q = $("#q").value.toLowerCase(), f = $("#fstatus").value;
-  const rows = data.listings.filter(l => (!f || (f==="verified") === (l.status==="verified")) && (!q || JSON.stringify(l).toLowerCase().includes(q)));
-  $("#list").innerHTML = rows.map(l => `<button class="row" data-id="${esc(l.id)}" aria-current="${l.id===sel}"><span class="cat">${esc(l.cat)}</span><span><b>${esc(l.title)}</b><small>${esc(l.org)} · ${esc(l.area)}${l.start?" · "+esc(l.start.replace("T"," ")):""}${l.deadline?" · closes "+esc(l.deadline):""}</small></span><span class="pill ${l.status==="verified"?"verified":"check"}">${l.status==="verified"?"Checked":"Check"}</span></button>`).join("") || `<p class="sub">No listings match.</p>`;
+  const match = l => !f ? true : f==="changed" ? checks[l.id]?.result==="changed" : f==="unreachable" ? ["unreachable","manual"].includes(checks[l.id]?.result) : (f==="verified") === (l.status==="verified");
+  const rows = data.listings.filter(l => match(l) && (!q || JSON.stringify(l).toLowerCase().includes(q)));
+  $("#list").innerHTML = rows.map(l => `<button class="row" data-id="${esc(l.id)}" aria-current="${l.id===sel}"><span class="cat">${esc(l.cat)}</span><span><b>${esc(l.title)}</b><small>${esc(l.org)} · ${esc(l.area)}${l.start?" · "+esc(l.start.replace("T"," ")):""}${l.deadline?" · closes "+esc(l.deadline):""}</small></span>${pill(l)}</button>`).join("") || `<p class="sub">No listings match.</p>`;
+}
+function pill(l){
+  const r = checks[l.id]?.result;
+  if(r==="changed") return `<span class="pill changed">Changed</span>`;
+  if(l.status!=="verified") return `<span class="pill check">Check</span>`;
+  if(r==="ok") return `<span class="pill verified">Auto-checked</span>`;
+  if(r==="unreachable"||r==="manual") return `<span class="pill blocked">Check by hand</span>`;
+  return `<span class="pill verified">Checked</span>`;
 }
 function field(label, name, val, type="text", hint="", full=false){
   return `<label class="${full?"full":""}">${label}${hint?` <small>${hint}</small>`:""}<input type="${type}" name="${name}" value="${esc(val ?? "")}" ${type==="number"?'step="any"':""}></label>`;
@@ -105,6 +151,7 @@ function edit(id){
   const checks = (name, opts, vals) => `<div class="checks">${opts.map(([v,t])=>`<label><input type="checkbox" name="${name}" value="${v}" ${(vals||[]).map(String).includes(String(v))?"checked":""}>${t}</label>`).join("")}</div>`;
   $("#editor").innerHTML = `
     <div class="bar" style="justify-content:space-between"><b>${esc(l.title)}</b><span class="pill ${l.status==="verified"?"verified":"check"}">${l.status==="verified"?"Checked "+esc(l.checked||""):"Needs checking"}</span></div>
+    ${checkNote(l)}
     <div class="bar">${l.url?`<a class="btn" href="${esc(l.url)}" target="_blank" rel="noopener">Open official page ↗</a>`:""}<button class="btn primary" id="verify">Mark checked today</button><button class="btn" id="dup">Duplicate</button><button class="btn danger" id="del">Delete</button></div>
     <form id="f">
       <label>Category<select name="cat">${CATS.map(c=>`<option ${c===l.cat?"selected":""}>${c}</option>`).join("")}</select></label>
@@ -135,9 +182,17 @@ function edit(id){
       <div class="full bar"><button class="btn primary" type="submit">Save changes</button><span class="sub" style="margin:0">ID: <code>${esc(l.id)}</code></span></div>
     </form>`;
   $("#f").addEventListener("submit", e => { e.preventDefault(); apply(l, new FormData(e.target)); save(); render(); edit(l.id); toast("Saved in this browser"); });
-  $("#verify").onclick = () => { const fd = new FormData($("#f")); apply(l, fd); l.status="verified"; l.checked=today(); save(); render(); edit(l.id); toast("Marked checked"); };
+  $("#verify").onclick = () => { const fd = new FormData($("#f")); apply(l, fd); l.status="verified"; l.checked=today(); delete l.flag; delete l.autoChecked; save(); render(); edit(l.id); toast("Marked checked"); };
   $("#dup").onclick = () => { const c = JSON.parse(JSON.stringify(l)); c.id = l.id+"-copy-"+Math.random().toString(36).slice(2,5); c.title += " (copy)"; c.status="check"; data.listings.unshift(c); save(); edit(c.id); };
   $("#del").onclick = e => { if(!e.target.dataset.armed){ e.target.dataset.armed="1"; e.target.textContent="Tap again to delete"; return; } data.listings = data.listings.filter(x=>x.id!==l.id); sel=null; save(); render(); $("#editor").innerHTML='<p class="sub">Deleted.</p>'; };
+}
+function checkNote(l){
+  const c = checks[l.id]; if(!c) return "";
+  const when = checksRun ? ` (sync on ${esc(checksRun.replace("T"," at "))})` : "";
+  if(c.result==="ok") return `<p class="sub">✅ Confirmed automatically on the official page${when}.</p>`;
+  if(c.result==="changed") return `<p class="sub" style="color:var(--hot)">⚠️ The official page no longer shows: ${c.missing.map(m=>`<code>${esc(m.replace(/\\/g,""))}</code>`).join(", ")}${when}. Check the page, update this listing, then press <b>Mark checked today</b>.</p>`;
+  if(c.result==="unreachable") return `<p class="sub">🔒 This site blocks automated checks (${esc(c.error||"")}). Check it by hand every couple of months.</p>`;
+  return `<p class="sub">✋ No automatic check rules for this listing. Check it by hand every couple of months.</p>`;
 }
 function apply(l, fd){
   const num = k => { const v = fd.get(k); return v===""||v==null ? null : Number(v); };
@@ -163,6 +218,84 @@ $("#download").onclick = () => { const blob = new Blob([exportJSON()], {type:"ap
 $("#copy").onclick = async () => { try{ await navigator.clipboard.writeText(exportJSON()); toast("Copied"); }catch(e){ toast("Couldn't copy, use Download instead"); } };
 $("#import").onchange = async e => { const f = e.target.files[0]; if(!f) return; try{ const d = JSON.parse(await f.text()); if(!d.listings) throw 0; data = d; save(); render(); toast("Imported"); }catch(err){ toast("That file isn't a UniLondon listings file"); } };
 $("#reload").onclick = e => { if(!e.target.dataset.armed){ e.target.dataset.armed="1"; e.target.textContent="Tap again to discard"; return; } try{ localStorage.removeItem(KEY); }catch(err){} location.reload(); };
+/* ---------- sync + publish ---------- */
+const tok = () => { try{ return localStorage.getItem(TOKEN_KEY) || ""; }catch(e){ return ""; } };
+async function gh(path, opts={}){
+  const r = await fetch(`https://api.github.com/repos/${REPO}${path}`, {...opts, headers:{"Accept":"application/vnd.github+json","Authorization":`Bearer ${tok()}`,"X-GitHub-Api-Version":"2022-11-28", ...(opts.headers||{})}});
+  if(!r.ok && r.status!==204){ let m = r.status + ""; try{ m += " " + (await r.json()).message; }catch(e){} throw new Error(m); }
+  return r.status===204 ? null : r.json();
+}
+function fmtWhen(s){ if(!s) return "never"; const d = new Date(s); return d.toLocaleString("en-GB",{weekday:"short",day:"numeric",month:"short",hour:"2-digit",minute:"2-digit"}); }
+async function loadStatus(){
+  try{
+    const [ev, ch] = await Promise.all([fetch("events.json?t="+Date.now()).then(r=>r.json()).catch(()=>null), fetch("checks.json?t="+Date.now()).then(r=>r.ok?r.json():null).catch(()=>null)]);
+    if(ch){ checksRun = ch.run; checks = Object.fromEntries(ch.results.map(r=>[r.id,r])); }
+    const cells = [];
+    if(ev){
+      cells.push(`<div class="cell"><b>Events</b><span class="n">${ev.events.length}</span> upcoming<br>synced ${esc(fmtWhen(ev.generated))}</div>`);
+      for(const src of ev.sources) cells.push(`<div class="cell"><b><span class="dot ${src.ok?"":"bad"}"></span>${esc(src.name)}</b>${src.ok ? `${src.count} events` : `Failed last time: ${esc(src.error||"")}. Kept ${src.count} previous.`}</div>`);
+    }
+    if(ch){
+      const c = ch.counts;
+      cells.push(`<div class="cell"><b>Listing checks</b><span class="n">${c.ok}</span> confirmed automatically<br>${c.changed ? `<a href="#" id="showchanged" style="color:var(--hot)">${c.changed} changed on the official page</a>` : "0 changed"} · ${c.unreachable + c.manual} check by hand<br>ran ${esc(fmtWhen(ch.run))}</div>`);
+    }
+    $("#syncstatus").innerHTML = cells.join("") || `<p class="sub">No sync has run yet.</p>`;
+    $("#showchanged")?.addEventListener("click", e => { e.preventDefault(); $("#fstatus").value = "changed"; render(); });
+    if(data) render();
+  }catch(e){ $("#syncstatus").innerHTML = `<p class="sub">Couldn't load sync status.</p>`; }
+}
+function tokenUI(){
+  const has = !!tok();
+  $("#tokenstate").textContent = has ? "Connected ✓" : "Not connected";
+  $("#tokenbox").open = !has;
+  $("#reponame").textContent = REPO || "(set repo in config.js)";
+  $("#actionslink").href = REPO ? `https://github.com/${REPO}/actions/workflows/${WORKFLOW}` : "#";
+}
+$("#savetoken").onclick = async () => {
+  const v = $("#token").value.trim(); if(!v) return;
+  try{ localStorage.setItem(TOKEN_KEY, v); }catch(e){}
+  $("#token").value = "";
+  try{ await gh(""); toast("Connected to GitHub"); }catch(e){ toast("GitHub didn't accept that token: " + e.message); try{ localStorage.removeItem(TOKEN_KEY); }catch(_){} }
+  tokenUI();
+};
+$("#forgettoken").onclick = () => { try{ localStorage.removeItem(TOKEN_KEY); }catch(e){} tokenUI(); toast("Token removed from this browser"); };
+let polling = null;
+$("#syncnow").onclick = async () => {
+  if(!tok()){ $("#tokenbox").open = true; toast("Connect this page to GitHub first (see below)"); return; }
+  const btn = $("#syncnow"); btn.disabled = true; btn.textContent = "Starting…";
+  const started = new Date(Date.now() - 5000).toISOString();
+  try{
+    await gh(`/actions/workflows/${WORKFLOW}/dispatches`, {method:"POST", body: JSON.stringify({ref:"main"})});
+    $("#runstatus").textContent = "Sync started. Pulling events and checking listings…";
+    clearInterval(polling);
+    polling = setInterval(async () => {
+      try{
+        const runs = await gh(`/actions/workflows/${WORKFLOW}/runs?per_page=5&event=workflow_dispatch`);
+        const run = runs.workflow_runs.find(r => r.created_at >= started);
+        if(!run){ return; }
+        const secs = Math.round((Date.now() - new Date(run.created_at)) / 1000);
+        if(run.status !== "completed"){ $("#runstatus").innerHTML = `Sync running (${secs}s)… <a href="${run.html_url}" target="_blank" rel="noopener">watch on GitHub</a>`; btn.textContent = "Syncing…"; return; }
+        clearInterval(polling); btn.disabled = false; btn.textContent = "Sync now";
+        if(run.conclusion === "success"){ $("#runstatus").innerHTML = `✅ Sync finished. The live app updates within a minute or two. <a href="${run.html_url}" target="_blank" rel="noopener">Details</a>`; setTimeout(loadStatus, 4000); }
+        else { $("#runstatus").innerHTML = `⚠️ Sync ${run.conclusion}. <a href="${run.html_url}" target="_blank" rel="noopener">See what went wrong</a>`; }
+      }catch(e){ clearInterval(polling); btn.disabled = false; btn.textContent = "Sync now"; $("#runstatus").textContent = "Lost track of the run: " + e.message; }
+    }, 6000);
+  }catch(e){ btn.disabled = false; btn.textContent = "Sync now"; toast("Couldn't start sync: " + e.message); }
+};
+function b64(str){ const bytes = new TextEncoder().encode(str); let bin = ""; bytes.forEach(b => bin += String.fromCharCode(b)); return btoa(bin); }
+$("#publish").onclick = async () => {
+  if(!tok()){ $("#tokenbox").open = true; toast("Connect this page to GitHub first, or use Download listings.json"); return; }
+  const btn = $("#publish"); btn.disabled = true; btn.textContent = "Publishing…";
+  try{
+    const cur = await gh(`/contents/listings.json?ref=main`);
+    await gh(`/contents/listings.json`, {method:"PUT", body: JSON.stringify({message:`Update listings from admin page (${today()})`, content: b64(exportJSON()), sha: cur.sha, branch:"main"})});
+    try{ localStorage.removeItem(KEY); }catch(e){}
+    toast("Published. Live in a minute or two.");
+  }catch(e){ toast("Couldn't publish: " + e.message); }
+  finally{ btn.disabled = false; btn.textContent = "Publish to site"; }
+};
+tokenUI();
+loadStatus();
 load();
 })();
 </script>

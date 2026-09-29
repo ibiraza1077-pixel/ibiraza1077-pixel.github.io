@@ -1,58 +1,1601 @@
 {
-  "updated": "2026-09-29",
-  "note": "Hand-checked listings. Every fact below was confirmed on the linked official page on the 'checked' date. Events are NOT kept here: they come from events.json, which updates automatically every day.",
-  "listings": [
-    {"id":"food-hk","cat":"food","title":"Free vegetarian lunch every weekday","org":"Hare Krishna Food for All","area":"Russell Square (outside SOAS)","ll":[51.5222,-0.1290],"price":0,"hours":[12.25,14.5],"days":[1,2,3,4,5],"tags":["food","money","veg"],"desc":"A free food stall outside SOAS on Thornhaugh Street, weekdays 12:15–14:30 (not Saturdays). Usually curry or pasta, always vegetarian. Open to everyone.","url":"https://nextmeal.co.uk/places/harekrishnafoodforall","source":"Hare Krishna Food for All (via Next Meal) · Students' Union UCL","checked":"2026-09-29","status":"verified"},
-    {"id":"food-farmers","cat":"food","title":"Bloomsbury Farmers' Market, Wed & Thu lunch","org":"London Farmers' Markets","area":"Woburn Square (behind SOAS)","ll":[51.5236,-0.1296],"price":null,"hours":[9,14],"days":[3,4],"tags":["food"],"desc":"Street food and farm produce every Wednesday and Thursday, 9am–2pm, rain or shine. The market has moved to Woburn Square, behind SOAS. Some stalls take cards, not all.","url":"https://www.lfm.org.uk/markets/bloomsbury/","source":"London Farmers' Markets","checked":"2026-09-29","status":"verified"},
-    {"id":"food-printroom","cat":"food","title":"£1.50 beans on toast breakfast","org":"Print Room Café (Students' Union UCL)","area":"UCL Bloomsbury","ll":[51.5244,-0.1336],"price":1.5,"hours":[8,11],"days":[1,2,3,4,5],"unis":["ucl"],"tags":["food","money"],"desc":"Every weekday 08:00–11:00, all breakfasts are under £4: beans or jam on toast £1.50, avocado on toast £2. At lunch, a cheese and beans jacket potato is £3.50.","url":"https://studentsunionucl.org/articles/cheap-eats-on-campus","source":"Students' Union UCL","checked":"2026-09-29","status":"verified"},
-    {"id":"food-bshop","cat":"food","title":"£3.99 meal deal (onigiri half price on Tuesdays)","org":"Bloomsbury Shop (Students' Union UCL)","area":"UCL Bloomsbury","ll":[51.5249,-0.1339],"price":3.99,"unis":["ucl"],"tags":["food","money"],"desc":"Sandwich or wrap, a snack and a drink for £3.99. Every Tuesday, Tanpopo onigiri are half price at £1.40 (usually £2.80).","url":"https://studentsunionucl.org/articles/cheap-eats-on-campus","source":"Students' Union UCL","checked":"2026-09-29","status":"verified"},
-    {"id":"food-gordons","cat":"food","title":"£4.55 soup and roll","org":"Gordon's Café (Students' Union UCL)","area":"UCL Bloomsbury","ll":[51.5251,-0.1331],"price":4.55,"unis":["ucl"],"tags":["food"],"desc":"Soup of the day with a roll for £4.55, or an Indian-inspired hot meal for £6.95.","url":"https://studentsunionucl.org/articles/cheap-eats-on-campus","source":"Students' Union UCL","checked":"2026-09-29","status":"verified"},
-    {"id":"food-kingsfood","cat":"food","title":"75p porridge and £1.75 jacket potatoes","org":"King's Food","area":"Strand, Waterloo & Denmark Hill","ll":[51.5115,-0.1160],"price":0.75,"unis":["kcl"],"tags":["food","money"],"desc":"Breakfast saver: porridge or cereal with toppings for £0.75 (Chapters in King's Building, King's Kitchen in Bush House and more). Lunch saver: jacket potato, beans and salad for £1.75 (Macadam Cafe and others). Fruit 50p. 50@50: half price on food expiring that day, 50 minutes before closing.","url":"https://self-service.kcl.ac.uk/article/KA-01965/en-us","source":"King's College London","checked":"2026-09-29","status":"verified"},
-    {"id":"food-vault","cat":"food","title":"Main and two sides for under £7","org":"The Vault (KCLSU)","area":"Bush House, Strand","ll":[51.5127,-0.1172],"price":7,"priceText":"Under £7","unis":["kcl"],"tags":["food","music"],"desc":"On level -1 of Bush House South East Wing. Mix and match a main and two sides (kebabs, chicken goujons, curly fries) for under £7. Sofas, and laptops welcome.","url":"https://www.kclsu.org/news/article/6015/Cheap-Eats-Near-Strand-Campus/","source":"KCLSU (updated Aug 2026)","checked":"2026-09-29","status":"verified"},
-    {"id":"food-shack","cat":"food","title":"Cheapest grab-and-go spot at Strand","org":"The Shack (KCLSU)","area":"Bush House, Strand","ll":[51.5128,-0.1177],"price":null,"unis":["kcl"],"tags":["food","money","veg"],"desc":"KCLSU café to the right of the south-east entrance to Bush House. KCLSU calls it the most affordable spot near Strand for sandwiches and wraps, with vegan, vegetarian and gluten-free options.","url":"https://www.kclsu.org/news/article/6015/Cheap-Eats-Near-Strand-Campus/","source":"KCLSU (updated Aug 2026)","checked":"2026-09-29","status":"verified"},
-    {"id":"food-wrights","cat":"food","title":"Sandwiches and plates, about £2.50–£8","org":"Wright's Bar, LSE","area":"LSE Old Building","ll":[51.5143,-0.1168],"price":null,"priceText":"£2.50–£8","unis":["lse"],"tags":["food"],"desc":"Right next to the LSE Old Building. Sandwiches and plates for an average of £2.50–£8 (prices from a Nov 2024 LSE student blog).","url":"https://blogs.lse.ac.uk/studentsatlse/2024/11/14/the-best-lunch-spots-on-and-around-lse-campus/","source":"Students@LSE blog (Nov 2024)","checked":"2026-09-29","status":"verified"},
-    {"id":"food-govindas","cat":"food","title":"10% off vegetarian thalis with student ID","org":"Govinda's Soho Street","area":"Soho Street (Tottenham Court Road)","ll":[51.5157,-0.1332],"price":null,"priceText":"10% student discount","weekHours":[[7.5,21],[7.5,22],[7.5,22],[7.5,22],[7.5,22],[7.5,22],[7.5,22]],"tags":["food","veg","money"],"desc":"London's oldest vegetarian restaurant (since 1979), 1 minute from Tottenham Court Road. 10% off food and drinks with a valid student ID or UNiDAYS ID. Open Mon–Sat 7:30–22:00, Sun 7:30–21:00.","url":"https://govindas.london/soho","source":"Govinda's","checked":"2026-09-29","status":"verified"},
-    {"id":"food-tgtg","cat":"food","title":"£3–£4 surplus food bags near campus","org":"Too Good To Go app","area":"Online","online":true,"price":null,"priceText":"Usually £3–£4","tags":["food","money"],"desc":"Cafés and shops, including campus outlets, sell unsold food as Magic Bags, usually £3–£4 for at least double the value. Reserve in the app and collect at the set time.","url":"https://food.lse.ac.uk/story/48211549/all-you-need-to-know-about-too-good-to-go","source":"Food at LSE","checked":"2026-09-29","status":"verified"},
-
-    {"id":"study-uclsc","cat":"study","title":"24-hour study space","org":"UCL Student Centre","area":"Gordon Square","ll":[51.5247,-0.1318],"price":0,"hours":[0,24],"unis":["ucl"],"tags":["quiet","wifi"],"desc":"Open 24 hours at 27–28 Gordon Square. For UCL students and staff only.","url":"https://studentsunionucl.org/whats-on/venue/student-centre","source":"Students' Union UCL · UCL Library Services","checked":"2026-09-29","status":"verified"},
-    {"id":"study-maughan","cat":"study","title":"Maughan Library, open till 1am","org":"King's College London","area":"Chancery Lane","ll":[51.5154,-0.1113],"price":0,"hours":[9,25],"unis":["kcl"],"tags":["quiet","wifi"],"desc":"King's main library in a grand Victorian building. Currently 9am–1am every day. Tap in with your King's ID. Hours change in vacations.","url":"https://libcal.kcl.ac.uk/hours","source":"King's Libraries","checked":"2026-09-29","status":"verified"},
-    {"id":"study-fw","cat":"study","title":"24-hour library at Waterloo","org":"Franklin-Wilkins Library, King's","area":"Waterloo campus","ll":[51.5053,-0.1134],"price":0,"hours":[0,24],"unis":["kcl"],"tags":["quiet","wifi"],"desc":"Open 24 hours, 7 days a week this term. King's ID needed.","url":"https://libcal.kcl.ac.uk/hours","source":"King's Libraries","checked":"2026-09-29","status":"verified"},
-    {"id":"study-lselib","cat":"study","title":"LSE Library","org":"LSE Library","area":"Portugal Street","ll":[51.5147,-0.1164],"price":0,"unis":["lse"],"tags":["quiet","wifi"],"desc":"LSE's main library, in the Lionel Robbins Building. Check today's hours on LSE Library's page before a late visit.","url":"https://www.lse.ac.uk/library/about/opening-hours","source":"LSE Library","checked":"2026-09-29","status":"verified"},
-    {"id":"study-senate","cat":"study","title":"Senate House Library, open till 11pm","org":"University of London","area":"Malet Street","ll":[51.5211,-0.1289],"price":0,"weekHours":[[9.75,21],[9,23],[9,23],[9,23],[9,23],[9,23],[9.75,21]],"unis":["ucl","kcl","lse"],"tags":["quiet","culture"],"desc":"The University of London's central library. Mon–Fri 09:00–23:00, weekends 09:45–21:00 (self-service in the evenings). Most current students at University of London colleges can register online for free and get a QR code for entry.","url":"https://www.london.ac.uk/about/services/senate-house-library/opening-hours","source":"Senate House Library","checked":"2026-09-29","status":"verified"},
-    {"id":"study-wellcome","cat":"study","title":"Free library open to everyone 18+","org":"Wellcome Collection","area":"Euston Road","ll":[51.5259,-0.1339],"price":0,"weekHours":[null,[10,18],[10,18],[10,18],[10,18],[10,18],[10,16]],"tags":["quiet","culture","wifi"],"desc":"Free to visit for anyone 18+, on level 2. Desk space for quiet study and a collaborative area. Mon–Fri 10:00–18:00, Sat 10:00–16:00, closed Sundays.","url":"https://wellcomecollection.org/visit-us/the-library","source":"Wellcome Collection","checked":"2026-09-29","status":"verified"},
-    {"id":"study-bl","cat":"study","title":"Free desks with Wi-Fi, or free Reader Pass","org":"The British Library","area":"King's Cross","ll":[51.5300,-0.1276],"price":0,"weekHours":[[11,17],[9.5,20],[9.5,20],[9.5,20],[9.5,20],[9.5,18],[9.5,17]],"tags":["quiet","wifi","culture"],"desc":"Anyone can use the public desks with free power and Wi-Fi. Aged 18+? Get a free Reader Pass for the quiet Reading Rooms, even if you don't need the collections. Building open Mon–Thu 09:30–20:00, Fri 09:30–18:00, Sat 09:30–17:00, Sun 11:00–17:00.","url":"https://www.bl.uk/visit/reading-rooms","source":"British Library","checked":"2026-09-29","status":"verified"},
-
-    {"id":"car-ucl-bfe","cat":"careers","title":"Banking, Finance & Economics Fair","org":"UCL Careers","area":"UCL Bloomsbury","ll":[51.5246,-0.1340],"price":0,"start":"2026-10-07T16:00","end":"2026-10-07T19:00","unis":["ucl"],"cg":["finance","tech"],"tags":["finance"],"desc":"Meet banks, funds and economics employers. Booking opens 30 September on myUCLCareers. You must book to speak to recruiters.","url":"https://www.ucl.ac.uk/study/careers/ucl-careers/resources-and-services/come-event/careers-fairs","source":"UCL Careers","checked":"2026-09-29","status":"verified"},
-    {"id":"car-ucl-bf","cat":"careers","title":"Banking & Finance Fair","org":"UCL Careers","area":"UCL Bloomsbury","ll":[51.5246,-0.1340],"price":0,"start":"2026-10-12T16:00","end":"2026-10-12T19:00","unis":["ucl"],"cg":["finance","tech"],"tags":["finance"],"desc":"A second finance fair. Booking opens 30 September on myUCLCareers. Open to all UCL students, any course.","url":"https://www.ucl.ac.uk/study/careers/ucl-careers/resources-and-services/come-event/careers-fairs","source":"UCL Careers","checked":"2026-09-29","status":"verified"},
-    {"id":"car-ucl-cons","cat":"careers","title":"Management Consultancy Fair","org":"UCL Careers","area":"UCL Bloomsbury","ll":[51.5246,-0.1340],"price":0,"start":"2026-10-14T16:00","end":"2026-10-14T19:00","unis":["ucl"],"tags":["consulting","finance"],"desc":"Consultancies recruiting from all degree subjects. Booking opens two weeks before on myUCLCareers.","url":"https://www.ucl.ac.uk/study/careers/ucl-careers/resources-and-services/come-event/careers-fairs","source":"UCL Careers","checked":"2026-09-29","status":"verified"},
-    {"id":"car-ucl-tech","cat":"careers","title":"Tech, Data & AI Fair","org":"UCL Careers","area":"UCL Bloomsbury","ll":[51.5246,-0.1340],"price":0,"start":"2026-10-21T16:00","end":"2026-10-21T19:00","unis":["ucl"],"cg":["tech"],"tags":["tech"],"desc":"Tech, data and AI employers. Booking opens two weeks before on myUCLCareers.","url":"https://www.ucl.ac.uk/study/careers/ucl-careers/resources-and-services/come-event/careers-fairs","source":"UCL Careers","checked":"2026-09-29","status":"verified"},
-    {"id":"car-ucl-life","cat":"careers","title":"Life & Health Sciences Fair","org":"UCL Careers with Imperial & King's","area":"UCL Bloomsbury","ll":[51.5246,-0.1340],"price":0,"start":"2026-10-26T17:00","end":"2026-10-26T20:00","unis":["ucl"],"cg":["health"],"tags":["research"],"desc":"Run jointly with Imperial College London and King's College London. Booking opens two weeks before on myUCLCareers.","url":"https://www.ucl.ac.uk/study/careers/ucl-careers/resources-and-services/come-event/careers-fairs","source":"UCL Careers","checked":"2026-09-29","status":"verified"},
-    {"id":"car-ucl-eng","cat":"careers","title":"Engineering & The Built Environment Fair","org":"UCL Careers","area":"UCL Bloomsbury","ll":[51.5246,-0.1340],"price":0,"start":"2026-10-28T16:00","end":"2026-10-28T19:00","unis":["ucl"],"cg":["tech","creative"],"tags":["tech"],"desc":"Engineering, construction and architecture employers. Booking opens two weeks before on myUCLCareers.","url":"https://www.ucl.ac.uk/study/careers/ucl-careers/resources-and-services/come-event/careers-fairs","source":"UCL Careers","checked":"2026-09-29","status":"verified"},
-    {"id":"car-ucl-law","cat":"careers","title":"Law Fair","org":"UCL Careers","area":"UCL Bloomsbury","ll":[51.5246,-0.1340],"price":0,"start":"2026-11-04T16:00","end":"2026-11-04T19:00","unis":["ucl"],"cg":["law"],"tags":["law"],"desc":"Law firms and chambers recruiting from all degree subjects. Booking opens two weeks before on myUCLCareers.","url":"https://www.ucl.ac.uk/study/careers/ucl-careers/resources-and-services/come-event/careers-fairs","source":"UCL Careers","checked":"2026-09-29","status":"verified"},
-    {"id":"car-summer27","cat":"careers","title":"Summer 2027 internships: when firms open","org":"Trackr timeline","area":"Online","online":true,"rolling":true,"price":0,"yrs":[2,3],"tags":["finance","tech","consulting","law"],"desc":"Month-by-month opening dates for 142 UK finance and consulting firms (updated 9 Sep 2026). Investment banks cluster in late August and early September. Consulting opens later, some in the new year. Firms that open early tend to fill early.","url":"https://the-trackr.com/blog/summer-2027-internship-timeline/","source":"Trackr","checked":"2026-09-29","status":"verified"},
-    {"id":"car-spring27","cat":"careers","title":"Spring weeks 2027 for first-years","org":"Trackr timeline","area":"Online","online":true,"rolling":true,"price":0,"yrs":[1],"cg":["finance","tech","law"],"tags":["finance","consulting"],"desc":"Short insight programmes for first-years. Applications run from June to April, with investment banks mostly opening in October and November, and consulting and trading firms in January and February (updated 9 Sep 2026).","url":"https://the-trackr.com/blog/spring-week-timeline-2027-when-uk-finance-firms-open-applications/","source":"Trackr","checked":"2026-09-29","status":"verified"},
-
-    {"id":"job-unitemps","cat":"work","title":"On-campus temp jobs at UCL","org":"UCL Unitemps","area":"Online","online":true,"unis":["ucl"],"tags":["flexible"],"desc":"UCL's own recruitment agency for temporary jobs on campus, including Student Ambassador roles and internships. Full-time and part-time work.","url":"https://www.ucl.ac.uk/work-at-ucl/temporary-work","source":"UCL","checked":"2026-09-29","status":"verified"},
-    {"id":"job-jobshop","cat":"work","title":"Part-time jobs board","org":"Students' Union UCL JobShop","area":"Online","online":true,"priceText":"Pay varies by job","unis":["ucl"],"tags":["flexible"],"desc":"Part-time, seasonal and temporary jobs from the Union and local employers. Pay depends on the role (roughly £12.75–£25 an hour on the board in late September 2026).","url":"https://studentsunionucl.org/jobshop","source":"Students' Union UCL","checked":"2026-09-29","status":"verified"},
-    {"id":"job-ktb","cat":"work","title":"Flexible campus jobs at £15.29 an hour","org":"King's Talent Bank","area":"Online","online":true,"pay":15.29,"unis":["kcl"],"tags":["flexible"],"desc":"King's own system for advertising and paying student jobs: departments, the ambassador scheme, fundraising and KCLSU venues. £15.29 an hour, with hours that fit your timetable.","url":"https://www.kcl.ac.uk/study/student-experience/working-while-studying","source":"King's College London","checked":"2026-09-29","status":"verified"},
-    {"id":"job-lse","cat":"work","title":"LSE's student jobs board","org":"LSE Careers","area":"Online","online":true,"unis":["lse"],"tags":["flexible","research"],"desc":"LSE's main job board for students and alumni: part-time jobs, internships, volunteering and graduate roles.","url":"https://info.lse.ac.uk/current-students/careers/Jobs-and-opportunities","source":"LSE Careers","checked":"2026-09-29","status":"verified"},
-
-    {"id":"fund-kcl","cat":"funding","title":"King's hardship funds reopen 14 October","org":"King's College London","area":"Online","online":true,"opensOn":"2026-10-14","unis":["kcl"],"tags":["money"],"desc":"Help with day-to-day costs like rent, bills and travel for October 2026 to May 2027. The funds are closed right now and reopen for applications on 14 October.","url":"https://www.kcl.ac.uk/study/undergraduate/fees-and-funding/student-funding/hardship-funds","source":"King's College London","checked":"2026-09-29","status":"verified"},
-    {"id":"fund-ucl","cat":"funding","title":"UCL Financial Assistance Fund","org":"UCL Student Funding","area":"Online","online":true,"closedNote":"2026–27 not open yet","unis":["ucl"],"tags":["money"],"desc":"UCL's hardship fund for students in unexpected financial need. 2025–26 applications have closed; check the page for when 2026–27 opens. Research students and those with exceptional circumstances can ask via AskUCL.","url":"https://www.ucl.ac.uk/study/student-finances/funding/financial-assistance-fund","source":"UCL","checked":"2026-09-29","status":"verified"},
-    {"id":"fund-ctax","cat":"funding","title":"Don't pay council tax you don't owe","org":"Citizens Advice","area":"Online","online":true,"rolling":true,"tags":["money"],"desc":"Homes where everyone is a full-time student are exempt from council tax, and halls are exempt automatically. If you share with non-students, you're 'disregarded', so they pay less. Your uni must give you a student certificate as proof.","url":"https://www.citizensadvice.org.uk/housing/council-tax/student-housing-council-tax/","source":"Citizens Advice","checked":"2026-09-29","status":"verified"},
-
-    {"id":"deal-oyster","cat":"deals","title":"30% off Travelcards with an 18+ Student Oyster","org":"Transport for London","area":"Online","online":true,"priceText":"30% off season tickets","tags":["money"],"desc":"The 18+ Student Oyster photocard gives 30% off adult weekly and monthly Travelcards and Bus & Tram Passes. It doesn't cut pay-as-you-go fares.","url":"https://www.kcl.ac.uk/study/student-experience/living-expenses/student-oyster-photocard","source":"King's College London","checked":"2026-09-29","status":"verified"},
-    {"id":"deal-railcard","cat":"deals","title":"1/3 off train fares with a 16–25 Railcard","org":"16–25 Railcard","area":"Online","online":true,"price":35,"priceText":"£35 a year","tags":["money"],"desc":"£35 for one year or £80 for three. Average saving £212 a year. Full-time mature students aged 26+ qualify using the mature student form.","url":"https://www.16-25railcard.co.uk/","source":"16–25 Railcard","checked":"2026-09-29","status":"verified"},
-    {"id":"deal-nt","cat":"deals","title":"£10 National Theatre tickets for 19–25s","org":"National Theatre","area":"South Bank","ll":[51.5070,-0.1143],"price":10,"tags":["culture"],"desc":"£10 tickets (£5 for 16–18) on selected shows, up to two per production: one for you and one for a friend. Bring proof of age.","url":"https://www.nationaltheatre.org.uk/16-25-tickets/","source":"National Theatre","checked":"2026-09-29","status":"verified"},
-    {"id":"deal-tate","cat":"deals","title":"£5 exhibition tickets with Tate Collective","org":"Tate Modern & Tate Britain","area":"Bankside","ll":[51.5076,-0.0994],"price":5,"tags":["culture"],"desc":"Free to join if you're 16–25. £5 tickets to all Tate exhibitions, and bring up to three friends aged 16–25 at £5 each. 20% off in Tate cafés.","url":"https://www.tate.org.uk/tate-collective","source":"Tate","checked":"2026-09-29","status":"verified"},
-    {"id":"deal-barbican","cat":"deals","title":"Tickets from £6 with Young Barbican","org":"Barbican","area":"Barbican","ll":[51.5202,-0.0937],"price":6,"priceText":"From £6","tags":["culture","music"],"desc":"Free membership for ages 16–29: discounted tickets for films, exhibitions, concerts and shows (cinema from £6), 10% off food, drink and the shop. Bring a friend aged 16–29.","url":"https://www.barbican.org.uk/join-support/young-barbican","source":"Barbican","checked":"2026-09-29","status":"verified"},
-    {"id":"deal-bm","cat":"deals","title":"British Museum: free, 5 minutes from campus","org":"British Museum","area":"Bloomsbury","ll":[51.5194,-0.1270],"price":0,"weekHours":[[10,17],[10,17],[10,17],[10,17],[10,17],[10,20.5],[10,17]],"tags":["culture"],"desc":"Free entry. Open daily 10:00–17:00, Fridays until 20:30.","url":"https://www.britishmuseum.org/visit","source":"British Museum","checked":"2026-09-29","status":"verified"},
-
-    {"id":"sport-uclgym","cat":"sport","title":"UCL student gym: £229 for 12 months","org":"TeamUCL Gym","area":"UCL Bloomsbury","ll":[51.5250,-0.1333],"price":229,"priceText":"£229 a year","deadline":"2026-10-31","unis":["ucl"],"tags":["fitness","money"],"desc":"Welcome offer: 12 months of unlimited classes and gym for £229 (under £20 a month), only between 1 September and 31 October 2026, online or at TeamUCL Gym reception.","url":"https://studentsunionucl.org/articles/teamucl-gym-welcome-offer-2026","source":"Students' Union UCL","checked":"2026-09-29","status":"verified"},
-    {"id":"sport-lsegym","cat":"sport","title":"LSESU Gym: £6 day pass or £32 a month","org":"LSESU Gym","area":"LSE","ll":[51.5146,-0.1161],"price":6,"priceText":"£6 day · £32 month","unis":["lse"],"tags":["fitness"],"desc":"Student prices: day pass £6, 10 day passes £24, 1 month £32, 3 months £85, 6 months £150, or the 12-month welcome offer at £220.","url":"https://www.lsesu.com/sport/gym/studentmembership/","source":"LSESU","checked":"2026-09-29","status":"verified"},
-    {"id":"sport-kclgym","cat":"sport","title":"King's Sport gym: £23.99 a month","org":"King's Sport & Wellness","area":"Strand & other campuses","ll":[51.5116,-0.1164],"price":23.99,"priceText":"£23.99/month · £220/year","unis":["kcl"],"tags":["fitness"],"desc":"Student membership: £23.99 a month, £220 for 12 months, or £8 per visit.","url":"https://www.kcl.ac.uk/sport/gyms/memberships","source":"King's College London","checked":"2026-09-29","status":"verified"},
-
-    {"id":"home-ich","cat":"housing","title":"Intercollegiate Halls in Bloomsbury","org":"University of London","area":"Bloomsbury","ll":[51.5236,-0.1296],"price":943,"priceText":"£217.56–£455.70 a week","unis":["ucl","kcl","lse"],"tags":[],"desc":"Seven central halls shared by University of London colleges. Weekly rents run from £217.56 to £455.70 depending on hall and room.","url":"https://www.london.ac.uk/about/services/halls","source":"University of London","checked":"2026-09-29","status":"verified"},
-    {"id":"home-uclhalls","cat":"housing","title":"UCL halls and nominated halls","org":"UCL Accommodation","area":"Online","online":true,"priceText":"Varies by hall","unis":["ucl"],"tags":[],"desc":"UCL halls are priced by zone (distance from campus) and band (building condition). Nominated halls run by Unite, urbanest and Intercollegiate are priced separately.","url":"https://www.ucl.ac.uk/study/accommodation/halls","source":"UCL","checked":"2026-09-29","status":"verified"}
-  ]
+ "updated": "2026-09-29",
+ "note": "Hand-checked listings. Every fact below was confirmed on the linked official page on the 'checked' date. Events are NOT kept here: they come from events.json, which updates automatically every day.",
+ "listings": [
+  {
+   "id": "food-hk",
+   "cat": "food",
+   "title": "Free vegetarian lunch every weekday",
+   "org": "Hare Krishna Food for All",
+   "area": "Russell Square (outside SOAS)",
+   "ll": [
+    51.5222,
+    -0.129
+   ],
+   "price": 0,
+   "hours": [
+    12.25,
+    14.5
+   ],
+   "days": [
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "tags": [
+    "food",
+    "money",
+    "veg"
+   ],
+   "desc": "A free food stall outside SOAS on Thornhaugh Street, weekdays 12:15–14:30 (not Saturdays). Usually curry or pasta, always vegetarian. Open to everyone.",
+   "url": "https://nextmeal.co.uk/places/harekrishnafoodforall",
+   "source": "Hare Krishna Food for All (via Next Meal) · Students' Union UCL",
+   "checked": "2026-09-29",
+   "status": "verified",
+   "verify": [
+    {
+     "find": [
+      "12:15 - 14:30",
+      "weekdays"
+     ]
+    }
+   ],
+   "autoChecked": true
+  },
+  {
+   "id": "food-farmers",
+   "cat": "food",
+   "title": "Bloomsbury Farmers' Market, Wed & Thu lunch",
+   "org": "London Farmers' Markets",
+   "area": "Woburn Square (behind SOAS)",
+   "ll": [
+    51.5236,
+    -0.1296
+   ],
+   "price": null,
+   "hours": [
+    9,
+    14
+   ],
+   "days": [
+    3,
+    4
+   ],
+   "tags": [
+    "food"
+   ],
+   "desc": "Street food and farm produce every Wednesday and Thursday, 9am–2pm, rain or shine. The market has moved to Woburn Square, behind SOAS. Some stalls take cards, not all.",
+   "url": "https://www.lfm.org.uk/markets/bloomsbury/",
+   "source": "London Farmers' Markets",
+   "checked": "2026-09-29",
+   "status": "verified",
+   "verify": [
+    {
+     "find": [
+      "Wednesday & Thursday 9am-2pm",
+      "Woburn Square"
+     ]
+    }
+   ],
+   "autoChecked": true
+  },
+  {
+   "id": "food-printroom",
+   "cat": "food",
+   "title": "£1.50 beans on toast breakfast",
+   "org": "Print Room Café (Students' Union UCL)",
+   "area": "UCL Bloomsbury",
+   "ll": [
+    51.5244,
+    -0.1336
+   ],
+   "price": 1.5,
+   "hours": [
+    8,
+    11
+   ],
+   "days": [
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "unis": [
+    "ucl"
+   ],
+   "tags": [
+    "food",
+    "money"
+   ],
+   "desc": "Every weekday 08:00–11:00, all breakfasts are under £4: beans or jam on toast £1.50, avocado on toast £2. At lunch, a cheese and beans jacket potato is £3.50.",
+   "url": "https://studentsunionucl.org/articles/cheap-eats-on-campus",
+   "source": "Students' Union UCL",
+   "checked": "2026-09-29",
+   "status": "verified",
+   "verify": [
+    {
+     "find": [
+      "£1\\.50",
+      "08:00 - 11:00"
+     ]
+    }
+   ],
+   "autoChecked": true
+  },
+  {
+   "id": "food-bshop",
+   "cat": "food",
+   "title": "£3.99 meal deal (onigiri half price on Tuesdays)",
+   "org": "Bloomsbury Shop (Students' Union UCL)",
+   "area": "UCL Bloomsbury",
+   "ll": [
+    51.5249,
+    -0.1339
+   ],
+   "price": 3.99,
+   "unis": [
+    "ucl"
+   ],
+   "tags": [
+    "food",
+    "money"
+   ],
+   "desc": "Sandwich or wrap, a snack and a drink for £3.99. Every Tuesday, Tanpopo onigiri are half price at £1.40 (usually £2.80).",
+   "url": "https://studentsunionucl.org/articles/cheap-eats-on-campus",
+   "source": "Students' Union UCL",
+   "checked": "2026-09-29",
+   "status": "verified",
+   "verify": [
+    {
+     "find": [
+      "£3\\.99",
+      "£1\\.40"
+     ]
+    }
+   ],
+   "autoChecked": true
+  },
+  {
+   "id": "food-gordons",
+   "cat": "food",
+   "title": "£4.55 soup and roll",
+   "org": "Gordon's Café (Students' Union UCL)",
+   "area": "UCL Bloomsbury",
+   "ll": [
+    51.5251,
+    -0.1331
+   ],
+   "price": 4.55,
+   "unis": [
+    "ucl"
+   ],
+   "tags": [
+    "food"
+   ],
+   "desc": "Soup of the day with a roll for £4.55, or an Indian-inspired hot meal for £6.95.",
+   "url": "https://studentsunionucl.org/articles/cheap-eats-on-campus",
+   "source": "Students' Union UCL",
+   "checked": "2026-09-29",
+   "status": "verified",
+   "verify": [
+    {
+     "find": [
+      "£4\\.55",
+      "£6\\.95"
+     ]
+    }
+   ],
+   "autoChecked": true
+  },
+  {
+   "id": "food-kingsfood",
+   "cat": "food",
+   "title": "75p porridge and £1.75 jacket potatoes",
+   "org": "King's Food",
+   "area": "Strand, Waterloo & Denmark Hill",
+   "ll": [
+    51.5115,
+    -0.116
+   ],
+   "price": 0.75,
+   "unis": [
+    "kcl"
+   ],
+   "tags": [
+    "food",
+    "money"
+   ],
+   "desc": "Breakfast saver: porridge or cereal with toppings for £0.75 (Chapters in King's Building, King's Kitchen in Bush House and more). Lunch saver: jacket potato, beans and salad for £1.75 (Macadam Cafe and others). Fruit 50p. 50@50: half price on food expiring that day, 50 minutes before closing.",
+   "url": "https://self-service.kcl.ac.uk/article/KA-01965/en-us",
+   "source": "King's College London",
+   "checked": "2026-09-29",
+   "status": "verified",
+   "verify": [
+    {
+     "find": [
+      "£0\\.75",
+      "£1\\.75",
+      "50@50"
+     ]
+    }
+   ],
+   "autoChecked": true
+  },
+  {
+   "id": "food-vault",
+   "cat": "food",
+   "title": "Main and two sides for under £7",
+   "org": "The Vault (KCLSU)",
+   "area": "Bush House, Strand",
+   "ll": [
+    51.5127,
+    -0.1172
+   ],
+   "price": 7,
+   "priceText": "Under £7",
+   "unis": [
+    "kcl"
+   ],
+   "tags": [
+    "food",
+    "music"
+   ],
+   "desc": "On level -1 of Bush House South East Wing. Mix and match a main and two sides (kebabs, chicken goujons, curly fries) for under £7. Sofas, and laptops welcome.",
+   "url": "https://www.kclsu.org/news/article/6015/Cheap-Eats-Near-Strand-Campus/",
+   "source": "KCLSU (updated Aug 2026)",
+   "checked": "2026-09-29",
+   "status": "verified",
+   "verify": [
+    {
+     "find": [
+      "less than £7"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "food-shack",
+   "cat": "food",
+   "title": "Cheapest grab-and-go spot at Strand",
+   "org": "The Shack (KCLSU)",
+   "area": "Bush House, Strand",
+   "ll": [
+    51.5128,
+    -0.1177
+   ],
+   "price": null,
+   "unis": [
+    "kcl"
+   ],
+   "tags": [
+    "food",
+    "money",
+    "veg"
+   ],
+   "desc": "KCLSU café to the right of the south-east entrance to Bush House. KCLSU calls it the most affordable spot near Strand for sandwiches and wraps, with vegan, vegetarian and gluten-free options.",
+   "url": "https://www.kclsu.org/news/article/6015/Cheap-Eats-Near-Strand-Campus/",
+   "source": "KCLSU (updated Aug 2026)",
+   "checked": "2026-09-29",
+   "status": "verified",
+   "verify": [
+    {
+     "find": [
+      "most affordable"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "food-wrights",
+   "cat": "food",
+   "title": "Sandwiches and plates, about £2.50–£8",
+   "org": "Wright's Bar, LSE",
+   "area": "LSE Old Building",
+   "ll": [
+    51.5143,
+    -0.1168
+   ],
+   "price": null,
+   "priceText": "£2.50–£8",
+   "unis": [
+    "lse"
+   ],
+   "tags": [
+    "food"
+   ],
+   "desc": "Right next to the LSE Old Building. Sandwiches and plates for an average of £2.50–£8 (prices from a Nov 2024 LSE student blog).",
+   "url": "https://blogs.lse.ac.uk/studentsatlse/2024/11/14/the-best-lunch-spots-on-and-around-lse-campus/",
+   "source": "Students@LSE blog (Nov 2024)",
+   "checked": "2026-09-29",
+   "status": "verified",
+   "verify": [
+    {
+     "find": [
+      "£2\\.50-£8"
+     ]
+    }
+   ],
+   "autoChecked": true
+  },
+  {
+   "id": "food-govindas",
+   "cat": "food",
+   "title": "10% off vegetarian thalis with student ID",
+   "org": "Govinda's Soho Street",
+   "area": "Soho Street (Tottenham Court Road)",
+   "ll": [
+    51.5157,
+    -0.1332
+   ],
+   "price": null,
+   "priceText": "10% student discount",
+   "weekHours": [
+    [
+     7.5,
+     21
+    ],
+    [
+     7.5,
+     22
+    ],
+    [
+     7.5,
+     22
+    ],
+    [
+     7.5,
+     22
+    ],
+    [
+     7.5,
+     22
+    ],
+    [
+     7.5,
+     22
+    ],
+    [
+     7.5,
+     22
+    ]
+   ],
+   "tags": [
+    "food",
+    "veg",
+    "money"
+   ],
+   "desc": "London's oldest vegetarian restaurant (since 1979), 1 minute from Tottenham Court Road. 10% off food and drinks with a valid student ID or UNiDAYS ID. Open Mon–Sat 7:30–22:00, Sun 7:30–21:00.",
+   "url": "https://govindas.london/soho",
+   "source": "Govinda's",
+   "checked": "2026-09-29",
+   "status": "verified",
+   "verify": [
+    {
+     "find": [
+      "10% off food and drinks",
+      "Mon-Sat 7:30 - 22:00",
+      "Sun 7:30 - 21:00"
+     ]
+    }
+   ],
+   "autoChecked": true
+  },
+  {
+   "id": "food-tgtg",
+   "cat": "food",
+   "title": "£3–£4 surplus food bags near campus",
+   "org": "Too Good To Go app",
+   "area": "Online",
+   "online": true,
+   "price": null,
+   "priceText": "Usually £3–£4",
+   "tags": [
+    "food",
+    "money"
+   ],
+   "desc": "Cafés and shops, including campus outlets, sell unsold food as Magic Bags, usually £3–£4 for at least double the value. Reserve in the app and collect at the set time.",
+   "url": "https://food.lse.ac.uk/story/48211549/all-you-need-to-know-about-too-good-to-go",
+   "source": "Food at LSE",
+   "checked": "2026-09-29",
+   "status": "verified",
+   "verify": [
+    {
+     "find": [
+      "£3-4"
+     ]
+    }
+   ],
+   "autoChecked": true
+  },
+  {
+   "id": "study-uclsc",
+   "cat": "study",
+   "title": "24-hour study space",
+   "org": "UCL Student Centre",
+   "area": "Gordon Square",
+   "ll": [
+    51.5247,
+    -0.1318
+   ],
+   "price": 0,
+   "hours": [
+    0,
+    24
+   ],
+   "unis": [
+    "ucl"
+   ],
+   "tags": [
+    "quiet",
+    "wifi"
+   ],
+   "desc": "Open 24 hours at 27–28 Gordon Square. For UCL students and staff only.",
+   "url": "https://studentsunionucl.org/whats-on/venue/student-centre",
+   "source": "Students' Union UCL · UCL Library Services",
+   "checked": "2026-09-29",
+   "status": "verified",
+   "verify": [
+    {
+     "find": [
+      "Open 24 hours"
+     ]
+    }
+   ],
+   "autoChecked": true
+  },
+  {
+   "id": "study-maughan",
+   "cat": "study",
+   "title": "Maughan Library, open till 1am",
+   "org": "King's College London",
+   "area": "Chancery Lane",
+   "ll": [
+    51.5154,
+    -0.1113
+   ],
+   "price": 0,
+   "hours": [
+    9,
+    25
+   ],
+   "unis": [
+    "kcl"
+   ],
+   "tags": [
+    "quiet",
+    "wifi"
+   ],
+   "desc": "King's main library in a grand Victorian building. Currently 9am–1am every day. Tap in with your King's ID. Hours change in vacations.",
+   "url": "https://libcal.kcl.ac.uk/hours",
+   "source": "King's Libraries",
+   "checked": "2026-09-29",
+   "status": "verified",
+   "verify": [
+    {
+     "find": [
+      "Maughan Library 9am - 1am"
+     ]
+    }
+   ],
+   "autoChecked": true
+  },
+  {
+   "id": "study-fw",
+   "cat": "study",
+   "title": "24-hour library at Waterloo",
+   "org": "Franklin-Wilkins Library, King's",
+   "area": "Waterloo campus",
+   "ll": [
+    51.5053,
+    -0.1134
+   ],
+   "price": 0,
+   "hours": [
+    0,
+    24
+   ],
+   "unis": [
+    "kcl"
+   ],
+   "tags": [
+    "quiet",
+    "wifi"
+   ],
+   "desc": "Open 24 hours, 7 days a week this term. King's ID needed.",
+   "url": "https://libcal.kcl.ac.uk/hours",
+   "source": "King's Libraries",
+   "checked": "2026-09-29",
+   "status": "verified",
+   "verify": [
+    {
+     "find": [
+      "Franklin-Wilkins Library 24 Hours"
+     ]
+    }
+   ],
+   "autoChecked": true
+  },
+  {
+   "id": "study-lselib",
+   "cat": "study",
+   "title": "LSE Library",
+   "org": "LSE Library",
+   "area": "Portugal Street",
+   "ll": [
+    51.5147,
+    -0.1164
+   ],
+   "price": 0,
+   "unis": [
+    "lse"
+   ],
+   "tags": [
+    "quiet",
+    "wifi"
+   ],
+   "desc": "LSE's main library, in the Lionel Robbins Building. Check today's hours on LSE Library's page before a late visit.",
+   "url": "https://www.lse.ac.uk/library/about/opening-hours",
+   "source": "LSE Library",
+   "checked": "2026-09-29",
+   "status": "verified"
+  },
+  {
+   "id": "study-senate",
+   "cat": "study",
+   "title": "Senate House Library, open till 11pm",
+   "org": "University of London",
+   "area": "Malet Street",
+   "ll": [
+    51.5211,
+    -0.1289
+   ],
+   "price": 0,
+   "weekHours": [
+    [
+     9.75,
+     21
+    ],
+    [
+     9,
+     23
+    ],
+    [
+     9,
+     23
+    ],
+    [
+     9,
+     23
+    ],
+    [
+     9,
+     23
+    ],
+    [
+     9,
+     23
+    ],
+    [
+     9.75,
+     21
+    ]
+   ],
+   "unis": [
+    "ucl",
+    "kcl",
+    "lse"
+   ],
+   "tags": [
+    "quiet",
+    "culture"
+   ],
+   "desc": "The University of London's central library. Mon–Fri 09:00–23:00, weekends 09:45–21:00 (self-service in the evenings). Most current students at University of London colleges can register online for free and get a QR code for entry.",
+   "url": "https://www.london.ac.uk/about/services/senate-house-library/opening-hours",
+   "source": "Senate House Library",
+   "checked": "2026-09-29",
+   "status": "verified",
+   "verify": [
+    {
+     "find": [
+      "Monday - Friday 09:00 - 23:00",
+      "Saturday 09:45 - 21:00"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "study-wellcome",
+   "cat": "study",
+   "title": "Free library open to everyone 18+",
+   "org": "Wellcome Collection",
+   "area": "Euston Road",
+   "ll": [
+    51.5259,
+    -0.1339
+   ],
+   "price": 0,
+   "weekHours": [
+    null,
+    [
+     10,
+     18
+    ],
+    [
+     10,
+     18
+    ],
+    [
+     10,
+     18
+    ],
+    [
+     10,
+     18
+    ],
+    [
+     10,
+     18
+    ],
+    [
+     10,
+     16
+    ]
+   ],
+   "tags": [
+    "quiet",
+    "culture",
+    "wifi"
+   ],
+   "desc": "Free to visit for anyone 18+, on level 2. Desk space for quiet study and a collaborative area. Mon–Fri 10:00–18:00, Sat 10:00–16:00, closed Sundays.",
+   "url": "https://wellcomecollection.org/visit-us/the-library",
+   "source": "Wellcome Collection",
+   "checked": "2026-09-29",
+   "status": "verified",
+   "verify": [
+    {
+     "find": [
+      "Monday 10:00 - 18:00",
+      "Saturday 10:00 - 16:00",
+      "Sunday Closed",
+      "over the age of 18"
+     ]
+    }
+   ],
+   "autoChecked": true
+  },
+  {
+   "id": "study-bl",
+   "cat": "study",
+   "title": "Free desks with Wi-Fi, or free Reader Pass",
+   "org": "The British Library",
+   "area": "King's Cross",
+   "ll": [
+    51.53,
+    -0.1276
+   ],
+   "price": 0,
+   "weekHours": [
+    [
+     11,
+     17
+    ],
+    [
+     9.5,
+     20
+    ],
+    [
+     9.5,
+     20
+    ],
+    [
+     9.5,
+     20
+    ],
+    [
+     9.5,
+     20
+    ],
+    [
+     9.5,
+     18
+    ],
+    [
+     9.5,
+     17
+    ]
+   ],
+   "tags": [
+    "quiet",
+    "wifi",
+    "culture"
+   ],
+   "desc": "Anyone can use the public desks with free power and Wi-Fi. Aged 18+? Get a free Reader Pass for the quiet Reading Rooms, even if you don't need the collections. Building open Mon–Thu 09:30–20:00, Fri 09:30–18:00, Sat 09:30–17:00, Sun 11:00–17:00.",
+   "url": "https://www.bl.uk/visit/reading-rooms",
+   "source": "British Library",
+   "checked": "2026-09-29",
+   "status": "verified",
+   "verify": [
+    {
+     "find": [
+      "free Reader Pass",
+      "free power and Wi-Fi"
+     ]
+    },
+    {
+     "url": "https://www.bl.uk/visit",
+     "find": [
+      "Monday - Thursday 09\\.30 - 20\\.00",
+      "Friday 09\\.30 - 18\\.00",
+      "Saturday 09\\.30 - 17\\.00",
+      "Sunday 11\\.00 - 17\\.00"
+     ]
+    }
+   ],
+   "autoChecked": true
+  },
+  {
+   "id": "car-ucl-bfe",
+   "cat": "careers",
+   "title": "Banking, Finance & Economics Fair",
+   "org": "UCL Careers",
+   "area": "UCL Bloomsbury",
+   "ll": [
+    51.5246,
+    -0.134
+   ],
+   "price": 0,
+   "start": "2026-10-07T16:00",
+   "end": "2026-10-07T19:00",
+   "unis": [
+    "ucl"
+   ],
+   "cg": [
+    "finance",
+    "tech"
+   ],
+   "tags": [
+    "finance"
+   ],
+   "desc": "Meet banks, funds and economics employers. Booking opens 30 September on myUCLCareers. You must book to speak to recruiters.",
+   "url": "https://www.ucl.ac.uk/study/careers/ucl-careers/resources-and-services/come-event/careers-fairs",
+   "source": "UCL Careers",
+   "checked": "2026-09-29",
+   "status": "verified",
+   "verify": [
+    {
+     "find": [
+      "Wednesday 7th October 2026, 4pm - 7pm"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "car-ucl-bf",
+   "cat": "careers",
+   "title": "Banking & Finance Fair",
+   "org": "UCL Careers",
+   "area": "UCL Bloomsbury",
+   "ll": [
+    51.5246,
+    -0.134
+   ],
+   "price": 0,
+   "start": "2026-10-12T16:00",
+   "end": "2026-10-12T19:00",
+   "unis": [
+    "ucl"
+   ],
+   "cg": [
+    "finance",
+    "tech"
+   ],
+   "tags": [
+    "finance"
+   ],
+   "desc": "A second finance fair. Booking opens 30 September on myUCLCareers. Open to all UCL students, any course.",
+   "url": "https://www.ucl.ac.uk/study/careers/ucl-careers/resources-and-services/come-event/careers-fairs",
+   "source": "UCL Careers",
+   "checked": "2026-09-29",
+   "status": "verified",
+   "verify": [
+    {
+     "find": [
+      "Monday 12th October, 4pm - 7pm"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "car-ucl-cons",
+   "cat": "careers",
+   "title": "Management Consultancy Fair",
+   "org": "UCL Careers",
+   "area": "UCL Bloomsbury",
+   "ll": [
+    51.5246,
+    -0.134
+   ],
+   "price": 0,
+   "start": "2026-10-14T16:00",
+   "end": "2026-10-14T19:00",
+   "unis": [
+    "ucl"
+   ],
+   "tags": [
+    "consulting",
+    "finance"
+   ],
+   "desc": "Consultancies recruiting from all degree subjects. Booking opens two weeks before on myUCLCareers.",
+   "url": "https://www.ucl.ac.uk/study/careers/ucl-careers/resources-and-services/come-event/careers-fairs",
+   "source": "UCL Careers",
+   "checked": "2026-09-29",
+   "status": "verified",
+   "verify": [
+    {
+     "find": [
+      "Wednesday 14th October, 4pm - 7pm"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "car-ucl-tech",
+   "cat": "careers",
+   "title": "Tech, Data & AI Fair",
+   "org": "UCL Careers",
+   "area": "UCL Bloomsbury",
+   "ll": [
+    51.5246,
+    -0.134
+   ],
+   "price": 0,
+   "start": "2026-10-21T16:00",
+   "end": "2026-10-21T19:00",
+   "unis": [
+    "ucl"
+   ],
+   "cg": [
+    "tech"
+   ],
+   "tags": [
+    "tech"
+   ],
+   "desc": "Tech, data and AI employers. Booking opens two weeks before on myUCLCareers.",
+   "url": "https://www.ucl.ac.uk/study/careers/ucl-careers/resources-and-services/come-event/careers-fairs",
+   "source": "UCL Careers",
+   "checked": "2026-09-29",
+   "status": "verified",
+   "verify": [
+    {
+     "find": [
+      "Wednesday 21st October, 4pm - 7pm"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "car-ucl-life",
+   "cat": "careers",
+   "title": "Life & Health Sciences Fair",
+   "org": "UCL Careers with Imperial & King's",
+   "area": "UCL Bloomsbury",
+   "ll": [
+    51.5246,
+    -0.134
+   ],
+   "price": 0,
+   "start": "2026-10-26T17:00",
+   "end": "2026-10-26T20:00",
+   "unis": [
+    "ucl"
+   ],
+   "cg": [
+    "health"
+   ],
+   "tags": [
+    "research"
+   ],
+   "desc": "Run jointly with Imperial College London and King's College London. Booking opens two weeks before on myUCLCareers.",
+   "url": "https://www.ucl.ac.uk/study/careers/ucl-careers/resources-and-services/come-event/careers-fairs",
+   "source": "UCL Careers",
+   "checked": "2026-09-29",
+   "status": "verified",
+   "verify": [
+    {
+     "find": [
+      "Monday 26th October, 5pm - 8pm"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "car-ucl-eng",
+   "cat": "careers",
+   "title": "Engineering & The Built Environment Fair",
+   "org": "UCL Careers",
+   "area": "UCL Bloomsbury",
+   "ll": [
+    51.5246,
+    -0.134
+   ],
+   "price": 0,
+   "start": "2026-10-28T16:00",
+   "end": "2026-10-28T19:00",
+   "unis": [
+    "ucl"
+   ],
+   "cg": [
+    "tech",
+    "creative"
+   ],
+   "tags": [
+    "tech"
+   ],
+   "desc": "Engineering, construction and architecture employers. Booking opens two weeks before on myUCLCareers.",
+   "url": "https://www.ucl.ac.uk/study/careers/ucl-careers/resources-and-services/come-event/careers-fairs",
+   "source": "UCL Careers",
+   "checked": "2026-09-29",
+   "status": "verified",
+   "verify": [
+    {
+     "find": [
+      "Wednesday 28th October, 4pm - 7pm"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "car-ucl-law",
+   "cat": "careers",
+   "title": "Law Fair",
+   "org": "UCL Careers",
+   "area": "UCL Bloomsbury",
+   "ll": [
+    51.5246,
+    -0.134
+   ],
+   "price": 0,
+   "start": "2026-11-04T16:00",
+   "end": "2026-11-04T19:00",
+   "unis": [
+    "ucl"
+   ],
+   "cg": [
+    "law"
+   ],
+   "tags": [
+    "law"
+   ],
+   "desc": "Law firms and chambers recruiting from all degree subjects. Booking opens two weeks before on myUCLCareers.",
+   "url": "https://www.ucl.ac.uk/study/careers/ucl-careers/resources-and-services/come-event/careers-fairs",
+   "source": "UCL Careers",
+   "checked": "2026-09-29",
+   "status": "verified",
+   "verify": [
+    {
+     "find": [
+      "Wednesday 4th November, 4pm - 7pm"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "car-summer27",
+   "cat": "careers",
+   "title": "Summer 2027 internships: when firms open",
+   "org": "Trackr timeline",
+   "area": "Online",
+   "online": true,
+   "rolling": true,
+   "price": 0,
+   "yrs": [
+    2,
+    3
+   ],
+   "tags": [
+    "finance",
+    "tech",
+    "consulting",
+    "law"
+   ],
+   "desc": "Month-by-month opening dates for 142 UK finance and consulting firms (updated 9 Sep 2026). Investment banks cluster in late August and early September. Consulting opens later, some in the new year. Firms that open early tend to fill early.",
+   "url": "https://the-trackr.com/blog/summer-2027-internship-timeline/",
+   "source": "Trackr",
+   "checked": "2026-09-29",
+   "status": "verified",
+   "verify": [
+    {
+     "find": [
+      "Summer 2027 Internship Timeline"
+     ]
+    }
+   ],
+   "autoChecked": true
+  },
+  {
+   "id": "car-spring27",
+   "cat": "careers",
+   "title": "Spring weeks 2027 for first-years",
+   "org": "Trackr timeline",
+   "area": "Online",
+   "online": true,
+   "rolling": true,
+   "price": 0,
+   "yrs": [
+    1
+   ],
+   "cg": [
+    "finance",
+    "tech",
+    "law"
+   ],
+   "tags": [
+    "finance",
+    "consulting"
+   ],
+   "desc": "Short insight programmes for first-years. Applications run from June to April, with investment banks mostly opening in October and November, and consulting and trading firms in January and February (updated 9 Sep 2026).",
+   "url": "https://the-trackr.com/blog/spring-week-timeline-2027-when-uk-finance-firms-open-applications/",
+   "source": "Trackr",
+   "checked": "2026-09-29",
+   "status": "verified",
+   "verify": [
+    {
+     "find": [
+      "Spring Week Timeline 2027"
+     ]
+    }
+   ],
+   "autoChecked": true
+  },
+  {
+   "id": "job-unitemps",
+   "cat": "work",
+   "title": "On-campus temp jobs at UCL",
+   "org": "UCL Unitemps",
+   "area": "Online",
+   "online": true,
+   "unis": [
+    "ucl"
+   ],
+   "tags": [
+    "flexible"
+   ],
+   "desc": "UCL's own recruitment agency for temporary jobs on campus, including Student Ambassador roles and internships. Full-time and part-time work.",
+   "url": "https://www.ucl.ac.uk/work-at-ucl/temporary-work",
+   "source": "UCL",
+   "checked": "2026-09-29",
+   "status": "verified",
+   "verify": [
+    {
+     "find": [
+      "Unitemps is UCL's internal recruitment agency"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "job-jobshop",
+   "cat": "work",
+   "title": "Part-time jobs board",
+   "org": "Students' Union UCL JobShop",
+   "area": "Online",
+   "online": true,
+   "priceText": "Pay varies by job",
+   "unis": [
+    "ucl"
+   ],
+   "tags": [
+    "flexible"
+   ],
+   "desc": "Part-time, seasonal and temporary jobs from the Union and local employers. Pay depends on the role (roughly £12.75–£25 an hour on the board in late September 2026).",
+   "url": "https://studentsunionucl.org/jobshop",
+   "source": "Students' Union UCL",
+   "checked": "2026-09-29",
+   "status": "verified",
+   "verify": [
+    {
+     "find": [
+      "part-time, seasonal and temporary work"
+     ]
+    }
+   ],
+   "autoChecked": true
+  },
+  {
+   "id": "job-ktb",
+   "cat": "work",
+   "title": "Flexible campus jobs at £15.29 an hour",
+   "org": "King's Talent Bank",
+   "area": "Online",
+   "online": true,
+   "pay": 15.29,
+   "unis": [
+    "kcl"
+   ],
+   "tags": [
+    "flexible"
+   ],
+   "desc": "King's own system for advertising and paying student jobs: departments, the ambassador scheme, fundraising and KCLSU venues. £15.29 an hour, with hours that fit your timetable.",
+   "url": "https://www.kcl.ac.uk/study/student-experience/working-while-studying",
+   "source": "King's College London",
+   "checked": "2026-09-29",
+   "status": "verified",
+   "verify": [
+    {
+     "find": [
+      "£15\\.29"
+     ]
+    }
+   ],
+   "autoChecked": true
+  },
+  {
+   "id": "job-lse",
+   "cat": "work",
+   "title": "LSE's student jobs board",
+   "org": "LSE Careers",
+   "area": "Online",
+   "online": true,
+   "unis": [
+    "lse"
+   ],
+   "tags": [
+    "flexible",
+    "research"
+   ],
+   "desc": "LSE's main job board for students and alumni: part-time jobs, internships, volunteering and graduate roles.",
+   "url": "https://info.lse.ac.uk/current-students/careers/Jobs-and-opportunities",
+   "source": "LSE Careers",
+   "checked": "2026-09-29",
+   "status": "verified",
+   "verify": [
+    {
+     "find": [
+      "Part-time jobs"
+     ]
+    }
+   ],
+   "autoChecked": true
+  },
+  {
+   "id": "fund-kcl",
+   "cat": "funding",
+   "title": "King's hardship funds reopen 14 October",
+   "org": "King's College London",
+   "area": "Online",
+   "online": true,
+   "opensOn": "2026-10-14",
+   "unis": [
+    "kcl"
+   ],
+   "tags": [
+    "money"
+   ],
+   "desc": "Help with day-to-day costs like rent, bills and travel for October 2026 to May 2027. The funds are closed right now and reopen for applications on 14 October.",
+   "url": "https://www.kcl.ac.uk/study/undergraduate/fees-and-funding/student-funding/hardship-funds",
+   "source": "King's College London",
+   "checked": "2026-09-29",
+   "status": "verified",
+   "verify": [
+    {
+     "find": [
+      "re-open for applications on 14"
+     ]
+    }
+   ],
+   "autoChecked": true
+  },
+  {
+   "id": "fund-ucl",
+   "cat": "funding",
+   "title": "UCL Financial Assistance Fund",
+   "org": "UCL Student Funding",
+   "area": "Online",
+   "online": true,
+   "closedNote": "2026–27 not open yet",
+   "unis": [
+    "ucl"
+   ],
+   "tags": [
+    "money"
+   ],
+   "desc": "UCL's hardship fund for students in unexpected financial need. 2025–26 applications have closed; check the page for when 2026–27 opens. Research students and those with exceptional circumstances can ask via AskUCL.",
+   "url": "https://www.ucl.ac.uk/study/student-finances/funding/financial-assistance-fund",
+   "source": "UCL",
+   "checked": "2026-09-29",
+   "status": "verified",
+   "verify": [
+    {
+     "find": [
+      "2025-26 applications now closed"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "fund-ctax",
+   "cat": "funding",
+   "title": "Don't pay council tax you don't owe",
+   "org": "Citizens Advice",
+   "area": "Online",
+   "online": true,
+   "rolling": true,
+   "tags": [
+    "money"
+   ],
+   "desc": "Homes where everyone is a full-time student are exempt from council tax, and halls are exempt automatically. If you share with non-students, you're 'disregarded', so they pay less. Your uni must give you a student certificate as proof.",
+   "url": "https://www.citizensadvice.org.uk/housing/council-tax/student-housing-council-tax/",
+   "source": "Citizens Advice",
+   "checked": "2026-09-29",
+   "status": "verified",
+   "verify": [
+    {
+     "find": [
+      "occupied by full-time university or college students",
+      "certificate"
+     ]
+    }
+   ],
+   "autoChecked": true
+  },
+  {
+   "id": "deal-oyster",
+   "cat": "deals",
+   "title": "30% off Travelcards with an 18+ Student Oyster",
+   "org": "Transport for London",
+   "area": "Online",
+   "online": true,
+   "priceText": "30% off season tickets",
+   "tags": [
+    "money"
+   ],
+   "desc": "The 18+ Student Oyster photocard gives 30% off adult weekly and monthly Travelcards and Bus & Tram Passes. It doesn't cut pay-as-you-go fares.",
+   "url": "https://www.kcl.ac.uk/study/student-experience/living-expenses/student-oyster-photocard",
+   "source": "King's College London",
+   "checked": "2026-09-29",
+   "status": "verified",
+   "verify": [
+    {
+     "find": [
+      "30 per cent off"
+     ]
+    }
+   ],
+   "autoChecked": true
+  },
+  {
+   "id": "deal-railcard",
+   "cat": "deals",
+   "title": "1/3 off train fares with a 16–25 Railcard",
+   "org": "16–25 Railcard",
+   "area": "Online",
+   "online": true,
+   "price": 35,
+   "priceText": "£35 a year",
+   "tags": [
+    "money"
+   ],
+   "desc": "£35 for one year or £80 for three. Average saving £212 a year. Full-time mature students aged 26+ qualify using the mature student form.",
+   "url": "https://www.16-25railcard.co.uk/",
+   "source": "16–25 Railcard",
+   "checked": "2026-09-29",
+   "status": "verified",
+   "verify": [
+    {
+     "find": [
+      "£35 for 1 year",
+      "£80 for 3 years"
+     ]
+    }
+   ],
+   "autoChecked": true
+  },
+  {
+   "id": "deal-nt",
+   "cat": "deals",
+   "title": "£10 National Theatre tickets for 19–25s",
+   "org": "National Theatre",
+   "area": "South Bank",
+   "ll": [
+    51.507,
+    -0.1143
+   ],
+   "price": 10,
+   "tags": [
+    "culture"
+   ],
+   "desc": "£10 tickets (£5 for 16–18) on selected shows, up to two per production: one for you and one for a friend. Bring proof of age.",
+   "url": "https://www.nationaltheatre.org.uk/16-25-tickets/",
+   "source": "National Theatre",
+   "checked": "2026-09-29",
+   "status": "verified",
+   "verify": [
+    {
+     "find": [
+      "£5 for 16 to 18-year-olds and £10 for 19 to 25-year-olds"
+     ]
+    }
+   ],
+   "autoChecked": true
+  },
+  {
+   "id": "deal-tate",
+   "cat": "deals",
+   "title": "£5 exhibition tickets with Tate Collective",
+   "org": "Tate Modern & Tate Britain",
+   "area": "Bankside",
+   "ll": [
+    51.5076,
+    -0.0994
+   ],
+   "price": 5,
+   "tags": [
+    "culture"
+   ],
+   "desc": "Free to join if you're 16–25. £5 tickets to all Tate exhibitions, and bring up to three friends aged 16–25 at £5 each. 20% off in Tate cafés.",
+   "url": "https://www.tate.org.uk/tate-collective",
+   "source": "Tate",
+   "checked": "2026-09-29",
+   "status": "verified",
+   "verify": [
+    {
+     "find": [
+      "£5 tickets to all Tate exhibitions"
+     ]
+    }
+   ],
+   "autoChecked": true
+  },
+  {
+   "id": "deal-barbican",
+   "cat": "deals",
+   "title": "Tickets from £6 with Young Barbican",
+   "org": "Barbican",
+   "area": "Barbican",
+   "ll": [
+    51.5202,
+    -0.0937
+   ],
+   "price": 6,
+   "priceText": "From £6",
+   "tags": [
+    "culture",
+    "music"
+   ],
+   "desc": "Free membership for ages 16–29: discounted tickets for films, exhibitions, concerts and shows (cinema from £6), 10% off food, drink and the shop. Bring a friend aged 16–29.",
+   "url": "https://www.barbican.org.uk/join-support/young-barbican",
+   "source": "Barbican",
+   "checked": "2026-09-29",
+   "status": "verified",
+   "verify": [
+    {
+     "find": [
+      "tickets from £6",
+      "Aged 16-29"
+     ]
+    }
+   ],
+   "autoChecked": true
+  },
+  {
+   "id": "deal-bm",
+   "cat": "deals",
+   "title": "British Museum: free, 5 minutes from campus",
+   "org": "British Museum",
+   "area": "Bloomsbury",
+   "ll": [
+    51.5194,
+    -0.127
+   ],
+   "price": 0,
+   "weekHours": [
+    [
+     10,
+     17
+    ],
+    [
+     10,
+     17
+    ],
+    [
+     10,
+     17
+    ],
+    [
+     10,
+     17
+    ],
+    [
+     10,
+     17
+    ],
+    [
+     10,
+     20.5
+    ],
+    [
+     10,
+     17
+    ]
+   ],
+   "tags": [
+    "culture"
+   ],
+   "desc": "Free entry. Open daily 10:00–17:00, Fridays until 20:30.",
+   "url": "https://www.britishmuseum.org/visit",
+   "source": "British Museum",
+   "checked": "2026-09-29",
+   "status": "verified",
+   "verify": [
+    {
+     "find": [
+      "Free entry",
+      "10\\.00-17\\.00",
+      "Fridays: 20\\.30"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "sport-uclgym",
+   "cat": "sport",
+   "title": "UCL student gym: £229 for 12 months",
+   "org": "TeamUCL Gym",
+   "area": "UCL Bloomsbury",
+   "ll": [
+    51.525,
+    -0.1333
+   ],
+   "price": 229,
+   "priceText": "£229 a year",
+   "deadline": "2026-10-31",
+   "unis": [
+    "ucl"
+   ],
+   "tags": [
+    "fitness",
+    "money"
+   ],
+   "desc": "Welcome offer: 12 months of unlimited classes and gym for £229 (under £20 a month), only between 1 September and 31 October 2026, online or at TeamUCL Gym reception.",
+   "url": "https://studentsunionucl.org/articles/teamucl-gym-welcome-offer-2026",
+   "source": "Students' Union UCL",
+   "checked": "2026-09-29",
+   "status": "verified",
+   "verify": [
+    {
+     "find": [
+      "£229",
+      "31st October 2026"
+     ]
+    }
+   ],
+   "autoChecked": true
+  },
+  {
+   "id": "sport-lsegym",
+   "cat": "sport",
+   "title": "LSESU Gym: £6 day pass or £32 a month",
+   "org": "LSESU Gym",
+   "area": "LSE",
+   "ll": [
+    51.5146,
+    -0.1161
+   ],
+   "price": 6,
+   "priceText": "£6 day · £32 month",
+   "unis": [
+    "lse"
+   ],
+   "tags": [
+    "fitness"
+   ],
+   "desc": "Student prices: day pass £6, 10 day passes £24, 1 month £32, 3 months £85, 6 months £150, or the 12-month welcome offer at £220.",
+   "url": "https://www.lsesu.com/sport/gym/studentmembership/",
+   "source": "LSESU",
+   "checked": "2026-09-29",
+   "status": "verified",
+   "verify": [
+    {
+     "find": [
+      "Day Pass - Student.{0,40}£6\\.00",
+      "1 Month Gym membership - Student.{0,40}£32\\.00",
+      "12 MONTH \\(STUDENT\\).{0,40}£220\\.00"
+     ]
+    }
+   ],
+   "autoChecked": true
+  },
+  {
+   "id": "sport-kclgym",
+   "cat": "sport",
+   "title": "King's Sport gym: £23.99 a month",
+   "org": "King's Sport & Wellness",
+   "area": "Strand & other campuses",
+   "ll": [
+    51.5116,
+    -0.1164
+   ],
+   "price": 23.99,
+   "priceText": "£23.99/month · £220/year",
+   "unis": [
+    "kcl"
+   ],
+   "tags": [
+    "fitness"
+   ],
+   "desc": "Student membership: £23.99 a month, £220 for 12 months, or £8 per visit.",
+   "url": "https://www.kcl.ac.uk/sport/gyms/memberships",
+   "source": "King's College London",
+   "checked": "2026-09-29",
+   "status": "verified",
+   "verify": [
+    {
+     "find": [
+      "Student £23\\.99 £220 £8"
+     ]
+    }
+   ],
+   "autoChecked": true
+  },
+  {
+   "id": "home-ich",
+   "cat": "housing",
+   "title": "Intercollegiate Halls in Bloomsbury",
+   "org": "University of London",
+   "area": "Bloomsbury",
+   "ll": [
+    51.5236,
+    -0.1296
+   ],
+   "price": 943,
+   "priceText": "£217.56–£455.70 a week",
+   "unis": [
+    "ucl",
+    "kcl",
+    "lse"
+   ],
+   "tags": [],
+   "desc": "Seven central halls shared by University of London colleges. Weekly rents run from £217.56 to £455.70 depending on hall and room.",
+   "url": "https://www.london.ac.uk/about/services/halls",
+   "source": "University of London",
+   "checked": "2026-09-29",
+   "status": "verified",
+   "verify": [
+    {
+     "find": [
+      "£217\\.56",
+      "£455\\.70"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "home-uclhalls",
+   "cat": "housing",
+   "title": "UCL halls and nominated halls",
+   "org": "UCL Accommodation",
+   "area": "Online",
+   "online": true,
+   "priceText": "Varies by hall",
+   "unis": [
+    "ucl"
+   ],
+   "tags": [],
+   "desc": "UCL halls are priced by zone (distance from campus) and band (building condition). Nominated halls run by Unite, urbanest and Intercollegiate are priced separately.",
+   "url": "https://www.ucl.ac.uk/study/accommodation/halls",
+   "source": "UCL",
+   "checked": "2026-09-29",
+   "status": "verified",
+   "verify": [
+    {
+     "find": [
+      "graded by zone"
+     ]
+    }
+   ]
+  }
+ ]
 }

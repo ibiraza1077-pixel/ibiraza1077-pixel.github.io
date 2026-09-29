@@ -10,6 +10,9 @@ window.UNILONDON_CONFIG = {
   // Link to a form where societies, cafés and students can suggest a listing. Leave empty to hide it.
   submitUrl: "",
 
+  // Your GitHub repository (owner/name). Used by the admin page's Sync now and Publish buttons.
+  repo: "ibiraza1077-pixel/ibiraza1077-pixel.github.io",
+
   // Shown in the app header and welcome screen.
   pilotName: "Central London pilot · UCL, King's, LSE",
 };

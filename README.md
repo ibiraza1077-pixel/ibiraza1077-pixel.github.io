@@ -26,7 +26,9 @@ To edit a file on GitHub: open it → pencil icon → change → *Commit changes
 
 ## How listings stay current
 
-**Events update themselves.** Twice a day (06:15 and 16:15 London time), a GitHub Action runs `scripts/update_events.py`. It pulls upcoming events from:
+Everything is kept up to date by one GitHub Action, **Sync** (`.github/workflows/update-events.yml`). It runs at about 06:15 and 16:15 London time every day, and whenever you press **Sync now** on the admin page.
+
+**1. Events update themselves.** `scripts/update_events.py` pulls upcoming events from:
 
 | Source | What it adds |
 |---|---|
@@ -35,20 +37,31 @@ To edit a file on GitHub: open it → pencil icon → change → *Commit changes
 | King's College London events calendar | Student and careers events (fairs, workshops, networking nights) |
 | LSE public events | Free public lectures and concerts |
 
-It writes them to `events.json` and commits. The site republishes automatically. Past events disappear on their own. If a source is down, the last good events from it are kept. You can run it any time from the **Actions** tab → *Update events* → *Run workflow*.
+Past events disappear on their own. If a source is down, its last good events are kept.
 
-Not covered automatically (their sites block automated access): KCLSU events and UCL Careers fairs. UCL Careers fairs are hand-entered in `listings.json` from the official page.
+**2. Listings re-check themselves.** `scripts/check_listings.py` opens each listing's official page and looks for the facts in its `verify` rules (prices, hours, dates):
+- **Still there:** the listing is marked "confirmed on the official page" with today's date.
+- **Changed:** the listing is flagged "may have changed" in the app and ranked lower, and a GitHub issue called **Listings need attention** tells you exactly what to fix. The issue closes itself once everything checks out.
+- **Site blocks automated checks** (ucl.ac.uk, KCLSU, University of London, British Museum): these can't be checked automatically. The issue reminds you when they're due for a manual check, and the app flags them after 60 days.
 
-**Everything else is hand-checked.** Food, study spaces, deals, funding, jobs, sport and housing live in `listings.json`. Each has a source link and a `checked` date. Anything not re-checked for 60 days is flagged in the app and ranked lower, so aim to re-check each listing at least every two months in `admin.html`.
+The checker never changes a price or time on its own. It only confirms or flags, so nothing wrong gets published.
+
+**3. Students always see the latest.** The app has a **Refresh** button, and refreshes by itself when reopened after 30 minutes.
+
+### Admin page (`/admin.html`)
+
+- **Sync now:** runs the Sync immediately and shows progress.
+- **Publish to site:** saves your listing edits straight to GitHub.
+- Both need a one-time connection: a fine-grained GitHub token limited to this repository, with *Actions* and *Contents* set to read and write. It's saved only in your browser. The page walks you through it.
+
+To add automatic checks to a new listing, give it a `verify` rule, e.g. `"verify": [{"find": ["£3\\.99", "08:00 - 11:00"]}]`. Each entry must appear on the listing's official page.
 
 ## Keeping listings accurate
 
 - Open `https://ibiraza1077-pixel.github.io/admin.html`.
-- Filter **Needs checking**. For each one, open the official page, fix anything that's wrong, then press **Mark checked today**.
-- **Download listings.json**, then on GitHub open `listings.json` → *Add file / Upload* (or pencil → paste) to replace it.
-- Past events and closed deadlines disappear from the app automatically.
+- Filter **Changed on official page** or **Can't auto-check**. Open the official page, fix anything that's wrong, then press **Mark checked today** and **Publish to site**.
 
-Aim to add 5–10 new listings a week: society events, café deals, new jobs. Fresh listings are what bring people back.
+Aim to add 5–10 new listings a week: café deals, new jobs, KCLSU events. Fresh listings are what bring people back.
 
 ## What to measure (GoatCounter dashboard)
 

@@ -1,0 +1,341 @@
+{
+ "run": "2026-09-29T11:35",
+ "counts": {
+  "ok": 29,
+  "changed": 0,
+  "unreachable": 15,
+  "manual": 1
+ },
+ "results": [
+  {
+   "result": "ok",
+   "id": "food-hk",
+   "title": "Free vegetarian lunch every weekday",
+   "url": "https://nextmeal.co.uk/places/harekrishnafoodforall",
+   "ageDays": 0
+  },
+  {
+   "result": "ok",
+   "id": "food-farmers",
+   "title": "Bloomsbury Farmers' Market, Wed & Thu lunch",
+   "url": "https://www.lfm.org.uk/markets/bloomsbury/",
+   "ageDays": 0
+  },
+  {
+   "result": "ok",
+   "id": "food-printroom",
+   "title": "£1.50 beans on toast breakfast",
+   "url": "https://studentsunionucl.org/articles/cheap-eats-on-campus",
+   "ageDays": 0
+  },
+  {
+   "result": "ok",
+   "id": "food-bshop",
+   "title": "£3.99 meal deal (onigiri half price on Tuesdays)",
+   "url": "https://studentsunionucl.org/articles/cheap-eats-on-campus",
+   "ageDays": 0
+  },
+  {
+   "result": "ok",
+   "id": "food-gordons",
+   "title": "£4.55 soup and roll",
+   "url": "https://studentsunionucl.org/articles/cheap-eats-on-campus",
+   "ageDays": 0
+  },
+  {
+   "result": "ok",
+   "id": "food-kingsfood",
+   "title": "75p porridge and £1.75 jacket potatoes",
+   "url": "https://self-service.kcl.ac.uk/article/KA-01965/en-us",
+   "ageDays": 0
+  },
+  {
+   "result": "unreachable",
+   "error": "HTTP 403 at https://www.kclsu.org/news/article/6015/Cheap-Eats-Near-Strand-Campus/",
+   "id": "food-vault",
+   "title": "Main and two sides for under £7",
+   "url": "https://www.kclsu.org/news/article/6015/Cheap-Eats-Near-Strand-Campus/",
+   "ageDays": 0
+  },
+  {
+   "result": "unreachable",
+   "error": "HTTP 403 at https://www.kclsu.org/news/article/6015/Cheap-Eats-Near-Strand-Campus/",
+   "id": "food-shack",
+   "title": "Cheapest grab-and-go spot at Strand",
+   "url": "https://www.kclsu.org/news/article/6015/Cheap-Eats-Near-Strand-Campus/",
+   "ageDays": 0
+  },
+  {
+   "result": "ok",
+   "id": "food-wrights",
+   "title": "Sandwiches and plates, about £2.50–£8",
+   "url": "https://blogs.lse.ac.uk/studentsatlse/2024/11/14/the-best-lunch-spots-on-and-around-lse-campus/",
+   "ageDays": 0
+  },
+  {
+   "result": "ok",
+   "id": "food-govindas",
+   "title": "10% off vegetarian thalis with student ID",
+   "url": "https://govindas.london/soho",
+   "ageDays": 0
+  },
+  {
+   "result": "ok",
+   "id": "food-tgtg",
+   "title": "£3–£4 surplus food bags near campus",
+   "url": "https://food.lse.ac.uk/story/48211549/all-you-need-to-know-about-too-good-to-go",
+   "ageDays": 0
+  },
+  {
+   "result": "ok",
+   "id": "study-uclsc",
+   "title": "24-hour study space",
+   "url": "https://studentsunionucl.org/whats-on/venue/student-centre",
+   "ageDays": 0
+  },
+  {
+   "result": "ok",
+   "id": "study-maughan",
+   "title": "Maughan Library, open till 1am",
+   "url": "https://libcal.kcl.ac.uk/hours",
+   "ageDays": 0
+  },
+  {
+   "result": "ok",
+   "id": "study-fw",
+   "title": "24-hour library at Waterloo",
+   "url": "https://libcal.kcl.ac.uk/hours",
+   "ageDays": 0
+  },
+  {
+   "result": "manual",
+   "id": "study-lselib",
+   "title": "LSE Library",
+   "url": "https://www.lse.ac.uk/library/about/opening-hours",
+   "ageDays": 0
+  },
+  {
+   "result": "unreachable",
+   "error": "HTTP 403 at https://www.london.ac.uk/about/services/senate-house-library/opening-hours",
+   "id": "study-senate",
+   "title": "Senate House Library, open till 11pm",
+   "url": "https://www.london.ac.uk/about/services/senate-house-library/opening-hours",
+   "ageDays": 0
+  },
+  {
+   "result": "ok",
+   "id": "study-wellcome",
+   "title": "Free library open to everyone 18+",
+   "url": "https://wellcomecollection.org/visit-us/the-library",
+   "ageDays": 0
+  },
+  {
+   "result": "ok",
+   "id": "study-bl",
+   "title": "Free desks with Wi-Fi, or free Reader Pass",
+   "url": "https://www.bl.uk/visit/reading-rooms",
+   "ageDays": 0
+  },
+  {
+   "result": "unreachable",
+   "error": "HTTP 403 at https://www.ucl.ac.uk/study/careers/ucl-careers/resources-and-services/come-event/careers-fairs",
+   "id": "car-ucl-bfe",
+   "title": "Banking, Finance & Economics Fair",
+   "url": "https://www.ucl.ac.uk/study/careers/ucl-careers/resources-and-services/come-event/careers-fairs",
+   "ageDays": 0
+  },
+  {
+   "result": "unreachable",
+   "error": "HTTP 403 at https://www.ucl.ac.uk/study/careers/ucl-careers/resources-and-services/come-event/careers-fairs",
+   "id": "car-ucl-bf",
+   "title": "Banking & Finance Fair",
+   "url": "https://www.ucl.ac.uk/study/careers/ucl-careers/resources-and-services/come-event/careers-fairs",
+   "ageDays": 0
+  },
+  {
+   "result": "unreachable",
+   "error": "HTTP 403 at https://www.ucl.ac.uk/study/careers/ucl-careers/resources-and-services/come-event/careers-fairs",
+   "id": "car-ucl-cons",
+   "title": "Management Consultancy Fair",
+   "url": "https://www.ucl.ac.uk/study/careers/ucl-careers/resources-and-services/come-event/careers-fairs",
+   "ageDays": 0
+  },
+  {
+   "result": "unreachable",
+   "error": "HTTP 403 at https://www.ucl.ac.uk/study/careers/ucl-careers/resources-and-services/come-event/careers-fairs",
+   "id": "car-ucl-tech",
+   "title": "Tech, Data & AI Fair",
+   "url": "https://www.ucl.ac.uk/study/careers/ucl-careers/resources-and-services/come-event/careers-fairs",
+   "ageDays": 0
+  },
+  {
+   "result": "unreachable",
+   "error": "HTTP 403 at https://www.ucl.ac.uk/study/careers/ucl-careers/resources-and-services/come-event/careers-fairs",
+   "id": "car-ucl-life",
+   "title": "Life & Health Sciences Fair",
+   "url": "https://www.ucl.ac.uk/study/careers/ucl-careers/resources-and-services/come-event/careers-fairs",
+   "ageDays": 0
+  },
+  {
+   "result": "unreachable",
+   "error": "HTTP 403 at https://www.ucl.ac.uk/study/careers/ucl-careers/resources-and-services/come-event/careers-fairs",
+   "id": "car-ucl-eng",
+   "title": "Engineering & The Built Environment Fair",
+   "url": "https://www.ucl.ac.uk/study/careers/ucl-careers/resources-and-services/come-event/careers-fairs",
+   "ageDays": 0
+  },
+  {
+   "result": "unreachable",
+   "error": "HTTP 403 at https://www.ucl.ac.uk/study/careers/ucl-careers/resources-and-services/come-event/careers-fairs",
+   "id": "car-ucl-law",
+   "title": "Law Fair",
+   "url": "https://www.ucl.ac.uk/study/careers/ucl-careers/resources-and-services/come-event/careers-fairs",
+   "ageDays": 0
+  },
+  {
+   "result": "ok",
+   "id": "car-summer27",
+   "title": "Summer 2027 internships: when firms open",
+   "url": "https://the-trackr.com/blog/summer-2027-internship-timeline/",
+   "ageDays": 0
+  },
+  {
+   "result": "ok",
+   "id": "car-spring27",
+   "title": "Spring weeks 2027 for first-years",
+   "url": "https://the-trackr.com/blog/spring-week-timeline-2027-when-uk-finance-firms-open-applications/",
+   "ageDays": 0
+  },
+  {
+   "result": "unreachable",
+   "error": "HTTP 403 at https://www.ucl.ac.uk/work-at-ucl/temporary-work",
+   "id": "job-unitemps",
+   "title": "On-campus temp jobs at UCL",
+   "url": "https://www.ucl.ac.uk/work-at-ucl/temporary-work",
+   "ageDays": 0
+  },
+  {
+   "result": "ok",
+   "id": "job-jobshop",
+   "title": "Part-time jobs board",
+   "url": "https://studentsunionucl.org/jobshop",
+   "ageDays": 0
+  },
+  {
+   "result": "ok",
+   "id": "job-ktb",
+   "title": "Flexible campus jobs at £15.29 an hour",
+   "url": "https://www.kcl.ac.uk/study/student-experience/working-while-studying",
+   "ageDays": 0
+  },
+  {
+   "result": "ok",
+   "id": "job-lse",
+   "title": "LSE's student jobs board",
+   "url": "https://info.lse.ac.uk/current-students/careers/Jobs-and-opportunities",
+   "ageDays": 0
+  },
+  {
+   "result": "ok",
+   "id": "fund-kcl",
+   "title": "King's hardship funds reopen 14 October",
+   "url": "https://www.kcl.ac.uk/study/undergraduate/fees-and-funding/student-funding/hardship-funds",
+   "ageDays": 0
+  },
+  {
+   "result": "unreachable",
+   "error": "HTTP 403 at https://www.ucl.ac.uk/study/student-finances/funding/financial-assistance-fund",
+   "id": "fund-ucl",
+   "title": "UCL Financial Assistance Fund",
+   "url": "https://www.ucl.ac.uk/study/student-finances/funding/financial-assistance-fund",
+   "ageDays": 0
+  },
+  {
+   "result": "ok",
+   "id": "fund-ctax",
+   "title": "Don't pay council tax you don't owe",
+   "url": "https://www.citizensadvice.org.uk/housing/council-tax/student-housing-council-tax/",
+   "ageDays": 0
+  },
+  {
+   "result": "ok",
+   "id": "deal-oyster",
+   "title": "30% off Travelcards with an 18+ Student Oyster",
+   "url": "https://www.kcl.ac.uk/study/student-experience/living-expenses/student-oyster-photocard",
+   "ageDays": 0
+  },
+  {
+   "result": "ok",
+   "id": "deal-railcard",
+   "title": "1/3 off train fares with a 16–25 Railcard",
+   "url": "https://www.16-25railcard.co.uk/",
+   "ageDays": 0
+  },
+  {
+   "result": "ok",
+   "id": "deal-nt",
+   "title": "£10 National Theatre tickets for 19–25s",
+   "url": "https://www.nationaltheatre.org.uk/16-25-tickets/",
+   "ageDays": 0
+  },
+  {
+   "result": "ok",
+   "id": "deal-tate",
+   "title": "£5 exhibition tickets with Tate Collective",
+   "url": "https://www.tate.org.uk/tate-collective",
+   "ageDays": 0
+  },
+  {
+   "result": "ok",
+   "id": "deal-barbican",
+   "title": "Tickets from £6 with Young Barbican",
+   "url": "https://www.barbican.org.uk/join-support/young-barbican",
+   "ageDays": 0
+  },
+  {
+   "result": "unreachable",
+   "error": "HTTP 403 at https://www.britishmuseum.org/visit",
+   "id": "deal-bm",
+   "title": "British Museum: free, 5 minutes from campus",
+   "url": "https://www.britishmuseum.org/visit",
+   "ageDays": 0
+  },
+  {
+   "result": "ok",
+   "id": "sport-uclgym",
+   "title": "UCL student gym: £229 for 12 months",
+   "url": "https://studentsunionucl.org/articles/teamucl-gym-welcome-offer-2026",
+   "ageDays": 0
+  },
+  {
+   "result": "ok",
+   "id": "sport-lsegym",
+   "title": "LSESU Gym: £6 day pass or £32 a month",
+   "url": "https://www.lsesu.com/sport/gym/studentmembership/",
+   "ageDays": 0
+  },
+  {
+   "result": "ok",
+   "id": "sport-kclgym",
+   "title": "King's Sport gym: £23.99 a month",
+   "url": "https://www.kcl.ac.uk/sport/gyms/memberships",
+   "ageDays": 0
+  },
+  {
+   "result": "unreachable",
+   "error": "HTTP 403 at https://www.london.ac.uk/about/services/halls",
+   "id": "home-ich",
+   "title": "Intercollegiate Halls in Bloomsbury",
+   "url": "https://www.london.ac.uk/about/services/halls",
+   "ageDays": 0
+  },
+  {
+   "result": "unreachable",
+   "error": "HTTP 403 at https://www.ucl.ac.uk/study/accommodation/halls",
+   "id": "home-uclhalls",
+   "title": "UCL halls and nominated halls",
+   "url": "https://www.ucl.ac.uk/study/accommodation/halls",
+   "ageDays": 0
+  }
+ ]
+}
