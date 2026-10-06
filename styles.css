@@ -330,3 +330,27 @@ body{margin:0;padding-top:env(safe-area-inset-top,0px)}
 .refresh:disabled{opacity:.6}
 .flagbox{display:flex;gap:8px;align-items:flex-start;margin-top:14px;padding:10px 12px;border-radius:10px;background:var(--surface-2);color:var(--warn);font-size:14px;font-weight:600}
 .flagbox .icon{width:16px;height:16px;margin-top:2px}
+
+/* ---------- real street map ---------- */
+.glwrap{position:relative}
+.glmap{height:min(64vh,620px);min-height:380px;border-radius:var(--r);overflow:hidden;border:1px solid var(--line);background:var(--land)}
+@media (min-width:1100px){.glmap{height:min(72vh,720px)}}
+.glloading{height:100%;display:grid;place-items:center;color:var(--ink-3);font-size:14px}
+.gl-legend{pointer-events:none}
+.gl-legend .lg-home{background:var(--accent)}
+.gl-legend .lg-campus{background:var(--ink);border-radius:3px}
+.mk-home{display:flex;flex-direction:column;align-items:center;gap:3px;pointer-events:none;transform:translateY(-11px)}
+.mk-home i{width:22px;height:22px;border-radius:50%;background:var(--accent);border:3px solid #fff;box-shadow:0 0 0 0 color-mix(in srgb,var(--accent) 45%,transparent);animation:homepulse 2.4s infinite}
+.mk-home span,.mk-campus span{font:700 11.5px/1 var(--body);color:var(--ink);background:var(--surface);border:1px solid var(--line);padding:3px 7px;border-radius:999px;box-shadow:var(--shadow);white-space:nowrap}
+.mk-home span{color:var(--accent)}
+.mk-campus{display:flex;align-items:center;gap:4px;pointer-events:none}
+.mk-campus .icon{width:26px;height:26px;padding:5px;border-radius:8px;background:var(--ink);color:var(--bg);border:2px solid var(--surface);box-shadow:var(--shadow)}
+@keyframes homepulse{0%{box-shadow:0 0 0 0 color-mix(in srgb,var(--accent) 45%,transparent)}70%{box-shadow:0 0 0 14px transparent}100%{box-shadow:0 0 0 0 transparent}}
+@media (prefers-reduced-motion:reduce){.mk-home i{animation:none}}
+.glmap .maplibregl-ctrl-group{background:var(--surface);border:1px solid var(--line);border-radius:12px;box-shadow:var(--shadow);overflow:hidden}
+.glmap .maplibregl-ctrl-group button{width:38px;height:38px;background-color:var(--surface)}
+.glmap .maplibregl-ctrl-group button+button{border-top:1px solid var(--line)}
+.glmap .maplibregl-ctrl-group button .icon{width:18px;height:18px;color:var(--ink)}
+.glmap .maplibregl-ctrl-group button:hover{background-color:var(--surface-2)}
+@media (prefers-color-scheme:dark){.glmap .maplibregl-ctrl-group button .maplibregl-ctrl-icon{filter:invert(1)}}
+.glmap .maplibregl-ctrl-attrib{font-size:10.5px}

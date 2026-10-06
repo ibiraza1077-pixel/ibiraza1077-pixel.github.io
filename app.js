@@ -110,7 +110,7 @@ const S = {
   installDismissed: store.get("installDismissed", false),
   view: "today",
   explore: {q:"", cat:"all", sort:"foryou", openNow:false, free:false, limit:40},
-  map: {cat:"all", vb:null, active:null},
+  map: {cat:"all", vb:null, active:null, now:false, camera:null},
   chat: [],
   updated: "",
 };
@@ -552,37 +552,251 @@ function mapSVG(rows, vb, idAttr=true, pxW){
     <g><circle cx="${hx}" cy="${hy}" r="${10*k}" fill="var(--accent)" stroke="var(--surface)" stroke-width="${3*k}"/><circle cx="${hx}" cy="${hy}" r="${3.5*k}" fill="var(--accent-ink)"/><text x="${hx}" y="${hy+24*k}" text-anchor="middle" font-size="${fs*1.05}" class="maplabel" style="fill:var(--accent);stroke-width:${3.5*k}">Home</text></g>
   </svg>`;
 }
-function mapRows(){ const C=ctx(); let rows = ranked(ITEMS.filter(i=>!i.online && (!i.start || (i.start-NOW)/864e5 < 7)),C); if(S.map.cat!=="all") rows = rows.filter(r=>r.it.cat===S.map.cat); return rows; }
-function viewMap(){
-  const rows = mapRows();
-  if(!S.map.vb) S.map.vb = defaultVB();
-  const chips = [["all","All"],...Object.entries(CATS).map(([k,v])=>[k,v.short])].map(([k,l])=>
+function mapRows(){
+  const C=ctx();
+  let rows = ranked(ITEMS.filter(i=>!i.online && (!i.start || (i.start-NOW)/864e5 < 7)),C);
+  if(S.map.cat!=="all") rows = rows.filter(r=>r.it.cat===S.map.cat);
+  if(S.map.now) rows = rows.filter(r=>{ const o=openState(r.it); if(o) return o.open; if(r.it.start) return r.it.start<=NOW || (r.it.start-NOW)/36e5<6; return false; });
+  return rows;
+}
+function mapChips(){
+  const cats = [["all","All"],...Object.entries(CATS).map(([k,v])=>[k,v.short])].map(([k,l])=>
     `<button class="chip" data-mcat="${k}" aria-pressed="${S.map.cat===k}">${k!=="all"?`<span class="sw" style="background:${catColor(k)}"></span>`:""}${l}</button>`).join("");
-  const near = [...rows].sort((a,b)=>a.dh-b.dh).slice(0,12);
+  return `<div class="chips" role="group" aria-label="Category">${cats}</div>
+    <div class="toggles"><button class="chip" data-mnow aria-pressed="${!!S.map.now}">${ic("clock","icon")} Open or on now</button><span class="resultcount" id="mapcount" style="align-self:center"></span></div>`;
+}
+function viewMap(){
   const act = S.map.active && BY_ID[S.map.active];
   return `${topbar()}
-  <section class="hello"><div class="eyebrow">Map</div><h1>What's around you</h1><p>Dashed ring = a 20-minute walk from home. Drag to pan. Pinch, Ctrl + scroll or +/− to zoom.</p></section>
+  <section class="hello"><div class="eyebrow">Map</div><h1>What's around you</h1><p>Tap a numbered bubble to zoom in, or a pin to see the details. The dashed ring is a 20-minute walk from home.</p></section>
   <section class="section">
-    <div class="chips" role="group" aria-label="Category">${chips}</div>
+    <div id="mapchips">${mapChips()}</div>
     <div class="mapgrid">
       <div>
-        <div class="mapwrap" id="mapwrap">
-          <div class="map-ctrl"><button data-zoom="in" aria-label="Zoom in">+</button><button data-zoom="out" aria-label="Zoom out">−</button><button data-zoom="reset" aria-label="Reset view">${ic("pin","icon")}</button></div>
-          <div id="mapholder">${mapSVG(rows, S.map.vb)}</div>
-          <div class="map-legend"><span><i style="background:var(--accent)"></i>Home</span><span><i style="background:var(--ink);border-radius:3px"></i>Campus</span><span>${rows.length} places</span></div>
+        <div class="glwrap">
+          <div id="glmap" class="glmap" role="application" aria-label="Map of places and events"><div class="glloading">Loading map…</div></div>
+          <div class="map-legend gl-legend"><span><i class="lg-home"></i>Home</span><span><i class="lg-campus"></i>Campus</span><span id="maplegendcount"></span></div>
         </div>
         <div id="mappreview" style="margin-top:10px">${act ? card({it:act,...score(act)}) : `<div class="empty">Tap a pin to preview it here.</div>`}</div>
       </div>
       <div>
-        <div class="eyebrow" style="margin-bottom:8px">Nearest to home</div>
-        <div class="maplist">${near.map(r=>card(r,{why:false})).join("")}</div>
+        <div class="eyebrow" style="margin-bottom:8px" id="maplisthead">In this area</div>
+        <div class="maplist" id="maplist"></div>
       </div>
     </div>
   </section>
   ${footer()}`;
 }
+
+/* Real street map: MapLibre GL + free OpenFreeMap tiles (OpenStreetMap data). No API key needed.
+   Falls back to the built-in schematic map if the library or tiles can't load (e.g. offline). */
+const MAPLIBRE_VERSION = "5.24.0";
+let gmap = null, mapLibPromise = null, gmapMarkers = [], mapGroup = null;
+function loadMapLib(){
+  if(window.maplibregl) return Promise.resolve();
+  if(mapLibPromise) return mapLibPromise;
+  mapLibPromise = new Promise((resolve, reject) => {
+    const base = `https://cdn.jsdelivr.net/npm/maplibre-gl@${MAPLIBRE_VERSION}/dist/`;
+    const css = document.createElement("link"); css.rel = "stylesheet"; css.href = base + "maplibre-gl.css"; document.head.appendChild(css);
+    const js = document.createElement("script"); js.src = base + "maplibre-gl.js"; js.async = true;
+    js.onload = () => resolve();
+    js.onerror = () => { mapLibPromise = null; reject(new Error("map library unavailable")); };
+    document.head.appendChild(js);
+    setTimeout(() => { if(!window.maplibregl){ mapLibPromise = null; reject(new Error("map library timed out")); } }, 12000);
+  });
+  return mapLibPromise;
+}
+const prefersDark = () => !!window.matchMedia?.("(prefers-color-scheme: dark)").matches;
+const mapStyleUrl = () => `https://tiles.openfreemap.org/styles/${prefersDark() ? "dark" : "positron"}`;
+const cssVar = name => getComputedStyle(document.documentElement).getPropertyValue(name).trim() || "#888";
+function spreadCoords(rows){
+  // Many union events are listed at the same campus point. Fan identical points out in a small spiral (up to ~60 m) so each can be tapped.
+  const groups = {};
+  rows.forEach(r => { const k = r.it.ll[0].toFixed(5)+","+r.it.ll[1].toFixed(5); (groups[k] = groups[k] || []).push(r); });
+  const out = new Map();
+  Object.values(groups).forEach(g => g.forEach((r, i) => {
+    if(g.length === 1 || i === 0){ out.set(r.it.id, [r.it.ll[1], r.it.ll[0]]); return; }
+    const ang = i * 2.39996, rad = 0.00055 * Math.sqrt(i / g.length);  // golden-angle spiral, at most ~60 m from the real spot
+    out.set(r.it.id, [r.it.ll[1] + rad*Math.cos(ang)/Math.cos(r.it.ll[0]*Math.PI/180), r.it.ll[0] + rad*Math.sin(ang)]);
+  }));
+  return out;
+}
+function placesGeoJSON(rows){
+  const colors = Object.fromEntries(Object.keys(CATS).map(c => [c, cssVar(`--c-${c}`)]));
+  const pos = spreadCoords(rows);
+  return {type:"FeatureCollection", features: rows.map(r => ({
+    type:"Feature", geometry:{type:"Point", coordinates: pos.get(r.it.id)},
+    properties:{id:r.it.id, cat:r.it.cat, color:colors[r.it.cat], label: r.it.title.length>28 ? r.it.title.slice(0,26)+"…" : r.it.title},
+  }))};
+}
+function circleGeoJSON([lat,lng], km){
+  const pts = [], R = 6371;
+  for(let i=0;i<=64;i++){
+    const a = i/64*2*Math.PI, dLat = km/R*Math.cos(a), dLng = km/(R*Math.cos(lat*Math.PI/180))*Math.sin(a);
+    pts.push([lng + dLng*180/Math.PI, lat + dLat*180/Math.PI]);
+  }
+  return {type:"Feature", geometry:{type:"Polygon", coordinates:[pts]}, properties:{}};
+}
+function ensureMapLayers(map){
+  // Add our layers once the base style is ready. Safe to call repeatedly (style.load can fire before or after we listen).
+  try{ if(map.isStyleLoaded() && !map.getLayer("points")) addMapLayers(map); }catch(e){}
+}
+function addMapLayers(map){
+  const C = ctx(), accent = cssVar("--accent"), surface = cssVar("--surface"), ink = cssVar("--ink"), bg = cssVar("--bg");
+  if(!map.getSource("walk")) map.addSource("walk", {type:"geojson", data: circleGeoJSON(C.home, 1.6)});
+  map.addLayer({id:"walk-fill", type:"fill", source:"walk", paint:{"fill-color":accent, "fill-opacity":0.06}});
+  map.addLayer({id:"walk-line", type:"line", source:"walk", paint:{"line-color":accent, "line-width":1.6, "line-opacity":0.7, "line-dasharray":[3,2]}});
+  if(!map.getSource("places")) map.addSource("places", {type:"geojson", data: placesGeoJSON(mapRows()), cluster:true, clusterRadius:42, clusterMaxZoom:15});
+  map.addLayer({id:"clusters", type:"circle", source:"places", filter:["has","point_count"], paint:{
+    "circle-color": accent, "circle-opacity": 0.92,
+    "circle-radius": ["step", ["get","point_count"], 16, 8, 20, 25, 26],
+    "circle-stroke-width": 3, "circle-stroke-color": surface }});
+  map.addLayer({id:"cluster-count", type:"symbol", source:"places", filter:["has","point_count"], layout:{
+    "text-field":["get","point_count_abbreviated"], "text-font":["Noto Sans Regular"], "text-size":13, "text-allow-overlap":true },
+    paint:{"text-color": cssVar("--accent-ink") || "#fff"}});
+  map.addLayer({id:"point-halo", type:"circle", source:"places", filter:["==",["get","id"], S.map.active || ""], paint:{
+    "circle-color":["get","color"], "circle-opacity":0.25, "circle-radius":18 }});
+  map.addLayer({id:"points", type:"circle", source:"places", filter:["!",["has","point_count"]], paint:{
+    "circle-color":["get","color"],
+    "circle-radius":["interpolate",["linear"],["zoom"], 11, 5, 14, 8, 17, 11],
+    "circle-stroke-width":2.5, "circle-stroke-color": surface }});
+  map.addLayer({id:"point-labels", type:"symbol", source:"places", minzoom:15, filter:["!",["has","point_count"]], layout:{
+    "text-field":["get","label"], "text-font":["Noto Sans Regular"], "text-size":11.5,
+    "text-offset":[0,1.25], "text-anchor":"top", "text-max-width":10, "text-optional":true },
+    paint:{"text-color": ink, "text-halo-color": bg, "text-halo-width":1.6}});
+}
+function placeMarkers(map){
+  gmapMarkers.forEach(m => m.remove()); gmapMarkers = [];
+  const C = ctx();
+  const home = document.createElement("div"); home.className = "mk-home"; home.innerHTML = `<i></i><span>Home</span>`; home.title = `Home (${C.p.area})`;
+  gmapMarkers.push(new maplibregl.Marker({element:home, anchor:"top"}).setLngLat([C.home[1], C.home[0]]).addTo(map));
+  if(C.uni.id !== "other"){
+    const uni = document.createElement("div"); uni.className = "mk-campus"; uni.innerHTML = `${ic("cap","icon")}<span>${esc(C.uni.name)}</span>`;
+    gmapMarkers.push(new maplibregl.Marker({element:uni}).setLngLat([C.uni.ll[1], C.uni.ll[0]]).addTo(map));
+  }
+}
+function fitHome(map, animate=true){
+  const C = ctx(); const pts = [C.home, ...(C.uni.id!=="other" ? [C.uni.ll] : [])];
+  const b = new maplibregl.LngLatBounds();
+  pts.forEach(p => b.extend([p[1], p[0]]));
+  // include a ring around home so the 20-minute walk is visible
+  [[0.016,0],[-0.016,0],[0,0.025],[0,-0.025]].forEach(([a,o]) => b.extend([C.home[1]+o, C.home[0]+a]));
+  map.fitBounds(b, {padding:40, maxZoom:15, duration: animate ? 600 : 0});
+}
+function updateMapList(){
+  if(!gmap || mapGroup) return;   // a tapped group's list stays until the user moves the map
+  const b = gmap.getBounds(), c = gmap.getCenter(), C = ctx();
+  const rows = mapRows();
+  const inView = rows.filter(r => b.contains([r.it.ll[1], r.it.ll[0]]))
+    .map(r => ({...r, dc: hav([c.lat, c.lng], r.it.ll)})).sort((a,b) => a.dc - b.dc);
+  $("#maplisthead").textContent = inView.length ? `In this area · ${inView.length}` : "In this area";
+  $("#maplist").innerHTML = inView.length ? inView.slice(0,15).map(r => card(r,{why:false})).join("") : `<div class="empty">Nothing here with these filters. Zoom out or try another category.</div>`;
+  const total = rows.length;
+  $("#maplegendcount") && ($("#maplegendcount").textContent = `${total} place${total===1?"":"s"}`);
+  $("#mapcount") && ($("#mapcount").textContent = `${total} on the map`);
+}
+function showGroup(ids, center){
+  const C = ctx();
+  const rows = ids.map(id => BY_ID[id]).filter(Boolean).map(it => ({it, ...score(it, C)})).sort((a,b) => b.s - a.s);
+  $("#maplisthead").innerHTML = `${rows.length} here <button class="link" id="grpclear" style="margin-left:8px">Show everything in view</button>`;
+  let shown = 40;
+  const draw = () => {
+    $("#maplist").innerHTML = rows.slice(0, shown).map(r => card(r)).join("") +
+      (rows.length > shown ? `<button class="btn" id="grpmore" style="width:100%">Show more (${rows.length - shown} left)</button>` : "");
+    $("#grpmore")?.addEventListener("click", () => { shown += 40; draw(); });
+  };
+  draw();
+  mapGroup = ids;
+  $("#grpclear").onclick = () => { mapGroup = null; updateMapList(); };
+  if(gmap && center) gmap.easeTo({center, zoom: Math.max(gmap.getZoom(), 15.5)});
+  if(window.innerWidth < 1100) $("#maplisthead").scrollIntoView({block:"start", behavior:"smooth"});
+}
+function refreshMapData(){
+  mapGroup = null;
+  if(gmap && gmap.getSource("places")){ gmap.getSource("places").setData(placesGeoJSON(mapRows())); updateMapList(); }
+  else if($("#mapholder")) $("#mapholder").innerHTML = mapSVG(mapRows(), S.map.vb);
+}
+function destroyMap(){
+  if(!gmap) return;
+  try{ const c = gmap.getCenter(); S.map.camera = {center:[c.lng, c.lat], zoom: gmap.getZoom()}; gmap.remove(); }catch(e){}
+  gmap = null; gmapMarkers = []; mapGroup = null;
+}
+async function setupMap(){
+  const el = $("#glmap"); if(!el) return;
+  try{
+    await loadMapLib();
+    if(!$("#glmap") || S.view !== "map") return;   // user left the tab while loading
+    el.innerHTML = "";
+    const restoring = !!S.map.camera;   // decide now: resize/load fire move events that would set a camera
+    const map = new maplibregl.Map({
+      container: el, style: mapStyleUrl(),
+      center: S.map.camera?.center || [ctx().home[1], ctx().home[0]], zoom: S.map.camera?.zoom || 13.5,
+      attributionControl: {compact: true}, cooperativeGestures: false, dragRotate: false, pitchWithRotate: false,
+    });
+    gmap = map;
+    window.__unilondonMap = map; // handy for debugging in the browser console
+    // keep the map sized to its box (layout can settle after the map is created, and on rotate/resize)
+    if(window.ResizeObserver){ const ro = new ResizeObserver(() => { if(gmap === map) map.resize(); }); ro.observe(el); map.once("remove", () => ro.disconnect()); }
+    requestAnimationFrame(() => map.resize());
+    map.touchZoomRotate.disableRotation();
+    map.addControl(new maplibregl.NavigationControl({showCompass:false}), "top-right");
+    const geo = new maplibregl.GeolocateControl({positionOptions:{enableHighAccuracy:true}, trackUserLocation:false, showUserLocation:true, fitBoundsOptions:{maxZoom:15}});
+    map.addControl(geo, "top-right");
+    geo.on("geolocate", () => track("map/locate", {once:true}));
+    class HomeControl { onAdd(m){ const d=document.createElement("div"); d.className="maplibregl-ctrl maplibregl-ctrl-group"; d.innerHTML=`<button type="button" title="Show home and campus" aria-label="Show home and campus">${ic("pin","icon")}</button>`; d.querySelector("button").onclick=()=>fitHome(m); return d; } onRemove(){} }
+    map.addControl(new HomeControl(), "top-right");
+    map.on("style.load", () => ensureMapLayers(map));
+    map.on("styledata", () => ensureMapLayers(map));
+    map.on("load", () => {
+      map.resize();
+      ensureMapLayers(map);
+      placeMarkers(map);
+      if(!restoring) fitHome(map, false);
+      updateMapList();
+    });
+    map.on("movestart", e => { if(e.originalEvent && mapGroup){ mapGroup = null; } });
+    map.on("moveend", () => { updateMapList(); const c = map.getCenter(); S.map.camera = {center:[c.lng,c.lat], zoom: map.getZoom()}; });
+    map.on("click", "clusters", async e => {
+      const f = map.queryRenderedFeatures(e.point, {layers:["clusters"]})[0]; if(!f) return;
+      const src = map.getSource("places"), id = f.properties.cluster_id, n = f.properties.point_count;
+      let z = null; try{ z = await src.getClusterExpansionZoom(id); }catch(err){}
+      // Zoom in only if that genuinely breaks the group up; if one part would still hold most of it
+      // (e.g. hundreds of events listed at one campus) or it's small, list what's inside instead.
+      let splits = false;
+      try{
+        const kids = await src.getClusterChildren(id);
+        const biggest = Math.max(...kids.map(k => k.properties.point_count || 1));
+        splits = kids.length > 1 && biggest / n < 0.7;
+      }catch(err){}
+      if(z != null && z <= 16 && n > 12 && splits) { map.easeTo({center:f.geometry.coordinates, zoom:z + 0.3}); return; }
+      // small or un-splittable group: list everything in it
+      try{
+        const leaves = await src.getClusterLeaves(id, 500, 0);
+        showGroup(leaves.map(l => l.properties.id), f.geometry.coordinates);
+      }catch(err){ map.easeTo({center:f.geometry.coordinates, zoom:map.getZoom()+2}); }
+    });
+    map.on("click", "points", e => { const f = e.features?.[0]; if(f) selectPin(f.properties.id, true); });
+    ["clusters","points"].forEach(l => { map.on("mouseenter", l, () => map.getCanvas().style.cursor = "pointer"); map.on("mouseleave", l, () => map.getCanvas().style.cursor = ""); });
+    map.on("error", e => { console.warn("map:", e?.error?.message || e); if(String(e?.error?.message||"").match(/Failed to fetch|NetworkError|style/i) && !map.isStyleLoaded()) fallbackToSvg(); });
+    const mq = window.matchMedia?.("(prefers-color-scheme: dark)");
+    mq?.addEventListener?.("change", () => { if(gmap === map){ map.setStyle(mapStyleUrl(), {diff:false}); } });
+    track("map/real", {once:true});
+  }catch(err){
+    fallbackToSvg();
+  }
+}
+function fallbackToSvg(){
+  destroyMap();
+  const el = $("#glmap"); if(!el) return;
+  if(!S.map.vb) S.map.vb = defaultVB();
+  el.outerHTML = `<div class="mapwrap" id="mapwrap"><div class="map-ctrl"><button data-zoom="in" aria-label="Zoom in">+</button><button data-zoom="out" aria-label="Zoom out">−</button><button data-zoom="reset" aria-label="Reset view">${ic("pin","icon")}</button></div><div id="mapholder">${mapSVG(mapRows(), S.map.vb)}</div></div>`;
+  const near = mapRows().sort((a,b)=>a.dh-b.dh).slice(0,12);
+  $("#maplisthead").textContent = "Nearest to home";
+  $("#maplist").innerHTML = near.map(r=>card(r,{why:false})).join("");
+  setupSvgMap();
+}
 function refreshMap(){ const h = $("#mapholder"); if(h) h.innerHTML = mapSVG(mapRows(), S.map.vb); }
-function setupMap(){
+function setupSvgMap(){
   const wrap = $("#mapwrap"); if(!wrap) return;
   let drag = null; const pointers = new Map(); let pinch = null;
   const toSvg = (cx, cy) => { const r=$("#mapsvg").getBoundingClientRect(); const vb=S.map.vb; return [vb.x + (cx-r.left)/r.width*vb.w, vb.y + (cy-r.top)/r.height*vb.h]; };
@@ -625,10 +839,14 @@ function setupMap(){
     const z = b.dataset.zoom; if(z==="reset"){ S.map.vb = defaultVB(); refreshMap(); } else zoom(z==="in"?1/1.4:1.4);
   }));
 }
-function selectPin(id){
-  S.map.active = id; refreshMap();
+function selectPin(id, fromMap){
+  S.map.active = id;
   const it = BY_ID[id]; const pv = $("#mappreview");
-  if(pv && it) pv.innerHTML = card({it, ...score(it)});
+  if(gmap){
+    if(gmap.getLayer("point-halo")) gmap.setFilter("point-halo", ["==",["get","id"], id]);
+    if(it && !fromMap) gmap.easeTo({center:[it.ll[1], it.ll[0]], zoom: Math.max(gmap.getZoom(), 15.5)});
+  } else refreshMap();
+  if(pv && it){ pv.innerHTML = card({it, ...score(it)}); if(fromMap && window.innerWidth < 1100) pv.scrollIntoView({block:"nearest", behavior:"smooth"}); }
 }
 
 /* ---------- plan ---------- */
@@ -868,7 +1086,7 @@ function openProfile(first=false){
       Object.assign(p, {uni:$("#p-uni").value, course:$("#p-course").value, area:$("#p-area").value, meal:+$("#p-meal").value});
       if($("#p-rent")) p.rent = +$("#p-rent").value;
       const wasFirst = !S.onboarded;
-      S.profile = p; S.onboarded = true; S.map.vb = null; persist(); closeSheet(); render();
+      S.profile = p; S.onboarded = true; S.map.vb = null; S.map.camera = null; persist(); closeSheet(); render();
       if(wasFirst){ track(`profile/uni-${p.uni}`); track(`profile/year-${p.year}`); track("onboarding/done"); }
       toast(wasFirst ? "You're all set" : "Feed updated for you");
       window.scrollTo({top:0});
@@ -921,6 +1139,7 @@ async function shareItem(id){
 function render(){
   NOW = new Date();
   const v = S.view;
+  destroyMap();
   $("#app").classList.toggle("wide", v==="map");
   renderNav();
   $("#main").innerHTML = v==="explore" ? viewExplore() : v==="map" ? viewMap() : v==="plan" ? viewPlan() : v==="ask" ? viewAsk() : viewToday();
@@ -961,7 +1180,8 @@ document.addEventListener("click", e => {
   if(d.nav){ closeSheet(); go(d.nav, {cat:d.cat}); return; }
   if("profile" in d){ openProfile(false); return; }
   if(d.ecat){ S.explore.cat = d.ecat; S.explore.limit = 40; render(); return; }
-  if(d.mcat){ S.map.cat = d.mcat; S.map.active = null; render(); return; }
+  if(d.mcat){ S.map.cat = d.mcat; S.map.active = null; if(gmap){ $("#mapchips").innerHTML = mapChips(); refreshMapData(); } else render(); return; }
+  if("mnow" in d){ S.map.now = !S.map.now; S.map.active = null; if(gmap){ $("#mapchips").innerHTML = mapChips(); refreshMapData(); } else render(); return; }
   if(d.suggest){ $("#msgs").innerHTML=""; ask(d.suggest); return; }
   if(d.dsave){ toggleSave(d.dsave); openDetail(d.dsave); render(); return; }
   if(d.dplan){ const id=d.dplan; if(S.plan.has(id)){ S.plan.delete(id); toast("Removed from your plan"); } else { S.plan.add(id); S.saved.add(id); bump(BY_ID[id].cat,1.1); track(`plan/${BY_ID[id].cat}`); toast("Added to your plan"); } persist(); openDetail(id); render(); return; }
