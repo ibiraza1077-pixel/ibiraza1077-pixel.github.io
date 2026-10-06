@@ -85,6 +85,8 @@ def check(listing):
         return {"result": "unreachable", "error": "; ".join(errors)}
     if missing:
         return {"result": "changed", "missing": missing, "error": "; ".join(errors) or None}
+    if errors:
+        return {"result": "unreachable", "error": "; ".join(errors)}
     return {"result": "ok"}
 
 

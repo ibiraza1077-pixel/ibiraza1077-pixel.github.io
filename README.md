@@ -26,7 +26,7 @@ To edit a file on GitHub: open it → pencil icon → change → *Commit changes
 
 ## How listings stay current
 
-Everything is kept up to date by one GitHub Action, **Sync** (`.github/workflows/update-events.yml`). It runs at about 06:15 and 16:15 London time every day, and whenever you press **Sync now** on the admin page.
+Everything is kept up to date by one GitHub Action, **Sync** (`.github/workflows/update-events.yml`). It runs at 05:15 and 15:15 UTC every day (06:15 and 16:15 in London during British Summer Time; 05:15 and 15:15 during winter), and whenever you press **Sync now** on the admin page.
 
 **1. Events update themselves.** `scripts/update_events.py` pulls upcoming events from:
 
@@ -86,3 +86,15 @@ python3 -m http.server 8000
 ```
 
 Then open http://localhost:8000.
+
+## Engineering and checks
+
+Built with vanilla JavaScript, a service worker and Python's standard library. The app separates static listings from fetched event data and uses scheduled GitHub Actions for updates. It is a student resource pilot; automated checks can flag changes but cannot guarantee that every listing is current.
+
+```bash
+node --check app.js
+node --check sw.js
+python3 -m unittest discover -s tests
+```
+
+Regression tests cover complete checks, changed facts and partially unreachable sources. A listing is only confirmed when every configured source can be checked. The service worker caches successful responses and uses cached data during failed requests.
