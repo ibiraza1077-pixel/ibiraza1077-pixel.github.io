@@ -1,9 +1,9 @@
 {
- "run": "2026-10-13T21:41",
+ "run": "2026-10-14T11:09",
  "counts": {
   "ok": 32,
-  "changed": 1,
-  "unreachable": 12,
+  "changed": 2,
+  "unreachable": 11,
   "manual": 0
  },
  "results": [
@@ -64,8 +64,7 @@
    "ageDays": 0
   },
   {
-   "result": "unreachable",
-   "error": "HTTP 403 at https://blogs.lse.ac.uk/studentsatlse/2024/11/14/the-best-lunch-spots-on-and-around-lse-campus/",
+   "result": "ok",
    "id": "food-wrights",
    "title": "Sandwiches and plates, about £2.50–£8",
    "url": "https://blogs.lse.ac.uk/studentsatlse/2024/11/14/the-best-lunch-spots-on-and-around-lse-campus/",
@@ -140,7 +139,7 @@
    "id": "car-ucl-bfe",
    "title": "Banking, Finance & Economics Fair",
    "url": "https://www.ucl.ac.uk/study/careers/ucl-careers/resources-and-services/come-event/careers-fairs",
-   "ageDays": 7
+   "ageDays": 8
   },
   {
    "result": "unreachable",
@@ -148,7 +147,7 @@
    "id": "car-ucl-bf",
    "title": "Banking & Finance Fair",
    "url": "https://www.ucl.ac.uk/study/careers/ucl-careers/resources-and-services/come-event/careers-fairs",
-   "ageDays": 7
+   "ageDays": 8
   },
   {
    "result": "unreachable",
@@ -156,7 +155,7 @@
    "id": "car-ucl-cons",
    "title": "Management Consultancy Fair",
    "url": "https://www.ucl.ac.uk/study/careers/ucl-careers/resources-and-services/come-event/careers-fairs",
-   "ageDays": 7
+   "ageDays": 8
   },
   {
    "result": "unreachable",
@@ -164,7 +163,7 @@
    "id": "car-ucl-tech",
    "title": "Tech, Data & AI Fair",
    "url": "https://www.ucl.ac.uk/study/careers/ucl-careers/resources-and-services/come-event/careers-fairs",
-   "ageDays": 7
+   "ageDays": 8
   },
   {
    "result": "unreachable",
@@ -172,7 +171,7 @@
    "id": "car-ucl-life",
    "title": "Life & Health Sciences Fair",
    "url": "https://www.ucl.ac.uk/study/careers/ucl-careers/resources-and-services/come-event/careers-fairs",
-   "ageDays": 7
+   "ageDays": 8
   },
   {
    "result": "unreachable",
@@ -180,7 +179,7 @@
    "id": "car-ucl-eng",
    "title": "Engineering & The Built Environment Fair",
    "url": "https://www.ucl.ac.uk/study/careers/ucl-careers/resources-and-services/come-event/careers-fairs",
-   "ageDays": 7
+   "ageDays": 8
   },
   {
    "result": "unreachable",
@@ -188,7 +187,7 @@
    "id": "car-ucl-law",
    "title": "Law Fair",
    "url": "https://www.ucl.ac.uk/study/careers/ucl-careers/resources-and-services/come-event/careers-fairs",
-   "ageDays": 7
+   "ageDays": 8
   },
   {
    "result": "ok",
@@ -233,11 +232,15 @@
    "ageDays": 0
   },
   {
-   "result": "ok",
+   "result": "changed",
+   "missing": [
+    "re-open for applications on 14"
+   ],
+   "error": null,
    "id": "fund-kcl",
    "title": "King's hardship funds reopen 14 October",
    "url": "https://www.kcl.ac.uk/study/undergraduate/fees-and-funding/student-funding/hardship-funds",
-   "ageDays": 0
+   "ageDays": 1
   },
   {
    "result": "unreachable",
@@ -245,7 +248,7 @@
    "id": "fund-ucl",
    "title": "UCL Financial Assistance Fund",
    "url": "https://www.ucl.ac.uk/study/student-finances/funding/financial-assistance-fund",
-   "ageDays": 7
+   "ageDays": 8
   },
   {
    "result": "ok",
@@ -295,7 +298,7 @@
    "id": "deal-bm",
    "title": "British Museum: free, 5 minutes from campus",
    "url": "https://www.britishmuseum.org/visit",
-   "ageDays": 7
+   "ageDays": 8
   },
   {
    "result": "ok",
@@ -313,7 +316,7 @@
    "id": "sport-lsegym",
    "title": "LSESU Gym: £6 day pass or £32 a month",
    "url": "https://www.lsesu.com/sport/gym/studentmembership/",
-   "ageDays": 2
+   "ageDays": 3
   },
   {
    "result": "ok",
@@ -328,7 +331,7 @@
    "id": "home-ich",
    "title": "Intercollegiate Halls in Bloomsbury",
    "url": "https://www.london.ac.uk/about/services/halls",
-   "ageDays": 7
+   "ageDays": 8
   },
   {
    "result": "unreachable",
@@ -336,7 +339,7 @@
    "id": "home-uclhalls",
    "title": "UCL halls and nominated halls",
    "url": "https://www.ucl.ac.uk/study/accommodation/halls",
-   "ageDays": 7
+   "ageDays": 8
   }
  ]
 }
