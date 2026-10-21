@@ -1,13 +1,14 @@
 {
- "generated": "2026-10-20T20:16",
+ "generated": "2026-10-21T11:05",
  "windowDays": 35,
  "sources": [
   {
    "key": "ucl-su",
    "name": "Students' Union UCL",
    "url": "https://studentsunionucl.org/whats-on",
-   "ok": true,
-   "count": 375,
+   "ok": false,
+   "count": 365,
+   "error": "HTTP Error 403: Forbidden",
    "fetched": "2026-10-20T20:16"
   },
   {
@@ -16,23 +17,23 @@
    "url": "https://www.lsesu.com/events/whats-on/",
    "ok": true,
    "count": 0,
-   "fetched": "2026-10-20T20:16"
+   "fetched": "2026-10-21T11:05"
   },
   {
    "key": "kcl",
    "name": "King's College London events",
    "url": "https://www.kcl.ac.uk/events/events-calendar",
    "ok": true,
-   "count": 62,
-   "fetched": "2026-10-20T20:16"
+   "count": 61,
+   "fetched": "2026-10-21T11:05"
   },
   {
    "key": "lse-public",
    "name": "LSE public events",
    "url": "https://www.lse.ac.uk/events",
    "ok": true,
-   "count": 9,
-   "fetched": "2026-10-20T20:16"
+   "count": 12,
+   "fetched": "2026-10-21T11:05"
   }
  ],
  "events": [
@@ -56,7 +57,7 @@
    "url": "https://www.lse.ac.uk/library/whats-on/events/stolen-theft-in-the-archives",
    "source": "LSE public events",
    "sourceKey": "lse-public",
-   "checked": "2026-10-20",
+   "checked": "2026-10-21",
    "status": "verified",
    "auto": true
   },
@@ -81,233 +82,6 @@
    ],
    "desc": "Run by Students' Union UCL.",
    "url": "https://studentsunionucl.org/whats-on/representation/donation-page-cowrie-scholarship-foundation-community-nights",
-   "source": "Students' Union UCL",
-   "sourceKey": "ucl-su",
-   "checked": "2026-10-20",
-   "status": "verified",
-   "auto": true
-  },
-  {
-   "id": "ucl-su-205022",
-   "cat": "events",
-   "title": "Telugu Movie night (+snacks!)",
-   "org": "Telugu Society",
-   "area": "IOE - Bedford Way (20) - C3.09",
-   "ll": [
-    51.5246,
-    -0.134
-   ],
-   "price": 0,
-   "start": "2026-10-20T18:00",
-   "end": "2026-10-20T20:30",
-   "unis": [
-    "ucl"
-   ],
-   "tags": [
-    "community",
-    "culture",
-    "food"
-   ],
-   "desc": "Run by Telugu Society. Venue: IOE - Bedford Way (20) - C3.09.",
-   "url": "https://studentsunionucl.org/whats-on/clubs-societies/telugu-movie-night-snacks",
-   "source": "Students' Union UCL",
-   "sourceKey": "ucl-su",
-   "checked": "2026-10-20",
-   "status": "verified",
-   "auto": true
-  },
-  {
-   "id": "ucl-su-203480",
-   "cat": "events",
-   "title": "Popchella - a UCL pop music festival!",
-   "org": "Taylor Swift Society",
-   "area": "Mullys Basement Bar",
-   "ll": [
-    51.5246,
-    -0.134
-   ],
-   "price": 0,
-   "start": "2026-10-20T19:00",
-   "end": "2026-10-20T23:00",
-   "unis": [
-    "ucl"
-   ],
-   "tags": [
-    "community",
-    "music",
-    "nightlife"
-   ],
-   "desc": "Run by Taylor Swift Society. Venue: Mullys Basement Bar.",
-   "url": "https://studentsunionucl.org/whats-on/clubs-societies/popchella-ucl-pop-music-festival",
-   "source": "Students' Union UCL",
-   "sourceKey": "ucl-su",
-   "checked": "2026-10-20",
-   "status": "verified",
-   "auto": true
-  },
-  {
-   "id": "ucl-su-204976",
-   "cat": "events",
-   "title": "The Workings of Karma",
-   "org": "Buddhist Society",
-   "area": "UCL Bloomsbury",
-   "ll": [
-    51.5246,
-    -0.134
-   ],
-   "price": 0,
-   "start": "2026-10-20T19:00",
-   "end": "2026-10-20T20:30",
-   "unis": [
-    "ucl"
-   ],
-   "tags": [
-    "community",
-    "culture"
-   ],
-   "desc": "Run by Buddhist Society. Venue: Meditation Room - Basement 2 - Student Centre. Beginner Friendly.",
-   "url": "https://studentsunionucl.org/whats-on/clubs-societies/workings-of-karma",
-   "source": "Students' Union UCL",
-   "sourceKey": "ucl-su",
-   "checked": "2026-10-20",
-   "status": "verified",
-   "auto": true
-  },
-  {
-   "id": "ucl-su-205087",
-   "cat": "sport",
-   "title": "Juggling & Circus Taster #3",
-   "org": "Balls! Juggling and Circus Society",
-   "area": "UCL Bloomsbury",
-   "ll": [
-    51.5246,
-    -0.134
-   ],
-   "price": 0,
-   "start": "2026-10-20T19:00",
-   "end": "2026-10-20T20:45",
-   "unis": [
-    "ucl"
-   ],
-   "tags": [
-    "community",
-    "culture",
-    "fitness",
-    "music",
-    "nightlife"
-   ],
-   "desc": "Run by Balls! Juggling and Circus Society. Venue: North Cloisters, Main Building, Gower Street. Beginner Friendly · Alcohol Free · Under 18 Friendly · Commuters.",
-   "url": "https://studentsunionucl.org/whats-on/clubs-societies/juggling-circus-taster-3",
-   "source": "Students' Union UCL",
-   "sourceKey": "ucl-su",
-   "checked": "2026-10-20",
-   "status": "verified",
-   "auto": true
-  },
-  {
-   "id": "ucl-su-204739",
-   "cat": "sport",
-   "title": "Dance Society: Absolute Beginner Classes series 1 - Contemporary",
-   "org": "Dance Society",
-   "area": "Chadwick G07",
-   "ll": [
-    51.5246,
-    -0.134
-   ],
-   "price": 0,
-   "start": "2026-10-20T20:00",
-   "end": "2026-10-20T21:00",
-   "unis": [
-    "ucl"
-   ],
-   "tags": [
-    "community",
-    "fitness"
-   ],
-   "desc": "Run by Dance Society. Venue: Chadwick G07. Beginner Friendly · Under 18 Friendly. Also on 2 more dates in the next few weeks.",
-   "url": "https://studentsunionucl.org/whats-on/give-it-go/dance-society-absolute-beginner-classes-series-1-contemporary-0",
-   "source": "Students' Union UCL",
-   "sourceKey": "ucl-su",
-   "checked": "2026-10-20",
-   "status": "verified",
-   "auto": true
-  },
-  {
-   "id": "ucl-su-204988",
-   "cat": "sport",
-   "title": "Swimming Club Taster Session",
-   "org": "Swimming Club",
-   "area": "UCL Bloomsbury",
-   "ll": [
-    51.5246,
-    -0.134
-   ],
-   "price": 0,
-   "start": "2026-10-20T20:00",
-   "end": "2026-10-20T21:00",
-   "unis": [
-    "ucl"
-   ],
-   "tags": [
-    "community",
-    "fitness"
-   ],
-   "desc": "Run by Swimming Club. Beginner Friendly. Also on 1 more date in the next few weeks.",
-   "url": "https://studentsunionucl.org/whats-on/sport/swimming-club-taster-session-9",
-   "source": "Students' Union UCL",
-   "sourceKey": "ucl-su",
-   "checked": "2026-10-20",
-   "status": "verified",
-   "auto": true
-  },
-  {
-   "id": "ucl-su-205031",
-   "cat": "events",
-   "title": "Crossbody Salsa Intermediates",
-   "org": "Salsa Society",
-   "area": "UCL Bloomsbury",
-   "ll": [
-    51.5246,
-    -0.134
-   ],
-   "price": 0,
-   "start": "2026-10-20T20:00",
-   "end": "2026-10-20T21:00",
-   "unis": [
-    "ucl"
-   ],
-   "tags": [
-    "culture"
-   ],
-   "desc": "Run by Salsa Society. Venue: Christopher Ingold Building G21, Ramsay LT.",
-   "url": "https://studentsunionucl.org/whats-on/clubs-societies/crossbody-salsa-intermediates-24",
-   "source": "Students' Union UCL",
-   "sourceKey": "ucl-su",
-   "checked": "2026-10-20",
-   "status": "verified",
-   "auto": true
-  },
-  {
-   "id": "ucl-su-205116",
-   "cat": "sport",
-   "title": "UEFA Champions League Phase PSG v Barcelona @ Phineas Bar",
-   "org": "Students' Union UCL",
-   "area": "Phineas Bar",
-   "ll": [
-    51.5246,
-    -0.134
-   ],
-   "price": 0,
-   "start": "2026-10-20T20:00",
-   "end": "2026-10-20T22:00",
-   "unis": [
-    "ucl"
-   ],
-   "tags": [
-    "fitness"
-   ],
-   "desc": "Run by Students' Union UCL. Venue: Phineas Bar.",
-   "url": "https://studentsunionucl.org/whats-on/bars/uefa-champions-league-phase-psg-v-barcelona-phineas-bar",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
    "checked": "2026-10-20",
@@ -424,63 +198,6 @@
    "auto": true
   },
   {
-   "id": "ucl-su-203381",
-   "cat": "sport",
-   "title": "Project Active Sculpt Pilates",
-   "org": "Students' Union UCL",
-   "area": "UCL Bloomsbury",
-   "ll": [
-    51.5246,
-    -0.134
-   ],
-   "price": 3.5,
-   "start": "2026-10-21T10:00",
-   "end": "2026-10-21T11:00",
-   "unis": [
-    "ucl"
-   ],
-   "tags": [
-    "community",
-    "culture",
-    "fitness"
-   ],
-   "desc": "Run by Students' Union UCL. Venue: Conference Room, Level 2, Bloomsbury Theatre Building. Beginner Friendly. Also on 1 more date in the next few weeks.",
-   "url": "https://studentsunionucl.org/whats-on/sport/project-active-sculpt-pilates-1",
-   "source": "Students' Union UCL",
-   "sourceKey": "ucl-su",
-   "checked": "2026-10-20",
-   "status": "verified",
-   "auto": true
-  },
-  {
-   "id": "ucl-su-204310",
-   "cat": "sport",
-   "title": "Project Active Lane Swimming",
-   "org": "Students' Union UCL",
-   "area": "UCL East",
-   "ll": [
-    51.5378,
-    -0.0107
-   ],
-   "price": 3.5,
-   "start": "2026-10-21T10:00",
-   "end": "2026-10-21T11:00",
-   "unis": [
-    "ucl"
-   ],
-   "tags": [
-    "community",
-    "fitness"
-   ],
-   "desc": "Run by Students' Union UCL. Venue: London Aquatics Centre. Beginner Friendly. Also on 1 more date in the next few weeks.",
-   "url": "https://studentsunionucl.org/whats-on/sport/project-active-lane-swimming-11",
-   "source": "Students' Union UCL",
-   "sourceKey": "ucl-su",
-   "checked": "2026-10-20",
-   "status": "verified",
-   "auto": true
-  },
-  {
    "id": "ucl-su-204674",
    "cat": "events",
    "title": "PGT Active Bystander Workshop: Online",
@@ -536,62 +253,6 @@
    "url": "https://studentsunionucl.org/whats-on/clubs-societies/coffee-morning",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-10-20",
-   "status": "verified",
-   "auto": true
-  },
-  {
-   "id": "kcl-mindfulness-with-jenny-online-19",
-   "cat": "events",
-   "title": "Mindfulness with Jenny - Online",
-   "org": "Dean's Office",
-   "area": "Online",
-   "ll": [
-    51.5115,
-    -0.116
-   ],
-   "online": true,
-   "start": "2026-10-21T10:00",
-   "end": "2026-10-21T11:00",
-   "unis": [
-    "kcl"
-   ],
-   "tags": [
-    "community"
-   ],
-   "desc": "A session to explore mindfulness and how to be mindful. Also on 4 more dates in the next few weeks.",
-   "url": "https://www.kcl.ac.uk/events/mindfulness-with-jenny-online-19",
-   "source": "King's College London events",
-   "sourceKey": "kcl",
-   "checked": "2026-10-20",
-   "status": "verified",
-   "auto": true
-  },
-  {
-   "id": "kcl-reimagining-chinese-diasporas-queer-art-community-building-a",
-   "cat": "events",
-   "title": "Reimagining Chinese Diasporas: Queer Art, Community Building and Co-Creation",
-   "org": "Lau China Institute",
-   "area": "Strand campus",
-   "ll": [
-    51.5115,
-    -0.116
-   ],
-   "start": "2026-10-21T10:00",
-   "end": "2026-10-21T11:30",
-   "unis": [
-    "kcl"
-   ],
-   "tags": [
-    "community",
-    "culture",
-    "law",
-    "research"
-   ],
-   "desc": "Bringing together Chinese diasporic artists, community organisers and researchers, this roundtable explores the challenges queer, feminist and LGBTQ+ communities face and what art can make possible for individuals, communities, and the institutions and policymakers seeking to…",
-   "url": "https://www.kcl.ac.uk/events/reimagining-chinese-diasporas-queer-art-community-building-and-co-creation",
-   "source": "King's College London events",
-   "sourceKey": "kcl",
    "checked": "2026-10-20",
    "status": "verified",
    "auto": true
@@ -705,7 +366,7 @@
    "url": "https://www.kcl.ac.uk/events/praying-the-holy-rosary-at-guys-7",
    "source": "King's College London events",
    "sourceKey": "kcl",
-   "checked": "2026-10-20",
+   "checked": "2026-10-21",
    "status": "verified",
    "auto": true
   },
@@ -760,7 +421,7 @@
    "url": "https://www.kcl.ac.uk/events/sacrament-of-confession-at-guys-6",
    "source": "King's College London events",
    "sourceKey": "kcl",
-   "checked": "2026-10-20",
+   "checked": "2026-10-21",
    "status": "verified",
    "auto": true
   },
@@ -842,7 +503,7 @@
    "url": "https://www.kcl.ac.uk/events/catholic-mass-at-guys-9",
    "source": "King's College London events",
    "sourceKey": "kcl",
-   "checked": "2026-10-20",
+   "checked": "2026-10-21",
    "status": "verified",
    "auto": true
   },
@@ -870,7 +531,7 @@
    "url": "https://www.kcl.ac.uk/events/college-eucharist-at-the-strand-black-history-month",
    "source": "King's College London events",
    "sourceKey": "kcl",
-   "checked": "2026-10-20",
+   "checked": "2026-10-21",
    "status": "verified",
    "auto": true
   },
@@ -1200,7 +861,7 @@
    "url": "https://www.kcl.ac.uk/events/unlocking-the-mystery-of-the-bible-at-guys-copy",
    "source": "King's College London events",
    "sourceKey": "kcl",
-   "checked": "2026-10-20",
+   "checked": "2026-10-21",
    "status": "verified",
    "auto": true
   },
@@ -1890,7 +1551,7 @@
    "url": "https://www.kcl.ac.uk/events/christus-medicus-group-at-guys-4",
    "source": "King's College London events",
    "sourceKey": "kcl",
-   "checked": "2026-10-20",
+   "checked": "2026-10-21",
    "status": "verified",
    "auto": true
   },
@@ -1915,7 +1576,7 @@
    "url": "https://www.kcl.ac.uk/events/undergraduate-info-session-personal-statement-21-october-2026",
    "source": "King's College London events",
    "sourceKey": "kcl",
-   "checked": "2026-10-20",
+   "checked": "2026-10-21",
    "status": "verified",
    "auto": true
   },
@@ -1967,7 +1628,7 @@
    "url": "https://www.lse.ac.uk/international-relations/events/2026/easting-the-west-theorizing-the-postliberal-conjuncture-from-china",
    "source": "LSE public events",
    "sourceKey": "lse-public",
-   "checked": "2026-10-20",
+   "checked": "2026-10-21",
    "status": "verified",
    "auto": true
   },
@@ -2078,7 +1739,7 @@
    "url": "https://www.lse.ac.uk/events/economic-perspective-on-ai",
    "source": "LSE public events",
    "sourceKey": "lse-public",
-   "checked": "2026-10-20",
+   "checked": "2026-10-21",
    "status": "verified",
    "auto": true
   },
@@ -2472,7 +2133,7 @@
    "url": "https://www.kcl.ac.uk/events/morning-prayer-at-the-strand-9",
    "source": "King's College London events",
    "sourceKey": "kcl",
-   "checked": "2026-10-20",
+   "checked": "2026-10-21",
    "status": "verified",
    "auto": true
   },
@@ -2498,7 +2159,7 @@
    "url": "https://www.kcl.ac.uk/events/morning-prayer-at-guys-8",
    "source": "King's College London events",
    "sourceKey": "kcl",
-   "checked": "2026-10-20",
+   "checked": "2026-10-21",
    "status": "verified",
    "auto": true
   },
@@ -2638,7 +2299,7 @@
    "url": "https://www.kcl.ac.uk/events/barista-session-at-guys-8",
    "source": "King's College London events",
    "sourceKey": "kcl",
-   "checked": "2026-10-20",
+   "checked": "2026-10-21",
    "status": "verified",
    "auto": true
   },
@@ -2664,7 +2325,7 @@
    "url": "https://www.kcl.ac.uk/events/radical-neuro-inclusion-at-denmark-hill",
    "source": "King's College London events",
    "sourceKey": "kcl",
-   "checked": "2026-10-20",
+   "checked": "2026-10-21",
    "status": "verified",
    "auto": true
   },
@@ -2690,7 +2351,7 @@
    "url": "https://www.kcl.ac.uk/events/rosary-prayer-group-at-the-strand-8",
    "source": "King's College London events",
    "sourceKey": "kcl",
-   "checked": "2026-10-20",
+   "checked": "2026-10-21",
    "status": "verified",
    "auto": true
   },
@@ -2716,34 +2377,7 @@
    "url": "https://www.kcl.ac.uk/events/sacrament-of-confession-at-the-strand-7",
    "source": "King's College London events",
    "sourceKey": "kcl",
-   "checked": "2026-10-20",
-   "status": "verified",
-   "auto": true
-  },
-  {
-   "id": "kcl-international-lunch-at-guys-8",
-   "cat": "events",
-   "title": "International Lunch at Guy's",
-   "org": "Dean's Office",
-   "area": "Guy's campus",
-   "ll": [
-    51.5033,
-    -0.0869
-   ],
-   "start": "2026-10-22T12:30",
-   "end": "2026-10-22T14:00",
-   "unis": [
-    "kcl"
-   ],
-   "tags": [
-    "community",
-    "food"
-   ],
-   "desc": "Meet up in the Chaplaincy & enjoy a (free!) light lunch on Thursdays during term time. Also on 4 more dates in the next few weeks.",
-   "url": "https://www.kcl.ac.uk/events/international-lunch-at-guys-8",
-   "source": "King's College London events",
-   "sourceKey": "kcl",
-   "checked": "2026-10-20",
+   "checked": "2026-10-21",
    "status": "verified",
    "auto": true
   },
@@ -2827,7 +2461,7 @@
    "url": "https://www.lse.ac.uk/events/arts-and-music/edward-leung-piano",
    "source": "LSE public events",
    "sourceKey": "lse-public",
-   "checked": "2026-10-20",
+   "checked": "2026-10-21",
    "status": "verified",
    "auto": true
   },
@@ -2853,7 +2487,7 @@
    "url": "https://www.kcl.ac.uk/events/catholic-mass-at-the-strand-7",
    "source": "King's College London events",
    "sourceKey": "kcl",
-   "checked": "2026-10-20",
+   "checked": "2026-10-21",
    "status": "verified",
    "auto": true
   },
@@ -3130,7 +2764,7 @@
    "url": "https://www.kcl.ac.uk/events/orthodox-vespers-at-the-strand-copy-2",
    "source": "King's College London events",
    "sourceKey": "kcl",
-   "checked": "2026-10-20",
+   "checked": "2026-10-21",
    "status": "verified",
    "auto": true
   },
@@ -3328,7 +2962,7 @@
    "url": "https://www.kcl.ac.uk/events/the-naval-war-in-the-baltic-1914-1915",
    "source": "King's College London events",
    "sourceKey": "kcl",
-   "checked": "2026-10-20",
+   "checked": "2026-10-21",
    "status": "verified",
    "auto": true
   },
@@ -3383,7 +3017,7 @@
    "url": "https://www.kcl.ac.uk/events/death-cafe-at-guys",
    "source": "King's College London events",
    "sourceKey": "kcl",
-   "checked": "2026-10-20",
+   "checked": "2026-10-21",
    "status": "verified",
    "auto": true
   },
@@ -3987,7 +3621,7 @@
    "url": "https://www.lse.ac.uk/social-policy/events/annual-lecture-2026",
    "source": "LSE public events",
    "sourceKey": "lse-public",
-   "checked": "2026-10-20",
+   "checked": "2026-10-21",
    "status": "verified",
    "auto": true
   },
@@ -4011,7 +3645,7 @@
    "url": "https://www.lse.ac.uk/sociology/events/2026/the-sociology-of-elite-power-today",
    "source": "LSE public events",
    "sourceKey": "lse-public",
-   "checked": "2026-10-20",
+   "checked": "2026-10-21",
    "status": "verified",
    "auto": true
   },
@@ -4035,7 +3669,7 @@
    "url": "https://www.lse.ac.uk/events/women-scholarship",
    "source": "LSE public events",
    "sourceKey": "lse-public",
-   "checked": "2026-10-20",
+   "checked": "2026-10-21",
    "status": "verified",
    "auto": true
   },
@@ -4059,7 +3693,7 @@
    "url": "https://www.lse.ac.uk/international-relations/events/2026/sea-change-the-new-great-game-in-the-arctic-circle",
    "source": "LSE public events",
    "sourceKey": "lse-public",
-   "checked": "2026-10-20",
+   "checked": "2026-10-21",
    "status": "verified",
    "auto": true
   },
@@ -4390,11 +4024,11 @@
    "tags": [
     "community"
    ],
-   "desc": "A Eucharist service every Friday at midday during term time in the Guy's Chapel. Also on 3 more dates in the next few weeks.",
+   "desc": "A Eucharist service every Friday at midday during term time in the Guy's Chapel. Also on 4 more dates in the next few weeks.",
    "url": "https://www.kcl.ac.uk/events/weekly-eucharist-at-guys-9",
    "source": "King's College London events",
    "sourceKey": "kcl",
-   "checked": "2026-10-20",
+   "checked": "2026-10-21",
    "status": "verified",
    "auto": true
   },
@@ -4418,11 +4052,11 @@
     "community",
     "culture"
    ],
-   "desc": "Read & discuss 'The Left Hand of Darkness' by Ursula K. Le Guin. Also on 2 more dates in the next few weeks.",
+   "desc": "Read & discuss 'The Left Hand of Darkness' by Ursula K. Le Guin. Also on 3 more dates in the next few weeks.",
    "url": "https://www.kcl.ac.uk/events/deans-office-book-club-online-9",
    "source": "King's College London events",
    "sourceKey": "kcl",
-   "checked": "2026-10-20",
+   "checked": "2026-10-21",
    "status": "verified",
    "auto": true
   },
@@ -4445,11 +4079,11 @@
     "community",
     "food"
    ],
-   "desc": "An opportunity to enjoy cake & coffee in the Guy's Chaplaincy every Friday during term time. Also on 3 more dates in the next few weeks.",
+   "desc": "An opportunity to enjoy cake & coffee in the Guy's Chaplaincy every Friday during term time. Also on 2 more dates in the next few weeks.",
    "url": "https://www.kcl.ac.uk/events/sweet-friday-at-guys-11",
    "source": "King's College London events",
    "sourceKey": "kcl",
-   "checked": "2026-10-20",
+   "checked": "2026-10-21",
    "status": "verified",
    "auto": true
   },
@@ -4503,7 +4137,7 @@
    "url": "https://www.kcl.ac.uk/events/afternoon-tea-at-the-strand-9",
    "source": "King's College London events",
    "sourceKey": "kcl",
-   "checked": "2026-10-20",
+   "checked": "2026-10-21",
    "status": "verified",
    "auto": true
   },
@@ -4974,7 +4608,7 @@
    "url": "https://www.lse.ac.uk/events/arts-and-music/lse-chill/lse-chill-20261023",
    "source": "LSE public events",
    "sourceKey": "lse-public",
-   "checked": "2026-10-20",
+   "checked": "2026-10-21",
    "status": "verified",
    "auto": true
   },
@@ -5529,7 +5163,7 @@
    "url": "https://www.kcl.ac.uk/events/qs-discover-connect-masters-in-london",
    "source": "King's College London events",
    "sourceKey": "kcl",
-   "checked": "2026-10-20",
+   "checked": "2026-10-21",
    "status": "verified",
    "auto": true
   },
@@ -5558,7 +5192,7 @@
    "url": "https://www.kcl.ac.uk/events/change-our-city-challenge-2026",
    "source": "King's College London events",
    "sourceKey": "kcl",
-   "checked": "2026-10-20",
+   "checked": "2026-10-21",
    "status": "verified",
    "auto": true
   },
@@ -6261,7 +5895,7 @@
    "url": "https://www.kcl.ac.uk/events/morning-prayer-online-copy-13",
    "source": "King's College London events",
    "sourceKey": "kcl",
-   "checked": "2026-10-20",
+   "checked": "2026-10-21",
    "status": "verified",
    "auto": true
   },
@@ -6292,6 +5926,30 @@
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
    "checked": "2026-10-20",
+   "status": "verified",
+   "auto": true
+  },
+  {
+   "id": "lse-public-women-artists-in-conflict-zones",
+   "cat": "events",
+   "title": "Women artists in conflict zones: imagination as an act of resistance",
+   "org": "LSE public events",
+   "area": "Atrium Gallery, Old Building",
+   "ll": [
+    51.5144,
+    -0.1165
+   ],
+   "start": "2026-10-26T10:00",
+   "end": "2026-12-04T17:00",
+   "tags": [
+    "culture",
+    "research"
+   ],
+   "desc": "LSE public event, open to everyone. Atrium Gallery, Old Building.",
+   "url": "https://www.lse.ac.uk/events/arts-and-music/exhibitions/exhibitions/women-artists-in-conflict-zones",
+   "source": "LSE public events",
+   "sourceKey": "lse-public",
+   "checked": "2026-10-21",
    "status": "verified",
    "auto": true
   },
@@ -6563,7 +6221,7 @@
    "url": "https://www.kcl.ac.uk/events/life-health-science-careers-event-2026",
    "source": "King's College London events",
    "sourceKey": "kcl",
-   "checked": "2026-10-20",
+   "checked": "2026-10-21",
    "status": "verified",
    "auto": true
   },
@@ -6875,6 +6533,55 @@
    "auto": true
   },
   {
+   "id": "lse-public-the-madness-of-markets",
+   "cat": "events",
+   "title": "The madness of markets: why smart investors make crazy decisions – and how to exploit them",
+   "org": "LSE public events",
+   "area": "Old Theatre, Old Building",
+   "ll": [
+    51.5144,
+    -0.1165
+   ],
+   "start": "2026-10-26T18:30",
+   "end": "2026-10-26T19:30",
+   "tags": [
+    "culture",
+    "finance",
+    "research"
+   ],
+   "desc": "LSE public event, open to everyone. In-person public event (Old Theatre, Old Building).",
+   "url": "https://www.lse.ac.uk/events/open/the-madness-of-markets",
+   "source": "LSE public events",
+   "sourceKey": "lse-public",
+   "checked": "2026-10-21",
+   "status": "verified",
+   "auto": true
+  },
+  {
+   "id": "lse-public-women-of-the-world",
+   "cat": "events",
+   "title": "Women of the world unite: the UN Decade for Women and transnational feminisms 1975 to now",
+   "org": "LSE public events",
+   "area": "Sheikh Zayed Theatre, Cheng Kin Ku Building",
+   "ll": [
+    51.5144,
+    -0.1165
+   ],
+   "start": "2026-10-26T18:30",
+   "end": "2026-10-26T20:00",
+   "tags": [
+    "culture",
+    "research"
+   ],
+   "desc": "LSE public event, open to everyone. In-person and online public event (Sheikh Zayed Theatre, Cheng Kin Ku Building).",
+   "url": "https://www.lse.ac.uk/events/women-of-the-world",
+   "source": "LSE public events",
+   "sourceKey": "lse-public",
+   "checked": "2026-10-21",
+   "status": "verified",
+   "auto": true
+  },
+  {
    "id": "ucl-su-204949",
    "cat": "sport",
    "title": "BHM Sports Pass - Men's Hockey Training",
@@ -7152,7 +6859,7 @@
    "url": "https://www.kcl.ac.uk/events/morning-prayer-at-waterloo-5",
    "source": "King's College London events",
    "sourceKey": "kcl",
-   "checked": "2026-10-20",
+   "checked": "2026-10-21",
    "status": "verified",
    "auto": true
   },
@@ -7178,7 +6885,7 @@
    "url": "https://www.kcl.ac.uk/events/morning-prayer-at-denmark-hill-9",
    "source": "King's College London events",
    "sourceKey": "kcl",
-   "checked": "2026-10-20",
+   "checked": "2026-10-21",
    "status": "verified",
    "auto": true
   },
@@ -7259,7 +6966,7 @@
    "url": "https://www.kcl.ac.uk/events/law-justice-fair-2026",
    "source": "King's College London events",
    "sourceKey": "kcl",
-   "checked": "2026-10-20",
+   "checked": "2026-10-21",
    "status": "verified",
    "auto": true
   },
@@ -7311,7 +7018,7 @@
    "url": "https://www.kcl.ac.uk/events/international-lunch-at-waterloo-10",
    "source": "King's College London events",
    "sourceKey": "kcl",
-   "checked": "2026-10-20",
+   "checked": "2026-10-21",
    "status": "verified",
    "auto": true
   },
@@ -7338,7 +7045,7 @@
    "url": "https://www.kcl.ac.uk/events/lunch-at-denmark-hill-2",
    "source": "King's College London events",
    "sourceKey": "kcl",
-   "checked": "2026-10-20",
+   "checked": "2026-10-21",
    "status": "verified",
    "auto": true
   },
@@ -7365,7 +7072,35 @@
    "url": "https://www.kcl.ac.uk/events/deans-office-book-club-at-waterloo-10",
    "source": "King's College London events",
    "sourceKey": "kcl",
-   "checked": "2026-10-20",
+   "checked": "2026-10-21",
+   "status": "verified",
+   "auto": true
+  },
+  {
+   "id": "kcl-age-of-deception-cybersecurity-as-secret-statecraft",
+   "cat": "events",
+   "title": "Age of Deception: Cybersecurity as Secret Statecraft",
+   "org": "Faculty of Social Science & Public Policy",
+   "area": "Strand campus",
+   "ll": [
+    51.5115,
+    -0.116
+   ],
+   "start": "2026-10-27T13:00",
+   "end": "2026-10-27T14:30",
+   "unis": [
+    "kcl"
+   ],
+   "tags": [
+    "community",
+    "law",
+    "research"
+   ],
+   "desc": "At the heart of cybersecurity lies a paradox: Cooperation makes conflict possible. In his new book, Age of Deception, Jon Lindsay shows that widespread trust in cyberspace enables espionage and subversion. Also on 1 more date in the next few weeks.",
+   "url": "https://www.kcl.ac.uk/events/age-of-deception-cybersecurity-as-secret-statecraft",
+   "source": "King's College London events",
+   "sourceKey": "kcl",
+   "checked": "2026-10-21",
    "status": "verified",
    "auto": true
   },
@@ -7390,35 +7125,7 @@
    "url": "https://www.kcl.ac.uk/events/undergraduate-info-session-ucas-27-october-2026",
    "source": "King's College London events",
    "sourceKey": "kcl",
-   "checked": "2026-10-20",
-   "status": "verified",
-   "auto": true
-  },
-  {
-   "id": "kcl-age-of-deception-cybersecurity-as-secret-statecraft",
-   "cat": "events",
-   "title": "Age of Deception: Cybersecurity as Secret Statecraft",
-   "org": "Faculty of Social Science & Public Policy",
-   "area": "Strand campus",
-   "ll": [
-    51.5115,
-    -0.116
-   ],
-   "start": "2026-10-27T13:00",
-   "end": "2026-10-27T14:30",
-   "unis": [
-    "kcl"
-   ],
-   "tags": [
-    "community",
-    "law",
-    "research"
-   ],
-   "desc": "At the heart of cybersecurity lies a paradox: Cooperation makes conflict possible. In his new book, Age of Deception, Jon Lindsay shows that widespread trust in cyberspace enables espionage and subversion.",
-   "url": "https://www.kcl.ac.uk/events/age-of-deception-cybersecurity-as-secret-statecraft",
-   "source": "King's College London events",
-   "sourceKey": "kcl",
-   "checked": "2026-10-20",
+   "checked": "2026-10-21",
    "status": "verified",
    "auto": true
   },
@@ -7497,7 +7204,7 @@
    "url": "https://www.kcl.ac.uk/events/all-souls-service-at-the-strand-requiem-in-a-time-of-remembering",
    "source": "King's College London events",
    "sourceKey": "kcl",
-   "checked": "2026-10-20",
+   "checked": "2026-10-21",
    "status": "verified",
    "auto": true
   },
@@ -7606,7 +7313,7 @@
    "url": "https://www.kcl.ac.uk/events/school-of-the-sacraments-at-guys-copy-1",
    "source": "King's College London events",
    "sourceKey": "kcl",
-   "checked": "2026-10-20",
+   "checked": "2026-10-21",
    "status": "verified",
    "auto": true
   },
@@ -7697,6 +7404,33 @@
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
    "checked": "2026-10-20",
+   "status": "verified",
+   "auto": true
+  },
+  {
+   "id": "kcl-mindfulness-with-jenny-online-20",
+   "cat": "events",
+   "title": "Mindfulness with Jenny - Online",
+   "org": "Dean's Office",
+   "area": "Online",
+   "ll": [
+    51.5115,
+    -0.116
+   ],
+   "online": true,
+   "start": "2026-10-28T10:00",
+   "end": "2026-10-28T11:00",
+   "unis": [
+    "kcl"
+   ],
+   "tags": [
+    "community"
+   ],
+   "desc": "A session to explore mindfulness and how to be mindful. Also on 3 more dates in the next few weeks.",
+   "url": "https://www.kcl.ac.uk/events/mindfulness-with-jenny-online-20",
+   "source": "King's College London events",
+   "sourceKey": "kcl",
+   "checked": "2026-10-21",
    "status": "verified",
    "auto": true
   },
@@ -8481,6 +8215,33 @@
    "auto": true
   },
   {
+   "id": "kcl-international-lunch-at-guys-9",
+   "cat": "events",
+   "title": "International Lunch at Guy's",
+   "org": "Dean's Office",
+   "area": "Guy's campus",
+   "ll": [
+    51.5033,
+    -0.0869
+   ],
+   "start": "2026-10-29T12:30",
+   "end": "2026-10-29T14:00",
+   "unis": [
+    "kcl"
+   ],
+   "tags": [
+    "community",
+    "food"
+   ],
+   "desc": "Meet up in the Chaplaincy & enjoy a (free!) light lunch on Thursdays during term time. Also on 3 more dates in the next few weeks.",
+   "url": "https://www.kcl.ac.uk/events/international-lunch-at-guys-9",
+   "source": "King's College London events",
+   "sourceKey": "kcl",
+   "checked": "2026-10-21",
+   "status": "verified",
+   "auto": true
+  },
+  {
    "id": "ucl-su-203557",
    "cat": "events",
    "title": "Managing and citing references with EndNote: workshop",
@@ -8585,7 +8346,7 @@
    "url": "https://www.kcl.ac.uk/events/should-the-united-states-pursue-a-nuclear-damage-limitation-capability",
    "source": "King's College London events",
    "sourceKey": "kcl",
-   "checked": "2026-10-20",
+   "checked": "2026-10-21",
    "status": "verified",
    "auto": true
   },
@@ -8724,7 +8485,7 @@
    "url": "https://www.kcl.ac.uk/events/yarn-and-yap-at-guys-copy-2",
    "source": "King's College London events",
    "sourceKey": "kcl",
-   "checked": "2026-10-20",
+   "checked": "2026-10-21",
    "status": "verified",
    "auto": true
   },
@@ -8918,7 +8679,7 @@
    "url": "https://www.kcl.ac.uk/events/john-hegley-and-friends-keats-the-cat-and-the-kennel",
    "source": "King's College London events",
    "sourceKey": "kcl",
-   "checked": "2026-10-20",
+   "checked": "2026-10-21",
    "status": "verified",
    "auto": true
   },
@@ -9643,7 +9404,7 @@
    "url": "https://www.kcl.ac.uk/events/future-skills-hackathon-thriving-in-the-age-of-genai",
    "source": "King's College London events",
    "sourceKey": "kcl",
-   "checked": "2026-10-20",
+   "checked": "2026-10-21",
    "status": "verified",
    "auto": true
   },
@@ -9843,7 +9604,7 @@
    "url": "https://www.kcl.ac.uk/events/global-placements-employer-speed-meet-autumn-2026",
    "source": "King's College London events",
    "sourceKey": "kcl",
-   "checked": "2026-10-20",
+   "checked": "2026-10-21",
    "status": "verified",
    "auto": true
   },
@@ -10297,7 +10058,7 @@
    "url": "https://www.kcl.ac.uk/events/college-eucharist-at-the-strand-said-service",
    "source": "King's College London events",
    "sourceKey": "kcl",
-   "checked": "2026-10-20",
+   "checked": "2026-10-21",
    "status": "verified",
    "auto": true
   },
@@ -10487,7 +10248,7 @@
    "url": "https://www.kcl.ac.uk/events/more-than-venices-successor-rethinking-the-austrian-navy-in-the-late-eighteenth-and-early-nineteenth-centuries",
    "source": "King's College London events",
    "sourceKey": "kcl",
-   "checked": "2026-10-20",
+   "checked": "2026-10-21",
    "status": "verified",
    "auto": true
   },
@@ -10652,7 +10413,7 @@
    "url": "https://www.kcl.ac.uk/events/virtual-campus-tour-strand-bush-house-6-november-2026",
    "source": "King's College London events",
    "sourceKey": "kcl",
-   "checked": "2026-10-20",
+   "checked": "2026-10-21",
    "status": "verified",
    "auto": true
   },
@@ -10951,7 +10712,7 @@
    "url": "https://www.kcl.ac.uk/events/virtual-campus-tour-guys-6-november-2026",
    "source": "King's College London events",
    "sourceKey": "kcl",
-   "checked": "2026-10-20",
+   "checked": "2026-10-21",
    "status": "verified",
    "auto": true
   },
@@ -10979,7 +10740,7 @@
    "url": "https://www.kcl.ac.uk/events/book-launch-escaping-the-conflict-trap",
    "source": "King's College London events",
    "sourceKey": "kcl",
-   "checked": "2026-10-20",
+   "checked": "2026-10-21",
    "status": "verified",
    "auto": true
   },
@@ -11062,7 +10823,7 @@
    "url": "https://www.kcl.ac.uk/events/choral-evensong-at-the-strand-11",
    "source": "King's College London events",
    "sourceKey": "kcl",
-   "checked": "2026-10-20",
+   "checked": "2026-10-21",
    "status": "verified",
    "auto": true
   },
@@ -11113,7 +10874,7 @@
    "url": "https://www.kcl.ac.uk/events/chinese-characters-workshop-i-copy-2",
    "source": "King's College London events",
    "sourceKey": "kcl",
-   "checked": "2026-10-20",
+   "checked": "2026-10-21",
    "status": "verified",
    "auto": true
   },
@@ -11223,7 +10984,7 @@
    "url": "https://www.kcl.ac.uk/events/act-of-remembrance-at-the-guys-memorial-arch",
    "source": "King's College London events",
    "sourceKey": "kcl",
-   "checked": "2026-10-20",
+   "checked": "2026-10-21",
    "status": "verified",
    "auto": true
   },
@@ -11276,7 +11037,7 @@
    "url": "https://www.kcl.ac.uk/events/quiet-and-reflection-in-the-college-chapel-at-the-strand",
    "source": "King's College London events",
    "sourceKey": "kcl",
-   "checked": "2026-10-20",
+   "checked": "2026-10-21",
    "status": "verified",
    "auto": true
   },
@@ -11303,7 +11064,7 @@
    "url": "https://www.kcl.ac.uk/events/undergraduate-taster-day-quantitative-mathematics-11-nov-2026",
    "source": "King's College London events",
    "sourceKey": "kcl",
-   "checked": "2026-10-20",
+   "checked": "2026-10-21",
    "status": "verified",
    "auto": true
   },
@@ -11384,7 +11145,7 @@
    "url": "https://www.kcl.ac.uk/events/science-engineering-technology-fair",
    "source": "King's College London events",
    "sourceKey": "kcl",
-   "checked": "2026-10-20",
+   "checked": "2026-10-21",
    "status": "verified",
    "auto": true
   },
@@ -11493,7 +11254,7 @@
    "url": "https://www.kcl.ac.uk/events/chaplaincy-weekend-away",
    "source": "King's College London events",
    "sourceKey": "kcl",
-   "checked": "2026-10-20",
+   "checked": "2026-10-21",
    "status": "verified",
    "auto": true
   },
@@ -11767,7 +11528,7 @@
    "url": "https://www.kcl.ac.uk/events/choral-evensong-at-the-strand-12",
    "source": "King's College London events",
    "sourceKey": "kcl",
-   "checked": "2026-10-20",
+   "checked": "2026-10-21",
    "status": "verified",
    "auto": true
   },
@@ -11818,7 +11579,7 @@
    "url": "https://www.kcl.ac.uk/events/chinese-characters-workshop-ii-copy",
    "source": "King's College London events",
    "sourceKey": "kcl",
-   "checked": "2026-10-20",
+   "checked": "2026-10-21",
    "status": "verified",
    "auto": true
   },
@@ -11845,7 +11606,7 @@
    "url": "https://www.kcl.ac.uk/events/afternoon-tea-at-the-strand-copy",
    "source": "King's College London events",
    "sourceKey": "kcl",
-   "checked": "2026-10-20",
+   "checked": "2026-10-21",
    "status": "verified",
    "auto": true
   },
@@ -11955,7 +11716,7 @@
    "url": "https://www.kcl.ac.uk/events/college-eucharist-at-the-strand-9",
    "source": "King's College London events",
    "sourceKey": "kcl",
-   "checked": "2026-10-20",
+   "checked": "2026-10-21",
    "status": "verified",
    "auto": true
   },
@@ -12006,7 +11767,7 @@
    "url": "https://www.kcl.ac.uk/events/undergraduate-taster-day-chemistry-18-nov-2026",
    "source": "King's College London events",
    "sourceKey": "kcl",
-   "checked": "2026-10-20",
+   "checked": "2026-10-21",
    "status": "verified",
    "auto": true
   },
@@ -12115,7 +11876,7 @@
    "url": "https://www.kcl.ac.uk/events/nihr-insight-career-development-workshop",
    "source": "King's College London events",
    "sourceKey": "kcl",
-   "checked": "2026-10-20",
+   "checked": "2026-10-21",
    "status": "verified",
    "auto": true
   },
@@ -12143,7 +11904,7 @@
    "url": "https://www.kcl.ac.uk/events/the-improbable-austro-japanese-war",
    "source": "King's College London events",
    "sourceKey": "kcl",
-   "checked": "2026-10-20",
+   "checked": "2026-10-21",
    "status": "verified",
    "auto": true
   },
