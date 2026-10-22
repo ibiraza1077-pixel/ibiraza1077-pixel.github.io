@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-21T20:17",
+ "generated": "2026-10-22T11:07",
  "windowDays": 35,
  "sources": [
   {
@@ -7,8 +7,8 @@
    "name": "Students' Union UCL",
    "url": "https://studentsunionucl.org/whats-on",
    "ok": true,
-   "count": 366,
-   "fetched": "2026-10-21T20:17"
+   "count": 362,
+   "fetched": "2026-10-22T11:07"
   },
   {
    "key": "lse-su",
@@ -16,7 +16,7 @@
    "url": "https://www.lsesu.com/events/whats-on/",
    "ok": true,
    "count": 0,
-   "fetched": "2026-10-21T20:17"
+   "fetched": "2026-10-22T11:07"
   },
   {
    "key": "kcl",
@@ -24,18 +24,45 @@
    "url": "https://www.kcl.ac.uk/events/events-calendar",
    "ok": true,
    "count": 61,
-   "fetched": "2026-10-21T20:17"
+   "fetched": "2026-10-22T11:07"
   },
   {
    "key": "lse-public",
    "name": "LSE public events",
    "url": "https://www.lse.ac.uk/events",
    "ok": true,
-   "count": 10,
-   "fetched": "2026-10-21T20:17"
+   "count": 12,
+   "fetched": "2026-10-22T11:07"
   }
  ],
  "events": [
+  {
+   "id": "ucl-su-204646",
+   "cat": "sport",
+   "title": "Trials",
+   "org": "Horse Riding Club",
+   "area": "London Equestrian Centre",
+   "ll": [
+    51.5246,
+    -0.134
+   ],
+   "price": 50.0,
+   "start": "2026-10-11T12:00",
+   "end": "2026-10-31T13:00",
+   "unis": [
+    "ucl"
+   ],
+   "tags": [
+    "fitness"
+   ],
+   "desc": "Run by Horse Riding Club. Venue: London Equestrian Centre.",
+   "url": "https://studentsunionucl.org/whats-on/clubs-societies/trials",
+   "source": "Students' Union UCL",
+   "sourceKey": "ucl-su",
+   "checked": "2026-10-22",
+   "status": "verified",
+   "auto": true
+  },
   {
    "id": "lse-public-stolen-theft-in-the-archives",
    "cat": "events",
@@ -56,7 +83,7 @@
    "url": "https://www.lse.ac.uk/library/whats-on/events/stolen-theft-in-the-archives",
    "source": "LSE public events",
    "sourceKey": "lse-public",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -83,60 +110,7 @@
    "url": "https://studentsunionucl.org/whats-on/representation/donation-page-cowrie-scholarship-foundation-community-nights",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
-   "status": "verified",
-   "auto": true
-  },
-  {
-   "id": "ucl-su-204784",
-   "cat": "events",
-   "title": "Sound Baths",
-   "org": "Students' Union UCL",
-   "area": "UCL East",
-   "ll": [
-    51.5378,
-    -0.0107
-   ],
-   "priceText": "Tickets on external site",
-   "start": "2026-10-21T00:00",
-   "end": "2026-10-21T23:59",
-   "unis": [
-    "ucl"
-   ],
-   "tags": [],
-   "desc": "Run by Students' Union UCL. Venue: Marshgate Building, UCL East. Alcohol Free.",
-   "url": "https://studentsunionucl.org/whats-on/events-activities/sound-baths",
-   "source": "Students' Union UCL",
-   "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
-   "status": "verified",
-   "auto": true
-  },
-  {
-   "id": "ucl-su-204974",
-   "cat": "events",
-   "title": "TEDxUCL V&A trip + picnic",
-   "org": "TEDx Society",
-   "area": "UCL East",
-   "ll": [
-    51.5378,
-    -0.0107
-   ],
-   "price": 0,
-   "start": "2026-10-21T00:00",
-   "end": "2026-10-21T23:59",
-   "unis": [
-    "ucl"
-   ],
-   "tags": [
-    "community",
-    "food"
-   ],
-   "desc": "Run by TEDx Society. Venue: V&A East Storehouse. Alcohol Free · Under 18 Friendly.",
-   "url": "https://studentsunionucl.org/whats-on/clubs-societies/tedxucl-va-trip-picnic",
-   "source": "Students' Union UCL",
-   "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -164,540 +138,12 @@
    "url": "https://studentsunionucl.org/whats-on/clubs-societies/portland-climbing-trip-tickets",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
   {
-   "id": "ucl-su-204198",
-   "cat": "events",
-   "title": "讲座 - 「寻己记」",
-   "org": "Chinese Christian Anchor Fellowship Society",
-   "area": "Chadwick 102A/B",
-   "ll": [
-    51.5246,
-    -0.134
-   ],
-   "price": 0,
-   "start": "2026-10-21T18:00",
-   "end": "2026-10-21T21:00",
-   "unis": [
-    "ucl"
-   ],
-   "tags": [
-    "community"
-   ],
-   "desc": "Run by Chinese Christian Anchor Fellowship Society. Venue: Chadwick 102A/B. Beginner Friendly.",
-   "url": "https://studentsunionucl.org/whats-on/events-activities/jiangzuo-xunjiji",
-   "source": "Students' Union UCL",
-   "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
-   "status": "verified",
-   "auto": true
-  },
-  {
-   "id": "ucl-su-204912",
-   "cat": "careers",
-   "title": "CV Clinic",
-   "org": "Women in Finance Society",
-   "area": "G.12 in 22 Gordon St",
-   "ll": [
-    51.5246,
-    -0.134
-   ],
-   "price": 0,
-   "start": "2026-10-21T18:00",
-   "end": "2026-10-21T20:30",
-   "unis": [
-    "ucl"
-   ],
-   "tags": [
-    "finance"
-   ],
-   "desc": "Run by Women in Finance Society. Venue: G.12 in 22 Gordon St.",
-   "url": "https://studentsunionucl.org/whats-on/clubs-societies/cv-clinic",
-   "source": "Students' Union UCL",
-   "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
-   "status": "verified",
-   "auto": true
-  },
-  {
-   "id": "ucl-su-205038",
-   "cat": "events",
-   "title": "Cyberpunk: Edgerunners S2 Watchalong",
-   "org": "Anime Society",
-   "area": "IOE C3.11",
-   "ll": [
-    51.5246,
-    -0.134
-   ],
-   "price": 0,
-   "start": "2026-10-21T18:00",
-   "end": "2026-10-21T21:00",
-   "unis": [
-    "ucl"
-   ],
-   "tags": [
-    "community",
-    "culture"
-   ],
-   "desc": "Run by Anime Society. Venue: IOE C3.11. Beginner Friendly.",
-   "url": "https://studentsunionucl.org/whats-on/events-activities/cyberpunk-edgerunners-s2-watchalong",
-   "source": "Students' Union UCL",
-   "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
-   "status": "verified",
-   "auto": true
-  },
-  {
-   "id": "ucl-su-205043",
-   "cat": "events",
-   "title": "Board Games Night",
-   "org": "Sci-Fi and Fantasy Society",
-   "area": "Chadwick G07",
-   "ll": [
-    51.5246,
-    -0.134
-   ],
-   "price": 0,
-   "start": "2026-10-21T18:00",
-   "end": "2026-10-21T21:00",
-   "unis": [
-    "ucl"
-   ],
-   "tags": [],
-   "desc": "Run by Sci-Fi and Fantasy Society. Venue: Chadwick G07.",
-   "url": "https://studentsunionucl.org/whats-on/clubs-societies/board-games-night-7",
-   "source": "Students' Union UCL",
-   "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
-   "status": "verified",
-   "auto": true
-  },
-  {
-   "id": "ucl-su-204839",
-   "cat": "events",
-   "title": "Inside Out 2 movie social",
-   "org": "Mental Health Society",
-   "area": "Leolin Price Lecture Theatre",
-   "ll": [
-    51.5246,
-    -0.134
-   ],
-   "price": 0,
-   "start": "2026-10-21T18:30",
-   "end": "2026-10-21T20:30",
-   "unis": [
-    "ucl"
-   ],
-   "tags": [
-    "community",
-    "culture",
-    "research"
-   ],
-   "desc": "Run by Mental Health Society. Venue: Leolin Price Lecture Theatre. Beginner Friendly.",
-   "url": "https://studentsunionucl.org/whats-on/clubs-societies/inside-out-2-movie-social",
-   "source": "Students' Union UCL",
-   "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
-   "status": "verified",
-   "auto": true
-  },
-  {
-   "id": "ucl-su-204872",
-   "cat": "events",
-   "title": "An Evening with Sir David Omand: Spies, Secrets and Machines",
-   "org": "Government and Politics Society",
-   "area": "Will be emailed to attendees",
-   "ll": [
-    51.5246,
-    -0.134
-   ],
-   "price": 0,
-   "start": "2026-10-21T18:30",
-   "end": "2026-10-21T20:30",
-   "unis": [
-    "ucl"
-   ],
-   "tags": [
-    "community",
-    "culture",
-    "law"
-   ],
-   "desc": "Run by Government and Politics Society. Venue: Will be emailed to attendees. Beginner Friendly · Under 18 Friendly.",
-   "url": "https://studentsunionucl.org/whats-on/clubs-societies/evening-with-sir-david-omand-spies-secrets-and-machines",
-   "source": "Students' Union UCL",
-   "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
-   "status": "verified",
-   "auto": true
-  },
-  {
-   "id": "ucl-su-204897",
-   "cat": "careers",
-   "title": "EIE Society Welcome Pub Crawl",
-   "org": "Education Innovation and Edupreneurship Society",
-   "area": "\"\"The Court, Tottenham Court Road\"\"",
-   "ll": [
-    51.5246,
-    -0.134
-   ],
-   "price": 0,
-   "start": "2026-10-21T18:30",
-   "end": "2026-10-21T21:00",
-   "unis": [
-    "ucl"
-   ],
-   "tags": [
-    "community"
-   ],
-   "desc": "Run by Education Innovation and Edupreneurship Society. Venue: \"\"The Court, Tottenham Court Road\"\". Beginner Friendly.",
-   "url": "https://studentsunionucl.org/whats-on/bars/eie-society-welcome-pub-crawl",
-   "source": "Students' Union UCL",
-   "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
-   "status": "verified",
-   "auto": true
-  },
-  {
-   "id": "ucl-su-203704",
-   "cat": "events",
-   "title": "Bitter Sweet Ballad",
-   "org": "Students' Union UCL",
-   "area": "UCL East",
-   "ll": [
-    51.5378,
-    -0.0107
-   ],
-   "priceText": "Tickets on external site",
-   "start": "2026-10-21T18:45",
-   "end": "2026-10-21T21:20",
-   "unis": [
-    "ucl"
-   ],
-   "tags": [
-    "culture"
-   ],
-   "desc": "Run by Students' Union UCL. Venue: One Pool Street Cinema.",
-   "url": "https://studentsunionucl.org/whats-on/events-activities/bitter-sweet-ballad",
-   "source": "Students' Union UCL",
-   "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
-   "status": "verified",
-   "auto": true
-  },
-  {
-   "id": "ucl-su-203136",
-   "cat": "events",
-   "title": "Sports Night @ Phineas",
-   "org": "Students' Union UCL",
-   "area": "Phineas Bar",
-   "ll": [
-    51.5246,
-    -0.134
-   ],
-   "price": 0,
-   "start": "2026-10-21T19:00",
-   "end": "2026-10-21T23:30",
-   "unis": [
-    "ucl"
-   ],
-   "tags": [
-    "community",
-    "music",
-    "nightlife"
-   ],
-   "desc": "Run by Students' Union UCL. Venue: Phineas Bar. Also on 4 more dates in the next few weeks.",
-   "url": "https://studentsunionucl.org/whats-on/bars/sports-night-phineas-37",
-   "source": "Students' Union UCL",
-   "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
-   "status": "verified",
-   "auto": true
-  },
-  {
-   "id": "ucl-su-204588",
-   "cat": "sport",
-   "title": "UCL Tennis Space race social",
-   "org": "Tennis Club",
-   "area": "UCL Bloomsbury",
-   "ll": [
-    51.5246,
-    -0.134
-   ],
-   "price": 10.0,
-   "start": "2026-10-21T19:00",
-   "end": "2026-10-21T23:00",
-   "unis": [
-    "ucl"
-   ],
-   "tags": [
-    "community",
-    "music",
-    "nightlife"
-   ],
-   "desc": "Run by Tennis Club. Venue: Crypt on the Green, Inspire St James Church Clerkenwell, Clerkenwell Close, London EC1R 0EA.",
-   "url": "https://studentsunionucl.org/whats-on/clubs-societies/ucl-tennis-space-race-social",
-   "source": "Students' Union UCL",
-   "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
-   "status": "verified",
-   "auto": true
-  },
-  {
-   "id": "ucl-su-205004",
-   "cat": "events",
-   "title": "Immigration Debate: UCL Debating Society X POC Network",
-   "org": "Debating Society",
-   "area": "UCL Bloomsbury",
-   "ll": [
-    51.5246,
-    -0.134
-   ],
-   "price": 0,
-   "start": "2026-10-21T19:00",
-   "end": "2026-10-21T21:00",
-   "unis": [
-    "ucl"
-   ],
-   "tags": [
-    "community"
-   ],
-   "desc": "Run by Debating Society. Venue: Christopher Ingold Building XLG1 Chemistry LT, Christopher Ingold Building. Beginner Friendly.",
-   "url": "https://studentsunionucl.org/whats-on/clubs-societies/immigration-debate-ucl-debating-society-x-poc-network",
-   "source": "Students' Union UCL",
-   "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
-   "status": "verified",
-   "auto": true
-  },
-  {
-   "id": "ucl-su-205124",
-   "cat": "events",
-   "title": "Post Grad Quiz @ Institute Bar",
-   "org": "Students' Union UCL",
-   "area": "The Institute Bar",
-   "ll": [
-    51.5246,
-    -0.134
-   ],
-   "price": 0,
-   "start": "2026-10-21T19:00",
-   "end": "2026-10-21T21:30",
-   "unis": [
-    "ucl"
-   ],
-   "tags": [
-    "community",
-    "culture"
-   ],
-   "desc": "Run by Students' Union UCL. Venue: The Institute Bar. Beginner Friendly.",
-   "url": "https://studentsunionucl.org/whats-on/bars/post-grad-quiz-institute-bar",
-   "source": "Students' Union UCL",
-   "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
-   "status": "verified",
-   "auto": true
-  },
-  {
-   "id": "ucl-su-204852",
-   "cat": "sport",
-   "title": "Beginners Class",
-   "org": "Amateur Boxing Club",
-   "area": "UCL Bloomsbury",
-   "ll": [
-    51.5246,
-    -0.134
-   ],
-   "price": 0,
-   "start": "2026-10-21T19:30",
-   "end": "2026-10-21T20:30",
-   "unis": [
-    "ucl"
-   ],
-   "tags": [
-    "community",
-    "culture",
-    "fitness"
-   ],
-   "desc": "Run by Amateur Boxing Club. Venue: Mandela Studio TeamUCL Gym , 3rd Floor, Bloomsbury Theatre Building, 15 Gordon Street, London WC1H 0AH. Beginner Friendly · Alcohol Free. Also on 1 more date in the next few weeks.",
-   "url": "https://studentsunionucl.org/whats-on/sport/beginners-class",
-   "source": "Students' Union UCL",
-   "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
-   "status": "verified",
-   "auto": true
-  },
-  {
-   "id": "ucl-su-205115",
-   "cat": "sport",
-   "title": "UEFA Champions League Phase Bayern Munich v Arsenal @ Phineas Bar",
-   "org": "Students' Union UCL",
-   "area": "Phineas Bar",
-   "ll": [
-    51.5246,
-    -0.134
-   ],
-   "price": 0,
-   "start": "2026-10-21T20:00",
-   "end": "2026-10-21T22:00",
-   "unis": [
-    "ucl"
-   ],
-   "tags": [
-    "fitness"
-   ],
-   "desc": "Run by Students' Union UCL. Venue: Phineas Bar.",
-   "url": "https://studentsunionucl.org/whats-on/bars/uefa-champions-league-phase-bayern-munich-v-arsenal-phineas-bar",
-   "source": "Students' Union UCL",
-   "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
-   "status": "verified",
-   "auto": true
-  },
-  {
-   "id": "ucl-su-204853",
-   "cat": "sport",
-   "title": "Intermediate Class",
-   "org": "Amateur Boxing Club",
-   "area": "UCL Bloomsbury",
-   "ll": [
-    51.5246,
-    -0.134
-   ],
-   "price": 0,
-   "start": "2026-10-21T20:30",
-   "end": "2026-10-21T21:30",
-   "unis": [
-    "ucl"
-   ],
-   "tags": [
-    "culture",
-    "fitness"
-   ],
-   "desc": "Run by Amateur Boxing Club. Venue: Mandela Studio TeamUCL Gym , 3rd Floor, Bloomsbury Theatre Building, 15 Gordon Street, London WC1H 0AH. Alcohol Free.",
-   "url": "https://studentsunionucl.org/whats-on/sport/intermediate-class-0",
-   "source": "Students' Union UCL",
-   "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
-   "status": "verified",
-   "auto": true
-  },
-  {
-   "id": "ucl-su-202985",
-   "cat": "events",
-   "title": "TeamUCL Sports Night - Black History Month Special @ SCALA | 21 October",
-   "org": "Students' Union UCL",
-   "area": "Scala",
-   "ll": [
-    51.5311,
-    -0.1205
-   ],
-   "price": 3.0,
-   "start": "2026-10-21T23:00",
-   "end": "2026-10-22T05:00",
-   "unis": [
-    "ucl"
-   ],
-   "tags": [
-    "music",
-    "nightlife"
-   ],
-   "desc": "Run by Students' Union UCL. Venue: Scala.",
-   "url": "https://studentsunionucl.org/whats-on/events-activities/teamucl-sports-night-black-history-month-special-scala-21-october",
-   "source": "Students' Union UCL",
-   "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
-   "status": "verified",
-   "auto": true
-  },
-  {
-   "id": "ucl-su-203408",
-   "cat": "sport",
-   "title": "Project Active Postgraduate Mat Pilates",
-   "org": "Students' Union UCL",
-   "area": "UCL Bloomsbury",
-   "ll": [
-    51.5246,
-    -0.134
-   ],
-   "price": 3.5,
-   "start": "2026-10-22T08:00",
-   "end": "2026-10-22T09:00",
-   "unis": [
-    "ucl"
-   ],
-   "tags": [
-    "community",
-    "culture",
-    "fitness"
-   ],
-   "desc": "Run by Students' Union UCL. Venue: Conference Room, Level 2, Bloomsbury Theatre Building. Beginner Friendly · Postgrads only. Also on 1 more date in the next few weeks.",
-   "url": "https://studentsunionucl.org/whats-on/sport/project-active-postgraduate-mat-pilates-9",
-   "yrs": [
-    4
-   ],
-   "source": "Students' Union UCL",
-   "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
-   "status": "verified",
-   "auto": true
-  },
-  {
-   "id": "kcl-morning-prayer-at-the-strand-9",
-   "cat": "events",
-   "title": "Morning Prayer at the Strand",
-   "org": "Dean's Office",
-   "area": "Strand campus",
-   "ll": [
-    51.5115,
-    -0.116
-   ],
-   "start": "2026-10-22T09:30",
-   "end": "2026-10-22T10:00",
-   "unis": [
-    "kcl"
-   ],
-   "tags": [
-    "community"
-   ],
-   "desc": "A Morning Prayer service every Thursday during term time in the College Chapel. Also on 3 more dates in the next few weeks.",
-   "url": "https://www.kcl.ac.uk/events/morning-prayer-at-the-strand-9",
-   "source": "King's College London events",
-   "sourceKey": "kcl",
-   "checked": "2026-10-21",
-   "status": "verified",
-   "auto": true
-  },
-  {
-   "id": "kcl-morning-prayer-at-guys-8",
-   "cat": "events",
-   "title": "Morning Prayer at Guy's",
-   "org": "Dean's Office",
-   "area": "Guy's campus",
-   "ll": [
-    51.5033,
-    -0.0869
-   ],
-   "start": "2026-10-22T10:00",
-   "end": "2026-10-22T10:30",
-   "unis": [
-    "kcl"
-   ],
-   "tags": [
-    "community"
-   ],
-   "desc": "A short Morning Prayer service at Guy's every Thursday during term time. Also on 4 more dates in the next few weeks.",
-   "url": "https://www.kcl.ac.uk/events/morning-prayer-at-guys-8",
-   "source": "King's College London events",
-   "sourceKey": "kcl",
-   "checked": "2026-10-21",
-   "status": "verified",
-   "auto": true
-  },
-  {
-   "id": "ucl-su-205057",
+   "id": "ucl-su-205059",
    "cat": "sport",
    "title": "TeamUCL Gym Tour",
    "org": "Students' Union UCL",
@@ -707,8 +153,8 @@
     -0.134
    ],
    "price": 0,
-   "start": "2026-10-22T10:30",
-   "end": "2026-10-22T11:00",
+   "start": "2026-10-22T11:00",
+   "end": "2026-10-22T11:30",
    "unis": [
     "ucl"
    ],
@@ -716,11 +162,11 @@
     "culture",
     "fitness"
    ],
-   "desc": "Run by Students' Union UCL. Venue: TeamUCL Gym, 3rd Floor, Bloomsbury Theatre Building, 15 Gordon Street, London WC1H 0AH. Also on 3 more dates in the next few weeks.",
-   "url": "https://studentsunionucl.org/whats-on/events-activities/teamucl-gym-tour-8",
+   "desc": "Run by Students' Union UCL. Venue: TeamUCL Gym, 3rd Floor, Bloomsbury Theatre Building, 15 Gordon Street, London WC1H 0AH. Also on 2 more dates in the next few weeks.",
+   "url": "https://studentsunionucl.org/whats-on/events-activities/teamucl-gym-tour-9",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -748,7 +194,7 @@
    "url": "https://studentsunionucl.org/whats-on/give-it-go/grown-for-good-nature-walk-with-hackney-herbal",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -777,7 +223,7 @@
    "url": "https://studentsunionucl.org/whats-on/sport/project-active-women-only-barre-18",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -805,7 +251,33 @@
    "url": "https://studentsunionucl.org/whats-on/sport/project-active-pay-and-play-pickleball-14",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
+   "status": "verified",
+   "auto": true
+  },
+  {
+   "id": "kcl-radical-neuro-inclusion-at-denmark-hill",
+   "cat": "events",
+   "title": "'Radical Neuro Inclusion?' at Denmark Hill",
+   "org": "Dean's Office",
+   "area": "Denmark Hill campus",
+   "ll": [
+    51.4686,
+    -0.0937
+   ],
+   "start": "2026-10-22T12:00",
+   "end": "2026-10-22T14:00",
+   "unis": [
+    "kcl"
+   ],
+   "tags": [
+    "community"
+   ],
+   "desc": "A drop-in space for people of all neurotypes, with refreshments.",
+   "url": "https://www.kcl.ac.uk/events/radical-neuro-inclusion-at-denmark-hill",
+   "source": "King's College London events",
+   "sourceKey": "kcl",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -832,33 +304,7 @@
    "url": "https://www.kcl.ac.uk/events/barista-session-at-guys-8",
    "source": "King's College London events",
    "sourceKey": "kcl",
-   "checked": "2026-10-21",
-   "status": "verified",
-   "auto": true
-  },
-  {
-   "id": "kcl-radical-neuro-inclusion-at-denmark-hill",
-   "cat": "events",
-   "title": "'Radical Neuro Inclusion?' at Denmark Hill",
-   "org": "Dean's Office",
-   "area": "Denmark Hill campus",
-   "ll": [
-    51.4686,
-    -0.0937
-   ],
-   "start": "2026-10-22T12:00",
-   "end": "2026-10-22T14:00",
-   "unis": [
-    "kcl"
-   ],
-   "tags": [
-    "community"
-   ],
-   "desc": "A drop-in space for people of all neurotypes, with refreshments.",
-   "url": "https://www.kcl.ac.uk/events/radical-neuro-inclusion-at-denmark-hill",
-   "source": "King's College London events",
-   "sourceKey": "kcl",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -884,7 +330,7 @@
    "url": "https://www.kcl.ac.uk/events/rosary-prayer-group-at-the-strand-8",
    "source": "King's College London events",
    "sourceKey": "kcl",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -906,11 +352,11 @@
    "tags": [
     "community"
    ],
-   "desc": "A Catholic priest is available to hear Confessions before the celebration of Holy Mass. Also on 5 more dates in the next few weeks.",
+   "desc": "A Catholic priest is available to hear Confessions before the celebration of Holy Mass. Also on 4 more dates in the next few weeks.",
    "url": "https://www.kcl.ac.uk/events/sacrament-of-confession-at-the-strand-7",
    "source": "King's College London events",
    "sourceKey": "kcl",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -933,11 +379,11 @@
     "community",
     "food"
    ],
-   "desc": "Meet up in the Chaplaincy & enjoy a (free!) light lunch on Thursdays during term time. Also on 3 more dates in the next few weeks.",
+   "desc": "Meet up in the Chaplaincy & enjoy a (free!) light lunch on Thursdays during term time. Also on 4 more dates in the next few weeks.",
    "url": "https://www.kcl.ac.uk/events/international-lunch-at-guys-8",
    "source": "King's College London events",
    "sourceKey": "kcl",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -968,7 +414,7 @@
    ],
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -997,7 +443,7 @@
    "url": "https://studentsunionucl.org/whats-on/clubs-societies/brazilian-jiu-jitsu-term-1-week-2-week-5-classes",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -1025,7 +471,7 @@
    "url": "https://studentsunionucl.org/whats-on/clubs-societies/selling-analogue-magazines-at-student-centre",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -1050,7 +496,7 @@
    "url": "https://www.lse.ac.uk/events/arts-and-music/edward-leung-piano",
    "source": "LSE public events",
    "sourceKey": "lse-public",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -1076,7 +522,7 @@
    "url": "https://www.kcl.ac.uk/events/catholic-mass-at-the-strand-7",
    "source": "King's College London events",
    "sourceKey": "kcl",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -1103,7 +549,7 @@
    "url": "https://studentsunionucl.org/whats-on/events-activities/de-stress-drop-in-time",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -1128,7 +574,7 @@
    "url": "https://studentsunionucl.org/whats-on/clubs-societies/yarn-crawl-3",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -1155,7 +601,36 @@
    "url": "https://studentsunionucl.org/whats-on/clubs-societies/coppafeel-x-lamorna-society-candle-making-workshop",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
+   "status": "verified",
+   "auto": true
+  },
+  {
+   "id": "ucl-su-203178",
+   "cat": "sport",
+   "title": "Project Active Women's Only Run",
+   "org": "Running, Athletics and Cross Country Club",
+   "area": "1st Floor Bloomsbury Theatre",
+   "ll": [
+    51.5246,
+    -0.134
+   ],
+   "price": 0,
+   "start": "2026-10-22T16:00",
+   "end": "2026-10-22T17:00",
+   "unis": [
+    "ucl"
+   ],
+   "tags": [
+    "community",
+    "culture",
+    "fitness"
+   ],
+   "desc": "Run by Running, Athletics and Cross Country Club. Venue: 1st Floor Bloomsbury Theatre. Beginner Friendly. Also on 1 more date in the next few weeks.",
+   "url": "https://studentsunionucl.org/whats-on/sport/project-active-womens-only-run-5",
+   "source": "Students' Union UCL",
+   "sourceKey": "ucl-su",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -1184,7 +659,7 @@
    "url": "https://studentsunionucl.org/whats-on/sport/project-active-barre-181",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -1212,7 +687,7 @@
    "url": "https://studentsunionucl.org/whats-on/sport/project-active-pay-and-play-indoor-climbing-0",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -1240,7 +715,7 @@
    "url": "https://studentsunionucl.org/whats-on/sport/project-active-pay-and-play-tennis-18",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -1269,7 +744,7 @@
    "url": "https://studentsunionucl.org/whats-on/events-activities/ug-active-bystander-workshop-online-4",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -1299,7 +774,7 @@
    "url": "https://studentsunionucl.org/whats-on/events-activities/debate-night-ai-in-education",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -1328,7 +803,7 @@
    "url": "https://studentsunionucl.org/whats-on/events-activities/bhm-movie-night",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -1354,7 +829,7 @@
    "url": "https://www.kcl.ac.uk/events/orthodox-vespers-at-the-strand-copy-2",
    "source": "King's College London events",
    "sourceKey": "kcl",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -1382,7 +857,7 @@
    "url": "https://studentsunionucl.org/whats-on/sport/muay-thai-sparring-drills-beginners-only",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -1410,7 +885,7 @@
    "url": "https://studentsunionucl.org/whats-on/clubs-societies/arab-and-north-african-society-picnic",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -1439,7 +914,7 @@
    "url": "https://studentsunionucl.org/whats-on/events-activities/breast-cancer-awareness-special-mat-pilates-sip-paint",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -1467,7 +942,7 @@
    "url": "https://studentsunionucl.org/whats-on/sport/7-side-football-session",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -1498,7 +973,7 @@
    ],
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -1525,7 +1000,7 @@
    "url": "https://studentsunionucl.org/whats-on/clubs-societies/most-workshop-workshop-of-all-workshops",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -1552,7 +1027,36 @@
    "url": "https://studentsunionucl.org/whats-on/clubs-societies/cafe-social",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
+   "status": "verified",
+   "auto": true
+  },
+  {
+   "id": "ucl-su-205169",
+   "cat": "events",
+   "title": "🎶 Musical Theatre Choir - a Singing Session 🎤",
+   "org": "Musical Theatre Society",
+   "area": "Bloomsbury Theatre Rehearsal Room",
+   "ll": [
+    51.5246,
+    -0.134
+   ],
+   "price": 0,
+   "start": "2026-10-22T17:00",
+   "end": "2026-10-22T19:00",
+   "unis": [
+    "ucl"
+   ],
+   "tags": [
+    "community",
+    "culture",
+    "music"
+   ],
+   "desc": "Run by Musical Theatre Society. Venue: Bloomsbury Theatre Rehearsal Room. Beginner Friendly.",
+   "url": "https://studentsunionucl.org/whats-on/events-activities/musical-theatre-choir-singing-session",
+   "source": "Students' Union UCL",
+   "sourceKey": "ucl-su",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -1579,7 +1083,7 @@
    "url": "https://www.kcl.ac.uk/events/the-naval-war-in-the-baltic-1914-1915",
    "source": "King's College London events",
    "sourceKey": "kcl",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -1607,7 +1111,7 @@
    "url": "https://studentsunionucl.org/whats-on/events-activities/artsunlocked-painting",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -1634,7 +1138,7 @@
    "url": "https://www.kcl.ac.uk/events/death-cafe-at-guys",
    "source": "King's College London events",
    "sourceKey": "kcl",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -1661,7 +1165,7 @@
    "url": "https://studentsunionucl.org/whats-on/bars/uefa-europa-league-phase-juventus-v-rennes-phineas-bar",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -1690,7 +1194,7 @@
    "url": "https://studentsunionucl.org/whats-on/sport/project-active-dance-fit-117",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -1718,7 +1222,7 @@
    "url": "https://studentsunionucl.org/whats-on/clubs-societies/drama-games-social-3",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -1745,7 +1249,7 @@
    "url": "https://studentsunionucl.org/whats-on/events-activities/aditya-kumar-dance-workshop",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -1773,7 +1277,7 @@
    "url": "https://studentsunionucl.org/whats-on/clubs-societies/life-drawing-every-thursday",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -1800,7 +1304,7 @@
    "url": "https://studentsunionucl.org/whats-on/sport/muay-thai-sparring-drills-advance-only",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -1827,7 +1331,7 @@
    "url": "https://studentsunionucl.org/whats-on/clubs-societies/rock-metal-quiz-night",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -1852,7 +1356,7 @@
    "url": "https://studentsunionucl.org/whats-on/clubs-societies/harry-potter-and-philosphers-stone-movie-screening",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -1881,7 +1385,7 @@
    "url": "https://studentsunionucl.org/whats-on/clubs-societies/dragsoc-lace-wig-workshop-by-donafella",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -1910,7 +1414,7 @@
    "url": "https://studentsunionucl.org/whats-on/bars/pub-crawl-anzo-x-irish-soc-x-welsh-soc",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -1937,7 +1441,7 @@
    "url": "https://studentsunionucl.org/whats-on/clubs-societies/investment-banking-panel",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -1966,7 +1470,7 @@
    "url": "https://studentsunionucl.org/whats-on/clubs-societies/hot-drink-handout-session-regular-outreach-thursday",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -1993,7 +1497,7 @@
    "url": "https://studentsunionucl.org/whats-on/events-activities/slime-making-with-fomsf-and-drrh",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -2021,7 +1525,7 @@
    "url": "https://studentsunionucl.org/whats-on/jobs-skills/ebs-capital-markets-panel",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -2049,7 +1553,7 @@
    "url": "https://studentsunionucl.org/whats-on/clubs-societies/comparative-case-study-night-criminal-justice-society",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -2076,34 +1580,7 @@
    "url": "https://studentsunionucl.org/whats-on/clubs-societies/bachata-beginners-31",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
-   "status": "verified",
-   "auto": true
-  },
-  {
-   "id": "ucl-su-205039",
-   "cat": "events",
-   "title": "Sign Language Social",
-   "org": "Sign Language Society",
-   "area": "Foster Court 112/113",
-   "ll": [
-    51.5246,
-    -0.134
-   ],
-   "price": 0,
-   "start": "2026-10-22T18:00",
-   "end": "2026-10-22T19:30",
-   "unis": [
-    "ucl"
-   ],
-   "tags": [
-    "community"
-   ],
-   "desc": "Run by Sign Language Society. Venue: Foster Court 112/113. Beginner Friendly · Alcohol Free · Commuters.",
-   "url": "https://studentsunionucl.org/whats-on/clubs-societies/sign-language-social",
-   "source": "Students' Union UCL",
-   "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -2130,7 +1607,7 @@
    "url": "https://studentsunionucl.org/whats-on/clubs-societies/prose-feedback-session-1",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -2159,7 +1636,7 @@
    "url": "https://studentsunionucl.org/whats-on/clubs-societies/jam-session",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -2187,7 +1664,7 @@
    "url": "https://studentsunionucl.org/whats-on/clubs-societies/evening-with-lord-biggar-on-colonialism-and-culture-wars",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -2214,7 +1691,7 @@
    "url": "https://studentsunionucl.org/whats-on/clubs-societies/bellydance-taster-session-1",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -2241,7 +1718,7 @@
    "url": "https://studentsunionucl.org/whats-on/clubs-societies/shaax-and-sheeko",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -2270,55 +1747,7 @@
    "url": "https://studentsunionucl.org/whats-on/clubs-societies/ucl-x-lse-energy-social",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
-   "status": "verified",
-   "auto": true
-  },
-  {
-   "id": "lse-public-annual-lecture-2026",
-   "cat": "events",
-   "title": "The unelectable budget: what Britain really needs",
-   "org": "LSE public events",
-   "area": "Sheikh Zayed Theatre, Cheng Kin Ku Building",
-   "ll": [
-    51.5144,
-    -0.1165
-   ],
-   "start": "2026-10-22T18:30",
-   "end": "2026-10-22T20:00",
-   "tags": [
-    "culture",
-    "research"
-   ],
-   "desc": "LSE public event, open to everyone. In-person and online public event (Sheikh Zayed Theatre, Cheng Kin Ku Building).",
-   "url": "https://www.lse.ac.uk/social-policy/events/annual-lecture-2026",
-   "source": "LSE public events",
-   "sourceKey": "lse-public",
-   "checked": "2026-10-21",
-   "status": "verified",
-   "auto": true
-  },
-  {
-   "id": "lse-public-the-sociology-of-elite-power-today",
-   "cat": "events",
-   "title": "The sociology of elite power today: introducing the Oxford Handbook of the Sociology of Global Elites",
-   "org": "LSE public events",
-   "area": "Hong Kong Theatre, Clement House",
-   "ll": [
-    51.5144,
-    -0.1165
-   ],
-   "start": "2026-10-22T18:30",
-   "end": "2026-10-22T20:00",
-   "tags": [
-    "culture",
-    "research"
-   ],
-   "desc": "LSE public event, open to everyone. In-person public event (Hong Kong Theatre, Clement House).",
-   "url": "https://www.lse.ac.uk/sociology/events/2026/the-sociology-of-elite-power-today",
-   "source": "LSE public events",
-   "sourceKey": "lse-public",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -2342,7 +1771,7 @@
    "url": "https://www.lse.ac.uk/events/women-scholarship",
    "source": "LSE public events",
    "sourceKey": "lse-public",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -2366,7 +1795,55 @@
    "url": "https://www.lse.ac.uk/international-relations/events/2026/sea-change-the-new-great-game-in-the-arctic-circle",
    "source": "LSE public events",
    "sourceKey": "lse-public",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
+   "status": "verified",
+   "auto": true
+  },
+  {
+   "id": "lse-public-the-sociology-of-elite-power-today",
+   "cat": "events",
+   "title": "The sociology of elite power today: introducing the Oxford Handbook of the Sociology of Global Elites",
+   "org": "LSE public events",
+   "area": "Hong Kong Theatre, Clement House",
+   "ll": [
+    51.5144,
+    -0.1165
+   ],
+   "start": "2026-10-22T18:30",
+   "end": "2026-10-22T20:00",
+   "tags": [
+    "culture",
+    "research"
+   ],
+   "desc": "LSE public event, open to everyone. In-person public event (Hong Kong Theatre, Clement House).",
+   "url": "https://www.lse.ac.uk/sociology/events/2026/the-sociology-of-elite-power-today",
+   "source": "LSE public events",
+   "sourceKey": "lse-public",
+   "checked": "2026-10-22",
+   "status": "verified",
+   "auto": true
+  },
+  {
+   "id": "lse-public-annual-lecture-2026",
+   "cat": "events",
+   "title": "The unelectable budget: what Britain really needs",
+   "org": "LSE public events",
+   "area": "Sheikh Zayed Theatre, Cheng Kin Ku Building",
+   "ll": [
+    51.5144,
+    -0.1165
+   ],
+   "start": "2026-10-22T18:30",
+   "end": "2026-10-22T20:00",
+   "tags": [
+    "culture",
+    "research"
+   ],
+   "desc": "LSE public event, open to everyone. In-person and online public event (Sheikh Zayed Theatre, Cheng Kin Ku Building).",
+   "url": "https://www.lse.ac.uk/social-policy/events/annual-lecture-2026",
+   "source": "LSE public events",
+   "sourceKey": "lse-public",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -2395,7 +1872,7 @@
    "url": "https://studentsunionucl.org/whats-on/clubs-societies/comedy-club-goes-to-pub-pub-social-0",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -2425,7 +1902,7 @@
    "url": "https://studentsunionucl.org/whats-on/bars/community-nights-black-history-month",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -2453,7 +1930,7 @@
    ],
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -2480,7 +1957,7 @@
    "url": "https://studentsunionucl.org/whats-on/clubs-societies/bachata-improvers-33",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -2510,35 +1987,7 @@
    "url": "https://studentsunionucl.org/whats-on/bars/pub-quiz-social-at-albany",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
-   "status": "verified",
-   "auto": true
-  },
-  {
-   "id": "ucl-su-204989",
-   "cat": "sport",
-   "title": "Swimming Club Taster Session",
-   "org": "Swimming Club",
-   "area": "UCL Bloomsbury",
-   "ll": [
-    51.5246,
-    -0.134
-   ],
-   "price": 0,
-   "start": "2026-10-22T20:00",
-   "end": "2026-10-22T21:00",
-   "unis": [
-    "ucl"
-   ],
-   "tags": [
-    "community",
-    "fitness"
-   ],
-   "desc": "Run by Swimming Club. Beginner Friendly.",
-   "url": "https://studentsunionucl.org/whats-on/sport/swimming-club-taster-session-10",
-   "source": "Students' Union UCL",
-   "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -2565,7 +2014,7 @@
    "url": "https://studentsunionucl.org/whats-on/clubs-societies/bachata-intermediates-20",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -2592,7 +2041,7 @@
    "url": "https://studentsunionucl.org/whats-on/bars/uefa-europa-league-phase-besiktas-v-crystal-palace-phineas-bar",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -2622,7 +2071,7 @@
    "url": "https://studentsunionucl.org/whats-on/bars/after-life-drawing-social",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -2647,7 +2096,7 @@
    "url": "https://studentsunionucl.org/whats-on/events-activities/mcm-comic-con-october-2026",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -2676,7 +2125,7 @@
    "url": "https://studentsunionucl.org/whats-on/sport/project-active-yin-yoga-women-only-0",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -2704,7 +2153,7 @@
    "url": "https://studentsunionucl.org/whats-on/events-activities/pgt-active-bystander-workshop-online-10",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -2731,7 +2180,7 @@
    "url": "https://studentsunionucl.org/whats-on/jobs-skills/career-supercharger-journey-of-life",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -2757,7 +2206,7 @@
    "url": "https://www.kcl.ac.uk/events/weekly-eucharist-at-guys-9",
    "source": "King's College London events",
    "sourceKey": "kcl",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -2785,7 +2234,7 @@
    "url": "https://www.kcl.ac.uk/events/deans-office-book-club-online-9",
    "source": "King's College London events",
    "sourceKey": "kcl",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -2812,7 +2261,7 @@
    "url": "https://www.kcl.ac.uk/events/sweet-friday-at-guys-11",
    "source": "King's College London events",
    "sourceKey": "kcl",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -2840,7 +2289,7 @@
    "url": "https://studentsunionucl.org/whats-on/clubs-societies/stage-crew-and-ucl-balls-crossover-social",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -2866,7 +2315,7 @@
    "url": "https://www.kcl.ac.uk/events/afternoon-tea-at-the-strand-9",
    "source": "King's College London events",
    "sourceKey": "kcl",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -2893,7 +2342,7 @@
    "url": "https://studentsunionucl.org/whats-on/bars/uefa-conference-league-phase-kairat-almaty-v-panathinaikos-phineas-bar",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -2920,7 +2369,7 @@
    "url": "https://studentsunionucl.org/whats-on/clubs-societies/wtnb-colouring-social",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -2947,7 +2396,7 @@
    "url": "https://studentsunionucl.org/whats-on/sport/teamucl-against-hate-term-1-workshop-1",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -2975,7 +2424,7 @@
    "url": "https://studentsunionucl.org/whats-on/sport/muay-thai-padwork-session-friday",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -3003,7 +2452,7 @@
    "url": "https://studentsunionucl.org/whats-on/sport/project-active-pay-and-play-badminton-som-11",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -3031,7 +2480,7 @@
    "url": "https://studentsunionucl.org/whats-on/sport/project-active-pay-and-play-5-side-football-women-only",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -3060,7 +2509,7 @@
    "url": "https://studentsunionucl.org/whats-on/sport/boxing-defence-class-for-purpose-of-self-defence",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -3088,7 +2537,7 @@
    "url": "https://studentsunionucl.org/whats-on/sport/social-dodgeball-club-session",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -3115,7 +2564,7 @@
    "url": "https://studentsunionucl.org/whats-on/clubs-societies/is-liberty-alive-in-uk-intro-to-libsoc-discussion-and-pub-after",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -3143,7 +2592,7 @@
    "url": "https://studentsunionucl.org/whats-on/clubs-societies/brian-cox-emergence-0",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -3171,7 +2620,7 @@
    "url": "https://studentsunionucl.org/whats-on/clubs-societies/drama-x-writers-society-play-in-day",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -3199,7 +2648,7 @@
    "url": "https://studentsunionucl.org/whats-on/clubs-societies/pamilya-night",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -3227,7 +2676,7 @@
    "url": "https://studentsunionucl.org/whats-on/clubs-societies/salsa-teams-auditions",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -3256,7 +2705,7 @@
    "url": "https://studentsunionucl.org/whats-on/clubs-societies/halloween-movie-night-1",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -3284,7 +2733,7 @@
    "url": "https://studentsunionucl.org/whats-on/clubs-societies/pirate-hat-diy-social",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -3308,7 +2757,7 @@
    "url": "https://www.lse.ac.uk/events/arts-and-music/lse-chill/lse-chill-20261023",
    "source": "LSE public events",
    "sourceKey": "lse-public",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -3337,7 +2786,7 @@
    "url": "https://studentsunionucl.org/whats-on/events-activities/jam-night-jazz-and-pop-piano",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -3365,7 +2814,7 @@
    "url": "https://studentsunionucl.org/whats-on/events-activities/cv-roast-hardware-and-software-internships",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -3392,7 +2841,7 @@
    "url": "https://studentsunionucl.org/whats-on/clubs-societies/asset-management-society-exploring-real-estate-private-equity",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -3421,7 +2870,7 @@
    "url": "https://studentsunionucl.org/whats-on/events-activities/women-trans-non-binary-tea-party-social",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -3448,7 +2897,7 @@
    "url": "https://studentsunionucl.org/whats-on/clubs-societies/friday-700-830pm-term-1-26-27-tickets",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -3476,7 +2925,7 @@
    "url": "https://studentsunionucl.org/whats-on/events-activities/mlm-bar-trip",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -3505,7 +2954,7 @@
    "url": "https://studentsunionucl.org/whats-on/clubs-societies/ucl-x-kcl-halloween-pub-crawl",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -3534,7 +2983,7 @@
    "url": "https://studentsunionucl.org/whats-on/clubs-societies/pub-social-9",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -3561,7 +3010,7 @@
    "url": "https://studentsunionucl.org/whats-on/bars/premier-league-ipswich-town-v-nottingham-forest-phineas-bar",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -3589,7 +3038,7 @@
    "url": "https://studentsunionucl.org/whats-on/bars/karaoke-mullys-bar-39",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -3618,7 +3067,7 @@
    "url": "https://studentsunionucl.org/whats-on/clubs-societies/pub-social-mullys",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -3647,7 +3096,7 @@
    "url": "https://studentsunionucl.org/whats-on/bars/live-dj-institute-bar-2",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -3677,7 +3126,7 @@
    "url": "https://studentsunionucl.org/whats-on/events-activities/nordic-welcome-party-at-embargo-republica",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -3705,7 +3154,7 @@
    "url": "https://studentsunionucl.org/whats-on/clubs-societies/hike-amersham-circular-25km",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -3732,7 +3181,7 @@
    "url": "https://studentsunionucl.org/whats-on/clubs-societies/aviation-soc-planespotting-at-heathrow",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -3757,7 +3206,7 @@
    "url": "https://studentsunionucl.org/whats-on/clubs-societies/business-games-2026",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -3784,7 +3233,7 @@
    "url": "https://studentsunionucl.org/whats-on/clubs-societies/intermediate-lesson-1",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -3812,7 +3261,7 @@
    "url": "https://studentsunionucl.org/whats-on/events-activities/ucl-turkish-society-runners-first-run",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -3840,7 +3289,7 @@
    "url": "https://studentsunionucl.org/whats-on/sport/social-badminton-mini-tournament-0",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -3865,7 +3314,7 @@
    "url": "https://studentsunionucl.org/whats-on/clubs-societies/gaming-society-x-dss-valorant-predictions-event",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -3889,7 +3338,7 @@
    "url": "https://www.kcl.ac.uk/events/qs-discover-connect-masters-in-london",
    "source": "King's College London events",
    "sourceKey": "kcl",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -3918,7 +3367,7 @@
    "url": "https://www.kcl.ac.uk/events/change-our-city-challenge-2026",
    "source": "King's College London events",
    "sourceKey": "kcl",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -3946,7 +3395,7 @@
    "url": "https://studentsunionucl.org/whats-on/events-activities/british-museum-trip-1",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -3973,7 +3422,7 @@
    "url": "https://studentsunionucl.org/whats-on/bars/premier-league-football-screenings-phineas-bar-1",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -4000,7 +3449,7 @@
    "url": "https://studentsunionucl.org/whats-on/clubs-societies/kings-2-ski-competiton",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -4029,7 +3478,7 @@
    "url": "https://studentsunionucl.org/whats-on/clubs-societies/global-market-making-games",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -4058,7 +3507,7 @@
    "url": "https://studentsunionucl.org/whats-on/clubs-societies/parkour-indoor-session",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -4086,7 +3535,35 @@
    "url": "https://studentsunionucl.org/whats-on/events-activities/dms-halloween-party",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
+   "status": "verified",
+   "auto": true
+  },
+  {
+   "id": "ucl-su-205167",
+   "cat": "events",
+   "title": "Board Games Night",
+   "org": "Aikido Club",
+   "area": "Darwin Building B05",
+   "ll": [
+    51.5246,
+    -0.134
+   ],
+   "price": 0,
+   "start": "2026-10-24T17:00",
+   "end": "2026-10-24T20:00",
+   "unis": [
+    "ucl"
+   ],
+   "tags": [
+    "community",
+    "tech"
+   ],
+   "desc": "Run by Aikido Club. Venue: Darwin Building B05. Beginner Friendly.",
+   "url": "https://studentsunionucl.org/whats-on/events-activities/board-games-night-1",
+   "source": "Students' Union UCL",
+   "sourceKey": "ucl-su",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -4114,7 +3591,7 @@
    "url": "https://studentsunionucl.org/whats-on/clubs-societies/performance-drama-soc-x-writers-soc-presents-play-in-day",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -4142,7 +3619,7 @@
    "url": "https://studentsunionucl.org/whats-on/clubs-societies/badminton-weekly-social-pay-and-play",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -4170,7 +3647,7 @@
    "url": "https://studentsunionucl.org/whats-on/events-activities/bhm-sports-pass-badminton-social-taster",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -4198,7 +3675,7 @@
    "url": "https://studentsunionucl.org/whats-on/events-activities/celya-ab-comedywe-must-stop-meeting-like-this",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -4228,7 +3705,7 @@
    "url": "https://studentsunionucl.org/whats-on/clubs-societies/halloween-party-film-society-x-drama-society",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -4256,7 +3733,7 @@
    "url": "https://studentsunionucl.org/whats-on/clubs-societies/walk-ramsgate-to-margate-coastal-trail-16km",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -4283,7 +3760,7 @@
    "url": "https://studentsunionucl.org/whats-on/sport/upper-thames-autumn-head-2026",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -4310,7 +3787,7 @@
    "url": "https://studentsunionucl.org/whats-on/clubs-societies/badminton-weekly-coaching-session-0",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -4338,7 +3815,7 @@
    "url": "https://studentsunionucl.org/whats-on/sport/project-active-vinyasa-yoga-30",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -4366,7 +3843,7 @@
    "url": "https://studentsunionucl.org/whats-on/sport/project-active-mat-pilates-ucl-east-2",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -4393,7 +3870,7 @@
    "url": "https://studentsunionucl.org/whats-on/sport/muay-thai-sunday-sparring",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -4420,7 +3897,7 @@
    "url": "https://studentsunionucl.org/whats-on/events-activities/discover-london-diwali-on-square",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -4452,7 +3929,7 @@
    ],
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -4481,7 +3958,7 @@
    "url": "https://studentsunionucl.org/whats-on/sport/vinyasa-yoga-session",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -4509,7 +3986,7 @@
    "url": "https://studentsunionucl.org/whats-on/events-activities/ucl-world-history-society-documentary-screening",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -4537,7 +4014,7 @@
    "url": "https://studentsunionucl.org/whats-on/events-activities/womens-pool-social",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -4566,7 +4043,7 @@
    "url": "https://studentsunionucl.org/whats-on/clubs-societies/halloween-gathering",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -4593,7 +4070,7 @@
    "url": "https://studentsunionucl.org/whats-on/events-activities/dance-society-24-hour-show",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -4619,7 +4096,7 @@
    "url": "https://studentsunionucl.org/whats-on/events-activities/discord-games-night",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -4647,7 +4124,7 @@
    "url": "https://studentsunionucl.org/whats-on/clubs-societies/karting-club-united-states-gp-watchalong-rocket-euston",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -4676,7 +4153,7 @@
    "url": "https://studentsunionucl.org/whats-on/sport/project-active-dynamic-pilates-15",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -4703,7 +4180,7 @@
    "url": "https://www.kcl.ac.uk/events/morning-prayer-online-copy-13",
    "source": "King's College London events",
    "sourceKey": "kcl",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -4733,7 +4210,7 @@
    "url": "https://studentsunionucl.org/whats-on/jobs-skills/research-consultancy-training-taster-0",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -4757,7 +4234,7 @@
    "url": "https://www.lse.ac.uk/events/arts-and-music/exhibitions/exhibitions/women-artists-in-conflict-zones",
    "source": "LSE public events",
    "sourceKey": "lse-public",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -4782,7 +4259,7 @@
    "url": "https://studentsunionucl.org/whats-on/events-activities/beyond-sora-end-of-programme-celebration",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -4809,7 +4286,7 @@
    "url": "https://studentsunionucl.org/whats-on/events-activities/matcha-crawl-with-lifestyle-medicine-society",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -4837,7 +4314,7 @@
    "url": "https://studentsunionucl.org/whats-on/events-activities/monday-meditation-25",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -4866,7 +4343,7 @@
    "url": "https://studentsunionucl.org/whats-on/sport/project-active-women-only-tai-chi-0",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -4894,7 +4371,7 @@
    "url": "https://studentsunionucl.org/whats-on/clubs-societies/prayer-meeting-1",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -4922,7 +4399,7 @@
    "url": "https://studentsunionucl.org/whats-on/sport/project-active-pay-and-play-squash-11",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -4950,7 +4427,7 @@
    "url": "https://studentsunionucl.org/whats-on/clubs-societies/pumpkin-painting-with-arts-sciences",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -4977,7 +4454,7 @@
    "url": "https://studentsunionucl.org/whats-on/clubs-societies/dms-medc0001-revision-session",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -5005,7 +4482,7 @@
    "url": "https://studentsunionucl.org/whats-on/sport/project-active-pay-and-play-5-side-football-2",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -5029,7 +4506,7 @@
    "url": "https://www.kcl.ac.uk/events/life-health-science-careers-event-2026",
    "source": "King's College London events",
    "sourceKey": "kcl",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -5057,7 +4534,7 @@
    "url": "https://studentsunionucl.org/whats-on/events-activities/artsunlocked-drawing",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -5086,7 +4563,7 @@
    "url": "https://studentsunionucl.org/whats-on/sport/teamucl-first-aid-course-14",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -5113,7 +4590,7 @@
    "url": "https://studentsunionucl.org/whats-on/representation/welfare-community-zone-meeting-1",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -5144,7 +4621,7 @@
    ],
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -5171,7 +4648,7 @@
    "url": "https://studentsunionucl.org/whats-on/clubs-societies/bible-study-session-1",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -5199,7 +4676,7 @@
    "url": "https://studentsunionucl.org/whats-on/clubs-societies/hot-drink-handout-session-regular-outreach-monday",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -5226,7 +4703,7 @@
    "url": "https://studentsunionucl.org/whats-on/events-activities/rums-rag-halloween-movie-night",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -5253,7 +4730,7 @@
    "url": "https://studentsunionucl.org/whats-on/clubs-societies/kcl-x-lse-x-ucl-geoguessr-tournament",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -5281,7 +4758,7 @@
    "url": "https://studentsunionucl.org/whats-on/sport/competitive-dodgeball-session-1",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -5309,7 +4786,7 @@
    "url": "https://studentsunionucl.org/whats-on/clubs-societies/halloween-games-night-with-asian-social-network",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -5337,7 +4814,7 @@
    "url": "https://studentsunionucl.org/whats-on/events-activities/breaking-into-tech-internship-insights-cv-guidance",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -5364,7 +4841,7 @@
    "url": "https://studentsunionucl.org/whats-on/events-activities/introverts-vision-boarding",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -5392,7 +4869,7 @@
    "url": "https://studentsunionucl.org/whats-on/clubs-societies/back-to-basics-session-1",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -5417,7 +4894,7 @@
    "url": "https://www.lse.ac.uk/events/open/the-madness-of-markets",
    "source": "LSE public events",
    "sourceKey": "lse-public",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -5441,7 +4918,7 @@
    "url": "https://www.lse.ac.uk/events/women-of-the-world",
    "source": "LSE public events",
    "sourceKey": "lse-public",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -5469,7 +4946,7 @@
    "url": "https://studentsunionucl.org/whats-on/clubs-societies/bhm-sports-pass-mens-hockey-training-2",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -5499,7 +4976,7 @@
    "url": "https://studentsunionucl.org/whats-on/bars/live-music-institute-bar-1",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -5527,7 +5004,7 @@
    "url": "https://studentsunionucl.org/whats-on/sport/wheelchair-basketball-taster-session-4",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -5554,7 +5031,7 @@
    "url": "https://studentsunionucl.org/whats-on/clubs-societies/quiz-for-breast-cancer-awareness",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -5584,7 +5061,7 @@
    "url": "https://studentsunionucl.org/whats-on/bars/mullys-halloween-quiz",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -5612,7 +5089,7 @@
    "url": "https://studentsunionucl.org/whats-on/clubs-societies/natsci-halloween-party",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -5640,7 +5117,7 @@
    "url": "https://studentsunionucl.org/whats-on/sport/muay-thai-padwork-session-monday",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -5669,7 +5146,7 @@
    "url": "https://studentsunionucl.org/whats-on/sport/all-levels-boxing-class",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -5697,7 +5174,7 @@
    "url": "https://studentsunionucl.org/whats-on/clubs-societies/filipino-history-workshop",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -5723,7 +5200,7 @@
    "url": "https://www.kcl.ac.uk/events/morning-prayer-at-waterloo-5",
    "source": "King's College London events",
    "sourceKey": "kcl",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -5749,7 +5226,7 @@
    "url": "https://www.kcl.ac.uk/events/morning-prayer-at-denmark-hill-9",
    "source": "King's College London events",
    "sourceKey": "kcl",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -5777,7 +5254,7 @@
    "url": "https://studentsunionucl.org/whats-on/representation/black-history-month-east-london-ethiopian-cooking-class",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -5806,7 +5283,7 @@
    "url": "https://studentsunionucl.org/whats-on/sport/project-active-step-0",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -5833,7 +5310,7 @@
    "url": "https://studentsunionucl.org/whats-on/events-activities/meet-su-pumpkin-decorating",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -5860,7 +5337,7 @@
    "url": "https://studentsunionucl.org/whats-on/events-activities/neurogenetics-journal-club-ucl-queen-square-institute-of-neurology",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -5886,7 +5363,7 @@
    "url": "https://www.kcl.ac.uk/events/law-justice-fair-2026",
    "source": "King's College London events",
    "sourceKey": "kcl",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -5911,7 +5388,7 @@
    "url": "https://studentsunionucl.org/whats-on/events-activities/part-time-jobs-fair-1",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -5938,7 +5415,7 @@
    "url": "https://www.kcl.ac.uk/events/international-lunch-at-waterloo-10",
    "source": "King's College London events",
    "sourceKey": "kcl",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -5965,7 +5442,31 @@
    "url": "https://www.kcl.ac.uk/events/lunch-at-denmark-hill-2",
    "source": "King's College London events",
    "sourceKey": "kcl",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
+   "status": "verified",
+   "auto": true
+  },
+  {
+   "id": "lse-public-can-incentives-encourage-open-research-practice",
+   "cat": "events",
+   "title": "Can incentives encourage open research practice?",
+   "org": "LSE public events",
+   "area": "LSE campus, venue tbc to ticketholders",
+   "ll": [
+    51.5144,
+    -0.1165
+   ],
+   "start": "2026-10-27T12:00",
+   "end": "2026-10-27T13:00",
+   "tags": [
+    "culture",
+    "research"
+   ],
+   "desc": "LSE public event, open to everyone. In-person and online public event (LSE campus, venue tbc to ticketholders).",
+   "url": "https://www.lse.ac.uk/library/whats-on/events/can-incentives-encourage-open-research-practice",
+   "source": "LSE public events",
+   "sourceKey": "lse-public",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -5994,7 +5495,7 @@
    "url": "https://studentsunionucl.org/whats-on/sport/project-active-breathe-balance-0",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -6017,11 +5518,11 @@
     "community",
     "culture"
    ],
-   "desc": "Read & discuss 'The Left Hand of Darkness' by Ursula K. Le Guin. Also on 3 more dates in the next few weeks.",
+   "desc": "Read & discuss 'The Left Hand of Darkness' by Ursula K. Le Guin. Also on 2 more dates in the next few weeks.",
    "url": "https://www.kcl.ac.uk/events/deans-office-book-club-at-waterloo-10",
    "source": "King's College London events",
    "sourceKey": "kcl",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -6049,7 +5550,7 @@
    "url": "https://www.kcl.ac.uk/events/age-of-deception-cybersecurity-as-secret-statecraft",
    "source": "King's College London events",
    "sourceKey": "kcl",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -6074,7 +5575,7 @@
    "url": "https://www.kcl.ac.uk/events/undergraduate-info-session-ucas-27-october-2026",
    "source": "King's College London events",
    "sourceKey": "kcl",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -6101,7 +5602,7 @@
    "url": "https://studentsunionucl.org/whats-on/clubs-societies/curious-can-science-and-faith-coexist",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -6129,7 +5630,7 @@
    "url": "https://studentsunionucl.org/whats-on/sport/all-jokes-aside-pickleball-52",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -6158,7 +5659,7 @@
    "url": "https://studentsunionucl.org/whats-on/sport/project-active-bloomsbury-run-group",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -6186,7 +5687,7 @@
    "url": "https://studentsunionucl.org/whats-on/sport/muay-thai-women-only-training-session-1-5pm-6pm",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -6211,7 +5712,7 @@
    "url": "https://studentsunionucl.org/whats-on/events-activities/speaker-event-william-gordon-petrovskii-introduction-to-alternative",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -6239,7 +5740,7 @@
    "url": "https://studentsunionucl.org/whats-on/events-activities/artsunlocked-drawing-ucl-east",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -6267,7 +5768,35 @@
    "url": "https://studentsunionucl.org/whats-on/events-activities/artsunlocked-acting",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
+   "status": "verified",
+   "auto": true
+  },
+  {
+   "id": "ucl-su-205174",
+   "cat": "events",
+   "title": "UCL Drag X KCL Makeup Workshop",
+   "org": "Drag Society",
+   "area": "UCL Bloomsbury",
+   "ll": [
+    51.5246,
+    -0.134
+   ],
+   "priceText": "Tickets on external site",
+   "start": "2026-10-27T17:30",
+   "end": "2026-10-27T19:00",
+   "unis": [
+    "ucl"
+   ],
+   "tags": [
+    "community",
+    "culture"
+   ],
+   "desc": "Run by Drag Society. Beginner Friendly · Alcohol Free.",
+   "url": "https://studentsunionucl.org/whats-on/clubs-societies/ucl-drag-x-kcl-makeup-workshop",
+   "source": "Students' Union UCL",
+   "sourceKey": "ucl-su",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -6294,7 +5823,7 @@
    "url": "https://www.kcl.ac.uk/events/all-souls-service-at-the-strand-requiem-in-a-time-of-remembering",
    "source": "King's College London events",
    "sourceKey": "kcl",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -6321,7 +5850,7 @@
    "url": "https://studentsunionucl.org/whats-on/representation/activities-zone-meeting-1",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -6349,7 +5878,7 @@
    "url": "https://studentsunionucl.org/whats-on/sport/muay-thai-women-only-training-session-2-6pm-7pm",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -6377,7 +5906,7 @@
    "url": "https://studentsunionucl.org/whats-on/sport/project-active-som-run-6",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -6404,7 +5933,7 @@
    "url": "https://studentsunionucl.org/whats-on/clubs-societies/spooky-sip-paint",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -6433,7 +5962,7 @@
    "url": "https://studentsunionucl.org/whats-on/clubs-societies/hot-drink-handout-session-taster-outreach-0",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -6460,7 +5989,7 @@
    "url": "https://studentsunionucl.org/whats-on/clubs-societies/sayyid-badr-albusaidi-foreign-minister-sultanate-of-oman-conversation",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -6487,7 +6016,7 @@
    "url": "https://studentsunionucl.org/whats-on/events-activities/pumpkin-carving-0",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -6514,7 +6043,7 @@
    "url": "https://studentsunionucl.org/whats-on/events-activities/career-talk-with-hvivo-head-of-clinical-operations",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -6542,7 +6071,7 @@
    "url": "https://studentsunionucl.org/whats-on/clubs-societies/swiftie-seminar-6",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -6568,7 +6097,7 @@
    "url": "https://www.kcl.ac.uk/events/school-of-the-sacraments-at-guys-copy-1",
    "source": "King's College London events",
    "sourceKey": "kcl",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -6596,7 +6125,33 @@
    "url": "https://studentsunionucl.org/whats-on/events-activities/lord-howard-of-lympne-in-conversation",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
+   "status": "verified",
+   "auto": true
+  },
+  {
+   "id": "lse-public-climate-change-and-liberal-political-economy",
+   "cat": "events",
+   "title": "Climate change and liberal political economy",
+   "org": "LSE public events",
+   "area": "Online public event",
+   "ll": [
+    51.5144,
+    -0.1165
+   ],
+   "online": true,
+   "start": "2026-10-27T18:30",
+   "end": "2026-10-27T20:15",
+   "tags": [
+    "culture",
+    "law",
+    "research"
+   ],
+   "desc": "LSE public event, open to everyone. Online public event.",
+   "url": "https://www.lse.ac.uk/hayek/events/climate-change-and-liberal-political-economy",
+   "source": "LSE public events",
+   "sourceKey": "lse-public",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -6630,7 +6185,7 @@
    ],
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -6658,7 +6213,93 @@
    "url": "https://studentsunionucl.org/whats-on/events-activities/dance-society-fright-night",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
+   "status": "verified",
+   "auto": true
+  },
+  {
+   "id": "ucl-su-205175",
+   "cat": "events",
+   "title": "Haunted Couture: UCL DragSoc Performs with KCL Pole for KCL IFem",
+   "org": "Drag Society",
+   "area": "UCL Bloomsbury",
+   "ll": [
+    51.5246,
+    -0.134
+   ],
+   "priceText": "Tickets on external site",
+   "start": "2026-10-27T20:30",
+   "end": "2026-10-27T22:00",
+   "unis": [
+    "ucl"
+   ],
+   "tags": [
+    "culture",
+    "music",
+    "nightlife"
+   ],
+   "desc": "Run by Drag Society.",
+   "url": "https://studentsunionucl.org/whats-on/clubs-societies/haunted-couture-ucl-dragsoc-performs-with-kcl-pole-for-kcl-ifem",
+   "source": "Students' Union UCL",
+   "sourceKey": "ucl-su",
+   "checked": "2026-10-22",
+   "status": "verified",
+   "auto": true
+  },
+  {
+   "id": "ucl-su-203381",
+   "cat": "sport",
+   "title": "Project Active Sculpt Pilates",
+   "org": "Students' Union UCL",
+   "area": "UCL Bloomsbury",
+   "ll": [
+    51.5246,
+    -0.134
+   ],
+   "price": 3.5,
+   "start": "2026-10-28T10:00",
+   "end": "2026-10-28T11:00",
+   "unis": [
+    "ucl"
+   ],
+   "tags": [
+    "community",
+    "culture",
+    "fitness"
+   ],
+   "desc": "Run by Students' Union UCL. Venue: Conference Room, Level 2, Bloomsbury Theatre Building. Beginner Friendly. Also on 1 more date in the next few weeks.",
+   "url": "https://studentsunionucl.org/whats-on/sport/project-active-sculpt-pilates-1",
+   "source": "Students' Union UCL",
+   "sourceKey": "ucl-su",
+   "checked": "2026-10-22",
+   "status": "verified",
+   "auto": true
+  },
+  {
+   "id": "ucl-su-204310",
+   "cat": "sport",
+   "title": "Project Active Lane Swimming",
+   "org": "Students' Union UCL",
+   "area": "UCL East",
+   "ll": [
+    51.5378,
+    -0.0107
+   ],
+   "price": 3.5,
+   "start": "2026-10-28T10:00",
+   "end": "2026-10-28T11:00",
+   "unis": [
+    "ucl"
+   ],
+   "tags": [
+    "community",
+    "fitness"
+   ],
+   "desc": "Run by Students' Union UCL. Venue: London Aquatics Centre. Beginner Friendly. Also on 1 more date in the next few weeks.",
+   "url": "https://studentsunionucl.org/whats-on/sport/project-active-lane-swimming-11",
+   "source": "Students' Union UCL",
+   "sourceKey": "ucl-su",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -6685,7 +6326,7 @@
    "url": "https://www.kcl.ac.uk/events/mindfulness-with-jenny-online-20",
    "source": "King's College London events",
    "sourceKey": "kcl",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -6712,7 +6353,7 @@
    "url": "https://studentsunionucl.org/whats-on/clubs-societies/bhm-sports-pass-wednesday-28th-october",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -6740,7 +6381,7 @@
    "url": "https://studentsunionucl.org/whats-on/representation/black-joy-market",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -6766,7 +6407,7 @@
    "url": "https://www.kcl.ac.uk/events/praying-the-holy-rosary-at-guys-8",
    "source": "King's College London events",
    "sourceKey": "kcl",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -6794,7 +6435,7 @@
    "url": "https://studentsunionucl.org/whats-on/give-it-go/steelpan-band-workshop",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -6820,7 +6461,7 @@
    "url": "https://www.kcl.ac.uk/events/sacrament-of-confession-at-guys-7",
    "source": "King's College London events",
    "sourceKey": "kcl",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -6849,7 +6490,7 @@
    "url": "https://studentsunionucl.org/whats-on/events-activities/artsunlocked-lunchtime-sing",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -6878,7 +6519,7 @@
    "url": "https://studentsunionucl.org/whats-on/give-it-go/jump-rope",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -6904,7 +6545,7 @@
    "url": "https://www.kcl.ac.uk/events/catholic-mass-at-guys-10",
    "source": "King's College London events",
    "sourceKey": "kcl",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -6932,7 +6573,7 @@
    "url": "https://www.kcl.ac.uk/events/college-eucharist-at-the-strand-black-history-month-1",
    "source": "King's College London events",
    "sourceKey": "kcl",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -6959,7 +6600,7 @@
    "url": "https://studentsunionucl.org/whats-on/clubs-societies/dumpling-making-with-asian-social-network",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -6987,7 +6628,7 @@
    "url": "https://studentsunionucl.org/whats-on/sport/project-active-halloween-fun-run",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -7015,7 +6656,7 @@
    "url": "https://studentsunionucl.org/whats-on/clubs-societies/compost-zine-workshop",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -7043,7 +6684,7 @@
    "url": "https://studentsunionucl.org/whats-on/clubs-societies/golf-range-session",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -7070,7 +6711,7 @@
    "url": "https://studentsunionucl.org/whats-on/clubs-societies/tfl-society-tube-challenge-2026",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -7098,7 +6739,7 @@
    "url": "https://studentsunionucl.org/whats-on/events-activities/trip-to-ucl-pathology-museum-with-anatomy-society",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -7126,7 +6767,7 @@
    "url": "https://studentsunionucl.org/whats-on/give-it-go/adinkra-printing",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -7152,7 +6793,36 @@
    "url": "https://www.kcl.ac.uk/events/unlocking-the-mystery-of-the-bible-at-guys-copy-1",
    "source": "King's College London events",
    "sourceKey": "kcl",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
+   "status": "verified",
+   "auto": true
+  },
+  {
+   "id": "ucl-su-203401",
+   "cat": "sport",
+   "title": "Project Active Women Only Hatha Yoga",
+   "org": "Students' Union UCL",
+   "area": "UCL Bloomsbury",
+   "ll": [
+    51.5246,
+    -0.134
+   ],
+   "price": 3.5,
+   "start": "2026-10-28T16:00",
+   "end": "2026-10-28T17:00",
+   "unis": [
+    "ucl"
+   ],
+   "tags": [
+    "community",
+    "culture",
+    "fitness"
+   ],
+   "desc": "Run by Students' Union UCL. Venue: Conference Room, Level 2, Bloomsbury Theatre Building. Beginner Friendly. Also on 1 more date in the next few weeks.",
+   "url": "https://studentsunionucl.org/whats-on/sport/project-active-women-only-hatha-yoga-8",
+   "source": "Students' Union UCL",
+   "sourceKey": "ucl-su",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -7180,7 +6850,7 @@
    "url": "https://studentsunionucl.org/whats-on/clubs-societies/analogue-magazine-second-meeting",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -7209,7 +6879,7 @@
    "url": "https://studentsunionucl.org/whats-on/clubs-societies/choir-and-band-rehersal-1",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -7237,7 +6907,7 @@
    "url": "https://studentsunionucl.org/whats-on/clubs-societies/ingenium-official-project-launch",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -7265,7 +6935,7 @@
    "url": "https://studentsunionucl.org/whats-on/clubs-societies/halloween-cupcake-decorating",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -7293,7 +6963,7 @@
    "url": "https://studentsunionucl.org/whats-on/events-activities/american-pool-social-session-0",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -7321,7 +6991,7 @@
    "url": "https://studentsunionucl.org/whats-on/clubs-societies/ucl-karting-teamsport-brent-cross",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -7349,7 +7019,7 @@
    "url": "https://studentsunionucl.org/whats-on/clubs-societies/egyptian-society-games-night",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -7377,7 +7047,35 @@
    "url": "https://studentsunionucl.org/whats-on/clubs-societies/ai-in-education-panel",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
+   "status": "verified",
+   "auto": true
+  },
+  {
+   "id": "ucl-su-204105",
+   "cat": "sport",
+   "title": "Wednesday 6.00 - 7.30pm (Term 1, 26/27) Tickets",
+   "org": "Kickboxing Club",
+   "area": "UCL Bloomsbury",
+   "ll": [
+    51.5246,
+    -0.134
+   ],
+   "price": 3.0,
+   "start": "2026-10-28T18:00",
+   "end": "2026-10-28T19:30",
+   "unis": [
+    "ucl"
+   ],
+   "tags": [
+    "community",
+    "fitness"
+   ],
+   "desc": "Run by Kickboxing Club. Venue: Mandela Studio, Bloomsbury Fitness, 3rd floor, 15 Gordon St, London, WC1H 0AY. Beginner Friendly.",
+   "url": "https://studentsunionucl.org/whats-on/clubs-societies/wednesday-600-730pm-term-1-26-27-tickets",
+   "source": "Students' Union UCL",
+   "sourceKey": "ucl-su",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -7404,7 +7102,7 @@
    "url": "https://studentsunionucl.org/whats-on/events-activities/jiangzuo-yesuruhegaibianshijie",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -7431,7 +7129,7 @@
    "url": "https://studentsunionucl.org/whats-on/events-activities/spooky-workshop",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -7458,7 +7156,7 @@
    "url": "https://studentsunionucl.org/whats-on/clubs-societies/investment-panel",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -7485,7 +7183,7 @@
    "url": "https://studentsunionucl.org/whats-on/clubs-societies/wildlife-watercolour-session-3-birds-of-prey-0",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -7513,7 +7211,7 @@
    "url": "https://studentsunionucl.org/whats-on/clubs-societies/qa-with-francesca-di-mottola",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -7539,7 +7237,35 @@
    "url": "https://www.kcl.ac.uk/events/christus-medicus-group-at-guys-5",
    "source": "King's College London events",
    "sourceKey": "kcl",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
+   "status": "verified",
+   "auto": true
+  },
+  {
+   "id": "ucl-su-203241",
+   "cat": "events",
+   "title": "artsUnlocked Just Vibes",
+   "org": "Students' Union UCL",
+   "area": "UCL Bloomsbury",
+   "ll": [
+    51.5246,
+    -0.134
+   ],
+   "price": 3.5,
+   "start": "2026-10-28T18:15",
+   "end": "2026-10-28T19:30",
+   "unis": [
+    "ucl"
+   ],
+   "tags": [
+    "community",
+    "culture"
+   ],
+   "desc": "Run by Students' Union UCL. Venue: 2nd Floor Conference Room, Bloomsbury Building. Beginner Friendly · Alcohol Free · Under 18 Friendly · Commuters.",
+   "url": "https://studentsunionucl.org/whats-on/events-activities/artsunlocked-just-vibes-0",
+   "source": "Students' Union UCL",
+   "sourceKey": "ucl-su",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -7566,7 +7292,7 @@
    "url": "https://studentsunionucl.org/whats-on/clubs-societies/immunology-journal-club-0",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -7595,7 +7321,7 @@
    "url": "https://studentsunionucl.org/whats-on/bars/halloween-sports-night-phineas",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -7625,7 +7351,7 @@
    "url": "https://studentsunionucl.org/whats-on/events-activities/halloween-karaoke-night",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -7653,7 +7379,36 @@
    "url": "https://studentsunionucl.org/whats-on/bars/post-grad-quiz-institute-bar-0",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
+   "status": "verified",
+   "auto": true
+  },
+  {
+   "id": "ucl-su-205107",
+   "cat": "sport",
+   "title": "Beginners Class",
+   "org": "Amateur Boxing Club",
+   "area": "UCL Bloomsbury",
+   "ll": [
+    51.5246,
+    -0.134
+   ],
+   "price": 0,
+   "start": "2026-10-28T19:30",
+   "end": "2026-10-28T20:30",
+   "unis": [
+    "ucl"
+   ],
+   "tags": [
+    "community",
+    "culture",
+    "fitness"
+   ],
+   "desc": "Run by Amateur Boxing Club. Venue: Mandela Studio TeamUCL Gym , 3rd Floor, Bloomsbury Theatre Building, 15 Gordon Street, London WC1H 0AH. Beginner Friendly · Alcohol Free · Under 18 Friendly.",
+   "url": "https://studentsunionucl.org/whats-on/sport/beginners-class-0",
+   "source": "Students' Union UCL",
+   "sourceKey": "ucl-su",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -7681,7 +7436,7 @@
    "url": "https://studentsunionucl.org/whats-on/sport/small-group-sparring-class-for-intermediates",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -7708,7 +7463,59 @@
    "url": "https://studentsunionucl.org/whats-on/clubs-societies/bellydancing-taster-session-2-0",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
+   "status": "verified",
+   "auto": true
+  },
+  {
+   "id": "kcl-morning-prayer-at-the-strand-10",
+   "cat": "events",
+   "title": "Morning Prayer at the Strand",
+   "org": "Dean's Office",
+   "area": "Strand campus",
+   "ll": [
+    51.5115,
+    -0.116
+   ],
+   "start": "2026-10-29T09:30",
+   "end": "2026-10-29T10:00",
+   "unis": [
+    "kcl"
+   ],
+   "tags": [
+    "community"
+   ],
+   "desc": "A Morning Prayer service every Thursday during term time in the College Chapel. Also on 2 more dates in the next few weeks.",
+   "url": "https://www.kcl.ac.uk/events/morning-prayer-at-the-strand-10",
+   "source": "King's College London events",
+   "sourceKey": "kcl",
+   "checked": "2026-10-22",
+   "status": "verified",
+   "auto": true
+  },
+  {
+   "id": "kcl-morning-prayer-at-guys-9",
+   "cat": "events",
+   "title": "Morning Prayer at Guy's",
+   "org": "Dean's Office",
+   "area": "Guy's campus",
+   "ll": [
+    51.5033,
+    -0.0869
+   ],
+   "start": "2026-10-29T10:00",
+   "end": "2026-10-29T10:30",
+   "unis": [
+    "kcl"
+   ],
+   "tags": [
+    "community"
+   ],
+   "desc": "A short Morning Prayer service at Guy's every Thursday during term time. Also on 3 more dates in the next few weeks.",
+   "url": "https://www.kcl.ac.uk/events/morning-prayer-at-guys-9",
+   "source": "King's College London events",
+   "sourceKey": "kcl",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -7735,7 +7542,7 @@
    "url": "https://studentsunionucl.org/whats-on/events-activities/managing-and-citing-references-with-endnote-workshop-0",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -7763,7 +7570,7 @@
    "url": "https://studentsunionucl.org/whats-on/events-activities/faith-and-belief-cafe-7",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -7790,7 +7597,7 @@
    "url": "https://studentsunionucl.org/whats-on/sport/football-masterclass-passing-and-receiving",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -7817,7 +7624,35 @@
    "url": "https://www.kcl.ac.uk/events/should-the-united-states-pursue-a-nuclear-damage-limitation-capability",
    "source": "King's College London events",
    "sourceKey": "kcl",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
+   "status": "verified",
+   "auto": true
+  },
+  {
+   "id": "ucl-su-205168",
+   "cat": "sport",
+   "title": "ArabNASoc v PakSoc Football Game",
+   "org": "Arab and North African Society",
+   "area": "UCL Bloomsbury",
+   "ll": [
+    51.5246,
+    -0.134
+   ],
+   "price": 0,
+   "start": "2026-10-29T16:00",
+   "end": "2026-10-29T18:00",
+   "unis": [
+    "ucl"
+   ],
+   "tags": [
+    "community",
+    "fitness"
+   ],
+   "desc": "Run by Arab and North African Society. Alcohol Free · Under 18 Friendly.",
+   "url": "https://studentsunionucl.org/whats-on/clubs-societies/arabnasoc-v-paksoc-football-game",
+   "source": "Students' Union UCL",
+   "sourceKey": "ucl-su",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -7844,7 +7679,7 @@
    "url": "https://studentsunionucl.org/whats-on/events-activities/ghost-painting-workshopfor-commuters",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -7871,7 +7706,7 @@
    "url": "https://studentsunionucl.org/whats-on/clubs-societies/spooktacular-workshop",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -7901,7 +7736,7 @@
    "url": "https://studentsunionucl.org/whats-on/clubs-societies/ucl-x-lse-x-qmul-x-kcl-debate-halloween-social",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -7930,7 +7765,32 @@
    "url": "https://studentsunionucl.org/whats-on/clubs-societies/adam-smith-institute-insight-into-policy-work",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
+   "status": "verified",
+   "auto": true
+  },
+  {
+   "id": "ucl-su-205170",
+   "cat": "events",
+   "title": "Halloween Zine Making",
+   "org": "Writers' Society",
+   "area": "222 Euston Road Room LG01",
+   "ll": [
+    51.5246,
+    -0.134
+   ],
+   "price": 0,
+   "start": "2026-10-29T17:30",
+   "end": "2026-10-29T19:30",
+   "unis": [
+    "ucl"
+   ],
+   "tags": [],
+   "desc": "Run by Writers' Society. Venue: 222 Euston Road Room LG01. Alcohol Free.",
+   "url": "https://studentsunionucl.org/whats-on/clubs-societies/halloween-zine-making",
+   "source": "Students' Union UCL",
+   "sourceKey": "ucl-su",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -7956,7 +7816,7 @@
    "url": "https://www.kcl.ac.uk/events/yarn-and-yap-at-guys-copy-2",
    "source": "King's College London events",
    "sourceKey": "kcl",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -7983,7 +7843,7 @@
    "url": "https://studentsunionucl.org/whats-on/jobs-skills/can-business-be-force-for-good-lemonaid-fireside-chat",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -8011,7 +7871,7 @@
    "url": "https://studentsunionucl.org/whats-on/representation/education-zone-meeting-1",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -8038,7 +7898,7 @@
    "url": "https://studentsunionucl.org/whats-on/clubs-societies/make-mandrake-craft-night",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -8069,7 +7929,7 @@
    "url": "https://studentsunionucl.org/whats-on/clubs-societies/halloween-boat-party-2026",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -8097,7 +7957,7 @@
    "url": "https://studentsunionucl.org/whats-on/clubs-societies/ucl-medtech-society-beginners-python-coding-workshop-series-session-1",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -8124,7 +7984,34 @@
    "url": "https://studentsunionucl.org/whats-on/events-activities/mindfulness-session",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
+   "status": "verified",
+   "auto": true
+  },
+  {
+   "id": "ucl-su-205173",
+   "cat": "events",
+   "title": "Republic Day Celebration",
+   "org": "Turkish Society",
+   "area": "UCL Bloomsbury",
+   "ll": [
+    51.5246,
+    -0.134
+   ],
+   "price": 0,
+   "start": "2026-10-29T18:30",
+   "end": "2026-10-29T20:00",
+   "unis": [
+    "ucl"
+   ],
+   "tags": [
+    "culture"
+   ],
+   "desc": "Run by Turkish Society.",
+   "url": "https://studentsunionucl.org/whats-on/clubs-societies/republic-day-celebration",
+   "source": "Students' Union UCL",
+   "sourceKey": "ucl-su",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -8150,7 +8037,7 @@
    "url": "https://www.kcl.ac.uk/events/john-hegley-and-friends-keats-the-cat-and-the-kennel",
    "source": "King's College London events",
    "sourceKey": "kcl",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -8179,7 +8066,7 @@
    "url": "https://studentsunionucl.org/whats-on/clubs-societies/super-mega-spooky-scary-comedy-club-goes-to-pub-pub-social",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -8207,7 +8094,7 @@
    "url": "https://studentsunionucl.org/whats-on/clubs-societies/connect",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -8236,7 +8123,7 @@
    "url": "https://studentsunionucl.org/whats-on/bars/local-lineup-sessions-mullys-bar-0",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -8263,7 +8150,7 @@
    "url": "https://studentsunionucl.org/whats-on/clubs-societies/mds-weekend-away",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -8290,7 +8177,7 @@
    "url": "https://studentsunionucl.org/whats-on/jobs-skills/career-supercharger-create-your-internship-tracker-informal-application",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -8317,7 +8204,34 @@
    "url": "https://studentsunionucl.org/whats-on/events-activities/pumkin-carving",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
+   "status": "verified",
+   "auto": true
+  },
+  {
+   "id": "ucl-su-205171",
+   "cat": "careers",
+   "title": "What is IP? with Professor Matt Fisher",
+   "org": "Intellectual Property Society",
+   "area": "UCL Bloomsbury",
+   "ll": [
+    51.5246,
+    -0.134
+   ],
+   "price": 0,
+   "start": "2026-10-30T16:00",
+   "end": "2026-10-30T17:00",
+   "unis": [
+    "ucl"
+   ],
+   "tags": [
+    "community"
+   ],
+   "desc": "Run by Intellectual Property Society. Beginner Friendly · Alcohol Free · Under 18 Friendly.",
+   "url": "https://studentsunionucl.org/whats-on/clubs-societies/what-is-ip-with-professor-matt-fisher",
+   "source": "Students' Union UCL",
+   "sourceKey": "ucl-su",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -8345,7 +8259,7 @@
    "url": "https://studentsunionucl.org/whats-on/events-activities/halloween-crafts-cafe-with-introverts-session-1",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -8373,7 +8287,7 @@
    "url": "https://studentsunionucl.org/whats-on/sport/halloween-social-dodgeball-session",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -8400,7 +8314,7 @@
    "url": "https://studentsunionucl.org/whats-on/events-activities/blood-on-clocktower",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -8428,7 +8342,35 @@
    "url": "https://studentsunionucl.org/whats-on/events-activities/milan-south-asian-character-night",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
+   "status": "verified",
+   "auto": true
+  },
+  {
+   "id": "ucl-su-205176",
+   "cat": "events",
+   "title": "Drag Society Kiki and Dragula Screening",
+   "org": "Drag Society",
+   "area": "IOE 784",
+   "ll": [
+    51.5246,
+    -0.134
+   ],
+   "price": 0,
+   "start": "2026-10-30T18:00",
+   "end": "2026-10-30T20:00",
+   "unis": [
+    "ucl"
+   ],
+   "tags": [
+    "community",
+    "culture"
+   ],
+   "desc": "Run by Drag Society. Venue: IOE 784. Under 18 Friendly.",
+   "url": "https://studentsunionucl.org/whats-on/clubs-societies/drag-society-kiki-and-dragula-screening-0",
+   "source": "Students' Union UCL",
+   "sourceKey": "ucl-su",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -8455,7 +8397,7 @@
    "url": "https://studentsunionucl.org/whats-on/events-activities/hocus-pocus-halloween-sing-long-film-screening",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -8483,7 +8425,7 @@
    "url": "https://studentsunionucl.org/whats-on/events-activities/halloween-crafts-cafe-with-introverts-session-2",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -8512,7 +8454,7 @@
    "url": "https://studentsunionucl.org/whats-on/clubs-societies/rock-metal-soc-annual-halloween-party",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -8540,7 +8482,7 @@
    "url": "https://studentsunionucl.org/whats-on/events-activities/economists-society-halloween-bus-tour",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -8568,7 +8510,7 @@
    "url": "https://studentsunionucl.org/whats-on/bars/halloween-karaoke-mullys-bar",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -8597,7 +8539,7 @@
    "url": "https://studentsunionucl.org/whats-on/bars/live-dj-halloween-special-institute-bar",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -8626,7 +8568,7 @@
    "url": "https://studentsunionucl.org/whats-on/events-activities/nightmare-in-camden-electric-ballroom",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -8654,7 +8596,7 @@
    "url": "https://studentsunionucl.org/whats-on/events-activities/halloween-ball-electric-brixton",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -8682,7 +8624,7 @@
    "url": "https://studentsunionucl.org/whats-on/clubs-societies/walk-halloween-on-cuckmere-pilgrim-path-19km",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -8709,7 +8651,7 @@
    "url": "https://studentsunionucl.org/whats-on/sport/cheer-camp",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -8738,7 +8680,7 @@
    "url": "https://studentsunionucl.org/whats-on/events-activities/anime-halloween-party",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -8767,7 +8709,7 @@
    "url": "https://studentsunionucl.org/whats-on/clubs-societies/drag-societys-halloween-show",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -8795,7 +8737,7 @@
    "url": "https://studentsunionucl.org/whats-on/clubs-societies/hike-hastings-to-rye-via-camber-castle-20km",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -8822,7 +8764,7 @@
    "url": "https://studentsunionucl.org/whats-on/clubs-societies/advance-lesson",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -8850,7 +8792,7 @@
    "url": "https://studentsunionucl.org/whats-on/events-activities/art-style-development-workshop",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -8876,7 +8818,7 @@
    "url": "https://www.kcl.ac.uk/events/future-skills-hackathon-thriving-in-the-age-of-genai",
    "source": "King's College London events",
    "sourceKey": "kcl",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -8904,7 +8846,7 @@
    "url": "https://studentsunionucl.org/whats-on/sport/project-active-pay-and-play-pool-1",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -8931,7 +8873,7 @@
    "url": "https://studentsunionucl.org/whats-on/clubs-societies/dr-erwin-alles-research-talk-multimodal-interventional-sensing-and-imaging",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -8959,7 +8901,7 @@
    "url": "https://studentsunionucl.org/whats-on/clubs-societies/creative-industries-breaking-in-without-connections-panel",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -8987,7 +8929,7 @@
    "url": "https://studentsunionucl.org/whats-on/clubs-societies/back-to-basics-session-2",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -9016,7 +8958,7 @@
    "url": "https://studentsunionucl.org/whats-on/bars/jazz-institute-bar-1",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -9046,7 +8988,7 @@
    "url": "https://studentsunionucl.org/whats-on/bars/jazz-jam-institute-bar-0",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -9076,7 +9018,7 @@
    "url": "https://studentsunionucl.org/whats-on/bars/mullys-quiz-24",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -9104,7 +9046,7 @@
    "url": "https://studentsunionucl.org/whats-on/events-activities/ug-active-bystander-workshop-in-person",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -9132,7 +9074,7 @@
    "url": "https://www.kcl.ac.uk/events/global-placements-employer-speed-meet-autumn-2026",
    "source": "King's College London events",
    "sourceKey": "kcl",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -9163,7 +9105,7 @@
    ],
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -9194,7 +9136,7 @@
    ],
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -9221,7 +9163,7 @@
    "url": "https://studentsunionucl.org/whats-on/clubs-societies/curious-how-can-loving-god-allow-suffering",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -9246,7 +9188,7 @@
    "url": "https://studentsunionucl.org/whats-on/clubs-societies/movie-night-fantastic-mr-fox",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -9274,7 +9216,7 @@
    "url": "https://studentsunionucl.org/whats-on/clubs-societies/toga-party-0",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -9302,7 +9244,7 @@
    "url": "https://studentsunionucl.org/whats-on/clubs-societies/hot-drink-handout-session-regular-outreach-tuesday",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -9329,7 +9271,7 @@
    "url": "https://studentsunionucl.org/whats-on/events-activities/lowkey-board-games-night-0",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -9357,7 +9299,7 @@
    "url": "https://studentsunionucl.org/whats-on/bars/ucl200-parent-workshop-1-upstairs-huntley-bar",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -9385,64 +9327,7 @@
    "url": "https://studentsunionucl.org/whats-on/give-it-go/dance-society-absolute-beginner-classes-series-1-contemporary-1",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
-   "status": "verified",
-   "auto": true
-  },
-  {
-   "id": "ucl-su-203382",
-   "cat": "sport",
-   "title": "Project Active Sculpt Pilates",
-   "org": "Students' Union UCL",
-   "area": "UCL Bloomsbury",
-   "ll": [
-    51.5246,
-    -0.134
-   ],
-   "price": 3.5,
-   "start": "2026-11-04T10:00",
-   "end": "2026-11-04T11:00",
-   "unis": [
-    "ucl"
-   ],
-   "tags": [
-    "community",
-    "culture",
-    "fitness"
-   ],
-   "desc": "Run by Students' Union UCL. Venue: Conference Room, Level 2, Bloomsbury Theatre Building. Beginner Friendly.",
-   "url": "https://studentsunionucl.org/whats-on/sport/project-active-sculpt-pilates-2",
-   "source": "Students' Union UCL",
-   "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
-   "status": "verified",
-   "auto": true
-  },
-  {
-   "id": "ucl-su-204311",
-   "cat": "sport",
-   "title": "Project Active Lane Swimming",
-   "org": "Students' Union UCL",
-   "area": "UCL East",
-   "ll": [
-    51.5378,
-    -0.0107
-   ],
-   "price": 3.5,
-   "start": "2026-11-04T10:00",
-   "end": "2026-11-04T11:00",
-   "unis": [
-    "ucl"
-   ],
-   "tags": [
-    "community",
-    "fitness"
-   ],
-   "desc": "Run by Students' Union UCL. Venue: London Aquatics Centre. Beginner Friendly.",
-   "url": "https://studentsunionucl.org/whats-on/sport/project-active-lane-swimming-12",
-   "source": "Students' Union UCL",
-   "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -9469,7 +9354,7 @@
    "url": "https://studentsunionucl.org/whats-on/clubs-societies/bhm-sports-pass-wednesday-4th-november",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -9501,36 +9386,7 @@
    ],
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
-   "status": "verified",
-   "auto": true
-  },
-  {
-   "id": "ucl-su-204815",
-   "cat": "careers",
-   "title": "BEYOND BORDERS: WHO IS SHAPING UKRAINE'S FUTURE [SRI Research Series]",
-   "org": "Social Research Institute Society",
-   "area": "TBA",
-   "ll": [
-    51.5246,
-    -0.134
-   ],
-   "price": 0,
-   "start": "2026-11-04T13:00",
-   "end": "2026-11-04T14:00",
-   "unis": [
-    "ucl"
-   ],
-   "tags": [
-    "community",
-    "culture",
-    "research"
-   ],
-   "desc": "Run by Social Research Institute Society. Venue: TBA. Beginner Friendly · Under 18 Friendly.",
-   "url": "https://studentsunionucl.org/whats-on/events-activities/beyond-borders-who-is-shaping-ukraines-future-sri-research-series",
-   "source": "Students' Union UCL",
-   "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -9556,36 +9412,7 @@
    "url": "https://www.kcl.ac.uk/events/college-eucharist-at-the-strand-said-service",
    "source": "King's College London events",
    "sourceKey": "kcl",
-   "checked": "2026-10-21",
-   "status": "verified",
-   "auto": true
-  },
-  {
-   "id": "ucl-su-203403",
-   "cat": "sport",
-   "title": "Project Active Women Only Hatha Yoga",
-   "org": "Students' Union UCL",
-   "area": "UCL Bloomsbury",
-   "ll": [
-    51.5246,
-    -0.134
-   ],
-   "price": 3.5,
-   "start": "2026-11-04T16:00",
-   "end": "2026-11-04T17:00",
-   "unis": [
-    "ucl"
-   ],
-   "tags": [
-    "community",
-    "culture",
-    "fitness"
-   ],
-   "desc": "Run by Students' Union UCL. Venue: Conference Room, Level 2, Bloomsbury Theatre Building. Beginner Friendly.",
-   "url": "https://studentsunionucl.org/whats-on/sport/project-active-women-only-hatha-yoga-9",
-   "source": "Students' Union UCL",
-   "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -9612,7 +9439,7 @@
    "url": "https://studentsunionucl.org/whats-on/events-activities/cop-student-climate-biodiversity-summit",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -9639,7 +9466,7 @@
    "url": "https://studentsunionucl.org/whats-on/clubs-societies/civsoc-careers-fair",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -9667,7 +9494,36 @@
    "url": "https://studentsunionucl.org/whats-on/events-activities/english-pool-social-session-0",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
+   "status": "verified",
+   "auto": true
+  },
+  {
+   "id": "ucl-su-203138",
+   "cat": "events",
+   "title": "Sports Night @ Phineas",
+   "org": "Students' Union UCL",
+   "area": "Phineas Bar",
+   "ll": [
+    51.5246,
+    -0.134
+   ],
+   "price": 0,
+   "start": "2026-11-04T19:00",
+   "end": "2026-11-04T23:30",
+   "unis": [
+    "ucl"
+   ],
+   "tags": [
+    "community",
+    "music",
+    "nightlife"
+   ],
+   "desc": "Run by Students' Union UCL. Venue: Phineas Bar. Also on 3 more dates in the next few weeks.",
+   "url": "https://studentsunionucl.org/whats-on/bars/sports-night-phineas-39",
+   "source": "Students' Union UCL",
+   "sourceKey": "ucl-su",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -9694,7 +9550,7 @@
    "url": "https://studentsunionucl.org/whats-on/clubs-societies/dream-big-or-face-reality-ucl-alumni-debate-night",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -9722,7 +9578,7 @@
    "url": "https://studentsunionucl.org/whats-on/events-activities/teamucl-sports-night-scala-4-november",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -9749,7 +9605,39 @@
    "url": "https://studentsunionucl.org/whats-on/clubs-societies/distance-training-tour",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
+   "status": "verified",
+   "auto": true
+  },
+  {
+   "id": "ucl-su-203409",
+   "cat": "sport",
+   "title": "Project Active Postgraduate Mat Pilates",
+   "org": "Students' Union UCL",
+   "area": "UCL Bloomsbury",
+   "ll": [
+    51.5246,
+    -0.134
+   ],
+   "price": 3.5,
+   "start": "2026-11-05T08:00",
+   "end": "2026-11-05T09:00",
+   "unis": [
+    "ucl"
+   ],
+   "tags": [
+    "community",
+    "culture",
+    "fitness"
+   ],
+   "desc": "Run by Students' Union UCL. Venue: Conference Room, Level 2, Bloomsbury Theatre Building. Beginner Friendly · Postgrads only.",
+   "url": "https://studentsunionucl.org/whats-on/sport/project-active-postgraduate-mat-pilates-10",
+   "yrs": [
+    4
+   ],
+   "source": "Students' Union UCL",
+   "sourceKey": "ucl-su",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -9774,36 +9662,7 @@
    "url": "https://studentsunionucl.org/whats-on/events-activities/search-strategies-for-literature-searching-0",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
-   "status": "verified",
-   "auto": true
-  },
-  {
-   "id": "ucl-su-203179",
-   "cat": "sport",
-   "title": "Project Active Women's Only Run",
-   "org": "Running, Athletics and Cross Country Club",
-   "area": "1st Floor Bloomsbury Theatre",
-   "ll": [
-    51.5246,
-    -0.134
-   ],
-   "price": 0,
-   "start": "2026-11-05T16:00",
-   "end": "2026-11-05T17:00",
-   "unis": [
-    "ucl"
-   ],
-   "tags": [
-    "community",
-    "culture",
-    "fitness"
-   ],
-   "desc": "Run by Running, Athletics and Cross Country Club. Venue: 1st Floor Bloomsbury Theatre. Beginner Friendly.",
-   "url": "https://studentsunionucl.org/whats-on/sport/project-active-womens-only-run-6",
-   "source": "Students' Union UCL",
-   "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -9830,7 +9689,7 @@
    "url": "https://www.kcl.ac.uk/events/more-than-venices-successor-rethinking-the-austrian-navy-in-the-late-eighteenth-and-early-nineteenth-centuries",
    "source": "King's College London events",
    "sourceKey": "kcl",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -9857,7 +9716,7 @@
    "url": "https://studentsunionucl.org/whats-on/clubs-societies/drama-society-meisner-workshop",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -9885,7 +9744,7 @@
    "url": "https://studentsunionucl.org/whats-on/events-activities/cafe-lates-presents-ucl-musical",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -9912,7 +9771,7 @@
    "url": "https://studentsunionucl.org/whats-on/clubs-societies/bob-blackman-mp-in-conversation",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -9940,7 +9799,36 @@
    "url": "https://studentsunionucl.org/whats-on/clubs-societies/rhythm-of-night-ucl-salsa-boat-party-expression-of-interest",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
+   "status": "verified",
+   "auto": true
+  },
+  {
+   "id": "ucl-su-205158",
+   "cat": "events",
+   "title": "Rhythm of the Night - UCL Salsa Boat Party Tickets",
+   "org": "Salsa Society",
+   "area": "The Dutch Master",
+   "ll": [
+    51.5246,
+    -0.134
+   ],
+   "price": 23.0,
+   "start": "2026-11-05T18:30",
+   "end": "2026-11-05T23:00",
+   "unis": [
+    "ucl"
+   ],
+   "tags": [
+    "culture",
+    "music",
+    "nightlife"
+   ],
+   "desc": "Run by Salsa Society. Venue: The Dutch Master.",
+   "url": "https://studentsunionucl.org/whats-on/clubs-societies/rhythm-of-night-ucl-salsa-boat-party-tickets",
+   "source": "Students' Union UCL",
+   "sourceKey": "ucl-su",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -9969,7 +9857,7 @@
    "url": "https://studentsunionucl.org/whats-on/bars/community-nights-glittoris-revival",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -9998,7 +9886,7 @@
    "url": "https://studentsunionucl.org/whats-on/sport/social-sport-activator-training-1",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -10023,7 +9911,7 @@
    "url": "https://www.kcl.ac.uk/events/virtual-campus-tour-strand-bush-house-6-november-2026",
    "source": "King's College London events",
    "sourceKey": "kcl",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -10051,7 +9939,7 @@
    "url": "https://studentsunionucl.org/whats-on/clubs-societies/potato-corner",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -10078,7 +9966,7 @@
    "url": "https://studentsunionucl.org/whats-on/clubs-societies/research-reflections-advice-from-phd",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -10105,7 +9993,7 @@
    "url": "https://studentsunionucl.org/whats-on/events-activities/cringe-night",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -10137,7 +10025,7 @@
    ],
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -10165,7 +10053,7 @@
    "url": "https://studentsunionucl.org/whats-on/events-activities/back-to-school-1st-term-1-mt-gala",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -10192,7 +10080,7 @@
    "url": "https://studentsunionucl.org/whats-on/events-activities/local-song-for-local-people-kate-butch",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -10219,7 +10107,7 @@
    "url": "https://studentsunionucl.org/whats-on/clubs-societies/hike-north-downs-way-oxted-to-otford-22km",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -10246,7 +10134,7 @@
    "url": "https://studentsunionucl.org/whats-on/clubs-societies/cambridge-winter-head-2026",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -10273,7 +10161,7 @@
    "url": "https://studentsunionucl.org/whats-on/events-activities/collabro-return-album-launch",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -10301,7 +10189,7 @@
    "url": "https://studentsunionucl.org/whats-on/events-activities/club-trip-1-lake-district",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -10329,7 +10217,7 @@
    "url": "https://studentsunionucl.org/whats-on/volunteering/big-help-out-robin-hood-garden-volunteering-0",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -10357,7 +10245,7 @@
    "url": "https://studentsunionucl.org/whats-on/jobs-skills/join-our-sustainability-consultancy-challenge-shape-future-of-sustainable",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -10382,7 +10270,7 @@
    "url": "https://www.kcl.ac.uk/events/virtual-campus-tour-guys-6-november-2026",
    "source": "King's College London events",
    "sourceKey": "kcl",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -10410,7 +10298,7 @@
    "url": "https://www.kcl.ac.uk/events/book-launch-escaping-the-conflict-trap",
    "source": "King's College London events",
    "sourceKey": "kcl",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -10438,7 +10326,7 @@
    "url": "https://studentsunionucl.org/whats-on/volunteering/community-action-lab",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -10466,7 +10354,7 @@
    "url": "https://studentsunionucl.org/whats-on/sport/project-active-learn-to-lift-for-beginners-group-two",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -10493,7 +10381,7 @@
    "url": "https://studentsunionucl.org/whats-on/events-activities/meet-su-ucl-200",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -10520,7 +10408,7 @@
    "url": "https://www.kcl.ac.uk/events/choral-evensong-at-the-strand-11",
    "source": "King's College London events",
    "sourceKey": "kcl",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -10547,7 +10435,7 @@
    "url": "https://studentsunionucl.org/whats-on/representation/union-executive-meeting-2",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -10571,7 +10459,7 @@
    "url": "https://www.kcl.ac.uk/events/chinese-characters-workshop-i-copy-2",
    "source": "King's College London events",
    "sourceKey": "kcl",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -10599,7 +10487,7 @@
    "url": "https://studentsunionucl.org/whats-on/bars/ucl200-parent-workshop-2-upstairs-huntley-bar",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -10627,7 +10515,7 @@
    "url": "https://studentsunionucl.org/whats-on/events-activities/greece-vineyards-trip-2026",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -10654,7 +10542,7 @@
    "url": "https://studentsunionucl.org/whats-on/events-activities/remembrance-service-univeristy-of-london",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -10681,7 +10569,7 @@
    "url": "https://www.kcl.ac.uk/events/act-of-remembrance-at-the-guys-memorial-arch",
    "source": "King's College London events",
    "sourceKey": "kcl",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -10708,7 +10596,7 @@
    "url": "https://studentsunionucl.org/whats-on/clubs-societies/bhm-sports-pass-wednesday-11th-november",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -10734,7 +10622,7 @@
    "url": "https://www.kcl.ac.uk/events/quiet-and-reflection-in-the-college-chapel-at-the-strand",
    "source": "King's College London events",
    "sourceKey": "kcl",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -10761,7 +10649,7 @@
    "url": "https://www.kcl.ac.uk/events/undergraduate-taster-day-quantitative-mathematics-11-nov-2026",
    "source": "King's College London events",
    "sourceKey": "kcl",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -10789,7 +10677,7 @@
    "url": "https://studentsunionucl.org/whats-on/events-activities/teamucl-sports-night-scala-11-november",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -10816,7 +10704,7 @@
    "url": "https://studentsunionucl.org/whats-on/sport/football-masterclass-finishing-shooting",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -10842,7 +10730,7 @@
    "url": "https://www.kcl.ac.uk/events/science-engineering-technology-fair",
    "source": "King's College London events",
    "sourceKey": "kcl",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -10869,7 +10757,7 @@
    "url": "https://studentsunionucl.org/whats-on/events-activities/cafe-lates-presents-guitar-society",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -10897,7 +10785,7 @@
    "url": "https://studentsunionucl.org/whats-on/events-activities/clothes-swap-mending-station-0",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -10925,7 +10813,7 @@
    "url": "https://studentsunionucl.org/whats-on/events-activities/ucl-repair-cafe",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -10951,7 +10839,7 @@
    "url": "https://www.kcl.ac.uk/events/chaplaincy-weekend-away",
    "source": "King's College London events",
    "sourceKey": "kcl",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -10980,7 +10868,7 @@
    "url": "https://studentsunionucl.org/whats-on/events-activities/inter-uni-rock-and-metal-night",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -11007,7 +10895,7 @@
    "url": "https://studentsunionucl.org/whats-on/volunteering/crafternoon-light-up-our-campus-with-origami",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -11034,7 +10922,7 @@
    "url": "https://studentsunionucl.org/whats-on/jobs-skills/building-ai-apps-from-scratch-with-google-ecosystem",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -11061,7 +10949,7 @@
    "url": "https://studentsunionucl.org/whats-on/clubs-societies/dr-harriet-lea-banks-talk-brain-drug-delivery-by-ultrasound-triggered",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -11088,7 +10976,7 @@
    "url": "https://studentsunionucl.org/whats-on/events-activities/discover-london-petrie-museum-marks-of-maker-stories-coffins-tell-us",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -11115,7 +11003,7 @@
    "url": "https://studentsunionucl.org/whats-on/events-activities/ucl-bike-bonanza-4",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -11142,7 +11030,7 @@
    "url": "https://studentsunionucl.org/whats-on/events-activities/meet-su-budgeting-tips",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -11170,7 +11058,7 @@
    "url": "https://studentsunionucl.org/whats-on/volunteering/big-help-out-monthly-community-gardening-in-hackney-wick-0",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -11198,7 +11086,7 @@
    "url": "https://studentsunionucl.org/whats-on/sport/project-active-learn-to-muay-thai-women-only",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -11225,7 +11113,7 @@
    "url": "https://studentsunionucl.org/whats-on/clubs-societies/curious-did-jesus-really-die",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -11252,7 +11140,7 @@
    "url": "https://www.kcl.ac.uk/events/choral-evensong-at-the-strand-12",
    "source": "King's College London events",
    "sourceKey": "kcl",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -11279,7 +11167,7 @@
    "url": "https://studentsunionucl.org/whats-on/clubs-societies/interview-and-qa-with-carlos-raphael-moersen-director-of-football",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -11303,7 +11191,7 @@
    "url": "https://www.kcl.ac.uk/events/chinese-characters-workshop-ii-copy",
    "source": "King's College London events",
    "sourceKey": "kcl",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -11330,7 +11218,7 @@
    "url": "https://www.kcl.ac.uk/events/afternoon-tea-at-the-strand-copy",
    "source": "King's College London events",
    "sourceKey": "kcl",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -11358,7 +11246,7 @@
    "url": "https://studentsunionucl.org/whats-on/bars/ucl200-parent-workshop-3-upstairs-huntley-bar",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -11386,7 +11274,7 @@
    "url": "https://studentsunionucl.org/whats-on/clubs-societies/k-pop-karaoke-night",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -11413,7 +11301,7 @@
    "url": "https://studentsunionucl.org/whats-on/representation/effective-representation-workshop-for-student-leaders-2",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -11440,7 +11328,7 @@
    "url": "https://www.kcl.ac.uk/events/college-eucharist-at-the-strand-9",
    "source": "King's College London events",
    "sourceKey": "kcl",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -11465,7 +11353,7 @@
    "url": "https://studentsunionucl.org/whats-on/events-activities/creative-wellbeing-sessions-for-survivors-grounding",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -11491,7 +11379,7 @@
    "url": "https://www.kcl.ac.uk/events/undergraduate-taster-day-chemistry-18-nov-2026",
    "source": "King's College London events",
    "sourceKey": "kcl",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -11518,7 +11406,7 @@
    "url": "https://studentsunionucl.org/whats-on/clubs-societies/sir-andy-street-cbe-in-conversation",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -11546,7 +11434,7 @@
    "url": "https://studentsunionucl.org/whats-on/events-activities/teamucl-sports-night-scala-18-november",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -11574,7 +11462,7 @@
    "url": "https://studentsunionucl.org/whats-on/volunteering/big-help-out-gardening-and-games-with-local-older-people",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -11601,7 +11489,7 @@
    "url": "https://studentsunionucl.org/whats-on/events-activities/artsunlocked-around-world-in-bookmarks-0",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -11627,7 +11515,7 @@
    "url": "https://www.kcl.ac.uk/events/nihr-insight-career-development-workshop",
    "source": "King's College London events",
    "sourceKey": "kcl",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -11655,7 +11543,7 @@
    "url": "https://www.kcl.ac.uk/events/the-improbable-austro-japanese-war",
    "source": "King's College London events",
    "sourceKey": "kcl",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -11682,7 +11570,7 @@
    "url": "https://studentsunionucl.org/whats-on/clubs-societies/cliff-crown-chairman-of-brentford-football-club-qa",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -11710,7 +11598,7 @@
    "url": "https://studentsunionucl.org/whats-on/clubs-societies/drama-society-volunteering-workshop",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -11737,7 +11625,7 @@
    "url": "https://studentsunionucl.org/whats-on/clubs-societies/ucl-model-united-nations-xii",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -11764,7 +11652,7 @@
    "url": "https://studentsunionucl.org/whats-on/sport/caged-street-3-side-football-tournament",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -11793,7 +11681,7 @@
    "url": "https://studentsunionucl.org/whats-on/sport/ucl-charity-swimathon-1",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -11820,7 +11708,7 @@
    "url": "https://studentsunionucl.org/whats-on/clubs-societies/national-festival-of-railway-modelling-2026",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -11846,7 +11734,7 @@
    "url": "https://www.kcl.ac.uk/events/eeg-programming-skills-workshop-for-pre-processing-and-computing-functional-networks-copy-1",
    "source": "King's College London events",
    "sourceKey": "kcl",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -11871,7 +11759,7 @@
    "url": "https://studentsunionucl.org/whats-on/clubs-societies/careers-in-dermatology-with-dr-leila-aval",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -11899,7 +11787,7 @@
    "url": "https://studentsunionucl.org/whats-on/events-activities/ucl-musical",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -11926,7 +11814,7 @@
    "url": "https://studentsunionucl.org/whats-on/events-activities/meet-su-intervention-and-prevention",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -11953,7 +11841,7 @@
    "url": "https://studentsunionucl.org/whats-on/events-activities/bacterial-genetics-and-evolution-journal-club-luria-delbruck-1943",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -11981,7 +11869,36 @@
    "url": "https://studentsunionucl.org/whats-on/representation/equi-tea",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
+   "status": "verified",
+   "auto": true
+  },
+  {
+   "id": "ucl-su-204815",
+   "cat": "careers",
+   "title": "BEYOND BORDERS: WHO IS SHAPING UKRAINE'S FUTURE [SRI Research Series]",
+   "org": "Social Research Institute Society",
+   "area": "TBA",
+   "ll": [
+    51.5246,
+    -0.134
+   ],
+   "price": 0,
+   "start": "2026-11-25T13:00",
+   "end": "2026-11-25T14:00",
+   "unis": [
+    "ucl"
+   ],
+   "tags": [
+    "community",
+    "culture",
+    "research"
+   ],
+   "desc": "Run by Social Research Institute Society. Venue: TBA. Beginner Friendly · Under 18 Friendly.",
+   "url": "https://studentsunionucl.org/whats-on/jobs-skills/beyond-borders-who-is-shaping-ukraines-future-sri-research-series",
+   "source": "Students' Union UCL",
+   "sourceKey": "ucl-su",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -12008,7 +11925,7 @@
    "url": "https://studentsunionucl.org/whats-on/representation/building-community-workshop-for-student-leaders-2",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -12036,7 +11953,7 @@
    "url": "https://studentsunionucl.org/whats-on/volunteering/stitching-and-sunprinting-community-textile-crafternoon-at-soanes-centre",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -12061,7 +11978,7 @@
    "url": "https://studentsunionucl.org/whats-on/events-activities/creative-wellbeing-sessions-for-survivors-making-space",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   },
@@ -12088,7 +12005,35 @@
    "url": "https://studentsunionucl.org/whats-on/events-activities/ghost-in-machine-student-shorts-work",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-10-21",
+   "checked": "2026-10-22",
+   "status": "verified",
+   "auto": true
+  },
+  {
+   "id": "ucl-su-202990",
+   "cat": "events",
+   "title": "TeamUCL Sports Night @ SCALA - 5th Birthday! | 25 November",
+   "org": "Students' Union UCL",
+   "area": "Scala",
+   "ll": [
+    51.5311,
+    -0.1205
+   ],
+   "price": 3.0,
+   "start": "2026-11-25T23:00",
+   "end": "2026-11-26T05:00",
+   "unis": [
+    "ucl"
+   ],
+   "tags": [
+    "music",
+    "nightlife"
+   ],
+   "desc": "Run by Students' Union UCL. Venue: Scala.",
+   "url": "https://studentsunionucl.org/whats-on/events-activities/teamucl-sports-night-scala-5th-birthday-25-november",
+   "source": "Students' Union UCL",
+   "sourceKey": "ucl-su",
+   "checked": "2026-10-22",
    "status": "verified",
    "auto": true
   }
