@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-15T12:41",
+ "generated": "2026-11-15T20:23",
  "windowDays": 35,
  "sources": [
   {
@@ -7,8 +7,8 @@
    "name": "Students' Union UCL",
    "url": "https://studentsunionucl.org/whats-on",
    "ok": true,
-   "count": 447,
-   "fetched": "2026-11-15T12:41"
+   "count": 457,
+   "fetched": "2026-11-15T20:23"
   },
   {
    "key": "lse-su",
@@ -16,7 +16,7 @@
    "url": "https://www.lsesu.com/events/whats-on/",
    "ok": true,
    "count": 1,
-   "fetched": "2026-11-15T12:41"
+   "fetched": "2026-11-15T20:23"
   },
   {
    "key": "kcl",
@@ -24,7 +24,7 @@
    "url": "https://www.kcl.ac.uk/events/events-calendar",
    "ok": true,
    "count": 73,
-   "fetched": "2026-11-15T12:41"
+   "fetched": "2026-11-15T20:23"
   },
   {
    "key": "lse-public",
@@ -32,7 +32,7 @@
    "url": "https://www.lse.ac.uk/events",
    "ok": true,
    "count": 12,
-   "fetched": "2026-11-15T12:41"
+   "fetched": "2026-11-15T20:23"
   }
  ],
  "events": [
@@ -161,33 +161,6 @@
    ],
    "desc": "Run by Hiking Club. Venue: London Paddington Station. Beginner Friendly.",
    "url": "https://studentsunionucl.org/whats-on/events-activities/hike-blenheim-palace-hanborough-to-charlbury-19km",
-   "source": "Students' Union UCL",
-   "sourceKey": "ucl-su",
-   "checked": "2026-11-15",
-   "status": "verified",
-   "auto": true
-  },
-  {
-   "id": "ucl-su-205493",
-   "cat": "sport",
-   "title": "Advance Lesson",
-   "org": "Horse Riding Club",
-   "area": "London Equestrian Centre",
-   "ll": [
-    51.5246,
-    -0.134
-   ],
-   "price": 55.0,
-   "start": "2026-11-15T14:15",
-   "end": "2026-11-15T15:15",
-   "unis": [
-    "ucl"
-   ],
-   "tags": [
-    "fitness"
-   ],
-   "desc": "Run by Horse Riding Club. Venue: London Equestrian Centre. Also on 1 more date in the next few weeks.",
-   "url": "https://studentsunionucl.org/whats-on/clubs-societies/advance-lesson-1",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
    "checked": "2026-11-15",
@@ -470,6 +443,33 @@
    "auto": true
   },
   {
+   "id": "ucl-su-205938",
+   "cat": "events",
+   "title": "Neerlandia Sinterklaas and Christmas Market 🎅🇳🇱🇧🇪",
+   "org": "Dutch and Flemish Society",
+   "area": "UCL Bloomsbury",
+   "ll": [
+    51.5246,
+    -0.134
+   ],
+   "price": 0,
+   "start": "2026-11-16T12:00",
+   "end": "2026-11-16T14:00",
+   "unis": [
+    "ucl"
+   ],
+   "tags": [
+    "culture"
+   ],
+   "desc": "Run by Dutch and Flemish Society.",
+   "url": "https://studentsunionucl.org/whats-on/events-activities/neerlandia-sinterklaas-and-christmas-market",
+   "source": "Students' Union UCL",
+   "sourceKey": "ucl-su",
+   "checked": "2026-11-15",
+   "status": "verified",
+   "auto": true
+  },
+  {
    "id": "ucl-su-203273",
    "cat": "events",
    "title": "Monday Meditation",
@@ -520,34 +520,6 @@
    ],
    "desc": "Run by Students' Union UCL. Venue: Conference Room, Level 2, Bloomsbury Theatre Building. Beginner Friendly. Also on 2 more dates in the next few weeks.",
    "url": "https://studentsunionucl.org/whats-on/sport/project-active-women-only-tai-chi-3",
-   "source": "Students' Union UCL",
-   "sourceKey": "ucl-su",
-   "checked": "2026-11-15",
-   "status": "verified",
-   "auto": true
-  },
-  {
-   "id": "ucl-su-205520",
-   "cat": "events",
-   "title": "Discover International Festival",
-   "org": "Students' Union UCL",
-   "area": "Main Quad",
-   "ll": [
-    51.5246,
-    -0.134
-   ],
-   "price": 0,
-   "start": "2026-11-16T13:00",
-   "end": "2026-11-16T14:00",
-   "unis": [
-    "ucl"
-   ],
-   "tags": [
-    "community",
-    "culture"
-   ],
-   "desc": "Run by Students' Union UCL. Venue: Main Quad. Beginner Friendly · Alcohol Free. Also on 1 more date in the next few weeks.",
-   "url": "https://studentsunionucl.org/whats-on/events-activities/discover-international-festival",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
    "checked": "2026-11-15",
@@ -896,6 +868,34 @@
    "auto": true
   },
   {
+   "id": "ucl-su-205326",
+   "cat": "events",
+   "title": "SAP Book Club",
+   "org": "Application of Psychedelics Society",
+   "area": "347 Taviton street",
+   "ll": [
+    51.5246,
+    -0.134
+   ],
+   "price": 0,
+   "start": "2026-11-16T18:00",
+   "end": "2026-11-16T19:00",
+   "unis": [
+    "ucl"
+   ],
+   "tags": [
+    "community",
+    "culture"
+   ],
+   "desc": "Run by Application of Psychedelics Society. Venue: 347 Taviton street. Beginner Friendly.",
+   "url": "https://studentsunionucl.org/whats-on/clubs-societies/sap-book-club",
+   "source": "Students' Union UCL",
+   "sourceKey": "ucl-su",
+   "checked": "2026-11-15",
+   "status": "verified",
+   "auto": true
+  },
+  {
    "id": "ucl-su-205463",
    "cat": "events",
    "title": "1989 Night 🩵",
@@ -1104,6 +1104,63 @@
    ],
    "desc": "Run by Biotechnology Society. Venue: 417 - Committee Room 1 in IOE - Bedford Way. Alcohol Free · Under 18 Friendly.",
    "url": "https://studentsunionucl.org/whats-on/clubs-societies/inside-industry-talks-by-experts-martina-micheletti",
+   "source": "Students' Union UCL",
+   "sourceKey": "ucl-su",
+   "checked": "2026-11-15",
+   "status": "verified",
+   "auto": true
+  },
+  {
+   "id": "ucl-su-205933",
+   "cat": "careers",
+   "title": "SUCCESSFUL PYRAMID SCHEME: PUBLIC SPEAKING NIGHT",
+   "org": "Leadership and Management Society",
+   "area": "222 Euston Road Room LG01",
+   "ll": [
+    51.5246,
+    -0.134
+   ],
+   "price": 0,
+   "start": "2026-11-16T18:00",
+   "end": "2026-11-16T20:00",
+   "unis": [
+    "ucl"
+   ],
+   "tags": [
+    "community",
+    "culture",
+    "volunteer"
+   ],
+   "desc": "Run by Leadership and Management Society. Venue: 222 Euston Road Room LG01. Beginner Friendly.",
+   "url": "https://studentsunionucl.org/whats-on/events-activities/successful-pyramid-scheme-public-speaking-night",
+   "source": "Students' Union UCL",
+   "sourceKey": "ucl-su",
+   "checked": "2026-11-15",
+   "status": "verified",
+   "auto": true
+  },
+  {
+   "id": "ucl-su-205940",
+   "cat": "events",
+   "title": "How To Pose for a Photoshoot",
+   "org": "MODO Fashion Society",
+   "area": "Foster Court 243",
+   "ll": [
+    51.5246,
+    -0.134
+   ],
+   "price": 0,
+   "start": "2026-11-16T18:00",
+   "end": "2026-11-16T19:00",
+   "unis": [
+    "ucl"
+   ],
+   "tags": [
+    "community",
+    "culture"
+   ],
+   "desc": "Run by MODO Fashion Society. Venue: Foster Court 243. Beginner Friendly · Under 18 Friendly.",
+   "url": "https://studentsunionucl.org/whats-on/events-activities/how-to-pose-for-photoshoot",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
    "checked": "2026-11-15",
@@ -1447,32 +1504,6 @@
    "auto": true
   },
   {
-   "id": "kcl-morning-prayer-at-waterloo-8",
-   "cat": "events",
-   "title": "Morning Prayer at Waterloo",
-   "org": "Dean's Office",
-   "area": "Waterloo campus",
-   "ll": [
-    51.5053,
-    -0.1134
-   ],
-   "start": "2026-11-17T09:30",
-   "end": "2026-11-17T09:50",
-   "unis": [
-    "kcl"
-   ],
-   "tags": [
-    "community"
-   ],
-   "desc": "A simple morning prayer in the Christian tradition to start your day. Also on 3 more dates in the next few weeks.",
-   "url": "https://www.kcl.ac.uk/events/morning-prayer-at-waterloo-8",
-   "source": "King's College London events",
-   "sourceKey": "kcl",
-   "checked": "2026-11-15",
-   "status": "verified",
-   "auto": true
-  },
-  {
    "id": "kcl-morning-prayer-at-denmark-hill-12",
    "cat": "events",
    "title": "Morning Prayer at Denmark Hill",
@@ -1492,6 +1523,32 @@
    ],
    "desc": "A Morning Prayer service every Tuesday morning in term time. Also on 3 more dates in the next few weeks.",
    "url": "https://www.kcl.ac.uk/events/morning-prayer-at-denmark-hill-12",
+   "source": "King's College London events",
+   "sourceKey": "kcl",
+   "checked": "2026-11-15",
+   "status": "verified",
+   "auto": true
+  },
+  {
+   "id": "kcl-morning-prayer-at-waterloo-8",
+   "cat": "events",
+   "title": "Morning Prayer at Waterloo",
+   "org": "Dean's Office",
+   "area": "Waterloo campus",
+   "ll": [
+    51.5053,
+    -0.1134
+   ],
+   "start": "2026-11-17T09:30",
+   "end": "2026-11-17T09:50",
+   "unis": [
+    "kcl"
+   ],
+   "tags": [
+    "community"
+   ],
+   "desc": "A simple morning prayer in the Christian tradition to start your day. Also on 3 more dates in the next few weeks.",
+   "url": "https://www.kcl.ac.uk/events/morning-prayer-at-waterloo-8",
    "source": "King's College London events",
    "sourceKey": "kcl",
    "checked": "2026-11-15",
@@ -2271,6 +2328,33 @@
    ],
    "desc": "Run by Muay Thai Club. Venue: Multipurpose Room, TeamUCL Gym. Beginner Friendly.",
    "url": "https://studentsunionucl.org/whats-on/sport/muay-thai-women-only-training-session-1-5pm-6pm-0",
+   "source": "Students' Union UCL",
+   "sourceKey": "ucl-su",
+   "checked": "2026-11-15",
+   "status": "verified",
+   "auto": true
+  },
+  {
+   "id": "ucl-su-205934",
+   "cat": "careers",
+   "title": "Arthur Network Launch: In Conversation with Former MP John Penrose:",
+   "org": "Libertarian Society",
+   "area": "UCL Bloomsbury",
+   "ll": [
+    51.5246,
+    -0.134
+   ],
+   "priceText": "Tickets on external site",
+   "start": "2026-11-17T17:00",
+   "end": "2026-11-17T18:00",
+   "unis": [
+    "ucl"
+   ],
+   "tags": [
+    "community"
+   ],
+   "desc": "Run by Libertarian Society. Venue: 2nd Floor Conference Room, Bloomsbury Building. Beginner Friendly · Alcohol Free · Under 18 Friendly · Commuters.",
+   "url": "https://studentsunionucl.org/whats-on/clubs-societies/arthur-network-launch-in-conversation-with-former-mp-john-penrose",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
    "checked": "2026-11-15",
@@ -3229,6 +3313,33 @@
    "auto": true
   },
   {
+   "id": "ucl-su-205925",
+   "cat": "events",
+   "title": "Crossbody Intermediates",
+   "org": "Salsa Society",
+   "area": "UCL Bloomsbury",
+   "ll": [
+    51.5246,
+    -0.134
+   ],
+   "price": 0,
+   "start": "2026-11-17T20:00",
+   "end": "2026-11-17T21:00",
+   "unis": [
+    "ucl"
+   ],
+   "tags": [
+    "culture"
+   ],
+   "desc": "Run by Salsa Society. Venue: IOE - Bedford Way (20) - 421 - Nunn Hall.",
+   "url": "https://studentsunionucl.org/whats-on/clubs-societies/crossbody-intermediates",
+   "source": "Students' Union UCL",
+   "sourceKey": "ucl-su",
+   "checked": "2026-11-15",
+   "status": "verified",
+   "auto": true
+  },
+  {
    "id": "ucl-su-205733",
    "cat": "events",
    "title": "🧁Homemade Bake Sale | UCL Cancer Charities Alliance Society @ UCL Student Centre",
@@ -3668,6 +3779,34 @@
    ],
    "desc": "Run by Students' Union UCL. Venue: \"G17, Yellow Room, North Cloisters\".",
    "url": "https://studentsunionucl.org/whats-on/clubs-societies/language-lunch-learn-international-festival",
+   "source": "Students' Union UCL",
+   "sourceKey": "ucl-su",
+   "checked": "2026-11-15",
+   "status": "verified",
+   "auto": true
+  },
+  {
+   "id": "ucl-su-205936",
+   "cat": "sport",
+   "title": "Parkour Outdoor Session - Bring a Friend!!",
+   "org": "Parkour Club",
+   "area": "Westbourne Park",
+   "ll": [
+    51.5246,
+    -0.134
+   ],
+   "price": 0,
+   "start": "2026-11-18T13:45",
+   "end": "2026-11-18T15:45",
+   "unis": [
+    "ucl"
+   ],
+   "tags": [
+    "community",
+    "fitness"
+   ],
+   "desc": "Run by Parkour Club. Venue: Westbourne Park. Beginner Friendly · Alcohol Free.",
+   "url": "https://studentsunionucl.org/whats-on/clubs-societies/parkour-outdoor-session-bring-friend",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
    "checked": "2026-11-15",
@@ -4491,34 +4630,6 @@
    "auto": true
   },
   {
-   "id": "ucl-su-205579",
-   "cat": "events",
-   "title": "Delving Into The Depths Of Film History - Film Evening",
-   "org": "World History Society",
-   "area": "UCL Bloomsbury",
-   "ll": [
-    51.5246,
-    -0.134
-   ],
-   "price": 0,
-   "start": "2026-11-18T17:30",
-   "end": "2026-11-18T20:30",
-   "unis": [
-    "ucl"
-   ],
-   "tags": [
-    "community",
-    "culture"
-   ],
-   "desc": "Run by World History Society. Beginner Friendly.",
-   "url": "https://studentsunionucl.org/whats-on/events-activities/delving-into-depths-of-film-history-film-evening",
-   "source": "Students' Union UCL",
-   "sourceKey": "ucl-su",
-   "checked": "2026-11-15",
-   "status": "verified",
-   "auto": true
-  },
-  {
    "id": "ucl-su-204105",
    "cat": "sport",
    "title": "Wednesday 6.00 - 7.30pm (Term 1, 26/27) Tickets",
@@ -4567,6 +4678,34 @@
    ],
    "desc": "Run by Graphic Novels and Comics Society. Venue: G01 222 Euston Road. Beginner Friendly · Alcohol Free.",
    "url": "https://studentsunionucl.org/whats-on/events-activities/typography-workshop",
+   "source": "Students' Union UCL",
+   "sourceKey": "ucl-su",
+   "checked": "2026-11-15",
+   "status": "verified",
+   "auto": true
+  },
+  {
+   "id": "ucl-su-205579",
+   "cat": "events",
+   "title": "Delving Into The Depths Of Film History - Film Evening",
+   "org": "World History Society",
+   "area": "UCL Bloomsbury",
+   "ll": [
+    51.5246,
+    -0.134
+   ],
+   "price": 0,
+   "start": "2026-11-18T18:00",
+   "end": "2026-11-18T21:00",
+   "unis": [
+    "ucl"
+   ],
+   "tags": [
+    "community",
+    "culture"
+   ],
+   "desc": "Run by World History Society. Beginner Friendly.",
+   "url": "https://studentsunionucl.org/whats-on/events-activities/delving-into-depths-of-film-history-film-evening",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
    "checked": "2026-11-15",
@@ -5486,6 +5625,34 @@
    "auto": true
   },
   {
+   "id": "ucl-su-205521",
+   "cat": "events",
+   "title": "Discover International Festival",
+   "org": "Students' Union UCL",
+   "area": "Main Quad",
+   "ll": [
+    51.5246,
+    -0.134
+   ],
+   "price": 0,
+   "start": "2026-11-19T12:30",
+   "end": "2026-11-19T13:30",
+   "unis": [
+    "ucl"
+   ],
+   "tags": [
+    "community",
+    "culture"
+   ],
+   "desc": "Run by Students' Union UCL. Venue: Main Quad. Beginner Friendly · Alcohol Free.",
+   "url": "https://studentsunionucl.org/whats-on/events-activities/discover-international-festival-0",
+   "source": "Students' Union UCL",
+   "sourceKey": "ucl-su",
+   "checked": "2026-11-15",
+   "status": "verified",
+   "auto": true
+  },
+  {
    "id": "kcl-sacrament-of-confession-at-the-strand-11",
    "cat": "events",
    "title": "Sacrament of Confession at the Strand",
@@ -5503,7 +5670,7 @@
    "tags": [
     "community"
    ],
-   "desc": "A Catholic priest is available to hear Confessions before the celebration of Holy Mass. Also on 3 more dates in the next few weeks.",
+   "desc": "A Catholic priest is available to hear Confessions before the celebration of Holy Mass. Also on 4 more dates in the next few weeks.",
    "url": "https://www.kcl.ac.uk/events/sacrament-of-confession-at-the-strand-11",
    "source": "King's College London events",
    "sourceKey": "kcl",
@@ -5530,7 +5697,7 @@
     "community",
     "food"
    ],
-   "desc": "Meet up in the Chaplaincy & enjoy a (free!) light lunch on Thursdays during term time. Also on 3 more dates in the next few weeks.",
+   "desc": "Meet up in the Chaplaincy & enjoy a (free!) light lunch on Thursdays during term time. Also on 2 more dates in the next few weeks.",
    "url": "https://www.kcl.ac.uk/events/international-lunch-at-guys-12",
    "source": "King's College London events",
    "sourceKey": "kcl",
@@ -7060,6 +7227,35 @@
    "auto": true
   },
   {
+   "id": "ucl-su-205937",
+   "cat": "events",
+   "title": "Comedy Club goes to the Pub (Pub Social)",
+   "org": "Comedy Club",
+   "area": "Phineas Bar",
+   "ll": [
+    51.5246,
+    -0.134
+   ],
+   "price": 0,
+   "start": "2026-11-19T19:30",
+   "end": "2026-11-19T21:00",
+   "unis": [
+    "ucl"
+   ],
+   "tags": [
+    "community",
+    "music",
+    "nightlife"
+   ],
+   "desc": "Run by Comedy Club. Venue: Phineas Bar.",
+   "url": "https://studentsunionucl.org/whats-on/clubs-societies/comedy-club-goes-to-pub-pub-social-1",
+   "source": "Students' Union UCL",
+   "sourceKey": "ucl-su",
+   "checked": "2026-11-15",
+   "status": "verified",
+   "auto": true
+  },
+  {
    "id": "ucl-su-205931",
    "cat": "events",
    "title": "Bachata Intermediates",
@@ -7613,6 +7809,31 @@
    "auto": true
   },
   {
+   "id": "ucl-su-205459",
+   "cat": "events",
+   "title": "VOCE x PENSA KCL Worship Night",
+   "org": "Gospel Society",
+   "area": "UCL Bloomsbury",
+   "ll": [
+    51.5246,
+    -0.134
+   ],
+   "price": 0,
+   "start": "2026-11-20T18:00",
+   "end": "2026-11-20T21:00",
+   "unis": [
+    "ucl"
+   ],
+   "tags": [],
+   "desc": "Run by Gospel Society.",
+   "url": "https://studentsunionucl.org/whats-on/events-activities/voce-x-pensa-kcl-worship-night",
+   "source": "Students' Union UCL",
+   "sourceKey": "ucl-su",
+   "checked": "2026-11-15",
+   "status": "verified",
+   "auto": true
+  },
+  {
    "id": "ucl-su-205537",
    "cat": "events",
    "title": "Quiz Night",
@@ -7642,7 +7863,7 @@
    "cat": "sport",
    "title": "Let's Talk about It - Breaking the stigma around talking about mental health",
    "org": "Running, Athletics and Cross Country Club",
-   "area": "UCL Bloomsbury",
+   "area": "IOE w2.06",
    "ll": [
     51.5246,
     -0.134
@@ -7656,7 +7877,7 @@
    "tags": [
     "fitness"
    ],
-   "desc": "Run by Running, Athletics and Cross Country Club. Commuters.",
+   "desc": "Run by Running, Athletics and Cross Country Club. Venue: IOE w2.06. Commuters.",
    "url": "https://studentsunionucl.org/whats-on/clubs-societies/lets-talk-about-it-breaking-stigma-around-talking-about-mental-health",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
@@ -7774,31 +7995,6 @@
    "yrs": [
     4
    ],
-   "source": "Students' Union UCL",
-   "sourceKey": "ucl-su",
-   "checked": "2026-11-15",
-   "status": "verified",
-   "auto": true
-  },
-  {
-   "id": "ucl-su-205459",
-   "cat": "events",
-   "title": "VOCE x PENSA KCL Worship Night",
-   "org": "Gospel Society",
-   "area": "UCL Bloomsbury",
-   "ll": [
-    51.5246,
-    -0.134
-   ],
-   "price": 0,
-   "start": "2026-11-20T18:30",
-   "end": "2026-11-20T21:30",
-   "unis": [
-    "ucl"
-   ],
-   "tags": [],
-   "desc": "Run by Gospel Society.",
-   "url": "https://studentsunionucl.org/whats-on/events-activities/voce-x-pensa-kcl-worship-night",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
    "checked": "2026-11-15",
@@ -8547,6 +8743,33 @@
    ],
    "desc": "Run by Nordic Society. Venue: St Olav's Norwegian Church in London. Alcohol Free · Under 18 Friendly.",
    "url": "https://studentsunionucl.org/whats-on/events-activities/norwegian-christmas-market",
+   "source": "Students' Union UCL",
+   "sourceKey": "ucl-su",
+   "checked": "2026-11-15",
+   "status": "verified",
+   "auto": true
+  },
+  {
+   "id": "ucl-su-205781",
+   "cat": "sport",
+   "title": "Advance Lesson",
+   "org": "Horse Riding Club",
+   "area": "London Equestrian Centre",
+   "ll": [
+    51.5246,
+    -0.134
+   ],
+   "price": 70.0,
+   "start": "2026-11-22T14:15",
+   "end": "2026-11-22T15:15",
+   "unis": [
+    "ucl"
+   ],
+   "tags": [
+    "fitness"
+   ],
+   "desc": "Run by Horse Riding Club. Venue: London Equestrian Centre.",
+   "url": "https://studentsunionucl.org/whats-on/events-activities/advance-lesson",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
    "checked": "2026-11-15",
@@ -11359,6 +11582,33 @@
    ],
    "desc": "Run by Nordic Society. Venue: Finnish Church in London. Alcohol Free · Under 18 Friendly.",
    "url": "https://studentsunionucl.org/whats-on/events-activities/finnish-christmas-fair",
+   "source": "Students' Union UCL",
+   "sourceKey": "ucl-su",
+   "checked": "2026-11-15",
+   "status": "verified",
+   "auto": true
+  },
+  {
+   "id": "ucl-su-205935",
+   "cat": "careers",
+   "title": "Students For Liberty London Conference",
+   "org": "Libertarian Society",
+   "area": "347 Taviton street",
+   "ll": [
+    51.5246,
+    -0.134
+   ],
+   "priceText": "Tickets on external site",
+   "start": "2026-11-28T14:00",
+   "end": "2026-11-28T18:00",
+   "unis": [
+    "ucl"
+   ],
+   "tags": [
+    "community"
+   ],
+   "desc": "Run by Libertarian Society. Venue: 347 Taviton street. Beginner Friendly · Under 18 Friendly · Commuters.",
+   "url": "https://studentsunionucl.org/whats-on/events-activities/students-for-liberty-london-conference",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
    "checked": "2026-11-15",
@@ -14349,6 +14599,34 @@
    ],
    "desc": "Run by Music Society. Venue: SAMA Bankside.",
    "url": "https://studentsunionucl.org/whats-on/events-activities/music-society-winter-ball",
+   "source": "Students' Union UCL",
+   "sourceKey": "ucl-su",
+   "checked": "2026-11-15",
+   "status": "verified",
+   "auto": true
+  },
+  {
+   "id": "ucl-su-205939",
+   "cat": "events",
+   "title": "The Bioluminescent Noël Ball",
+   "org": "Division of Medicine Society",
+   "area": "St John's Church, Hyde Park",
+   "ll": [
+    51.5246,
+    -0.134
+   ],
+   "price": 0,
+   "start": "2026-12-12T19:30",
+   "end": "2026-12-12T22:30",
+   "unis": [
+    "ucl"
+   ],
+   "tags": [
+    "music",
+    "nightlife"
+   ],
+   "desc": "Run by Division of Medicine Society. Venue: St John's Church, Hyde Park.",
+   "url": "https://studentsunionucl.org/whats-on/events-activities/bioluminescent-noel-ball",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
    "checked": "2026-11-15",
