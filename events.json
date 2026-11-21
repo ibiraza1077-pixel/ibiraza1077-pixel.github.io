@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-21T13:25",
+ "generated": "2026-11-21T20:54",
  "windowDays": 35,
  "sources": [
   {
@@ -7,8 +7,8 @@
    "name": "Students' Union UCL",
    "url": "https://studentsunionucl.org/whats-on",
    "ok": true,
-   "count": 385,
-   "fetched": "2026-11-21T13:25"
+   "count": 376,
+   "fetched": "2026-11-21T20:54"
   },
   {
    "key": "lse-su",
@@ -16,7 +16,7 @@
    "url": "https://www.lsesu.com/events/whats-on/",
    "ok": true,
    "count": 2,
-   "fetched": "2026-11-21T13:25"
+   "fetched": "2026-11-21T20:54"
   },
   {
    "key": "kcl",
@@ -24,7 +24,7 @@
    "url": "https://www.kcl.ac.uk/events/events-calendar",
    "ok": true,
    "count": 65,
-   "fetched": "2026-11-21T13:25"
+   "fetched": "2026-11-21T20:54"
   },
   {
    "key": "lse-public",
@@ -32,7 +32,7 @@
    "url": "https://www.lse.ac.uk/events",
    "ok": true,
    "count": 12,
-   "fetched": "2026-11-21T13:25"
+   "fetched": "2026-11-21T20:54"
   }
  ],
  "events": [
@@ -270,365 +270,6 @@
    ],
    "desc": "Run by Hiking Club. Venue: Euston Station. Beginner Friendly.",
    "url": "https://studentsunionucl.org/whats-on/events-activities/hike-ashridge-estate-boundary-trail-24km",
-   "source": "Students' Union UCL",
-   "sourceKey": "ucl-su",
-   "checked": "2026-11-21",
-   "status": "verified",
-   "auto": true
-  },
-  {
-   "id": "ucl-su-205393",
-   "cat": "careers",
-   "title": "2026 DECA Case Championship UCL Business Society",
-   "org": "Business Society",
-   "area": "UCL East",
-   "ll": [
-    51.5378,
-    -0.0107
-   ],
-   "price": 15.0,
-   "start": "2026-11-21T09:00",
-   "end": "2026-11-21T18:00",
-   "unis": [
-    "ucl"
-   ],
-   "tags": [],
-   "desc": "Run by Business Society. Venue: Marshgate Building, UCL East.",
-   "url": "https://studentsunionucl.org/whats-on/events-activities/2026-deca-case-championship-ucl-business-society-0",
-   "source": "Students' Union UCL",
-   "sourceKey": "ucl-su",
-   "checked": "2026-11-21",
-   "status": "verified",
-   "auto": true
-  },
-  {
-   "id": "ucl-su-205835",
-   "cat": "events",
-   "title": "UCL Impromptu Public Speaking Competition",
-   "org": "Public Speaking Society",
-   "area": "Darwin B05",
-   "ll": [
-    51.5246,
-    -0.134
-   ],
-   "price": 0,
-   "start": "2026-11-21T10:00",
-   "end": "2026-11-21T16:00",
-   "unis": [
-    "ucl"
-   ],
-   "tags": [
-    "community"
-   ],
-   "desc": "Run by Public Speaking Society. Venue: Darwin B05. Beginner Friendly.",
-   "url": "https://studentsunionucl.org/whats-on/clubs-societies/ucl-impromptu-public-speaking-competition",
-   "source": "Students' Union UCL",
-   "sourceKey": "ucl-su",
-   "checked": "2026-11-21",
-   "status": "verified",
-   "auto": true
-  },
-  {
-   "id": "ucl-su-205320",
-   "cat": "events",
-   "title": "Dance Society Origami Social 🔖",
-   "org": "Dance Society",
-   "area": "Institute of Education",
-   "ll": [
-    51.5246,
-    -0.134
-   ],
-   "price": 0,
-   "start": "2026-11-21T13:00",
-   "end": "2026-11-21T15:00",
-   "unis": [
-    "ucl"
-   ],
-   "tags": [
-    "community"
-   ],
-   "desc": "Run by Dance Society. Venue: Institute of Education. Beginner Friendly · Under 18 Friendly.",
-   "url": "https://studentsunionucl.org/whats-on/events-activities/dance-society-origami-social",
-   "source": "Students' Union UCL",
-   "sourceKey": "ucl-su",
-   "checked": "2026-11-21",
-   "status": "verified",
-   "auto": true
-  },
-  {
-   "id": "ucl-su-205533",
-   "cat": "events",
-   "title": "Introverts' London Trip",
-   "org": "Introverts Society",
-   "area": "Regent’s Canal & Coal Drop Yard",
-   "ll": [
-    51.5246,
-    -0.134
-   ],
-   "price": 0,
-   "start": "2026-11-21T13:00",
-   "end": "2026-11-21T15:00",
-   "unis": [
-    "ucl"
-   ],
-   "tags": [
-    "community",
-    "culture"
-   ],
-   "desc": "Run by Introverts Society. Venue: Regent’s Canal & Coal Drop Yard. Beginner Friendly · Alcohol Free · Under 18 Friendly · Commuters.",
-   "url": "https://studentsunionucl.org/whats-on/clubs-societies/introverts-london-trip",
-   "source": "Students' Union UCL",
-   "sourceKey": "ucl-su",
-   "checked": "2026-11-21",
-   "status": "verified",
-   "auto": true
-  },
-  {
-   "id": "ucl-su-205844",
-   "cat": "sport",
-   "title": "Brazilian Jiu-Jitsu Classes Term 1 (Second Half)",
-   "org": "Brazilian Jiu-Jitsu Club",
-   "area": "UCL Bloomsbury",
-   "ll": [
-    51.5246,
-    -0.134
-   ],
-   "price": 3.0,
-   "start": "2026-11-21T13:00",
-   "end": "2026-11-21T15:00",
-   "unis": [
-    "ucl"
-   ],
-   "tags": [
-    "community",
-    "culture",
-    "fitness"
-   ],
-   "desc": "Run by Brazilian Jiu-Jitsu Club. Venue: TeamUCL Gym, 3rd Floor, Bloomsbury Theatre Building, 15 Gordon Street, London WC1H 0AH. Beginner Friendly · Under 18 Friendly.",
-   "url": "https://studentsunionucl.org/whats-on/clubs-societies/brazilian-jiu-jitsu-classes-term-1-second-half-0",
-   "source": "Students' Union UCL",
-   "sourceKey": "ucl-su",
-   "checked": "2026-11-21",
-   "status": "verified",
-   "auto": true
-  },
-  {
-   "id": "ucl-su-205961",
-   "cat": "sport",
-   "title": "Cheerleading Varsity Tryouts",
-   "org": "Cheerleading Club",
-   "area": "UCL Bloomsbury",
-   "ll": [
-    51.5246,
-    -0.134
-   ],
-   "price": 2.0,
-   "start": "2026-11-21T13:00",
-   "end": "2026-11-21T14:00",
-   "unis": [
-    "ucl"
-   ],
-   "tags": [
-    "culture",
-    "fitness"
-   ],
-   "desc": "Run by Cheerleading Club. Venue: Mandela Studio TeamUCL Gym , 3rd Floor, Bloomsbury Theatre Building, 15 Gordon Street, London WC1H 0AH. Also on 1 more date in the next few weeks.",
-   "url": "https://studentsunionucl.org/whats-on/sport/cheerleading-varsity-tryouts",
-   "source": "Students' Union UCL",
-   "sourceKey": "ucl-su",
-   "checked": "2026-11-21",
-   "status": "verified",
-   "auto": true
-  },
-  {
-   "id": "ucl-su-205313",
-   "cat": "careers",
-   "title": "Stock Pitch Competition!",
-   "org": "Women in Finance Society",
-   "area": "Jeremy Bentham Room",
-   "ll": [
-    51.5246,
-    -0.134
-   ],
-   "price": 0,
-   "start": "2026-11-21T14:00",
-   "end": "2026-11-21T16:30",
-   "unis": [
-    "ucl"
-   ],
-   "tags": [
-    "community",
-    "finance"
-   ],
-   "desc": "Run by Women in Finance Society. Venue: Jeremy Bentham Room. Beginner Friendly · Under 18 Friendly.",
-   "url": "https://studentsunionucl.org/whats-on/clubs-societies/stock-pitch-competition",
-   "source": "Students' Union UCL",
-   "sourceKey": "ucl-su",
-   "checked": "2026-11-21",
-   "status": "verified",
-   "auto": true
-  },
-  {
-   "id": "ucl-su-205695",
-   "cat": "events",
-   "title": "Swedish Christmas Market",
-   "org": "Nordic Society",
-   "area": "Swedish Church",
-   "ll": [
-    51.5246,
-    -0.134
-   ],
-   "price": 0,
-   "start": "2026-11-21T14:00",
-   "end": "2026-11-21T15:30",
-   "unis": [
-    "ucl"
-   ],
-   "tags": [
-    "community",
-    "culture"
-   ],
-   "desc": "Run by Nordic Society. Venue: Swedish Church. Alcohol Free · Under 18 Friendly.",
-   "url": "https://studentsunionucl.org/whats-on/events-activities/swedish-christmas-market",
-   "source": "Students' Union UCL",
-   "sourceKey": "ucl-su",
-   "checked": "2026-11-21",
-   "status": "verified",
-   "auto": true
-  },
-  {
-   "id": "ucl-su-205431",
-   "cat": "events",
-   "title": "Dance Society: Heels Workshop (Open-Level)",
-   "org": "Dance Society",
-   "area": "UCL Bloomsbury",
-   "ll": [
-    51.5246,
-    -0.134
-   ],
-   "price": 0,
-   "start": "2026-11-21T15:00",
-   "end": "2026-11-21T17:00",
-   "unis": [
-    "ucl"
-   ],
-   "tags": [
-    "community"
-   ],
-   "desc": "Run by Dance Society. Venue: 2nd Floor Conference Room, Bloomsbury Building. Beginner Friendly · Under 18 Friendly.",
-   "url": "https://studentsunionucl.org/whats-on/events-activities/dance-society-heels-workshop-open-level-0",
-   "source": "Students' Union UCL",
-   "sourceKey": "ucl-su",
-   "checked": "2026-11-21",
-   "status": "verified",
-   "auto": true
-  },
-  {
-   "id": "ucl-su-206048",
-   "cat": "sport",
-   "title": "Parkour Indoor Session",
-   "org": "Parkour Club",
-   "area": "UCL Bloomsbury",
-   "ll": [
-    51.5246,
-    -0.134
-   ],
-   "price": 0,
-   "start": "2026-11-21T15:15",
-   "end": "2026-11-21T17:00",
-   "unis": [
-    "ucl"
-   ],
-   "tags": [
-    "community",
-    "culture",
-    "fitness"
-   ],
-   "desc": "Run by Parkour Club. Venue: Mandela Studio TeamUCL Gym , 3rd Floor, Bloomsbury Theatre Building, 15 Gordon Street, London WC1H 0AH. Beginner Friendly.",
-   "url": "https://studentsunionucl.org/whats-on/clubs-societies/parkour-indoor-session-3",
-   "source": "Students' Union UCL",
-   "sourceKey": "ucl-su",
-   "checked": "2026-11-21",
-   "status": "verified",
-   "auto": true
-  },
-  {
-   "id": "ucl-su-205778",
-   "cat": "sport",
-   "title": "Beginner Lesson",
-   "org": "Horse Riding Club",
-   "area": "London Equestrian Centre",
-   "ll": [
-    51.5246,
-    -0.134
-   ],
-   "price": 55.0,
-   "start": "2026-11-21T16:00",
-   "end": "2026-11-21T17:00",
-   "unis": [
-    "ucl"
-   ],
-   "tags": [
-    "community",
-    "fitness"
-   ],
-   "desc": "Run by Horse Riding Club. Venue: London Equestrian Centre. Beginner Friendly. Also on 2 more dates in the next few weeks.",
-   "url": "https://studentsunionucl.org/whats-on/events-activities/beginner-lesson-0",
-   "source": "Students' Union UCL",
-   "sourceKey": "ucl-su",
-   "checked": "2026-11-21",
-   "status": "verified",
-   "auto": true
-  },
-  {
-   "id": "ucl-su-206006",
-   "cat": "events",
-   "title": "Flash and Twilight: Workshop on Visual Style with with Fjodors (Theo) Aleksejevs",
-   "org": "Photography Society",
-   "area": "Hampstead Heath",
-   "ll": [
-    51.5246,
-    -0.134
-   ],
-   "price": 0,
-   "start": "2026-11-21T16:00",
-   "end": "2026-11-21T18:00",
-   "unis": [
-    "ucl"
-   ],
-   "tags": [
-    "community"
-   ],
-   "desc": "Run by Photography Society. Venue: Hampstead Heath. Beginner Friendly.",
-   "url": "https://studentsunionucl.org/whats-on/clubs-societies/flash-and-twilight-workshop-on-visual-style-with-with-fjodors-theo",
-   "source": "Students' Union UCL",
-   "sourceKey": "ucl-su",
-   "checked": "2026-11-21",
-   "status": "verified",
-   "auto": true
-  },
-  {
-   "id": "ucl-su-205921",
-   "cat": "sport",
-   "title": "Badminton Weekly Social (Pay and Play)",
-   "org": "Badminton Club",
-   "area": "UCL Bloomsbury",
-   "ll": [
-    51.5246,
-    -0.134
-   ],
-   "price": 9.0,
-   "start": "2026-11-21T18:00",
-   "end": "2026-11-21T19:30",
-   "unis": [
-    "ucl"
-   ],
-   "tags": [
-    "community",
-    "fitness"
-   ],
-   "desc": "Run by Badminton Club. Venue: LSE Marshall Building Multifunctional Sports Hall. Beginner Friendly.",
-   "url": "https://studentsunionucl.org/whats-on/clubs-societies/badminton-weekly-social-pay-and-play-1",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
    "checked": "2026-11-21",
@@ -3885,7 +3526,7 @@
    "tags": [
     "community"
    ],
-   "desc": "Holy Mass celebrated every Wednesday in term time in the Guy's Chapel. Also on 3 more dates in the next few weeks.",
+   "desc": "Holy Mass celebrated every Wednesday in term time in the Guy's Chapel. Also on 2 more dates in the next few weeks.",
    "url": "https://www.kcl.ac.uk/events/catholic-mass-at-guys-14",
    "source": "King's College London events",
    "sourceKey": "kcl",
@@ -5307,32 +4948,6 @@
    "auto": true
   },
   {
-   "id": "kcl-thursday-threads-at-denmark-hill-4",
-   "cat": "events",
-   "title": "Thursday Threads at Denmark Hill",
-   "org": "Dean's Office",
-   "area": "Denmark Hill campus",
-   "ll": [
-    51.4686,
-    -0.0937
-   ],
-   "start": "2026-11-26T12:00",
-   "end": "2026-11-26T14:00",
-   "unis": [
-    "kcl"
-   ],
-   "tags": [
-    "community"
-   ],
-   "desc": "A weekly crafting event to work on a simple project, and unwind! Also on 2 more dates in the next few weeks.",
-   "url": "https://www.kcl.ac.uk/events/thursday-threads-at-denmark-hill-4",
-   "source": "King's College London events",
-   "sourceKey": "kcl",
-   "checked": "2026-11-21",
-   "status": "verified",
-   "auto": true
-  },
-  {
    "id": "kcl-barista-session-at-guys-13",
    "cat": "events",
    "title": "Barista Session at Guy's",
@@ -5353,6 +4968,32 @@
    ],
    "desc": "An opportunity to learn the secrets of the Chaplaincy coffee machine! Also on 2 more dates in the next few weeks.",
    "url": "https://www.kcl.ac.uk/events/barista-session-at-guys-13",
+   "source": "King's College London events",
+   "sourceKey": "kcl",
+   "checked": "2026-11-21",
+   "status": "verified",
+   "auto": true
+  },
+  {
+   "id": "kcl-thursday-threads-at-denmark-hill-4",
+   "cat": "events",
+   "title": "Thursday Threads at Denmark Hill",
+   "org": "Dean's Office",
+   "area": "Denmark Hill campus",
+   "ll": [
+    51.4686,
+    -0.0937
+   ],
+   "start": "2026-11-26T12:00",
+   "end": "2026-11-26T14:00",
+   "unis": [
+    "kcl"
+   ],
+   "tags": [
+    "community"
+   ],
+   "desc": "A weekly crafting event to work on a simple project, and unwind! Also on 2 more dates in the next few weeks.",
+   "url": "https://www.kcl.ac.uk/events/thursday-threads-at-denmark-hill-4",
    "source": "King's College London events",
    "sourceKey": "kcl",
    "checked": "2026-11-21",
@@ -5414,27 +5055,28 @@
    "auto": true
   },
   {
-   "id": "kcl-sacrament-of-confession-at-the-strand-12",
+   "id": "ucl-su-206081",
    "cat": "events",
-   "title": "Sacrament of Confession at the Strand",
-   "org": "Dean's Office",
-   "area": "Strand campus",
+   "title": "Lamorna Society: Dessert Candle Workshop",
+   "org": "Lamorna Society",
+   "area": "Room 206, Lewis' Building",
    "ll": [
-    51.5115,
-    -0.116
+    51.5246,
+    -0.134
    ],
+   "price": 0,
    "start": "2026-11-26T12:30",
-   "end": "2026-11-26T13:00",
+   "end": "2026-11-26T15:30",
    "unis": [
-    "kcl"
+    "ucl"
    ],
    "tags": [
     "community"
    ],
-   "desc": "A Catholic priest is available to hear Confessions before the celebration of Holy Mass. Also on 2 more dates in the next few weeks.",
-   "url": "https://www.kcl.ac.uk/events/sacrament-of-confession-at-the-strand-12",
-   "source": "King's College London events",
-   "sourceKey": "kcl",
+   "desc": "Run by Lamorna Society. Venue: Room 206, Lewis' Building. Beginner Friendly.",
+   "url": "https://studentsunionucl.org/whats-on/clubs-societies/lamorna-society-dessert-candle-workshop",
+   "source": "Students' Union UCL",
+   "sourceKey": "ucl-su",
    "checked": "2026-11-21",
    "status": "verified",
    "auto": true
@@ -5460,6 +5102,32 @@
    ],
    "desc": "Meet up in the Chaplaincy & enjoy a (free!) light lunch on Thursdays during term time. Also on 2 more dates in the next few weeks.",
    "url": "https://www.kcl.ac.uk/events/international-lunch-at-guys-13",
+   "source": "King's College London events",
+   "sourceKey": "kcl",
+   "checked": "2026-11-21",
+   "status": "verified",
+   "auto": true
+  },
+  {
+   "id": "kcl-sacrament-of-confession-at-the-strand-12",
+   "cat": "events",
+   "title": "Sacrament of Confession at the Strand",
+   "org": "Dean's Office",
+   "area": "Strand campus",
+   "ll": [
+    51.5115,
+    -0.116
+   ],
+   "start": "2026-11-26T12:30",
+   "end": "2026-11-26T13:00",
+   "unis": [
+    "kcl"
+   ],
+   "tags": [
+    "community"
+   ],
+   "desc": "A Catholic priest is available to hear Confessions before the celebration of Holy Mass. Also on 2 more dates in the next few weeks.",
+   "url": "https://www.kcl.ac.uk/events/sacrament-of-confession-at-the-strand-12",
    "source": "King's College London events",
    "sourceKey": "kcl",
    "checked": "2026-11-21",
@@ -6813,32 +6481,6 @@
    "auto": true
   },
   {
-   "id": "kcl-radical-neuro-inclusion-at-denmark-hill-1",
-   "cat": "events",
-   "title": "'Radical Neuro Inclusion?' at Denmark Hill",
-   "org": "Dean's Office",
-   "area": "Denmark Hill campus",
-   "ll": [
-    51.4686,
-    -0.0937
-   ],
-   "start": "2026-11-27T12:00",
-   "end": "2026-11-27T14:00",
-   "unis": [
-    "kcl"
-   ],
-   "tags": [
-    "community"
-   ],
-   "desc": "A drop-in space for people of all neurotypes, with refreshments.",
-   "url": "https://www.kcl.ac.uk/events/radical-neuro-inclusion-at-denmark-hill-1",
-   "source": "King's College London events",
-   "sourceKey": "kcl",
-   "checked": "2026-11-21",
-   "status": "verified",
-   "auto": true
-  },
-  {
    "id": "kcl-weekly-eucharist-at-guys-14",
    "cat": "events",
    "title": "Weekly Eucharist at Guy's",
@@ -6858,6 +6500,32 @@
    ],
    "desc": "A Eucharist service every Friday at midday during term time in the Guy's Chapel. Also on 2 more dates in the next few weeks.",
    "url": "https://www.kcl.ac.uk/events/weekly-eucharist-at-guys-14",
+   "source": "King's College London events",
+   "sourceKey": "kcl",
+   "checked": "2026-11-21",
+   "status": "verified",
+   "auto": true
+  },
+  {
+   "id": "kcl-radical-neuro-inclusion-at-denmark-hill-1",
+   "cat": "events",
+   "title": "'Radical Neuro Inclusion?' at Denmark Hill",
+   "org": "Dean's Office",
+   "area": "Denmark Hill campus",
+   "ll": [
+    51.4686,
+    -0.0937
+   ],
+   "start": "2026-11-27T12:00",
+   "end": "2026-11-27T14:00",
+   "unis": [
+    "kcl"
+   ],
+   "tags": [
+    "community"
+   ],
+   "desc": "A drop-in space for people of all neurotypes, with refreshments.",
+   "url": "https://www.kcl.ac.uk/events/radical-neuro-inclusion-at-denmark-hill-1",
    "source": "King's College London events",
    "sourceKey": "kcl",
    "checked": "2026-11-21",
@@ -7695,6 +7363,34 @@
    "auto": true
   },
   {
+   "id": "ucl-su-205993",
+   "cat": "sport",
+   "title": "Beginner Lesson",
+   "org": "Horse Riding Club",
+   "area": "London Equestrian Centre",
+   "ll": [
+    51.5246,
+    -0.134
+   ],
+   "price": 0,
+   "start": "2026-11-28T10:00",
+   "end": "2026-11-28T11:00",
+   "unis": [
+    "ucl"
+   ],
+   "tags": [
+    "community",
+    "fitness"
+   ],
+   "desc": "Run by Horse Riding Club. Venue: London Equestrian Centre. Beginner Friendly. Also on 1 more date in the next few weeks.",
+   "url": "https://studentsunionucl.org/whats-on/clubs-societies/beginner-lesson-74",
+   "source": "Students' Union UCL",
+   "sourceKey": "ucl-su",
+   "checked": "2026-11-21",
+   "status": "verified",
+   "auto": true
+  },
+  {
    "id": "ucl-su-204175",
    "cat": "sport",
    "title": "Social Badminton Mini Tournament",
@@ -8145,7 +7841,7 @@
    "cat": "events",
    "title": "Festive Card Making for Hospital Patients",
    "org": "Student Inclusion Health Society",
-   "area": "IOE C3.14",
+   "area": "IOE C3.12",
    "ll": [
     51.5246,
     -0.134
@@ -8159,7 +7855,7 @@
    "tags": [
     "community"
    ],
-   "desc": "Run by Student Inclusion Health Society. Venue: IOE C3.14. Beginner Friendly · Alcohol Free · Under 18 Friendly.",
+   "desc": "Run by Student Inclusion Health Society. Venue: IOE C3.12. Beginner Friendly · Alcohol Free · Under 18 Friendly.",
    "url": "https://studentsunionucl.org/whats-on/clubs-societies/festive-card-making-for-hospital-patients",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
@@ -8435,6 +8131,34 @@
    ],
    "desc": "Run by Life Science Society. Venue: IOE 20 Bedford Way – 102 Punnett Hall. Under 18 Friendly.",
    "url": "https://studentsunionucl.org/whats-on/clubs-societies/ucl-lss-medtech-x-accenture-life-sciences-consulting-insights-careers",
+   "source": "Students' Union UCL",
+   "sourceKey": "ucl-su",
+   "checked": "2026-11-21",
+   "status": "verified",
+   "auto": true
+  },
+  {
+   "id": "ucl-su-206079",
+   "cat": "events",
+   "title": "Cheermas",
+   "org": "Cheerleading Club",
+   "area": "UCL Bloomsbury",
+   "ll": [
+    51.5246,
+    -0.134
+   ],
+   "price": 0,
+   "start": "2026-12-01T19:30",
+   "end": "2026-12-02T00:00",
+   "unis": [
+    "ucl"
+   ],
+   "tags": [
+    "music",
+    "nightlife"
+   ],
+   "desc": "Run by Cheerleading Club. Venue: Pedro’s Wine Bar, 128 Druid Street, London SE1 2HH.",
+   "url": "https://studentsunionucl.org/whats-on/clubs-societies/cheermas-1",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
    "checked": "2026-11-21",
@@ -9591,6 +9315,31 @@
    "yrs": [
     4
    ],
+   "source": "Students' Union UCL",
+   "sourceKey": "ucl-su",
+   "checked": "2026-11-21",
+   "status": "verified",
+   "auto": true
+  },
+  {
+   "id": "ucl-su-206080",
+   "cat": "events",
+   "title": "Interuni Hafla",
+   "org": "Arab and North African Society",
+   "area": "IOE Punnett Hall",
+   "ll": [
+    51.5246,
+    -0.134
+   ],
+   "price": 0,
+   "start": "2026-12-04T18:00",
+   "end": "2026-12-04T21:00",
+   "unis": [
+    "ucl"
+   ],
+   "tags": [],
+   "desc": "Run by Arab and North African Society. Venue: IOE Punnett Hall. Alcohol Free.",
+   "url": "https://studentsunionucl.org/whats-on/clubs-societies/interuni-hafla-0",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
    "checked": "2026-11-21",
@@ -10909,6 +10658,34 @@
    ],
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
+   "checked": "2026-11-21",
+   "status": "verified",
+   "auto": true
+  },
+  {
+   "id": "kcl-college-eucharist-at-the-strand-11",
+   "cat": "events",
+   "title": "College Eucharist at the Strand",
+   "org": "Dean's Office",
+   "area": "Strand campus",
+   "ll": [
+    51.5115,
+    -0.116
+   ],
+   "start": "2026-12-09T13:10",
+   "end": "2026-12-09T14:00",
+   "unis": [
+    "kcl"
+   ],
+   "tags": [
+    "community",
+    "food",
+    "music"
+   ],
+   "desc": "A lunchtime service in the College Chapel with music by the Choir of King's College London. Also on 1 more date in the next few weeks.",
+   "url": "https://www.kcl.ac.uk/events/college-eucharist-at-the-strand-11",
+   "source": "King's College London events",
+   "sourceKey": "kcl",
    "checked": "2026-11-21",
    "status": "verified",
    "auto": true
@@ -12486,34 +12263,6 @@
    "url": "https://studentsunionucl.org/whats-on/sport/5-side-departmental-derby",
    "source": "Students' Union UCL",
    "sourceKey": "ucl-su",
-   "checked": "2026-11-21",
-   "status": "verified",
-   "auto": true
-  },
-  {
-   "id": "kcl-college-eucharist-at-the-strand-12",
-   "cat": "events",
-   "title": "College Eucharist at the Strand",
-   "org": "Dean's Office",
-   "area": "Strand campus",
-   "ll": [
-    51.5115,
-    -0.116
-   ],
-   "start": "2026-12-16T13:10",
-   "end": "2026-12-16T14:00",
-   "unis": [
-    "kcl"
-   ],
-   "tags": [
-    "community",
-    "food",
-    "music"
-   ],
-   "desc": "A lunchtime service in the College Chapel with music by the Choir of King's College London.",
-   "url": "https://www.kcl.ac.uk/events/college-eucharist-at-the-strand-12",
-   "source": "King's College London events",
-   "sourceKey": "kcl",
    "checked": "2026-11-21",
    "status": "verified",
    "auto": true
